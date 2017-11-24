@@ -13,7 +13,7 @@ namespace Offsets
 
 	public class UMaterialShaderQualitySettings
 	{
-		public const int FName = 0x0028;
+		public const int ForwardSettingMap = 0x0028;
 	}
 
 }

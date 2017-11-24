@@ -39,7 +39,10 @@ namespace Offsets
 	public class UGameplayTasksComponent
 	{
 		public const int UnknownData00 = 0x00F8;
+		public const int SimulatedTasks = 0x0100;
+		public const int TaskPriorityQueue = 0x0110;
 		public const int UnknownData01 = 0x0120;
+		public const int TickingTasks = 0x0130;
 		public const int UnknownData02 = 0x0140;
 		public const int OnClaimedResourcesChange = 0x0148;
 		public const int UnknownData03 = 0x0158;

@@ -53,6 +53,7 @@ namespace Offsets
 		public const int TestMove = 0x03B8;
 		public const int WheelUp = 0x03C0;
 		public const int UnknownData04 = 0x03C1;
+		public const int AlignmentStack = 0x03C8;
 		public const int LastZoomLevel = 0x03D8;
 		public const int NewVar_1 = 0x03DC;
 		public const int MouseDownPosition = 0x03E4;

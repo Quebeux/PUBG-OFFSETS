@@ -20,6 +20,7 @@ namespace Offsets
 		public const int ContinousReloadCount = 0x0290;
 		public const int UnknownData00 = 0x0294;
 		public const int LastReload = 0x0298;
+		public const int VisibleWebPopupArray = 0x02A0;
 		public const int NameTagHeight = 0x02B0;
 	}
 

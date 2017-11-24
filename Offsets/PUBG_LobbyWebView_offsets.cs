@@ -11,6 +11,7 @@ namespace Offsets
 		public const int WebView_1 = 0x0248;
 		public const int WebView_2 = 0x0250;
 		public const int WebView_3 = 0x0258;
+		public const int ViewArray = 0x0260;
 		public const int TickForWebViewVisibilityChange = 0x0270;
 	}
 

@@ -33,6 +33,7 @@ namespace Offsets
 		public const int UnknownData05 = 0x00E4;
 		public const int Navigation = 0x00E8;
 		public const int UnknownData06 = 0x00F0;
+		public const int NativeBindings = 0x0118;
 	}
 
 	public class UUserWidget
@@ -47,6 +48,9 @@ namespace Offsets
 		public const int bIsFocusable = 0x0199;
 		public const int UnknownData01 = 0x019A;
 		public const int WidgetTree = 0x01A0;
+		public const int ActiveSequencePlayers = 0x01A8;
+		public const int StoppedSequencePlayers = 0x01B8;
+		public const int NamedSlotBindings = 0x01C8;
 		public const int bStopAction = 0x01D8;
 		public const int UnknownData02 = 0x01D9;
 		public const int Priority = 0x01DC;
@@ -95,11 +99,13 @@ namespace Offsets
 
 	public class UMovieSceneWidgetMaterialTrack
 	{
+		public const int BrushPropertyNamePath = 0x0038;
 		public const int TrackName = 0x0048;
 	}
 
 	public class UPropertyBinding
 	{
+		public const int SourceObject = 0x0028;
 		public const int SourcePath = 0x0030;
 		public const int DestinationProperty = 0x0040;
 	}
@@ -139,6 +145,7 @@ namespace Offsets
 
 	public class USlateVectorArtData
 	{
+		public const int VertexData = 0x0028;
 		public const int IndexData = 0x0038;
 		public const int Material = 0x0048;
 		public const int ExtentMin = 0x0050;
@@ -309,12 +316,14 @@ namespace Offsets
 
 	public class UComboBox
 	{
+		public const int Items = 0x0128;
 		public const int OnGenerateWidgetEvent = 0x0138;
 		public const int UnknownData00 = 0x0148;
 	}
 
 	public class UComboBoxString
 	{
+		public const int DefaultOptions = 0x0128;
 		public const int SelectedOption = 0x0138;
 		public const int WidgetStyle = 0x0148;
 		public const int ItemStyle = 0x0570;
@@ -455,6 +464,7 @@ namespace Offsets
 
 	public class UPanelWidget
 	{
+		public const int Slots = 0x0128;
 		public const int UnknownData00 = 0x0138;
 	}
 
@@ -765,6 +775,7 @@ namespace Offsets
 	{
 		public const int ItemHeight = 0x0128;
 		public const int UnknownData00 = 0x012C;
+		public const int Items = 0x0130;
 		public const int SelectionMode = 0x0140;
 		public const int UnknownData01 = 0x0141;
 		public const int OnGenerateRowEvent = 0x0148;
@@ -775,6 +786,7 @@ namespace Offsets
 	{
 		public const int ItemWidth = 0x0128;
 		public const int ItemHeight = 0x012C;
+		public const int Items = 0x0130;
 		public const int SelectionMode = 0x0140;
 		public const int UnknownData00 = 0x0141;
 		public const int OnGenerateTileEvent = 0x0148;
@@ -820,6 +832,7 @@ namespace Offsets
 		public const int TextDelegate = 0x0168;
 		public const int Font = 0x0178;
 		public const int Color = 0x01E0;
+		public const int Decorators = 0x01F0;
 		public const int UnknownData00 = 0x0200;
 	}
 
@@ -853,6 +866,7 @@ namespace Offsets
 	public class UWidgetTree
 	{
 		public const int RootWidget = 0x0028;
+		public const int AllWidgets = 0x0030;
 	}
 
 	public class UWidgetAnimation
@@ -860,12 +874,16 @@ namespace Offsets
 		public const int OnAnimationStarted = 0x0028;
 		public const int OnAnimationFinished = 0x0038;
 		public const int MovieScene = 0x0048;
+		public const int AnimationBindings = 0x0050;
 		public const int UnknownData00 = 0x0060;
 	}
 
 	public class UWidgetBlueprintGeneratedClass
 	{
 		public const int WidgetTree = 0x02F8;
+		public const int Bindings = 0x0300;
+		public const int Animations = 0x0310;
+		public const int NamedSlots = 0x0320;
 		public const int bCanEverTick = 0x0330;
 		public const int bCanEverPaint = 0x0330;
 		public const int UnknownData00 = 0x0331;

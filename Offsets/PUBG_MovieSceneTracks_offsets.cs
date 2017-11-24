@@ -35,6 +35,11 @@ namespace Offsets
 		public const int UnknownData01 = 0x00CD;
 	}
 
+	public class UMovieScene3DConstraintTrack
+	{
+		public const int ConstraintSections = 0x0028;
+	}
+
 	public class UMovieScene3DTransformSection
 	{
 		public const int UnknownData00 = 0x0040;
@@ -48,6 +53,7 @@ namespace Offsets
 		public const int UnknownData00 = 0x0040;
 		public const int ActorGuidIndexCurve = 0x0048;
 		public const int UnknownData01 = 0x00B8;
+		public const int ActorGuidStrings = 0x00C8;
 	}
 
 	public class UMovieSceneAudioSection
@@ -58,6 +64,11 @@ namespace Offsets
 		public const int AudioVolume = 0x0050;
 		public const int bSuppressSubtitles = 0x0054;
 		public const int UnknownData00 = 0x0055;
+	}
+
+	public class UMovieSceneAudioTrack
+	{
+		public const int AudioSections = 0x0028;
 	}
 
 	public class UMovieSceneBoolSection
@@ -88,9 +99,19 @@ namespace Offsets
 		public const int UserDefinedPlaySpace = 0x005C;
 	}
 
+	public class UMovieSceneCameraAnimTrack
+	{
+		public const int CameraAnimSections = 0x0028;
+	}
+
 	public class UMovieSceneCameraCutSection
 	{
 		public const int CameraGuid = 0x0040;
+	}
+
+	public class UMovieSceneCameraCutTrack
+	{
+		public const int Sections = 0x0028;
 	}
 
 	public class UMovieSceneCameraShakeSection
@@ -101,6 +122,11 @@ namespace Offsets
 		public const int UnknownData00 = 0x004D;
 		public const int UserDefinedPlaySpace = 0x0050;
 		public const int UnknownData01 = 0x005C;
+	}
+
+	public class UMovieSceneCameraShakeTrack
+	{
+		public const int CameraShakeSections = 0x0028;
 	}
 
 	public class UMovieSceneColorSection
@@ -122,6 +148,7 @@ namespace Offsets
 		public const int bFireEventsWhenForwards = 0x0028;
 		public const int bFireEventsWhenBackwards = 0x0028;
 		public const int UnknownData00 = 0x0029;
+		public const int Sections = 0x0030;
 	}
 
 	public class UMovieSceneFloatSection
@@ -141,12 +168,31 @@ namespace Offsets
 	{
 		public const int Visibility = 0x0040;
 		public const int UnknownData00 = 0x0041;
+		public const int LevelNames = 0x0048;
 	}
 
 	public class UMovieScenePropertyTrack
 	{
 		public const int PropertyName = 0x0028;
 		public const int PropertyPath = 0x0030;
+		public const int Sections = 0x0040;
+	}
+
+	public class UMovieSceneLevelVisibilityTrack
+	{
+		public const int Sections = 0x0028;
+	}
+
+	public class UMovieSceneParameterSection
+	{
+		public const int ScalarParameterNamesAndCurves = 0x0040;
+		public const int VectorParameterNamesAndCurves = 0x0050;
+		public const int ColorParameterNamesAndCurves = 0x0060;
+	}
+
+	public class UMovieSceneMaterialTrack
+	{
+		public const int Sections = 0x0028;
 	}
 
 	public class UMovieSceneComponentMaterialTrack
@@ -155,9 +201,19 @@ namespace Offsets
 		public const int UnknownData00 = 0x003C;
 	}
 
+	public class UMovieSceneParticleParameterTrack
+	{
+		public const int Sections = 0x0028;
+	}
+
 	public class UMovieSceneParticleSection
 	{
 		public const int ParticleKeys = 0x0040;
+	}
+
+	public class UMovieSceneParticleTrack
+	{
+		public const int ParticleSections = 0x0028;
 	}
 
 	public class UMovieSceneByteTrack
@@ -189,8 +245,14 @@ namespace Offsets
 		public const int SlotName = 0x0060;
 	}
 
+	public class UMovieSceneSkeletalAnimationTrack
+	{
+		public const int AnimationSections = 0x0028;
+	}
+
 	public class UMovieSceneSpawnTrack
 	{
+		public const int Sections = 0x0028;
 		public const int ObjectGuid = 0x0038;
 	}
 
@@ -207,6 +269,7 @@ namespace Offsets
 		public const int PrerollTime = 0x0048;
 		public const int UnknownData00 = 0x004C;
 		public const int SubSequence = 0x0050;
+		public const int ActorToRecord = 0x0058;
 		public const int UnknownData01 = 0x0074;
 		public const int TargetSequenceName = 0x0078;
 		public const int TargetPathToRecordTo = 0x0088;
@@ -215,6 +278,11 @@ namespace Offsets
 	public class UMovieSceneCinematicShotSection
 	{
 		public const int DisplayName = 0x0098;
+	}
+
+	public class UMovieSceneSubTrack
+	{
+		public const int Sections = 0x0028;
 	}
 
 	public class UMovieSceneVectorSection

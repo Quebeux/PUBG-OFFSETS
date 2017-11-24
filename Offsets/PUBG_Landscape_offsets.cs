@@ -13,6 +13,9 @@ namespace Offsets
 		public const int UnknownData00 = 0x06DC;
 		public const int OverrideMaterial = 0x06E0;
 		public const int OverrideHoleMaterial = 0x06E8;
+		public const int MaterialInstances = 0x06F0;
+		public const int WeightmapLayerAllocations = 0x0700;
+		public const int WeightmapTextures = 0x0710;
 		public const int XYOffsetmapTexture = 0x0720;
 		public const int UnknownData01 = 0x0728;
 		public const int WeightmapScaleBias = 0x0730;
@@ -21,7 +24,9 @@ namespace Offsets
 		public const int HeightmapScaleBias = 0x0750;
 		public const int HeightmapTexture = 0x0760;
 		public const int CachedLocalBox = 0x0768;
+		public const int CollisionComponent = 0x0784;
 		public const int MapBuildDataId = 0x07A0;
+		public const int IrrelevantLights = 0x07B0;
 		public const int CollisionMipLevel = 0x07C0;
 		public const int SimpleCollisionMipLevel = 0x07C4;
 		public const int NegativeZBoundsExtension = 0x07C8;
@@ -47,6 +52,7 @@ namespace Offsets
 
 	public class ULandscapeGrassType
 	{
+		public const int GrassVarieties = 0x0028;
 		public const int GrassMesh = 0x0038;
 		public const int GrassDensity = 0x0040;
 		public const int PlacementJitter = 0x0044;
@@ -69,7 +75,9 @@ namespace Offsets
 		public const int CollisionQuadFlags = 0x06F0;
 		public const int HeightfieldGuid = 0x0700;
 		public const int CachedLocalBox = 0x0710;
+		public const int RenderComponent = 0x072C;
 		public const int UnknownData02 = 0x0748;
+		public const int CookedPhysicalMaterials = 0x0758;
 		public const int UnknownData03 = 0x0768;
 	}
 
@@ -80,6 +88,7 @@ namespace Offsets
 
 	public class ULandscapeInfo
 	{
+		public const int LandscapeActor = 0x0028;
 		public const int LandscapeGuid = 0x0044;
 		public const int ComponentSizeQuads = 0x0054;
 		public const int SubsectionSizeQuads = 0x0058;
@@ -119,6 +128,7 @@ namespace Offsets
 	public class ULandscapeMeshProxyComponent
 	{
 		public const int UnknownData00 = 0x0810;
+		public const int ProxyComponentBases = 0x0818;
 		public const int ProxyLOD = 0x0828;
 		public const int UnknownData01 = 0x0829;
 	}
@@ -140,6 +150,9 @@ namespace Offsets
 		public const int LandscapeHoleMaterial = 0x03E8;
 		public const int NegativeZBoundsExtension = 0x03F0;
 		public const int PositiveZBoundsExtension = 0x03F4;
+		public const int LandscapeComponents = 0x03F8;
+		public const int CollisionComponents = 0x0408;
+		public const int FoliageComponents = 0x0418;
 		public const int UnknownData02 = 0x0428;
 		public const int bHasLandscapeGrass = 0x0488;
 		public const int UnknownData03 = 0x0489;
@@ -176,6 +189,8 @@ namespace Offsets
 	public class ULandscapeSplinesComponent
 	{
 		public const int UnknownData00 = 0x06D0;
+		public const int Segments = 0x06D8;
+		public const int CookedForeignMeshComponents = 0x06E8;
 		public const int UnknownData01 = 0x06F8;
 	}
 
@@ -183,8 +198,10 @@ namespace Offsets
 	{
 		public const int Connections = 0x0028;
 		public const int SplineInfo = 0x0058;
+		public const int Points = 0x0070;
 		public const int Bounds = 0x0080;
 		public const int UnknownData00 = 0x009C;
+		public const int LocalMeshComponents = 0x00A0;
 	}
 
 	public class ULandscapeSplineControlPoint
@@ -195,13 +212,21 @@ namespace Offsets
 		public const int SideFalloff = 0x0044;
 		public const int EndFalloff = 0x0048;
 		public const int UnknownData00 = 0x004C;
+		public const int ConnectedSegments = 0x0050;
+		public const int Points = 0x0060;
 		public const int Bounds = 0x0070;
 		public const int UnknownData01 = 0x008C;
 		public const int LocalMeshComponent = 0x0090;
 	}
 
+	public class UMaterialExpressionLandscapeGrassOutput
+	{
+		public const int GrassTypes = 0x0060;
+	}
+
 	public class UMaterialExpressionLandscapeLayerBlend
 	{
+		public const int Layers = 0x0060;
 		public const int ExpressionGUID = 0x0070;
 	}
 

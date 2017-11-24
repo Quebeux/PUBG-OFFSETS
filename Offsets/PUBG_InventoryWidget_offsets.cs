@@ -47,6 +47,8 @@ namespace Offsets
 		public const int wasVicinityEmpty = 0x03B8;
 		public const int willDropToVicinity = 0x03B9;
 		public const int UnknownData00 = 0x03BA;
+		public const int MouseOverSlot = 0x03C0;
+		public const int SlotContainer = 0x03D0;
 		public const int MouseOverItem = 0x03E0;
 		public const int MouseOverEquipableItem = 0x03E8;
 		public const int MouseOverAttachmentItem = 0x03F0;
@@ -54,6 +56,7 @@ namespace Offsets
 		public const int DefaultColor = 0x0420;
 		public const int SelectIndex = 0x0448;
 		public const int UnknownData01 = 0x044C;
+		public const int FocusableWidgetLis = 0x0450;
 		public const int bLeft = 0x0460;
 		public const int bright = 0x0461;
 		public const int bUp = 0x0462;

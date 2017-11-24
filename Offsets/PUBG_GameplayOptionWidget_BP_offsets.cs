@@ -20,9 +20,11 @@ namespace Offsets
 		public const int Sprint = 0x02C8;
 		public const int UiSettings = 0x02D0;
 		public const int Walk = 0x02D8;
+		public const int ContentsForInputMode = 0x02E0;
 		public const int StrToggle = 0x02F0;
 		public const int StrDoubleTap = 0x0300;
 		public const int StrHold = 0x0310;
+		public const int ContentsForFunctionalities = 0x0320;
 		public const int StrEnable = 0x0330;
 		public const int StrDisable = 0x0340;
 		public const int strOn = 0x0350;

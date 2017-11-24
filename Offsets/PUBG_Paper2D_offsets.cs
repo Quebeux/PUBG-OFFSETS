@@ -25,23 +25,27 @@ namespace Offsets
 		public const int SourceUV = 0x0038;
 		public const int SourceDimension = 0x0040;
 		public const int SourceTexture = 0x0048;
+		public const int AdditionalSourceTextures = 0x0050;
 		public const int BakedSourceUV = 0x0060;
 		public const int BakedSourceDimension = 0x0068;
 		public const int BakedSourceTexture = 0x0070;
 		public const int DefaultMaterial = 0x0078;
 		public const int AlternateMaterial = 0x0080;
+		public const int Sockets = 0x0088;
 		public const int SpriteCollisionDomain = 0x0098;
 		public const int UnknownData01 = 0x0099;
 		public const int PixelsPerUnrealUnit = 0x009C;
 		public const int BodySetup = 0x00A0;
 		public const int AlternateMaterialSplitIndex = 0x00A8;
 		public const int UnknownData02 = 0x00AC;
+		public const int BakedRenderData = 0x00B0;
 	}
 
 	public class UPaperFlipbook
 	{
 		public const int FramesPerSecond = 0x0028;
 		public const int UnknownData00 = 0x002C;
+		public const int KeyFrames = 0x0030;
 		public const int DefaultMaterial = 0x0040;
 		public const int CollisionSource = 0x0048;
 		public const int UnknownData01 = 0x0049;
@@ -71,6 +75,8 @@ namespace Offsets
 
 	public class UPaperGroupedSpriteComponent
 	{
+		public const int InstanceMaterials = 0x0780;
+		public const int PerInstanceSpriteData = 0x0790;
 		public const int UnknownData00 = 0x07A0;
 	}
 
@@ -126,6 +132,7 @@ namespace Offsets
 
 	public class UPaperTerrainMaterial
 	{
+		public const int Rules = 0x0028;
 		public const int InteriorFill = 0x0038;
 	}
 
@@ -145,6 +152,8 @@ namespace Offsets
 		public const int HeightInTiles = 0x005C;
 		public const int AllocatedWidth = 0x0060;
 		public const int AllocatedHeight = 0x0064;
+		public const int PerTileData = 0x0068;
+		public const int Terrains = 0x0078;
 		public const int TileWidth = 0x0088;
 		public const int TileHeight = 0x008C;
 		public const int Margin = 0x0090;
@@ -167,6 +176,7 @@ namespace Offsets
 		public const int AllocatedWidth = 0x0064;
 		public const int AllocatedHeight = 0x0068;
 		public const int UnknownData01 = 0x006C;
+		public const int AllocatedCells = 0x0070;
 		public const int TileSet = 0x0080;
 		public const int AllocatedGrid = 0x0088;
 	}
@@ -181,7 +191,9 @@ namespace Offsets
 		public const int SeparationPerTileX = 0x003C;
 		public const int SeparationPerTileY = 0x0040;
 		public const int SeparationPerLayer = 0x0044;
+		public const int SelectedTileSet = 0x0048;
 		public const int Material = 0x0068;
+		public const int TileLayers = 0x0070;
 		public const int CollisionThickness = 0x0080;
 		public const int SpriteCollisionDomain = 0x0084;
 		public const int ProjectionMode = 0x0085;
@@ -206,6 +218,7 @@ namespace Offsets
 		public const int TileHeight = 0x078C;
 		public const int DefaultLayerTileSet = 0x0790;
 		public const int Material = 0x0798;
+		public const int TileLayers = 0x07A0;
 		public const int TileMapColor = 0x07B0;
 		public const int UseSingleLayerIndex = 0x07C0;
 		public const int bUseSingleLayer = 0x07C4;

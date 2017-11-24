@@ -30,6 +30,7 @@ namespace Offsets
 
 	public class UBTTaskNode
 	{
+		public const int Services = 0x0058;
 		public const int bIgnoreRestartSelf = 0x0068;
 		public const int UnknownData00 = 0x0069;
 	}
@@ -79,6 +80,8 @@ namespace Offsets
 	public class UPawnActionsComponent
 	{
 		public const int ControlledPawn = 0x00F8;
+		public const int ActionStacks = 0x0100;
+		public const int ActionEvents = 0x0110;
 		public const int CurrentAction = 0x0120;
 		public const int UnknownData00 = 0x0128;
 	}
@@ -110,6 +113,7 @@ namespace Offsets
 		public const int BehaviorTreeManager = 0x0080;
 		public const int EnvironmentQueryManager = 0x0088;
 		public const int PerceptionSystem = 0x0090;
+		public const int AllProxyObjects = 0x0098;
 		public const int HotSpotManager = 0x00A8;
 		public const int UnknownData01 = 0x00B0;
 	}
@@ -129,12 +133,14 @@ namespace Offsets
 	public class UAIPerceptionSystem
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int Senses = 0x0080;
 		public const int PerceptionAgingRate = 0x0090;
 		public const int UnknownData01 = 0x0094;
 	}
 
 	public class UAIPerceptionComponent
 	{
+		public const int SensesConfig = 0x00F8;
 		public const int DominantSense = 0x0108;
 		public const int UnknownData00 = 0x0110;
 		public const int AIOwner = 0x0120;
@@ -148,18 +154,32 @@ namespace Offsets
 	{
 		public const int bAutoRegisterAsSource = 0x00F8;
 		public const int UnknownData00 = 0x00F9;
+		public const int RegisterAsSourceForSenses = 0x0100;
 	}
 
 	public class UAISense_Blueprint
 	{
 		public const int ListenerDataType = 0x0120;
+		public const int ListenerContainer = 0x0128;
+		public const int UnprocessedEvents = 0x0138;
 		public const int UnknownData00 = 0x0148;
+	}
+
+	public class UAISense_Damage
+	{
+		public const int RegisteredEvents = 0x0120;
 	}
 
 	public class UAISense_Hearing
 	{
+		public const int NoiseEvents = 0x0120;
 		public const int SpeedOfSoundSq = 0x0130;
 		public const int UnknownData00 = 0x0134;
+	}
+
+	public class UAISense_Prediction
+	{
+		public const int RegisteredEvents = 0x0120;
 	}
 
 	public class UAISense_Sight
@@ -173,6 +193,16 @@ namespace Offsets
 		public const int MaxQueryImportance = 0x01E8;
 		public const int SightLimitQueryImportance = 0x01EC;
 		public const int UnknownData02 = 0x01F0;
+	}
+
+	public class UAISense_Team
+	{
+		public const int RegisteredEvents = 0x0120;
+	}
+
+	public class UAISense_Touch
+	{
+		public const int RegisteredEvents = 0x0120;
 	}
 
 	public class UAISenseConfig
@@ -248,11 +278,14 @@ namespace Offsets
 	public class UBehaviorTreeComponent
 	{
 		public const int UnknownData00 = 0x0158;
+		public const int NodeInstances = 0x0178;
 		public const int UnknownData01 = 0x0188;
 	}
 
 	public class UBTCompositeNode
 	{
+		public const int Children = 0x0058;
+		public const int Services = 0x0068;
 		public const int UnknownData00 = 0x0078;
 	}
 
@@ -260,6 +293,8 @@ namespace Offsets
 	{
 		public const int RootNode = 0x0028;
 		public const int BlackboardAsset = 0x0030;
+		public const int RootDecorators = 0x0038;
+		public const int RootDecoratorOps = 0x0048;
 		public const int UnknownData00 = 0x0058;
 	}
 
@@ -267,6 +302,8 @@ namespace Offsets
 	{
 		public const int MaxDebuggerSteps = 0x0028;
 		public const int UnknownData00 = 0x002C;
+		public const int LoadedTemplates = 0x0030;
+		public const int ActiveComponents = 0x0040;
 	}
 
 	public class UBlackboardKeyType
@@ -291,6 +328,7 @@ namespace Offsets
 	public class UBlackboardData
 	{
 		public const int Parent = 0x0028;
+		public const int Keys = 0x0030;
 		public const int bHasSynchronizedKeys = 0x0040;
 		public const int UnknownData00 = 0x0041;
 	}
@@ -300,6 +338,7 @@ namespace Offsets
 		public const int BrainComp = 0x00F8;
 		public const int BlackboardAsset = 0x0100;
 		public const int UnknownData00 = 0x0108;
+		public const int KeyInstances = 0x0128;
 		public const int UnknownData01 = 0x0138;
 	}
 
@@ -353,6 +392,7 @@ namespace Offsets
 	{
 		public const int AIOwner = 0x0068;
 		public const int ActorOwner = 0x0070;
+		public const int ObservedKeyNames = 0x0078;
 		public const int UnknownData00 = 0x0088;
 		public const int bShowPropertyDetails = 0x0098;
 		public const int bCheckConditionOnlyBlackBoardChanges = 0x0098;
@@ -520,6 +560,8 @@ namespace Offsets
 	public class UBTTask_RunEQSQuery
 	{
 		public const int QueryTemplate = 0x0098;
+		public const int QueryParams = 0x00A0;
+		public const int QueryConfig = 0x00B0;
 		public const int RunMode = 0x00C0;
 		public const int UnknownData00 = 0x00C1;
 		public const int EQSQueryBlackboardKey = 0x00C8;
@@ -620,6 +662,8 @@ namespace Offsets
 	public class UCrowdManager
 	{
 		public const int MyNavData = 0x0028;
+		public const int AvoidanceConfig = 0x0030;
+		public const int SamplingPatterns = 0x0040;
 		public const int MaxAgents = 0x0050;
 		public const int MaxAgentRadius = 0x0054;
 		public const int MaxAvoidedAgents = 0x0058;
@@ -634,6 +678,7 @@ namespace Offsets
 	public class UEnvQuery
 	{
 		public const int QueryName = 0x0028;
+		public const int Options = 0x0030;
 	}
 
 	public class UEnvQueryContext_BlueprintBase
@@ -655,6 +700,9 @@ namespace Offsets
 	public class UEnvQueryManager
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int InstanceCache = 0x0098;
+		public const int LocalContexts = 0x00A8;
+		public const int GCShieldedWrappers = 0x00B8;
 		public const int UnknownData01 = 0x00C8;
 		public const int MaxAllowedTestingTime = 0x0120;
 		public const int bTestQueriesUsingBreadth = 0x0128;
@@ -694,6 +742,7 @@ namespace Offsets
 
 	public class UEnvQueryGenerator_Composite
 	{
+		public const int Generators = 0x0050;
 		public const int bHasMatchingItemType = 0x0060;
 		public const int UnknownData00 = 0x0061;
 	}
@@ -845,6 +894,7 @@ namespace Offsets
 	public class UEnvQueryOption
 	{
 		public const int Generator = 0x0028;
+		public const int Tests = 0x0030;
 	}
 
 	public class UEQSRenderingComponent
@@ -856,6 +906,8 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x07C0;
 		public const int QueryTemplate = 0x07C8;
+		public const int QueryParams = 0x07D0;
+		public const int QueryConfig = 0x07E0;
 		public const int TimeLimitPerStep = 0x07F0;
 		public const int StepToDebugDraw = 0x07F4;
 		public const int HighlightMode = 0x07F8;
@@ -907,6 +959,7 @@ namespace Offsets
 
 	public class UPawnAction_Sequence
 	{
+		public const int ActionSequence = 0x00D0;
 		public const int ChildFailureHandlingMode = 0x00E0;
 		public const int UnknownData00 = 0x00E1;
 		public const int RecentActionCopy = 0x00E8;

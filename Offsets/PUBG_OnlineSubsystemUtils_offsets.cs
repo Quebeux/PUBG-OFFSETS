@@ -157,6 +157,7 @@ namespace Offsets
 		public const int TeamAssignmentMethod = 0x0040;
 		public const int ReservedHostTeamNum = 0x0048;
 		public const int ForceTeamNum = 0x004C;
+		public const int Reservations = 0x0050;
 		public const int UnknownData00 = 0x0060;
 	}
 
@@ -175,6 +176,7 @@ namespace Offsets
 	{
 		public const int ListenPort = 0x03C8;
 		public const int UnknownData00 = 0x03CC;
+		public const int ClientActors = 0x03D0;
 		public const int UnknownData01 = 0x03E0;
 	}
 
@@ -182,6 +184,7 @@ namespace Offsets
 	{
 		public const int BeaconTypeName = 0x03A0;
 		public const int ClientBeaconActorClass = 0x03B0;
+		public const int ClientActors = 0x03B8;
 	}
 
 	public class APartyBeaconHost
@@ -204,6 +207,7 @@ namespace Offsets
 	{
 		public const int bOnlinePIEEnabled = 0x0038;
 		public const int UnknownData00 = 0x0039;
+		public const int Logins = 0x0040;
 	}
 
 	public class UOnlineSessionClient

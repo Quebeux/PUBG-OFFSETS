@@ -16,6 +16,7 @@ namespace Offsets
 		public const int SkeletalMesh = 0x0430;
 		public const int Item = 0x0438;
 		public const int Weapon_Gun = 0x0440;
+		public const int Attachments = 0x0448;
 	}
 
 }

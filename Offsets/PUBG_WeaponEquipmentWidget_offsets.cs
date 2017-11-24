@@ -18,6 +18,7 @@ namespace Offsets
 		public const int SelectedTabIndex = 0x02C8;
 		public const int UnknownData00 = 0x02CC;
 		public const int WeaponProcessor = 0x02D0;
+		public const int WeaponSlotList = 0x02D8;
 		public const int Equipment = 0x02E8;
 		public const int UnknownData01 = 0x02E9;
 		public const int TslItemDragDropOperation = 0x02F0;

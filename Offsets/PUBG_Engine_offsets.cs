@@ -61,15 +61,21 @@ namespace Offsets
 		public const int SpawnCollisionHandlingMethod = 0x0161;
 		public const int UnknownData10 = 0x0162;
 		public const int Instigator = 0x0168;
+		public const int Children = 0x0170;
 		public const int RootComponent = 0x0180;
+		public const int ControllingMatineeActors = 0x0188;
 		public const int InitialLifeSpan = 0x0198;
 		public const int UnknownData11 = 0x019C;
+		public const int Layers = 0x01A8;
+		public const int ParentComponentActor = 0x01B8;
+		public const int ParentComponent = 0x01C0;
 		public const int bAllowReceiveTickEventOnDedicatedServer = 0x01C8;
 		public const int UnknownData12 = 0x01C8;
 		public const int bActorSeamlessTraveled = 0x01C8;
 		public const int bIgnoresOriginShifting = 0x01C8;
 		public const int bEnableAutoLODGeneration = 0x01C8;
 		public const int UnknownData13 = 0x01C9;
+		public const int Tags = 0x01D0;
 		public const int HiddenEditorViews = 0x01E0;
 		public const int OnTakeAnyDamage = 0x01E8;
 		public const int OnTakePointDamage = 0x01F8;
@@ -87,6 +93,8 @@ namespace Offsets
 		public const int OnDestroyed = 0x02B8;
 		public const int OnEndPlay = 0x02C8;
 		public const int UnknownData14 = 0x02D8;
+		public const int BlueprintCreatedComponents = 0x0378;
+		public const int InstanceComponents = 0x0388;
 		public const int UnknownData15 = 0x0398;
 	}
 
@@ -100,9 +108,13 @@ namespace Offsets
 		public const int bShowOverlays = 0x03A8;
 		public const int bEnableDebugTextShadow = 0x03A8;
 		public const int UnknownData00 = 0x03A9;
+		public const int PostRenderedActors = 0x03B0;
 		public const int UnknownData01 = 0x03C0;
+		public const int DebugDisplay = 0x03C8;
+		public const int ToggledDebugCategories = 0x03D8;
 		public const int Canvas = 0x03E8;
 		public const int DebugCanvas = 0x03F0;
+		public const int DebugTextList = 0x03F8;
 		public const int ShowDebugTargetDesiredClass = 0x0408;
 		public const int ShowDebugTargetActor = 0x0410;
 		public const int UnknownData02 = 0x0418;
@@ -117,6 +129,8 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x0028;
 		public const int PrimaryComponentTick = 0x0030;
+		public const int ComponentTags = 0x0088;
+		public const int AssetUserData = 0x0098;
 		public const int UnknownData01 = 0x00A8;
 		public const int bReplicates = 0x00A8;
 		public const int bNetAddressable = 0x00A8;
@@ -134,6 +148,7 @@ namespace Offsets
 		public const int UnknownData06 = 0x00AC;
 		public const int CreationMethod = 0x00B0;
 		public const int UnknownData07 = 0x00B1;
+		public const int UCSModifiedProperties = 0x00C0;
 		public const int OnComponentActivated = 0x00D0;
 		public const int OnComponentDeactivated = 0x00E0;
 		public const int UnknownData08 = 0x00F0;
@@ -142,6 +157,7 @@ namespace Offsets
 	public class USceneComponent
 	{
 		public const int AttachParent = 0x00F8;
+		public const int AttachChildren = 0x0100;
 		public const int UnknownData00 = 0x0110;
 		public const int AttachSocketName = 0x0160;
 		public const int UnknownData01 = 0x0168;
@@ -159,6 +175,7 @@ namespace Offsets
 		public const int UnknownData02 = 0x0169;
 		public const int bAbsoluteTranslation = 0x0169;
 		public const int UnknownData03 = 0x016A;
+		public const int PhysicsVolume = 0x016C;
 		public const int UnknownData04 = 0x0174;
 		public const int Location = 0x01A0;
 		public const int UnknownData05 = 0x01AC;
@@ -258,6 +275,8 @@ namespace Offsets
 		public const int UnknownData13 = 0x053D;
 		public const int CanCharacterStepUpOn = 0x053E;
 		public const int UnknownData14 = 0x053F;
+		public const int MoveIgnoreActors = 0x0540;
+		public const int MoveIgnoreComponents = 0x0550;
 		public const int UnknownData15 = 0x0560;
 		public const int OnComponentHit = 0x0570;
 		public const int OnComponentBeginOverlap = 0x0580;
@@ -305,6 +324,9 @@ namespace Offsets
 		public const int SubDivisionStepSize = 0x07AC;
 		public const int bUseSubDivisions = 0x07B0;
 		public const int UnknownData03 = 0x07B1;
+		public const int IrrelevantLights = 0x07B8;
+		public const int LODData = 0x07C8;
+		public const int StreamingTextureData = 0x07D8;
 		public const int bUseDefaultCollision = 0x07E8;
 		public const int UnknownData04 = 0x07E9;
 		public const int LightmassSettings = 0x07EC;
@@ -342,6 +364,7 @@ namespace Offsets
 		public const int TargetViewRotation = 0x044C;
 		public const int UnknownData03 = 0x0458;
 		public const int SmoothTargetViewRotationSpeed = 0x0464;
+		public const int HiddenActors = 0x0468;
 		public const int LastSpectatorStateSynchTime = 0x0478;
 		public const int LastSpectatorSyncLocation = 0x047C;
 		public const int LastSpectatorSyncRotation = 0x0488;
@@ -349,6 +372,7 @@ namespace Offsets
 		public const int CheatManager = 0x0498;
 		public const int CheatClass = 0x04A0;
 		public const int PlayerInput = 0x04A8;
+		public const int ActiveForceFeedbackEffects = 0x04B0;
 		public const int UnknownData04 = 0x04C0;
 		public const int UnknownData05 = 0x0540;
 		public const int bPlayerIsWaiting = 0x0540;
@@ -368,6 +392,7 @@ namespace Offsets
 		public const int bEnableTouchOverEvents = 0x05A8;
 		public const int bForceFeedbackEnabled = 0x05A8;
 		public const int UnknownData09 = 0x05A9;
+		public const int ClickEventKeys = 0x05B0;
 		public const int DefaultMouseCursor = 0x05C0;
 		public const int CurrentMouseCursor = 0x05C1;
 		public const int DefaultClickTraceChannel = 0x05C2;
@@ -451,6 +476,7 @@ namespace Offsets
 		public const int SavedRootMotion = 0x0508;
 		public const int UnknownData05 = 0x0608;
 		public const int ClientRootMotionParams = 0x0610;
+		public const int RootMotionRepMoves = 0x0650;
 		public const int RepRootMotion = 0x0660;
 	}
 
@@ -559,6 +585,7 @@ namespace Offsets
 		public const int BrushComponent = 0x03B8;
 		public const int bInManipulation = 0x03C0;
 		public const int UnknownData02 = 0x03C1;
+		public const int SavedSelections = 0x03C8;
 	}
 
 	public class AWheeledVehicle
@@ -573,6 +600,7 @@ namespace Offsets
 		public const int bDeprecatedSpringOffsetMode = 0x0148;
 		public const int UnknownData01 = 0x0149;
 		public const int TirePunctured = 0x0150;
+		public const int WheelSetups = 0x0160;
 		public const int Mass = 0x0170;
 		public const int DragCoefficient = 0x0174;
 		public const int ChassisWidth = 0x0178;
@@ -592,6 +620,7 @@ namespace Offsets
 		public const int LowForwardSpeedSubStepCount = 0x01B4;
 		public const int HighForwardSpeedSubStepCount = 0x01B8;
 		public const int UnknownData03 = 0x01BC;
+		public const int Wheels = 0x01C0;
 		public const int UnknownData04 = 0x01D0;
 		public const int bUseRVOAvoidance = 0x01E8;
 		public const int UnknownData05 = 0x01E9;
@@ -870,6 +899,7 @@ namespace Offsets
 		public const int UnknownData03 = 0x00B0;
 		public const int bQueueMontageEvents = 0x0120;
 		public const int UnknownData04 = 0x0121;
+		public const int ActiveAnimNotifyState = 0x02B0;
 		public const int UnknownData05 = 0x02C0;
 	}
 
@@ -914,7 +944,9 @@ namespace Offsets
 		public const int LargeFontName = 0x0080;
 		public const int SubtitleFont = 0x0090;
 		public const int SubtitleFontName = 0x0098;
+		public const int AdditionalFonts = 0x00A8;
 		public const int UnknownData01 = 0x00B8;
+		public const int AdditionalFontNames = 0x00C0;
 		public const int ConsoleClass = 0x00D0;
 		public const int ConsoleClassName = 0x00D8;
 		public const int GameViewportClientClass = 0x00E8;
@@ -994,6 +1026,13 @@ namespace Offsets
 		public const int ArrowMaterial = 0x0448;
 		public const int ArrowMaterialName = 0x0450;
 		public const int LightingOnlyBrightness = 0x0460;
+		public const int ShaderComplexityColors = 0x0470;
+		public const int QuadComplexityColors = 0x0480;
+		public const int LightComplexityColors = 0x0490;
+		public const int StationaryLightOverlapColors = 0x04A0;
+		public const int LODColorationColors = 0x04B0;
+		public const int HLODColorationColors = 0x04C0;
+		public const int StreamingAccuracyColors = 0x04D0;
 		public const int MaxPixelShaderAdditiveComplexityCount = 0x04E0;
 		public const int MaxES2PixelShaderAdditiveComplexityCount = 0x04E4;
 		public const int MinLightMapDensity = 0x04E8;
@@ -1005,8 +1044,13 @@ namespace Offsets
 		public const int RenderLightMapDensityColorScale = 0x04FC;
 		public const int LightMapDensityVertexMappedColor = 0x0500;
 		public const int LightMapDensitySelectedColor = 0x0510;
+		public const int StatColorMappings = 0x0520;
 		public const int DefaultPhysMaterial = 0x0530;
 		public const int DefaultPhysMaterialName = 0x0538;
+		public const int ActiveGameNameRedirects = 0x0548;
+		public const int ActiveClassRedirects = 0x0558;
+		public const int ActivePluginRedirects = 0x0568;
+		public const int ActiveStructRedirects = 0x0578;
 		public const int PreIntegratedSkinBRDFTexture = 0x0588;
 		public const int PreIntegratedSkinBRDFTextureName = 0x0590;
 		public const int MiniFontTexture = 0x05A0;
@@ -1017,6 +1061,7 @@ namespace Offsets
 		public const int LightMapDensityTextureName = 0x05D8;
 		public const int UnknownData03 = 0x05E8;
 		public const int GameViewport = 0x05F0;
+		public const int DeferredCommands = 0x05F8;
 		public const int UnknownData04 = 0x0608;
 		public const int TickCycles = 0x0670;
 		public const int GameCycles = 0x0674;
@@ -1071,6 +1116,7 @@ namespace Offsets
 		public const int MaxParticleResize = 0x0724;
 		public const int MaxParticleResizeWarn = 0x0728;
 		public const int UnknownData13 = 0x072C;
+		public const int PendingDroppedNotes = 0x0730;
 		public const int PhysicErrorCorrection = 0x0740;
 		public const int NetClientTicksPerSecond = 0x075C;
 		public const int DisplayGamma = 0x0760;
@@ -1100,6 +1146,9 @@ namespace Offsets
 		public const int HoverHighlightIntensity = 0x07FC;
 		public const int SelectionHighlightIntensityBillboards = 0x0800;
 		public const int UnknownData19 = 0x0804;
+		public const int NetDriverDefinitions = 0x0BE0;
+		public const int ServerActors = 0x0BF0;
+		public const int RuntimeServerActors = 0x0C00;
 		public const int bStartedLoadMapMovie = 0x0C10;
 		public const int UnknownData20 = 0x0C11;
 		public const int NextWorldContextHandle = 0x0C28;
@@ -1115,6 +1164,7 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x0030;
 		public const int ViewportConsole = 0x0038;
+		public const int DebugProperties = 0x0040;
 		public const int UnknownData01 = 0x0050;
 		public const int World = 0x0080;
 		public const int GameInstance = 0x0088;
@@ -1128,12 +1178,14 @@ namespace Offsets
 		public const int DefaultTexture_Black = 0x0040;
 		public const int DefaultTexture_White = 0x0048;
 		public const int UnknownData01 = 0x0050;
+		public const int HistoryBuffer = 0x0068;
 		public const int UnknownData02 = 0x0078;
 	}
 
 	public class USkinnedMeshComponent
 	{
 		public const int SkeletalMesh = 0x0780;
+		public const int MasterPoseComponent = 0x0788;
 		public const int UnknownData00 = 0x0790;
 		public const int bUseBoundsFromMasterPoseComponent = 0x07E4;
 		public const int UnknownData01 = 0x07E5;
@@ -1141,6 +1193,7 @@ namespace Offsets
 		public const int ForcedLodModel = 0x0810;
 		public const int MinLodModel = 0x0814;
 		public const int UnknownData02 = 0x0818;
+		public const int LODInfo = 0x0828;
 		public const int StreamingDistanceMultiplier = 0x0838;
 		public const int WireframeColor = 0x083C;
 		public const int bForceWireframe = 0x0840;
@@ -1178,6 +1231,7 @@ namespace Offsets
 	{
 		public const int bFractureEffectOverride = 0x08F0;
 		public const int UnknownData00 = 0x08F1;
+		public const int FractureEffects = 0x08F8;
 		public const int bEnableHardSleeping = 0x0908;
 		public const int UnknownData01 = 0x0909;
 		public const int LargeChunkThreshold = 0x090C;
@@ -1231,6 +1285,7 @@ namespace Offsets
 		public const int MinRespawnDelay = 0x0448;
 		public const int NumTravellingPlayers = 0x044C;
 		public const int EngineMessageClass = 0x0450;
+		public const int InactivePlayerArray = 0x0458;
 		public const int InactivePlayerStateLifeSpan = 0x0468;
 		public const int bHandleDedicatedServerReplays = 0x046C;
 		public const int UnknownData01 = 0x046D;
@@ -1239,6 +1294,7 @@ namespace Offsets
 	public class UGameInstance
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int LocalPlayers = 0x0038;
 		public const int OnlineSession = 0x0048;
 		public const int UnknownData01 = 0x0050;
 	}
@@ -1259,6 +1315,7 @@ namespace Offsets
 		public const int GameModeClass = 0x03A0;
 		public const int AuthorityGameMode = 0x03A8;
 		public const int SpectatorClass = 0x03B0;
+		public const int PlayerArray = 0x03B8;
 		public const int bReplicatedHasBegunPlay = 0x03C8;
 		public const int UnknownData00 = 0x03C9;
 		public const int ReplicatedWorldTimeSeconds = 0x03CC;
@@ -1320,6 +1377,7 @@ namespace Offsets
 		public const int PhysicsSerializer = 0x08A0;
 		public const int NumPendingLightmaps = 0x08A8;
 		public const int UnknownData03 = 0x08AC;
+		public const int CachedMappings = 0x08B0;
 	}
 
 	public class UHierarchicalInstancedStaticMeshComponent
@@ -1330,6 +1388,7 @@ namespace Offsets
 		public const int UnknownData01 = 0x093C;
 		public const int BuiltInstanceBounds = 0x0940;
 		public const int UnbuiltInstanceBounds = 0x095C;
+		public const int UnbuiltInstanceBoundsList = 0x0978;
 		public const int bEnableDensityScaling = 0x0988;
 		public const int UnknownData02 = 0x0989;
 		public const int OcclusionLayerNumNodes = 0x09B0;
@@ -1390,13 +1449,19 @@ namespace Offsets
 		public const int ViewTarget = 0x0E90;
 		public const int PendingViewTarget = 0x13E0;
 		public const int UnknownData04 = 0x1930;
+		public const int ModifierList = 0x1948;
+		public const int DefaultModifiers = 0x1958;
 		public const int FreeCamDistance = 0x1968;
 		public const int FreeCamOffset = 0x196C;
 		public const int ViewTargetOffset = 0x1978;
 		public const int UnknownData05 = 0x1984;
+		public const int CameraLensEffects = 0x1998;
 		public const int CachedCameraShakeMod = 0x19A8;
 		public const int AnimInstPool = 0x19B0;
+		public const int PostProcessBlendCache = 0x19F0;
 		public const int UnknownData06 = 0x1A00;
+		public const int ActiveAnims = 0x1A10;
+		public const int FreeAnims = 0x1A20;
 		public const int AnimCameraActor = 0x1A30;
 		public const int bIsOrthographic = 0x1A38;
 		public const int UnknownData07 = 0x1A38;
@@ -1453,10 +1518,15 @@ namespace Offsets
 
 	public class USceneCaptureComponent
 	{
+		public const int HiddenComponents = 0x0300;
+		public const int HiddenActors = 0x0310;
+		public const int ShowOnlyComponents = 0x0320;
+		public const int ShowOnlyActors = 0x0330;
 		public const int bCaptureEveryFrame = 0x0340;
 		public const int bCaptureOnMovement = 0x0341;
 		public const int UnknownData00 = 0x0342;
 		public const int MaxViewDistanceOverride = 0x0344;
+		public const int ShowFlagSettings = 0x0348;
 		public const int UnknownData01 = 0x0358;
 	}
 
@@ -1531,6 +1601,7 @@ namespace Offsets
 		public const int UnknownData01 = 0x0038;
 		public const int LightmassSettings = 0x0040;
 		public const int UnknownData02 = 0x0054;
+		public const int TextureStreamingData = 0x0058;
 		public const int UnknownData03 = 0x0068;
 	}
 
@@ -1542,6 +1613,10 @@ namespace Offsets
 		public const int UnknownData00 = 0x0080;
 		public const int bOverrideSubsurfaceProfile = 0x0080;
 		public const int UnknownData01 = 0x0081;
+		public const int FontParameterValues = 0x0088;
+		public const int ScalarParameterValues = 0x0098;
+		public const int TextureParameterValues = 0x00A8;
+		public const int VectorParameterValues = 0x00B8;
 		public const int bOverrideBaseProperties = 0x00C8;
 		public const int UnknownData02 = 0x00C9;
 		public const int BasePropertyOverrides = 0x00CC;
@@ -1565,19 +1640,24 @@ namespace Offsets
 		public const int bShowInputs = 0x004D;
 		public const int bShowOutputs = 0x004D;
 		public const int UnknownData00 = 0x004E;
+		public const int Outputs = 0x0050;
 	}
 
 	public class UBlueprintGeneratedClass
 	{
 		public const int NumReplicatedProperties = 0x0228;
 		public const int UnknownData00 = 0x022C;
+		public const int DynamicBindingObjects = 0x0230;
+		public const int ComponentTemplates = 0x0240;
+		public const int Timelines = 0x0250;
 		public const int SimpleConstructionScript = 0x0260;
 		public const int InheritableComponentHandler = 0x0268;
 		public const int UberGraphFramePointerProperty = 0x0270;
 		public const int UberGraphFunction = 0x0278;
+		public const int FastCallPairs = 0x0280;
 		public const int bHasInstrumentation = 0x0290;
 		public const int UnknownData01 = 0x0291;
-		public const int FName = 0x0298;
+		public const int CookedComponentInstancingData = 0x0298;
 		public const int UnknownData02 = 0x02E8;
 	}
 
@@ -1611,6 +1691,7 @@ namespace Offsets
 
 	public class UNavigationQueryFilter
 	{
+		public const int Areas = 0x0028;
 		public const int IncludeFlags = 0x0038;
 		public const int ExcludeFlags = 0x003C;
 		public const int UnknownData00 = 0x0040;
@@ -1624,6 +1705,7 @@ namespace Offsets
 	public class UEdGraphNode
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int DeprecatedPins = 0x0038;
 		public const int NodePosX = 0x0048;
 		public const int NodePosY = 0x004C;
 		public const int NodeWidth = 0x0050;
@@ -1655,6 +1737,8 @@ namespace Offsets
 		public const int AutogeneratedDefaultValue = 0x00E0;
 		public const int DefaultObject = 0x00F0;
 		public const int DefaultTextValue = 0x00F8;
+		public const int LinkedTo = 0x0110;
+		public const int SubPins = 0x0120;
 		public const int ParentPin = 0x0130;
 		public const int ReferencePassThroughConnection = 0x0138;
 	}
@@ -1680,6 +1764,8 @@ namespace Offsets
 		public const int bIsRegeneratingOnLoad = 0x0068;
 		public const int UnknownData01 = 0x0069;
 		public const int SimpleConstructionScript = 0x0070;
+		public const int ComponentTemplates = 0x0078;
+		public const int Timelines = 0x0088;
 		public const int InheritableComponentHandler = 0x0098;
 		public const int BlueprintType = 0x00A0;
 		public const int UnknownData02 = 0x00A1;
@@ -1696,15 +1782,20 @@ namespace Offsets
 	public class ULevel
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int AActors = 0x00A0;
 		public const int OwningWorld = 0x00B0;
 		public const int Model = 0x00B8;
+		public const int ModelComponents = 0x00C0;
 		public const int NumTextureStreamingUnbuiltComponents = 0x00D0;
 		public const int NumTextureStreamingDirtyResources = 0x00D4;
 		public const int LevelScriptActor = 0x00D8;
 		public const int NavListStart = 0x00E0;
 		public const int NavListEnd = 0x00E8;
+		public const int NavDataChunks = 0x00F0;
 		public const int LightmapTotalSize = 0x0100;
 		public const int ShadowmapTotalSize = 0x0104;
+		public const int StaticNavigableGeometry = 0x0108;
+		public const int StreamingTextureGuids = 0x0118;
 		public const int UnknownData01 = 0x0128;
 		public const int bIsLightingScenario = 0x01B8;
 		public const int UnknownData02 = 0x01B9;
@@ -1719,6 +1810,7 @@ namespace Offsets
 		public const int UnknownData05 = 0x01E5;
 		public const int WorldSettings = 0x02E0;
 		public const int UnknownData06 = 0x02E8;
+		public const int AssetUserData = 0x02F0;
 		public const int UnknownData07 = 0x0300;
 	}
 
@@ -1739,6 +1831,7 @@ namespace Offsets
 
 	public class ACullDistanceVolume
 	{
+		public const int CullDistances = 0x03D8;
 		public const int bEnabled = 0x03E8;
 		public const int UnknownData00 = 0x03E9;
 		public const int CullDistanceForLODActor = 0x03EC;
@@ -1751,6 +1844,7 @@ namespace Offsets
 
 	public class ALevelStreamingVolume
 	{
+		public const int StreamingLevelNames = 0x03D8;
 		public const int bEditorPreVisOnly = 0x03E8;
 		public const int bDisabled = 0x03E8;
 		public const int UnknownData00 = 0x03E9;
@@ -1794,6 +1888,13 @@ namespace Offsets
 		public const int bEnabled = 0x08CC;
 		public const int bUnbound = 0x08CC;
 		public const int UnknownData01 = 0x08CD;
+	}
+
+	public class APrecomputedVisibilityOverrideVolume
+	{
+		public const int OverrideVisibleActors = 0x03D8;
+		public const int OverrideInvisibleActors = 0x03E8;
+		public const int OverrideInvisibleLevels = 0x03F8;
 	}
 
 	public class UCameraShake
@@ -1841,6 +1942,7 @@ namespace Offsets
 
 	public class UForceFeedbackEffect
 	{
+		public const int ChannelDetails = 0x0028;
 		public const int Duration = 0x0038;
 		public const int UnknownData00 = 0x003C;
 	}
@@ -1905,6 +2007,7 @@ namespace Offsets
 		public const int BaseFOV = 0x0440;
 		public const int bAllowMultipleInstances = 0x0444;
 		public const int UnknownData01 = 0x0445;
+		public const int EmittersToTreatAsSame = 0x0448;
 		public const int DistFromCamera = 0x0458;
 		public const int UnknownData02 = 0x045C;
 	}
@@ -2026,6 +2129,9 @@ namespace Offsets
 		public const int bHighPriorityLoading = 0x0520;
 		public const int bHighPriorityLoadingLocal = 0x0520;
 		public const int UnknownData09 = 0x0521;
+		public const int ReplicationViewers = 0x0528;
+		public const int LayerNamesToLoadInReplay = 0x0538;
+		public const int AssetUserData = 0x0548;
 	}
 
 	public class ALevelBounds
@@ -2113,9 +2219,16 @@ namespace Offsets
 	public class ALODActor
 	{
 		public const int StaticMeshComponent = 0x03A0;
+		public const int SubActors = 0x03A8;
 		public const int LODDrawDistance = 0x03B8;
 		public const int LODLevel = 0x03BC;
+		public const int SubObjects = 0x03C0;
 		public const int UnknownData00 = 0x03D0;
+	}
+
+	public class AMaterialInstanceActor
+	{
+		public const int TargetActors = 0x03A0;
 	}
 
 	public class AMatineeActor
@@ -2142,8 +2255,11 @@ namespace Offsets
 		public const int bHidePlayer = 0x03C4;
 		public const int bHideHud = 0x03C4;
 		public const int UnknownData02 = 0x03C5;
+		public const int GroupActorInfos = 0x03C8;
 		public const int bShouldShowGore = 0x03D8;
 		public const int UnknownData03 = 0x03D9;
+		public const int GroupInst = 0x03E0;
+		public const int CameraCuts = 0x03F0;
 		public const int bIsPlaying = 0x0400;
 		public const int bReversePlayback = 0x0400;
 		public const int bPaused = 0x0400;
@@ -2179,6 +2295,7 @@ namespace Offsets
 		public const int ObservedPathsTickInterval = 0x0400;
 		public const int DataVersion = 0x0404;
 		public const int UnknownData02 = 0x0408;
+		public const int SupportedAreas = 0x04D8;
 		public const int UnknownData03 = 0x04E8;
 	}
 
@@ -2311,12 +2428,16 @@ namespace Offsets
 
 	public class UNavLinkDefinition
 	{
+		public const int Links = 0x0028;
+		public const int SegmentLinks = 0x0038;
 		public const int UnknownData00 = 0x0048;
 	}
 
 	public class ANavLinkProxy
 	{
 		public const int UnknownData00 = 0x03A0;
+		public const int PointLinks = 0x03B0;
+		public const int SegmentLinks = 0x03C0;
 		public const int SmartLinkComp = 0x03D0;
 		public const int bSmartLinkIsRelevant = 0x03D8;
 		public const int UnknownData01 = 0x03D9;
@@ -2325,11 +2446,18 @@ namespace Offsets
 
 	public class USkeleton
 	{
+		public const int BoneTree = 0x0028;
+		public const int RefLocalPoses = 0x0038;
 		public const int UnknownData00 = 0x0048;
 		public const int VirtualBoneGuid = 0x0158;
+		public const int VirtualBones = 0x0168;
+		public const int LinkupCache = 0x0178;
+		public const int Sockets = 0x0188;
 		public const int UnknownData01 = 0x0198;
 		public const int SmartNames = 0x01E8;
 		public const int UnknownData02 = 0x0238;
+		public const int BlendProfiles = 0x0250;
+		public const int SlotGroups = 0x0260;
 		public const int UnknownData03 = 0x0270;
 	}
 
@@ -2341,9 +2469,12 @@ namespace Offsets
 		public const int ExtendedBounds = 0x006C;
 		public const int PositiveBoundsExtension = 0x0088;
 		public const int NegativeBoundsExtension = 0x0094;
+		public const int Materials = 0x00A0;
+		public const int SkelMirrorTable = 0x00B0;
 		public const int SkelMirrorAxis = 0x00C0;
 		public const int SkelMirrorFlipAxis = 0x00C1;
 		public const int UnknownData01 = 0x00C2;
+		public const int LODInfo = 0x00C8;
 		public const int bUseFullPrecisionUVs = 0x00D8;
 		public const int bHasBeenSimplified = 0x00D8;
 		public const int bHasVertexColors = 0x00D8;
@@ -2352,10 +2483,19 @@ namespace Offsets
 		public const int BodySetup = 0x00E0;
 		public const int PhysicsAsset = 0x00E8;
 		public const int ShadowPhysicsAsset = 0x00F0;
+		public const int MorphTargets = 0x00F8;
 		public const int UnknownData03 = 0x0108;
+		public const int ClothingAssets = 0x0270;
 		public const int PostProcessAnimBlueprint = 0x0280;
+		public const int AssetUserData = 0x0288;
 		public const int UnknownData04 = 0x0298;
+		public const int Sockets = 0x02A0;
 		public const int UnknownData05 = 0x02B0;
+	}
+
+	public class UAssetMappingTable
+	{
+		public const int MappedAssets = 0x0028;
 	}
 
 	public class UAnimationAsset
@@ -2363,6 +2503,8 @@ namespace Offsets
 		public const int UnknownData00 = 0x0028;
 		public const int Skeleton = 0x0030;
 		public const int UnknownData01 = 0x0038;
+		public const int MetaData = 0x0058;
+		public const int AssetUserData = 0x0068;
 	}
 
 	public class AReflectionCapture
@@ -2426,9 +2568,12 @@ namespace Offsets
 		public const int AnimBlueprintGeneratedClass = 0x0900;
 		public const int AnimClass = 0x0908;
 		public const int AnimScriptInstance = 0x0910;
+		public const int SubInstances = 0x0918;
 		public const int PostProcessAnimInstance = 0x0928;
 		public const int AnimationData = 0x0930;
 		public const int UnknownData02 = 0x0948;
+		public const int CachedBoneSpaceTransforms = 0x0958;
+		public const int CachedComponentSpaceTransforms = 0x0968;
 		public const int UnknownData03 = 0x0978;
 		public const int GlobalAnimRateScale = 0x0998;
 		public const int bHasValidBodies = 0x099C;
@@ -2551,6 +2696,7 @@ namespace Offsets
 		public const int OnResetDelegate = 0x0190;
 		public const int MaxSimulationTimeStep = 0x01A0;
 		public const int MaxSimulationIterations = 0x01A4;
+		public const int ControlPoints = 0x01A8;
 		public const int UnknownData03 = 0x01B8;
 	}
 
@@ -2564,6 +2710,9 @@ namespace Offsets
 		public const int ForegroundLineBatcher = 0x0050;
 		public const int NetworkManager = 0x0058;
 		public const int PhysicsCollisionHandler = 0x0060;
+		public const int ExtraReferencedObjects = 0x0068;
+		public const int PerModuleDataObjects = 0x0078;
+		public const int StreamingLevels = 0x0088;
 		public const int StreamingLevelsPrefix = 0x0098;
 		public const int CurrentLevelPendingVisibility = 0x00A8;
 		public const int CurrentLevelPendingInvisibility = 0x00B0;
@@ -2576,9 +2725,12 @@ namespace Offsets
 		public const int GameState = 0x00F8;
 		public const int AISystem = 0x0100;
 		public const int AvoidanceManager = 0x0108;
+		public const int Levels = 0x0110;
+		public const int LevelCollections = 0x0120;
 		public const int UnknownData02 = 0x0130;
 		public const int CurrentLevel = 0x0138;
 		public const int OwningGameInstance = 0x0140;
+		public const int ParameterCollectionInstances = 0x0148;
 		public const int CanvasForRenderingToTarget = 0x0158;
 		public const int CanvasForDrawMaterialToRenderTarget = 0x0160;
 		public const int UnknownData03 = 0x0168;
@@ -2604,8 +2756,11 @@ namespace Offsets
 		public const int bGenerateNavigationOnlyAroundNavigationInvokers = 0x0040;
 		public const int UnknownData03 = 0x0041;
 		public const int ActiveTilesUpdateInterval = 0x0044;
+		public const int SupportedAgents = 0x0048;
 		public const int DirtyAreasUpdateFreq = 0x0058;
 		public const int UnknownData04 = 0x005C;
+		public const int NavDataSet = 0x0060;
+		public const int NavDataRegistrationQueue = 0x0070;
 		public const int UnknownData05 = 0x0080;
 		public const int OnNavDataRegisteredEvent = 0x00E0;
 		public const int OnNavigationGenerationFinishedDelegate = 0x00F0;
@@ -2636,6 +2791,7 @@ namespace Offsets
 		public const int OnProjectileBounce = 0x0170;
 		public const int OnProjectileStop = 0x0180;
 		public const int HomingAccelerationMagnitude = 0x0190;
+		public const int HomingTargetComponent = 0x0194;
 		public const int MaxSimulationTimeStep = 0x019C;
 		public const int MaxSimulationIterations = 0x01A0;
 		public const int UnknownData01 = 0x01A4;
@@ -2752,6 +2908,7 @@ namespace Offsets
 		public const int GroundOffset = 0x031C;
 		public const int StartDistance = 0x0320;
 		public const int SunDiscScale = 0x0324;
+		public const int HeightDensityLayers = 0x0328;
 		public const int DefaultBrightness = 0x0338;
 		public const int DefaultLightColor = 0x033C;
 		public const int bDisableSunDisk = 0x0340;
@@ -2771,6 +2928,7 @@ namespace Offsets
 	public class UAudioComponent
 	{
 		public const int Sound = 0x0300;
+		public const int InstanceParameters = 0x0308;
 		public const int SoundClassOverride = 0x0318;
 		public const int bAutoDestroy = 0x0320;
 		public const int bStopWhenOwnerDestroyed = 0x0320;
@@ -2841,6 +2999,7 @@ namespace Offsets
 		public const int FogDensity = 0x0300;
 		public const int FogInscatteringColor = 0x0304;
 		public const int UnknownData00 = 0x0314;
+		public const int HeightDensityLayers = 0x0318;
 		public const int DirectionalInscatteringExponent = 0x0328;
 		public const int DirectionalInscatteringStartDistance = 0x032C;
 		public const int DirectionalInscatteringColor = 0x0330;
@@ -2887,6 +3046,7 @@ namespace Offsets
 		public const int bUsedAsAtmosphereSunLight = 0x0484;
 		public const int bUseGridShadow = 0x0484;
 		public const int UnknownData03 = 0x0485;
+		public const int GridShadowSplitSettings = 0x0488;
 		public const int UnknownData04 = 0x0498;
 	}
 
@@ -3077,6 +3237,7 @@ namespace Offsets
 		public const int WarmupTime = 0x0034;
 		public const int WarmupTickRate = 0x0038;
 		public const int UnknownData01 = 0x003C;
+		public const int Emitters = 0x0040;
 		public const int PreviewComponent = 0x0050;
 		public const int CurveEdSetup = 0x0058;
 		public const int bOrientZAxisTowardCamera = 0x0060;
@@ -3087,6 +3248,7 @@ namespace Offsets
 		public const int LODDistances = 0x0070;
 		public const int bRegenerateLODDuplicate = 0x0080;
 		public const int UnknownData04 = 0x0081;
+		public const int LODSettings = 0x0088;
 		public const int bUseFixedRelativeBoundingBox = 0x0098;
 		public const int UnknownData05 = 0x0099;
 		public const int FixedRelativeBoundingBox = 0x009C;
@@ -3113,6 +3275,8 @@ namespace Offsets
 		public const int OcclusionBoundsMethod = 0x00F0;
 		public const int UnknownData11 = 0x00F1;
 		public const int CustomOcclusionBounds = 0x00F4;
+		public const int SoloTracking = 0x0110;
+		public const int NamedMaterialSlots = 0x0120;
 		public const int UnknownData12 = 0x0130;
 	}
 
@@ -3122,6 +3286,7 @@ namespace Offsets
 		public const int SubUVDataOffset = 0x0030;
 		public const int EmitterRenderMode = 0x0034;
 		public const int UnknownData00 = 0x0035;
+		public const int LODLevels = 0x0038;
 		public const int ConvertedModules = 0x0048;
 		public const int UnknownData01 = 0x0049;
 		public const int PeakActiveParticles = 0x004C;
@@ -3141,6 +3306,8 @@ namespace Offsets
 
 	public class UParticleSystemComponent
 	{
+		public const int EmitterMaterials = 0x06D0;
+		public const int SkelMeshComponents = 0x06E0;
 		public const int UnknownData00 = 0x06F0;
 		public const int bResetOnDetach = 0x06F0;
 		public const int bUpdateOnDedicatedServer = 0x06F1;
@@ -3150,6 +3317,7 @@ namespace Offsets
 		public const int UnknownData02 = 0x06F2;
 		public const int RequiredSignificance = 0x06F4;
 		public const int UnknownData03 = 0x06F5;
+		public const int InstanceParameters = 0x0700;
 		public const int OnParticleSpawn = 0x0710;
 		public const int OnParticleBurst = 0x0720;
 		public const int OnParticleDeath = 0x0730;
@@ -3170,10 +3338,12 @@ namespace Offsets
 		public const int UnknownData08 = 0x0795;
 		public const int bSkipUpdateDynamicDataDuringTick = 0x0798;
 		public const int UnknownData09 = 0x0799;
+		public const int ReplayClips = 0x07B8;
 		public const int UnknownData10 = 0x07C8;
 		public const int CustomTimeDilation = 0x0828;
 		public const int UnknownData11 = 0x082C;
 		public const int OnSystemFinished = 0x0830;
+		public const int AutoAttachParent = 0x0840;
 		public const int AutoAttachSocketName = 0x0848;
 		public const int AutoAttachLocationType = 0x0850;
 		public const int AutoAttachLocationRule = 0x0851;
@@ -3330,6 +3500,7 @@ namespace Offsets
 
 	public class UAnimSequenceBase
 	{
+		public const int Notifies = 0x0078;
 		public const int SequenceLength = 0x0088;
 		public const int RateScale = 0x008C;
 		public const int RawCurveData = 0x0090;
@@ -3352,10 +3523,14 @@ namespace Offsets
 		public const int SyncSlotIndex = 0x0128;
 		public const int UnknownData01 = 0x012C;
 		public const int MarkerData = 0x0130;
+		public const int CompositeSections = 0x0150;
+		public const int SlotAnimTracks = 0x0160;
+		public const int BranchingPoints = 0x0170;
 		public const int bEnableRootMotionTranslation = 0x0180;
 		public const int bEnableRootMotionRotation = 0x0181;
 		public const int RootMotionRootLock = 0x0182;
 		public const int UnknownData02 = 0x0183;
+		public const int BranchingPointMarkers = 0x0188;
 		public const int BranchingPointStateNotifyIndices = 0x0198;
 	}
 
@@ -3363,6 +3538,7 @@ namespace Offsets
 	{
 		public const int NumFrames = 0x00A0;
 		public const int UnknownData00 = 0x00A4;
+		public const int TrackToSkeletonMapTable = 0x00A8;
 		public const int UnknownData01 = 0x00B8;
 		public const int AdditiveAnimType = 0x0148;
 		public const int RefPoseType = 0x0149;
@@ -3377,6 +3553,7 @@ namespace Offsets
 		public const int bForceRootLock = 0x016B;
 		public const int bRootMotionSettingsCopiedFromMontage = 0x016C;
 		public const int UnknownData03 = 0x016D;
+		public const int AuthoredSyncMarkers = 0x0170;
 		public const int UnknownData04 = 0x0180;
 	}
 
@@ -3391,7 +3568,10 @@ namespace Offsets
 		public const int UnknownData01 = 0x00FE;
 		public const int NumOfDimension = 0x0100;
 		public const int AnimLength = 0x0104;
+		public const int PerBoneBlend = 0x0108;
 		public const int UnknownData02 = 0x0118;
+		public const int SampleData = 0x0120;
+		public const int GridSamples = 0x0130;
 	}
 
 	public class UBlendSpace
@@ -3419,11 +3599,15 @@ namespace Offsets
 	public class UAnimClassData
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int BakedStateMachines = 0x0030;
 		public const int TargetSkeleton = 0x0040;
+		public const int AnimNotifies = 0x0048;
 		public const int RootAnimNodeIndex = 0x0058;
 		public const int UnknownData01 = 0x005C;
 		public const int OrderedSavedPoseIndices = 0x0060;
 		public const int RootAnimNodeProperty = 0x0070;
+		public const int AnimNodeProperties = 0x0078;
+		public const int SyncGroupNames = 0x0088;
 	}
 
 	public class UAnimCompress
@@ -3519,6 +3703,7 @@ namespace Offsets
 	public class UAnimBlueprint
 	{
 		public const int TargetSkeleton = 0x0190;
+		public const int Groups = 0x0198;
 		public const int UnknownData00 = 0x01A8;
 	}
 
@@ -3532,11 +3717,14 @@ namespace Offsets
 	public class UAnimBlueprintGeneratedClass
 	{
 		public const int UnknownData00 = 0x02F8;
+		public const int BakedStateMachines = 0x0300;
 		public const int TargetSkeleton = 0x0310;
+		public const int AnimNotifies = 0x0318;
 		public const int RootAnimNodeIndex = 0x0328;
 		public const int UnknownData01 = 0x032C;
 		public const int OrderedSavedPoseIndices = 0x0330;
 		public const int UnknownData02 = 0x0340;
+		public const int SyncGroupNames = 0x0358;
 	}
 
 	public class UVehicleAnimInstance
@@ -3598,8 +3786,12 @@ namespace Offsets
 	{
 		public const int bAnimRotationOnly = 0x0028;
 		public const int UnknownData00 = 0x0029;
+		public const int TrackBoneNames = 0x0030;
+		public const int LinkupCache = 0x0040;
 		public const int BoneUseAnimTranslation = 0x0050;
 		public const int ForceUseMeshTranslation = 0x0060;
+		public const int UseTranslationBoneNames = 0x0070;
+		public const int ForceMeshTranslationBoneNames = 0x0080;
 		public const int PreviewSkelMeshName = 0x0090;
 		public const int BestRatioSkelMeshName = 0x0098;
 		public const int UnknownData01 = 0x00A0;
@@ -3608,10 +3800,18 @@ namespace Offsets
 	public class UAutomationTestSettings
 	{
 		public const int AutomationTestmap = 0x0028;
+		public const int EditorPerformanceTestMaps = 0x0038;
 		public const int BuildPromotionTest = 0x0048;
 		public const int MaterialEditorPromotionTest = 0x0238;
 		public const int ParticleEditorPromotionTest = 0x0268;
 		public const int BlueprintEditorPromotionTest = 0x0278;
+		public const int EngineTestModules = 0x02A8;
+		public const int EditorTestModules = 0x02B8;
+		public const int TestLevelFolders = 0x02C8;
+		public const int TestAssetsToOpen = 0x02D8;
+		public const int ExternalTools = 0x02E8;
+		public const int ImportExportTestDefinitions = 0x02F8;
+		public const int LaunchOnSettings = 0x0308;
 		public const int DefaultScreenshotResolution = 0x0318;
 	}
 
@@ -3632,6 +3832,7 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x0028;
 		public const int OwningSkeleton = 0x0030;
+		public const int ProfileEntries = 0x0038;
 	}
 
 	public class UPlatformGameInstance
@@ -3662,6 +3863,11 @@ namespace Offsets
 
 	public class UCollisionProfile
 	{
+		public const int Profiles = 0x0038;
+		public const int DefaultChannelResponses = 0x0048;
+		public const int EditProfiles = 0x0058;
+		public const int ProfileRedirects = 0x0068;
+		public const int CollisionChannelRedirects = 0x0078;
 		public const int UnknownData00 = 0x0088;
 	}
 
@@ -3706,14 +3912,28 @@ namespace Offsets
 	public class UPhysicsAsset
 	{
 		public const int BoundsBodies = 0x0028;
+		public const int SkeletalBodySetups = 0x0038;
+		public const int ConstraintSetup = 0x0048;
 		public const int bUseAsyncScene = 0x0058;
 		public const int UnknownData00 = 0x0059;
+		public const int BodySetup = 0x0100;
+	}
+
+	public class USkeletalBodySetup
+	{
+		public const int PhysicalAnimationData = 0x0320;
+	}
+
+	public class UBoneMaskFilter
+	{
+		public const int BlendPoses = 0x0028;
 	}
 
 	public class UBookMark
 	{
 		public const int Location = 0x0028;
 		public const int Rotation = 0x0034;
+		public const int HiddenLevels = 0x0040;
 	}
 
 	public class UBookMark2D
@@ -3740,6 +3960,8 @@ namespace Offsets
 		public const int ToolTip = 0x0038;
 		public const int NotifyBadParams = 0x0048;
 		public const int UnknownData00 = 0x0049;
+		public const int Vertices = 0x0050;
+		public const int Polys = 0x0060;
 		public const int Layer = 0x0070;
 		public const int MergeCoplanars = 0x0078;
 		public const int UnknownData01 = 0x0079;
@@ -3794,6 +4016,7 @@ namespace Offsets
 
 	public class UCameraModifier_CameraShake
 	{
+		public const int ActiveShakes = 0x0048;
 		public const int SplitScreenShakeScale = 0x0058;
 		public const int UnknownData00 = 0x005C;
 	}
@@ -3856,6 +4079,8 @@ namespace Offsets
 		public const int HelpDescription = 0x0028;
 		public const int HelpUsage = 0x0038;
 		public const int HelpWebLink = 0x0048;
+		public const int HelpParamNames = 0x0058;
+		public const int HelpParamDescriptions = 0x0068;
 		public const int IsServer = 0x0078;
 		public const int IsClient = 0x0078;
 		public const int IsEditor = 0x0078;
@@ -3887,6 +4112,7 @@ namespace Offsets
 	public class UPreviewMeshCollection
 	{
 		public const int Skeleton = 0x0028;
+		public const int SkeletalMeshes = 0x0030;
 	}
 
 	public class UTireType
@@ -3914,6 +4140,7 @@ namespace Offsets
 		public const int bNoTimeouts = 0x006C;
 		public const int UnknownData02 = 0x006D;
 		public const int ServerConnection = 0x0070;
+		public const int ClientConnections = 0x0078;
 		public const int UnknownData03 = 0x0088;
 		public const int World = 0x00A0;
 		public const int UnknownData04 = 0x00A8;
@@ -3933,8 +4160,11 @@ namespace Offsets
 
 	public class UNetConnection
 	{
+		public const int Children = 0x0048;
 		public const int Driver = 0x0058;
 		public const int PackageMap = 0x0060;
+		public const int OpenChannels = 0x0068;
+		public const int SentTemporaries = 0x0078;
 		public const int ViewTarget = 0x0088;
 		public const int OwningActor = 0x0090;
 		public const int MaxPacket = 0x0098;
@@ -3960,8 +4190,11 @@ namespace Offsets
 		public const int FractureMaterialDesc = 0x002C;
 		public const int RandomSeed = 0x0050;
 		public const int UnknownData00 = 0x0054;
+		public const int VoronoiSites = 0x0058;
 		public const int OriginalSubmeshCount = 0x0068;
 		public const int UnknownData01 = 0x006C;
+		public const int Materials = 0x0070;
+		public const int ChunkParameters = 0x0080;
 		public const int UnknownData02 = 0x0090;
 	}
 
@@ -3969,6 +4202,7 @@ namespace Offsets
 	{
 		public const int CompressCommandletVersion = 0x0038;
 		public const int UnknownData00 = 0x003C;
+		public const int KeyEndEffectorsMatchNameArray = 0x0040;
 		public const int DefaultCompressionAlgorithm = 0x0050;
 		public const int RotationCompressionFormat = 0x0058;
 		public const int TranslationCompressionFormat = 0x0059;
@@ -3997,6 +4231,7 @@ namespace Offsets
 		public const int VoiPSoundClass = 0x0078;
 		public const int LowPassFilterResonance = 0x0088;
 		public const int MaximumConcurrentStreams = 0x008C;
+		public const int QualityLevels = 0x0090;
 		public const int bAllowVirtualizedSounds = 0x00A0;
 		public const int UnknownData00 = 0x00A1;
 		public const int DialogueFilenameFormat = 0x00A8;
@@ -4018,6 +4253,7 @@ namespace Offsets
 		public const int UnknownData01 = 0x00B5;
 		public const int CustomScalingRuleClass = 0x00B8;
 		public const int UIScaleCurve = 0x00C8;
+		public const int CursorClasses = 0x0148;
 		public const int CustomScalingRuleClassInstance = 0x0158;
 		public const int CustomScalingRule = 0x0160;
 	}
@@ -4124,6 +4360,7 @@ namespace Offsets
 		public const int SyncSceneSmoothingFactorOnDedicatedServer = 0x00AC;
 		public const int AsyncSceneSmoothingFactorOnDedicatedServer = 0x00B0;
 		public const int InitialAverageFrameRateOnDedicatedServer = 0x00B4;
+		public const int PhysicalSurfaces = 0x00B8;
 	}
 
 	public class URendererSettings
@@ -4210,17 +4447,24 @@ namespace Offsets
 		public const int UnknownData00 = 0x0039;
 	}
 
+	public class UTextureLODSettings
+	{
+		public const int TextureLODGroups = 0x0028;
+	}
+
 	public class UDeviceProfile
 	{
 		public const int DeviceType = 0x0038;
 		public const int BaseProfileName = 0x0048;
 		public const int Parent = 0x0058;
 		public const int UnknownData00 = 0x0060;
+		public const int CVars = 0x0068;
 		public const int UnknownData01 = 0x0078;
 	}
 
 	public class UDeviceProfileManager
 	{
+		public const int Profiles = 0x0028;
 		public const int UnknownData00 = 0x0038;
 	}
 
@@ -4240,6 +4484,7 @@ namespace Offsets
 		public const int UnknownData00 = 0x0029;
 		public const int SpokenText = 0x0030;
 		public const int SubtitleOverride = 0x0040;
+		public const int ContextMappings = 0x0050;
 		public const int LocalizationGUID = 0x0060;
 	}
 
@@ -4351,9 +4596,40 @@ namespace Offsets
 		public const int UnknownData02 = 0x005D;
 	}
 
+	public class UComponentDelegateBinding
+	{
+		public const int ComponentDelegateBindings = 0x0028;
+	}
+
+	public class UInputActionDelegateBinding
+	{
+		public const int InputActionDelegateBindings = 0x0028;
+	}
+
+	public class UInputAxisDelegateBinding
+	{
+		public const int InputAxisDelegateBindings = 0x0028;
+	}
+
+	public class UInputAxisKeyDelegateBinding
+	{
+		public const int InputAxisKeyDelegateBindings = 0x0028;
+	}
+
+	public class UInputKeyDelegateBinding
+	{
+		public const int InputKeyDelegateBindings = 0x0028;
+	}
+
+	public class UInputTouchDelegateBinding
+	{
+		public const int InputTouchDelegateBindings = 0x0028;
+	}
+
 	public class UEdGraph
 	{
 		public const int Schema = 0x0028;
+		public const int Nodes = 0x0030;
 		public const int bEditable = 0x0040;
 		public const int bAllowDeletion = 0x0040;
 		public const int bAllowRenaming = 0x0040;
@@ -4379,6 +4655,8 @@ namespace Offsets
 	{
 		public const int SupportedClass = 0x0028;
 		public const int ExportRootScope = 0x0030;
+		public const int FormatExtension = 0x0038;
+		public const int FormatDescription = 0x0048;
 		public const int PreferredFormatIndex = 0x0058;
 		public const int TextIndent = 0x005C;
 		public const int bText = 0x0060;
@@ -4391,6 +4669,8 @@ namespace Offsets
 	{
 		public const int GlobalOverrideIntensity = 0x0028;
 		public const int StreamingSectionSize = 0x002C;
+		public const int SharedCubemaps = 0x0030;
+		public const int ReferencedCubemaps = 0x0040;
 		public const int UnknownData00 = 0x0050;
 	}
 
@@ -4404,6 +4684,8 @@ namespace Offsets
 		public const int UnknownData00 = 0x0028;
 		public const int FontCacheType = 0x0030;
 		public const int UnknownData01 = 0x0031;
+		public const int Characters = 0x0038;
+		public const int Textures = 0x0048;
 		public const int IsRemapped = 0x0058;
 		public const int EmScale = 0x005C;
 		public const int Ascent = 0x0060;
@@ -4450,7 +4732,9 @@ namespace Offsets
 
 	public class USoundSubmix
 	{
+		public const int ChildSubmixes = 0x0028;
 		public const int ParentSubmix = 0x0038;
+		public const int SubmixEffectChain = 0x0040;
 		public const int OutputWetLevel = 0x0050;
 		public const int UnknownData00 = 0x0054;
 	}
@@ -4473,11 +4757,13 @@ namespace Offsets
 		public const int AttenuationSettings = 0x0068;
 		public const int Priority = 0x0070;
 		public const int UnknownData03 = 0x0074;
+		public const int SourceEffectChain = 0x0078;
 		public const int UnknownData04 = 0x0088;
 	}
 
 	public class USoundGroups
 	{
+		public const int SoundGroupProfiles = 0x0028;
 		public const int UnknownData00 = 0x0038;
 	}
 
@@ -4503,6 +4789,8 @@ namespace Offsets
 		public const int NumChannels = 0x00C4;
 		public const int SampleRate = 0x00C8;
 		public const int RawPCMDataSize = 0x00CC;
+		public const int Subtitles = 0x00D0;
+		public const int LocalizedSubtitles = 0x00E0;
 		public const int UnknownData04 = 0x00F0;
 	}
 
@@ -4512,15 +4800,23 @@ namespace Offsets
 		public const int UnknownData00 = 0x0030;
 	}
 
+	public class UInheritableComponentHandler
+	{
+		public const int Records = 0x0028;
+	}
+
 	public class UPlayerInput
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int DebugExecBindings = 0x0120;
 		public const int UnknownData01 = 0x0130;
+		public const int InvertedAxis = 0x0160;
 		public const int UnknownData02 = 0x0170;
 	}
 
 	public class UInputSettings
 	{
+		public const int AxisConfig = 0x0028;
 		public const int bAltEnterTogglesFullscreen = 0x0038;
 		public const int bF11TogglesFullscreen = 0x0038;
 		public const int bUseMouseForTouch = 0x0038;
@@ -4533,15 +4829,19 @@ namespace Offsets
 		public const int DefaultViewportMouseCaptureMode = 0x0045;
 		public const int bDefaultViewportMouseLock = 0x0046;
 		public const int DefaultViewportMouseLockMode = 0x0047;
+		public const int ActionMappings = 0x0048;
+		public const int AxisMappings = 0x0058;
 		public const int bAlwaysShowTouchInterface = 0x0068;
 		public const int bShowConsoleOnFourFingerTap = 0x0069;
 		public const int UnknownData01 = 0x006A;
 		public const int DefaultTouchInterface = 0x0070;
 		public const int ConsoleKey = 0x0080;
+		public const int ConsoleKeys = 0x0098;
 	}
 
 	public class UInterpCurveEdSetup
 	{
+		public const int Tabs = 0x0028;
 		public const int ActiveTab = 0x0038;
 		public const int UnknownData00 = 0x003C;
 	}
@@ -4550,12 +4850,14 @@ namespace Offsets
 	{
 		public const int InterpLength = 0x0028;
 		public const int PathBuildTime = 0x002C;
+		public const int InterpGroups = 0x0030;
 		public const int CurveEdSetup = 0x0040;
 		public const int EdSectionStart = 0x0048;
 		public const int EdSectionEnd = 0x004C;
 		public const int bShouldBakeAndPrune = 0x0050;
 		public const int UnknownData00 = 0x0051;
 		public const int CachedDirectorGroup = 0x0058;
+		public const int AllEventNames = 0x0060;
 	}
 
 	public class UInterpFilter
@@ -4566,6 +4868,7 @@ namespace Offsets
 	public class UInterpGroup
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int InterpTracks = 0x0030;
 		public const int GroupName = 0x0040;
 		public const int GroupColor = 0x0048;
 		public const int bCollapsed = 0x004C;
@@ -4587,11 +4890,13 @@ namespace Offsets
 	{
 		public const int Group = 0x0028;
 		public const int GroupActor = 0x0030;
+		public const int TrackInst = 0x0038;
 	}
 
 	public class UInterpTrack
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int SubTracks = 0x0038;
 		public const int TrackInstClass = 0x0048;
 		public const int ActiveCondition = 0x0050;
 		public const int UnknownData01 = 0x0051;
@@ -4609,17 +4914,20 @@ namespace Offsets
 
 	public class UInterpTrackBoolProp
 	{
+		public const int BoolTrack = 0x0070;
 		public const int PropertyName = 0x0080;
 	}
 
 	public class UInterpTrackDirector
 	{
+		public const int CutTrack = 0x0070;
 		public const int bSimulateCameraCutsOnClients = 0x0080;
 		public const int UnknownData00 = 0x0081;
 	}
 
 	public class UInterpTrackEvent
 	{
+		public const int EventTrack = 0x0070;
 		public const int bFireEventsWhenForwards = 0x0080;
 		public const int bFireEventsWhenBackwards = 0x0080;
 		public const int bFireEventsWhenJumpingForwards = 0x0080;
@@ -4637,6 +4945,7 @@ namespace Offsets
 	public class UInterpTrackAnimControl
 	{
 		public const int SlotName = 0x0090;
+		public const int AnimSeqs = 0x0098;
 		public const int bSkipAnimNotifiers = 0x00A8;
 		public const int UnknownData00 = 0x00A9;
 	}
@@ -4660,6 +4969,7 @@ namespace Offsets
 
 	public class UInterpTrackFloatMaterialParam
 	{
+		public const int TargetMaterials = 0x0090;
 		public const int ParamName = 0x00A0;
 	}
 
@@ -4711,8 +5021,14 @@ namespace Offsets
 		public const int PropertyName = 0x0090;
 	}
 
+	public class UInterpTrackParticleReplay
+	{
+		public const int TrackKeys = 0x0070;
+	}
+
 	public class UInterpTrackToggle
 	{
+		public const int ToggleTrack = 0x0070;
 		public const int bActivateSystemEachUpdate = 0x0080;
 		public const int bActivateWithJustAttachedFlag = 0x0080;
 		public const int bFireEventsWhenForwards = 0x0080;
@@ -4735,6 +5051,7 @@ namespace Offsets
 
 	public class UInterpTrackSound
 	{
+		public const int Sounds = 0x0090;
 		public const int bPlayOnReverse = 0x00A0;
 		public const int bContinueSoundOnMatineeEnd = 0x00A0;
 		public const int bSuppressSubtitles = 0x00A0;
@@ -4745,6 +5062,7 @@ namespace Offsets
 
 	public class UInterpTrackVectorMaterialParam
 	{
+		public const int TargetMaterials = 0x0090;
 		public const int ParamName = 0x00A0;
 	}
 
@@ -4755,6 +5073,7 @@ namespace Offsets
 
 	public class UInterpTrackVisibility
 	{
+		public const int VisibilityTrack = 0x0070;
 		public const int bFireEventsWhenForwards = 0x0080;
 		public const int bFireEventsWhenBackwards = 0x0080;
 		public const int bFireEventsWhenJumpingForwards = 0x0080;
@@ -4787,7 +5106,9 @@ namespace Offsets
 
 	public class UInterpTrackInstFloatMaterialParam
 	{
+		public const int MaterialInstances = 0x0028;
 		public const int ResetFloats = 0x0038;
+		public const int PrimitiveMaterialRefs = 0x0048;
 		public const int InstancedTrack = 0x0058;
 	}
 
@@ -4874,6 +5195,9 @@ namespace Offsets
 
 	public class UInterpTrackInstVectorMaterialParam
 	{
+		public const int MaterialInstances = 0x0028;
+		public const int ResetVectors = 0x0038;
+		public const int PrimitiveMaterialRefs = 0x0048;
 		public const int InstancedTrack = 0x0058;
 	}
 
@@ -4905,12 +5229,15 @@ namespace Offsets
 		public const int LayerName = 0x0028;
 		public const int bIsVisible = 0x0030;
 		public const int UnknownData00 = 0x0031;
+		public const int ActorStats = 0x0038;
 	}
 
 	public class ULevelStreaming
 	{
 		public const int PackageName = 0x0028;
+		public const int WorldAsset = 0x0030;
 		public const int PackageNameToLoad = 0x0050;
+		public const int LODPackageNames = 0x0058;
 		public const int UnknownData00 = 0x0068;
 		public const int LevelTransform = 0x0080;
 		public const int UnknownData01 = 0x00B0;
@@ -4930,8 +5257,10 @@ namespace Offsets
 		public const int DrawColor = 0x00C8;
 		public const int LevelColor = 0x00CC;
 		public const int UnknownData06 = 0x00DC;
+		public const int EditorStreamingVolumes = 0x00E0;
 		public const int MinTimeBetweenVolumeUnloadRequests = 0x00F0;
 		public const int UnknownData07 = 0x00F4;
+		public const int Keywords = 0x00F8;
 		public const int OnLevelLoaded = 0x0108;
 		public const int OnLevelUnloaded = 0x0118;
 		public const int OnLevelShown = 0x0128;
@@ -5109,6 +5438,7 @@ namespace Offsets
 		public const int OutputType = 0x0070;
 		public const int UnknownData00 = 0x0071;
 		public const int Description = 0x0078;
+		public const int Inputs = 0x0088;
 	}
 
 	public class UMaterialExpressionClearCoatNormalCustomOutput
@@ -5197,6 +5527,7 @@ namespace Offsets
 
 	public class UMaterialExpressionDynamicParameter
 	{
+		public const int ParamNames = 0x0060;
 		public const int DefaultValue = 0x0070;
 	}
 
@@ -5279,6 +5610,7 @@ namespace Offsets
 	public class UMaterialExpressionGetMaterialAttributes
 	{
 		public const int MaterialAttributes = 0x0060;
+		public const int AttributeGetTypes = 0x00A0;
 	}
 
 	public class UMaterialExpressionGIReplace
@@ -5348,6 +5680,8 @@ namespace Offsets
 	public class UMaterialExpressionMaterialFunctionCall
 	{
 		public const int MaterialFunction = 0x0060;
+		public const int FunctionInputs = 0x0068;
+		public const int FunctionOutputs = 0x0078;
 	}
 
 	public class UMaterialExpressionMaterialProxyReplace
@@ -5537,6 +5871,12 @@ namespace Offsets
 		public const int UnknownData00 = 0x0061;
 	}
 
+	public class UMaterialExpressionSetMaterialAttributes
+	{
+		public const int Inputs = 0x0060;
+		public const int AttributeSetTypes = 0x0070;
+	}
+
 	public class UMaterialExpressionSine
 	{
 		public const int Input = 0x0060;
@@ -5720,6 +6060,7 @@ namespace Offsets
 		public const int Description = 0x0038;
 		public const int bExposeToLibrary = 0x0048;
 		public const int UnknownData00 = 0x0049;
+		public const int FunctionExpressions = 0x0050;
 		public const int bReentrantFlag = 0x0060;
 		public const int UnknownData01 = 0x0061;
 	}
@@ -5816,6 +6157,9 @@ namespace Offsets
 		public const int EditorY = 0x0834;
 		public const int EditorPitch = 0x0838;
 		public const int EditorYaw = 0x083C;
+		public const int Expressions = 0x0840;
+		public const int MaterialFunctionInfos = 0x0850;
+		public const int MaterialParameterCollectionInfos = 0x0860;
 		public const int bCanMaskedBeAssumedOpaque = 0x0870;
 		public const int bIsMasked = 0x0870;
 		public const int bIsPreviewMaterial = 0x0870;
@@ -5834,6 +6178,7 @@ namespace Offsets
 		public const int RefractionDepthBias = 0x0884;
 		public const int StateId = 0x0888;
 		public const int UnknownData11 = 0x0898;
+		public const int ExpressionTextureReferences = 0x0978;
 	}
 
 	public class UMaterialInstanceDynamic
@@ -5844,6 +6189,8 @@ namespace Offsets
 	public class UMaterialParameterCollection
 	{
 		public const int StateId = 0x0028;
+		public const int ScalarParameters = 0x0038;
+		public const int VectorParameters = 0x0048;
 		public const int UnknownData00 = 0x0058;
 	}
 
@@ -5884,6 +6231,8 @@ namespace Offsets
 	public class UNavCollision
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int CylinderCollision = 0x0078;
+		public const int BoxCollision = 0x0088;
 		public const int AreaClass = 0x0098;
 		public const int bIsDynamicObstacle = 0x00A0;
 		public const int bGatherConvexGeometry = 0x00A0;
@@ -5903,6 +6252,7 @@ namespace Offsets
 	public class UNavigationPath
 	{
 		public const int PathUpdatedNotifier = 0x0028;
+		public const int PathPoints = 0x0038;
 		public const int RecalculateOnInvalidation = 0x0048;
 		public const int UnknownData00 = 0x0049;
 	}
@@ -5912,9 +6262,16 @@ namespace Offsets
 		public const int ObjectBaseClass = 0x0028;
 		public const int bHasBlueprintClasses = 0x0030;
 		public const int UnknownData00 = 0x0031;
+		public const int Objects = 0x0038;
+		public const int WeakObjects = 0x0048;
 		public const int bUseWeakReferences = 0x0058;
 		public const int bIsFullyLoaded = 0x0059;
 		public const int UnknownData01 = 0x005A;
+	}
+
+	public class UObjectReferencer
+	{
+		public const int ReferencedObjects = 0x0028;
 	}
 
 	public class UParticleModule
@@ -5948,9 +6305,15 @@ namespace Offsets
 		public const int bEnabled = 0x002C;
 		public const int UnknownData00 = 0x002D;
 		public const int RequiredModule = 0x0030;
+		public const int Modules = 0x0038;
 		public const int TypeDataModule = 0x0048;
 		public const int SpawnModule = 0x0050;
 		public const int EventGenerator = 0x0058;
+		public const int SpawningModules = 0x0060;
+		public const int SpawnModules = 0x0070;
+		public const int UpdateModules = 0x0080;
+		public const int OrbitModules = 0x0090;
+		public const int EventReceiverModules = 0x00A0;
 		public const int ConvertedModules = 0x00B0;
 		public const int UnknownData01 = 0x00B1;
 		public const int PeakActiveParticles = 0x00B4;
@@ -6208,6 +6571,11 @@ namespace Offsets
 		public const int UnknownData00 = 0x00B9;
 	}
 
+	public class UParticleModuleEventGenerator
+	{
+		public const int Events = 0x0030;
+	}
+
 	public class UParticleModuleEventReceiverBase
 	{
 		public const int EventGeneratorType = 0x0030;
@@ -6229,6 +6597,7 @@ namespace Offsets
 		public const int bInheritVelocity = 0x0078;
 		public const int UnknownData00 = 0x0079;
 		public const int InheritVelocityScale = 0x0080;
+		public const int PhysicalMaterials = 0x00D0;
 		public const int bBanPhysicalMaterials = 0x00E0;
 		public const int UnknownData01 = 0x00E1;
 	}
@@ -6305,6 +6674,7 @@ namespace Offsets
 		public const int SourceType = 0x0030;
 		public const int UnknownData00 = 0x0031;
 		public const int UniversalOffset = 0x0034;
+		public const int SourceLocations = 0x0040;
 		public const int SelectionMethod = 0x0050;
 		public const int UnknownData01 = 0x0051;
 		public const int bUpdatePositionEachFrame = 0x0054;
@@ -6403,6 +6773,7 @@ namespace Offsets
 		public const int bInheritBoneVelocity = 0x0040;
 		public const int UnknownData01 = 0x0041;
 		public const int SkelMeshActorParamName = 0x0048;
+		public const int ValidAssociatedBones = 0x0050;
 		public const int bEnforceNormalCheck = 0x0060;
 		public const int UnknownData02 = 0x0061;
 		public const int NormalToCompare = 0x0064;
@@ -6421,6 +6792,11 @@ namespace Offsets
 	public class UParticleModuleSourceMovement
 	{
 		public const int SourceMovementScale = 0x0030;
+	}
+
+	public class UParticleModuleMeshMaterial
+	{
+		public const int MeshMaterials = 0x0030;
 	}
 
 	public class UParticleModuleOrbitBase
@@ -6446,6 +6822,7 @@ namespace Offsets
 
 	public class UParticleModuleParameterDynamic
 	{
+		public const int DynamicParams = 0x0030;
 		public const int UpdateFlags = 0x0040;
 		public const int bUsesVelocity = 0x0044;
 		public const int UnknownData00 = 0x0045;
@@ -6495,6 +6872,7 @@ namespace Offsets
 		public const int SpawnRate = 0x0078;
 		public const int ParticleBurstMethod = 0x00B0;
 		public const int UnknownData05 = 0x00B1;
+		public const int BurstList = 0x00B8;
 		public const int EmitterDelay = 0x00C8;
 		public const int EmitterDelayLow = 0x00CC;
 		public const int bEmitterDelayUseRange = 0x00D0;
@@ -6528,6 +6906,7 @@ namespace Offsets
 		public const int NormalsCylinderDirection = 0x0130;
 		public const int bOrbitModuleAffectsVelocityAlignment = 0x013C;
 		public const int UnknownData14 = 0x013D;
+		public const int NamedMaterialOverrides = 0x0140;
 		public const int UnknownData15 = 0x0150;
 	}
 
@@ -6644,6 +7023,7 @@ namespace Offsets
 		public const int RateScale = 0x0070;
 		public const int ParticleBurstMethod = 0x00A8;
 		public const int UnknownData00 = 0x00A9;
+		public const int BurstList = 0x00B0;
 		public const int BurstScale = 0x00C0;
 		public const int bApplyGlobalSpawnRateScale = 0x00F8;
 		public const int UnknownData01 = 0x00F9;
@@ -6690,6 +7070,7 @@ namespace Offsets
 		public const int bLockSourceStength = 0x0078;
 		public const int UnknownData01 = 0x0079;
 		public const int SourceOffsetCount = 0x007C;
+		public const int SourceOffsetDefaults = 0x0080;
 		public const int SelectionMethod = 0x0090;
 		public const int UnknownData02 = 0x0091;
 		public const int bInheritRotation = 0x0094;
@@ -6914,6 +7295,7 @@ namespace Offsets
 		public const int SurfaceType = 0x0050;
 		public const int UnknownData03 = 0x0051;
 		public const int TireFrictionScale = 0x0054;
+		public const int TireFrictionScales = 0x0058;
 		public const int UnknownData04 = 0x0068;
 	}
 
@@ -6930,6 +7312,7 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x0028;
 		public const int DefaultInstance = 0x0030;
+		public const int ProfileHandles = 0x0220;
 		public const int DefaultProfile = 0x0230;
 		public const int UnknownData01 = 0x0334;
 	}
@@ -6939,8 +7322,14 @@ namespace Offsets
 		public const int UnknownData00 = 0x0028;
 	}
 
+	public class UPlatformInterfaceBase
+	{
+		public const int AllDelegates = 0x0028;
+	}
+
 	public class UCloudStorageBase
 	{
+		public const int LocalCloudFiles = 0x0038;
 		public const int bSuppressDelegateCalls = 0x0048;
 		public const int UnknownData00 = 0x0049;
 	}
@@ -6949,10 +7338,13 @@ namespace Offsets
 	{
 		public const int bShouldPauseWhileAdOpen = 0x0038;
 		public const int UnknownData00 = 0x0039;
+		public const int ClickedBannerDelegates = 0x0040;
+		public const int ClosedAdDelegates = 0x0050;
 	}
 
 	public class UMicroTransactionBase
 	{
+		public const int AvailableProducts = 0x0038;
 		public const int LastError = 0x0048;
 		public const int LastErrorSolution = 0x0058;
 	}
@@ -7002,10 +7394,19 @@ namespace Offsets
 		public const int RoomRolloffFactor = 0x0054;
 	}
 
+	public class URig
+	{
+		public const int TransformBases = 0x0028;
+		public const int Nodes = 0x0038;
+	}
+
 	public class USimpleConstructionScript
 	{
+		public const int RootNodes = 0x0028;
+		public const int AllNodes = 0x0038;
 		public const int DefaultSceneRootNode = 0x0048;
 		public const int RootNode = 0x0050;
+		public const int ActorComponentNodes = 0x0058;
 		public const int UnknownData00 = 0x0068;
 	}
 
@@ -7020,6 +7421,8 @@ namespace Offsets
 		public const int ParentComponentOwnerClassName = 0x00A0;
 		public const int bIsParentComponentNative = 0x00A8;
 		public const int UnknownData00 = 0x00A9;
+		public const int ChildNodes = 0x00B0;
+		public const int MetaDataArray = 0x00C0;
 		public const int VariableGuid = 0x00D0;
 		public const int bIsFalseRoot = 0x00E0;
 		public const int bIsNative = 0x00E1;
@@ -7039,11 +7442,13 @@ namespace Offsets
 	public class UDestructibleMesh
 	{
 		public const int DefaultDestructibleParameters = 0x02C0;
+		public const int FractureEffects = 0x0348;
 		public const int UnknownData00 = 0x0358;
 	}
 
 	public class USkeletalMeshReductionSettings
 	{
+		public const int Settings = 0x0028;
 		public const int UnknownData00 = 0x0038;
 	}
 
@@ -7075,6 +7480,7 @@ namespace Offsets
 		public const int bNoTiling = 0x004C;
 		public const int bUseCinematicMipLevels = 0x004C;
 		public const int UnknownData01 = 0x004D;
+		public const int AssetUserData = 0x0050;
 		public const int CachedCombinedLODBias = 0x0060;
 		public const int bAsyncResourceReleaseHasBeenStarted = 0x0064;
 		public const int UnknownData02 = 0x0065;
@@ -7109,6 +7515,8 @@ namespace Offsets
 	{
 		public const int Properties = 0x0028;
 		public const int UnknownData00 = 0x004C;
+		public const int ChildClasses = 0x0050;
+		public const int PassiveSoundMixModifiers = 0x0060;
 		public const int ParentClass = 0x0070;
 	}
 
@@ -7118,14 +7526,21 @@ namespace Offsets
 		public const int UnknownData00 = 0x0029;
 		public const int EQPriority = 0x002C;
 		public const int EQSettings = 0x0030;
+		public const int SoundClassEffects = 0x0068;
 		public const int InitialDelay = 0x0078;
 		public const int FadeInTime = 0x007C;
 		public const int Duration = 0x0080;
 		public const int FadeOutTime = 0x0084;
 	}
 
+	public class USoundNode
+	{
+		public const int ChildNodes = 0x0028;
+	}
+
 	public class USoundNodeWavePlayer
 	{
+		public const int SoundWaveAssetPtr = 0x0038;
 		public const int SoundWave = 0x0058;
 		public const int UnknownData00 = 0x0060;
 		public const int bLooping = 0x0060;
@@ -7161,6 +7576,11 @@ namespace Offsets
 		public const int DialogueWaveParameter = 0x0038;
 		public const int bLooping = 0x0058;
 		public const int UnknownData00 = 0x0059;
+	}
+
+	public class USoundNodeDistanceCrossFade
+	{
+		public const int CrossFadeInput = 0x0038;
 	}
 
 	public class USoundNodeParamCrossFade
@@ -7269,8 +7689,11 @@ namespace Offsets
 	public class UStaticMesh
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int SectionInfoExts = 0x0040;
 		public const int MinLOD = 0x0050;
 		public const int UnknownData01 = 0x0054;
+		public const int Materials = 0x0058;
+		public const int StaticMaterials = 0x0068;
 		public const int LightmapUVDensity = 0x0078;
 		public const int LightMapResolution = 0x007C;
 		public const int LightMapCoordinateIndex = 0x0080;
@@ -7283,6 +7706,7 @@ namespace Offsets
 		public const int LpvBiasMultiplier = 0x0098;
 		public const int bAllowCPUAccess = 0x009C;
 		public const int UnknownData04 = 0x009D;
+		public const int Sockets = 0x00D0;
 		public const int UnknownData05 = 0x00E0;
 		public const int PositiveBoundsExtension = 0x00F0;
 		public const int NegativeBoundsExtension = 0x00FC;
@@ -7291,6 +7715,7 @@ namespace Offsets
 		public const int UnknownData06 = 0x0125;
 		public const int ElementToIgnoreForTexFactor = 0x0128;
 		public const int UnknownData07 = 0x012C;
+		public const int AssetUserData = 0x0130;
 		public const int NavCollision = 0x0140;
 	}
 
@@ -7316,7 +7741,9 @@ namespace Offsets
 	{
 		public const int VertexCountPerFace = 0x0028;
 		public const int IndicesPerFace = 0x0038;
+		public const int VertexAttributeStreams = 0x0048;
 		public const int UnknownData00 = 0x0058;
+		public const int Materials = 0x0068;
 	}
 
 	public class USubsurfaceProfile
@@ -7410,6 +7837,7 @@ namespace Offsets
 	public class UCanvasRenderTarget2D
 	{
 		public const int OnCanvasRenderTargetUpdate = 0x00F8;
+		public const int World = 0x0108;
 		public const int bShouldClearRenderTargetOnReceiveUpdate = 0x0110;
 		public const int UnknownData00 = 0x0111;
 	}
@@ -7436,11 +7864,17 @@ namespace Offsets
 		public const int bValidatedAsWired = 0x0030;
 		public const int bIgnoreTimeDilation = 0x0030;
 		public const int UnknownData01 = 0x0031;
+		public const int EventTracks = 0x0038;
+		public const int FloatTracks = 0x0048;
+		public const int VectorTracks = 0x0058;
+		public const int LinearColorTracks = 0x0068;
+		public const int MetaDataArray = 0x0078;
 		public const int TimelineGuid = 0x0088;
 	}
 
 	public class UTouchInterface
 	{
+		public const int Controls = 0x0028;
 		public const int ActiveOpacity = 0x0038;
 		public const int InactiveOpacity = 0x003C;
 		public const int TimeUntilDeactive = 0x0040;
@@ -7450,6 +7884,11 @@ namespace Offsets
 		public const int UnknownData00 = 0x004D;
 		public const int StartupDelay = 0x0050;
 		public const int UnknownData01 = 0x0054;
+	}
+
+	public class UUserDefinedEnum
+	{
+		public const int DisplayNames = 0x0058;
 	}
 
 	public class UVectorField
@@ -7488,6 +7927,7 @@ namespace Offsets
 	public class UWorldComposition
 	{
 		public const int UnknownData00 = 0x0028;
+		public const int TilesStreaming = 0x0048;
 		public const int TilesStreamingTimeThreshold = 0x0058;
 		public const int bLoadAllTilesDuringCinematic = 0x0060;
 		public const int bRebaseOriginIn3DSpace = 0x0061;

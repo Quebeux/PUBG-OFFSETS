@@ -8,6 +8,8 @@ namespace Offsets
 	public class ACrossActor
 	{
 		public const int UniqueKey = 0x03B0;
+		public const int SideActors = 0x03C0;
+		public const int SideMeshes = 0x03D0;
 	}
 
 	public class ARoadActor
@@ -23,6 +25,9 @@ namespace Offsets
 		public const int StepGeneration = 0x03D8;
 		public const int Size = 0x03DC;
 		public const int RoadMesh = 0x03E0;
+		public const int RoadMeshesComp = 0x03E8;
+		public const int SideActors = 0x03F8;
+		public const int SideMeshes = 0x0408;
 	}
 
 }

@@ -63,6 +63,7 @@ namespace Offsets
 		public const int bIsGameOver = 0x04CC;
 		public const int UnknownData01 = 0x04CD;
 		public const int AddedTeamList = 0x04D0;
+		public const int PlayerMatchResultGroup = 0x04E0;
 		public const int LastPlayerInfoNums = 0x04F0;
 		public const int bIsReportButtonVanishing = 0x04F4;
 	}

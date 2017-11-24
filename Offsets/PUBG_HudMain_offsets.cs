@@ -36,6 +36,7 @@ namespace Offsets
 		public const int HitNotify = 0x0318;
 		public const int Old = 0x0320;
 		public const int UnknownData00 = 0x0321;
+		public const int MiniMapTypes = 0x0328;
 		public const int IsShowPlayerList = 0x0338;
 		public const int UnknownData01 = 0x0339;
 		public const int ColorBlindColorSet_SpetatingName = 0x0340;

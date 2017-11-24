@@ -9,7 +9,7 @@ namespace Offsets
 	{
 		public const int MovieScene = 0x0028;
 		public const int ObjectReferences = 0x0030;
-		public const int FString = 0x0080;
+		public const int PossessedObjects = 0x0080;
 	}
 
 	public class ULevelSequencePlayer

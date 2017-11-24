@@ -49,6 +49,7 @@ namespace Offsets
 		public const int FuelConsumptionModifierIdle = 0x07B8;
 		public const int SpeedKPH_1 = 0x07BC;
 		public const int WheelsSuspensionOffset_1 = 0x07C0;
+		public const int WheelsContactSurface_1 = 0x07D0;
 		public const int WheelsRotationSpeed = 0x07E0;
 		public const int WheelsSuspensionMaxDrop_1 = 0x07F0;
 		public const int WheelsSuspensionMaxRaise_1 = 0x0800;
@@ -63,6 +64,7 @@ namespace Offsets
 		public const int Brake_1 = 0x081C;
 		public const int TestBrakingAKEvent = 0x0820;
 		public const int UnknownData04 = 0x0821;
+		public const int TestWheelsContactSurface_prev_1 = 0x0828;
 		public const int TestBrakingAKEvent_prev = 0x0838;
 		public const int UnknownData05 = 0x0839;
 		public const int WheelsSuspensionOffsetNorm = 0x0840;

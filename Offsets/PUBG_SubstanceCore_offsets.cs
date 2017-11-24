@@ -9,6 +9,7 @@ namespace Offsets
 	{
 		public const int UnknownData00 = 0x0028;
 		public const int Parent = 0x0030;
+		public const int ImageSources = 0x0038;
 		public const int bFreezed = 0x0048;
 		public const int UnknownData01 = 0x0049;
 	}
@@ -24,6 +25,7 @@ namespace Offsets
 		public const int UnknownData01 = 0x012C;
 		public const int SourceFilePath = 0x0130;
 		public const int SourceFileTimestamp = 0x0140;
+		public const int Consumers = 0x0150;
 	}
 
 	public class USubstanceInstanceFactory

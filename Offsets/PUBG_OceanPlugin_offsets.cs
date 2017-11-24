@@ -17,11 +17,13 @@ namespace Offsets
 		public const int UnknownData00 = 0x0325;
 		public const int MaxUnderwaterVelocity = 0x0328;
 		public const int TestPointRadius = 0x032C;
+		public const int TestPoints = 0x0330;
 		public const int ApplyForceToBones = 0x0340;
 		public const int SnapToSurfaceIfNoPhysics = 0x0341;
 		public const int TwoGerstnerIterations = 0x0342;
 		public const int UnknownData01 = 0x0343;
 		public const int PointDensityOverride = 0x0348;
+		public const int BoneOverride = 0x0358;
 		public const int DrawDebugPoints = 0x0368;
 		public const int EnableStayUprightConstraint = 0x0369;
 		public const int UnknownData02 = 0x036A;
@@ -43,6 +45,8 @@ namespace Offsets
 		public const int GlobalWaveSpeed = 0x03AC;
 		public const int GlobalWaveAmplitude = 0x03B0;
 		public const int DistanceCheck = 0x03B4;
+		public const int WaveClusters = 0x03B8;
+		public const int WaveSetOffsetsOverride = 0x03C8;
 		public const int NetWorkTimeOffset = 0x03D8;
 		public const int bEnableLandscapeModulation = 0x03DC;
 		public const int UnknownData01 = 0x03DD;
@@ -67,6 +71,7 @@ namespace Offsets
 		public const int UnknownData00 = 0x0165;
 		public const int MaxUnderwaterVelocity = 0x0168;
 		public const int TestPointRadius = 0x016C;
+		public const int TestPoints = 0x0170;
 		public const int PointDensityOverride = 0x0180;
 		public const int DrawDebugPoints = 0x0190;
 		public const int EnableStayUprightConstraint = 0x0191;
@@ -140,6 +145,7 @@ namespace Offsets
 
 	public class AFishManager
 	{
+		public const int flockTypes = 0x03A0;
 		public const int numInFlock = 0x03B0;
 		public const int minZ = 0x03C0;
 		public const int maxZ = 0x03C4;
@@ -157,6 +163,8 @@ namespace Offsets
 		public const int FishInteractionSphere = 0x0410;
 		public const int isLeader = 0x0418;
 		public const int UnknownData01 = 0x0419;
+		public const int enemyTypes = 0x0420;
+		public const int preyTypes = 0x0430;
 		public const int neighborType = 0x0440;
 		public const int followDist = 0x0448;
 		public const int Speed = 0x044C;

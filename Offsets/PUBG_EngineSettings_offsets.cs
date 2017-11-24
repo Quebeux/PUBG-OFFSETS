@@ -9,6 +9,8 @@ namespace Offsets
 	{
 		public const int MaxScrollbackSize = 0x0028;
 		public const int UnknownData00 = 0x002C;
+		public const int ManualAutoCompleteList = 0x0030;
+		public const int AutoCompleteMapPaths = 0x0040;
 		public const int BackgroundOpacityPercentage = 0x0050;
 		public const int bOrderTopToBottom = 0x0054;
 		public const int UnknownData01 = 0x0055;
@@ -35,6 +37,8 @@ namespace Offsets
 		public const int ServerDefaultMap = 0x0080;
 		public const int GlobalDefaultGameMode = 0x0090;
 		public const int GlobalDefaultServerGameMode = 0x00A0;
+		public const int GameModeMapPrefixes = 0x00B0;
+		public const int GameModeClassAliases = 0x00C0;
 	}
 
 	public class UGameNetworkManagerSettings
@@ -91,6 +95,7 @@ namespace Offsets
 	{
 		public const int bShowHUD = 0x0028;
 		public const int UnknownData00 = 0x0029;
+		public const int DebugDisplay = 0x0030;
 	}
 
 }

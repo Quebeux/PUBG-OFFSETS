@@ -23,9 +23,12 @@ namespace Offsets
 		public const int bIsMouseOverWeaponEquipment = 0x00C3;
 		public const int bIsMouseOverAttachmentSlot = 0x00C4;
 		public const int UnknownData02 = 0x00C5;
+		public const int Container = 0x00C8;
+		public const int Slot = 0x00D8;
 		public const int DragDroppingWeaponIndex = 0x00E8;
 		public const int MouseOverSlotId = 0x00EC;
 		public const int UnknownData03 = 0x00ED;
+		public const int OtherContainerStack = 0x00F0;
 		public const int ActionName = 0x0100;
 	}
 

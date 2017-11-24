@@ -48,6 +48,7 @@ namespace Offsets
 		public const int DragDroppingEquipableItem = 0x0428;
 		public const int DragDroppingWeaponItem = 0x0430;
 		public const int DragDroppingAttachableItem = 0x0438;
+		public const int AttachmentSlotList = 0x0440;
 		public const int Inventory = 0x0450;
 		public const int ItemStudioClass = 0x0458;
 		public const int bWantFocus = 0x0460;

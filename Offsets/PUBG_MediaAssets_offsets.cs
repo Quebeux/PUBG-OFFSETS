@@ -28,6 +28,11 @@ namespace Offsets
 		public const int UnknownData04 = 0x00C0;
 	}
 
+	public class UMediaPlaylist
+	{
+		public const int Items = 0x0028;
+	}
+
 	public class UMediaSoundWave
 	{
 		public const int UnknownData00 = 0x0260;
@@ -58,6 +63,11 @@ namespace Offsets
 	public class UStreamMediaSource
 	{
 		public const int StreamUrl = 0x0038;
+	}
+
+	public class UMediaSubtitles
+	{
+		public const int Subtitles = 0x0028;
 	}
 
 	public class UMediaTexture

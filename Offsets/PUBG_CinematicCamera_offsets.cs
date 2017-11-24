@@ -31,6 +31,7 @@ namespace Offsets
 		public const int RailSplineComponent = 0x03B0;
 		public const int RailCameraMount = 0x03B8;
 		public const int PreviewMesh_Rail = 0x03C0;
+		public const int PreviewRailMeshSegments = 0x03C8;
 		public const int PreviewRailStaticMesh = 0x03D8;
 		public const int PreviewMesh_Mount = 0x03E0;
 	}
@@ -44,6 +45,8 @@ namespace Offsets
 		public const int CurrentAperture = 0x08B4;
 		public const int CurrentFocusDistance = 0x08B8;
 		public const int UnknownData00 = 0x08BC;
+		public const int FilmbackPresets = 0x08C8;
+		public const int LensPresets = 0x08D8;
 		public const int DefaultFilmbackPresetName = 0x08E8;
 		public const int DefaultLensPresetName = 0x08F8;
 		public const int DefaultLensFocalLength = 0x0908;

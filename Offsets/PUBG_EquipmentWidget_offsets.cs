@@ -25,6 +25,7 @@ namespace Offsets
 		public const int Torso = 0x02F0;
 		public const int TorsoArmor = 0x02F8;
 		public const int WeightImage = 0x0300;
+		public const int EquipSlotList = 0x0308;
 		public const int Inventory = 0x0318;
 		public const int WeightMaterial = 0x0320;
 		public const int CharacterStudio = 0x0328;

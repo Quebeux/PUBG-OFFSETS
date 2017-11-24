@@ -18,6 +18,9 @@ namespace Offsets
 		public const int PrereqName = 0x0070;
 		public const int PrereqPath = 0x0080;
 		public const int PrereqArgs = 0x0090;
+		public const int FileManifestList = 0x00A0;
+		public const int ChunkList = 0x00B0;
+		public const int CustomFields = 0x00C0;
 	}
 
 }

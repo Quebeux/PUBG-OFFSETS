@@ -23,6 +23,8 @@ namespace Offsets
 		public const int StackCountText = 0x02B8;
 		public const int UseInfo_bg = 0x02C0;
 		public const int UseInfo_Text = 0x02C8;
+		public const int Item_SlotInterface = 0x02D0;
+		public const int SlotContainer = 0x02E0;
 		public const int OnSlotFocus = 0x02F0;
 		public const int bIsPackaged = 0x0300;
 		public const int UnknownData00 = 0x0301;

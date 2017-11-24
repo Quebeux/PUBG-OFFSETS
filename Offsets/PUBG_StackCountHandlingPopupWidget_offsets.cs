@@ -21,6 +21,8 @@ namespace Offsets
 		public const int OuterPopup = 0x02E8;
 		public const int Item = 0x02F0;
 		public const int Inventory = 0x02F8;
+		public const int Container = 0x0300;
+		public const int ItemSlot = 0x0310;
 		public const int bIsDropping = 0x0320;
 		public const int UnknownData00 = 0x0321;
 		public const int AmountText = 0x0328;

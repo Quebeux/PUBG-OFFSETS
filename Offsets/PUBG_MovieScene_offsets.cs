@@ -7,6 +7,10 @@ namespace Offsets
 {
 	public class UMovieScene
 	{
+		public const int Spawnables = 0x0028;
+		public const int Possessables = 0x0038;
+		public const int ObjectBindings = 0x0048;
+		public const int MasterTracks = 0x0058;
 		public const int CameraCutTrack = 0x0068;
 		public const int SelectionRange = 0x0070;
 		public const int PlaybackRange = 0x0080;
@@ -22,6 +26,9 @@ namespace Offsets
 	public class UMovieSceneFolder
 	{
 		public const int FolderName = 0x0028;
+		public const int ChildFolders = 0x0030;
+		public const int ChildMasterTracks = 0x0040;
+		public const int ChildObjectBindingStrings = 0x0050;
 		public const int UnknownData00 = 0x0060;
 	}
 

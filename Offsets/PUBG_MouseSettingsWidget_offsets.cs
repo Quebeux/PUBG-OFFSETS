@@ -12,6 +12,7 @@ namespace Offsets
 		public const int KeyList = 0x0288;
 		public const int QualitySliderWidget = 0x0290;
 		public const int TslCheckBox = 0x0298;
+		public const int KeyBorders = 0x02A0;
 		public const int NewVar_1 = 0x02B0;
 	}
 

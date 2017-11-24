@@ -12,6 +12,7 @@ namespace Offsets
 		public const int ErrorIcon = 0x0250;
 		public const int ItemIcon = 0x0258;
 		public const int StackCountText = 0x0260;
+		public const int ItemInterface = 0x0268;
 		public const int ItemInstance = 0x0278;
 		public const int ShooterPlayerController = 0x0280;
 		public const int Inventory = 0x0288;

@@ -12,6 +12,7 @@ namespace Offsets
 		public const int ComboBox = 0x0250;
 		public const int DisplayName = 0x0258;
 		public const int OnSelectionChanged = 0x0270;
+		public const int OptionList = 0x0280;
 	}
 
 }

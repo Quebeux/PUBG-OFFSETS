@@ -19,6 +19,9 @@ namespace Offsets
 	{
 		public const int ByteCode = 0x0028;
 		public const int ConstantData = 0x0038;
+		public const int Attributes = 0x0098;
+		public const int EventReceivers = 0x00A8;
+		public const int EventGenerators = 0x00B8;
 		public const int Usage = 0x00C8;
 		public const int UnknownData00 = 0x00C9;
 	}
@@ -40,6 +43,11 @@ namespace Offsets
 		public const int UnknownData03 = 0x0064;
 		public const int UpdateScriptProps = 0x0068;
 		public const int SpawnScriptProps = 0x00C0;
+	}
+
+	public class UNiagaraEffect
+	{
+		public const int EmitterProps = 0x0028;
 	}
 
 	public class UNiagaraEffectRendererProperties

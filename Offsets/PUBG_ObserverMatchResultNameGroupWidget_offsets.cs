@@ -18,6 +18,7 @@ namespace Offsets
 		public const int MatchResulttInfo_8 = 0x0280;
 		public const int RankingText = 0x0288;
 		public const int SoloOrDuo = 0x0290;
+		public const int PlayerMatchResultInfos = 0x0298;
 		public const int Ranking = 0x02A8;
 		public const int bSmall = 0x02AC;
 	}

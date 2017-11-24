@@ -11,6 +11,7 @@ namespace Offsets
 		public const int CarePackageItemList = 0x0248;
 		public const int IsShowCarePackageItemList = 0x0250;
 		public const int UnknownData00 = 0x0251;
+		public const int Items = 0x0258;
 		public const int EventDispatcher_ShowCarePackageItem = 0x0268;
 	}
 

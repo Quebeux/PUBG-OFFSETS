@@ -39,6 +39,7 @@ namespace Offsets
 		public const int GroundSlopeAngle = 0x00B4;
 		public const int Height = 0x00BC;
 		public const int UnknownData05 = 0x00C4;
+		public const int LandscapeLayers = 0x00C8;
 		public const int LandscapeLayer = 0x00D8;
 		public const int CollisionWithWorld = 0x00E0;
 		public const int UnknownData06 = 0x00E1;
@@ -104,6 +105,7 @@ namespace Offsets
 
 	public class UFoliageType_InstancedStaticMesh
 	{
+		public const int OverrideMaterials = 0x03D0;
 		public const int ComponentClass = 0x03E0;
 		public const int UnknownData00 = 0x03E8;
 	}
@@ -153,6 +155,7 @@ namespace Offsets
 		public const int NumUniqueTiles = 0x0030;
 		public const int MinimumQuadTreeSize = 0x0034;
 		public const int UnknownData00 = 0x0038;
+		public const int FoliageTypes = 0x0040;
 		public const int bNeedsSimulation = 0x0050;
 		public const int UnknownData01 = 0x0051;
 	}
@@ -161,6 +164,7 @@ namespace Offsets
 	{
 		public const int FoliageSpawner = 0x0028;
 		public const int UnknownData00 = 0x0030;
+		public const int InstancesArray = 0x00D0;
 		public const int UnknownData01 = 0x00E0;
 	}
 

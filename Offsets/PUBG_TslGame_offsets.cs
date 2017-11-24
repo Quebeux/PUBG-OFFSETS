@@ -14,7 +14,9 @@ namespace Offsets
 	{
 		public const int MainUMGHudClass = 0x0488;
 		public const int UnknownData00 = 0x0490;
-		public const int FString = 0x04A8;
+		public const int ActionInputEventHolderArray = 0x0498;
+		public const int WidgetStateMap = 0x04A8;
+		public const int UseMouseWidgetStack = 0x04F8;
 		public const int MainUMGHud = 0x0508;
 	}
 
@@ -54,9 +56,11 @@ namespace Offsets
 	public class UAsyncStaticMeshComponent
 	{
 		public const int UnknownData00 = 0x0810;
+		public const int StaticMeshAsset = 0x0818;
 		public const int UnknownData01 = 0x0838;
 		public const int ErrorStaticMesh = 0x0840;
 		public const int ClientCollisionProfileNameOverride = 0x0848;
+		public const int PendingStaticMeshAsset = 0x0850;
 		public const int UnknownData02 = 0x0870;
 	}
 
@@ -85,6 +89,11 @@ namespace Offsets
 		public const int UnknownData04 = 0x03F8;
 	}
 
+	public class UBuffComponet
+	{
+		public const int Buffs = 0x00F8;
+	}
+
 	public class UCameraSettings
 	{
 		public const int CameraPitchMinStand = 0x0028;
@@ -102,6 +111,9 @@ namespace Offsets
 		public const int CameraYawMinInVehicle = 0x0058;
 		public const int CameraYawMaxInVehicle = 0x005C;
 		public const int HeadBoneName = 0x0060;
+		public const int HideMaterialsWhenCameraIsInHead = 0x0068;
+		public const int HideMaterialsOnScopeMode = 0x0078;
+		public const int HideMaterialsOnHighScopeMode = 0x0088;
 	}
 
 	public class UCastComponent
@@ -183,10 +195,15 @@ namespace Offsets
 		public const int UnknownData07 = 0x07A0;
 		public const int SpectatorScopeMesh = 0x07B0;
 		public const int UnknownData08 = 0x07B8;
+		public const int NearClippingLevelsOverZ = 0x0810;
 		public const int MaxValidPing = 0x0820;
 		public const int DefaultFOV = 0x0824;
 		public const int VivoxComponent = 0x0828;
+		public const int Teams = 0x0830;
+		public const int ReplicateTeamMembers = 0x0840;
 		public const int UnknownData09 = 0x0850;
+		public const int ReplicateCharacter = 0x08A0;
+		public const int ReplicateCarePackageItemList = 0x08B0;
 		public const int UnknownData10 = 0x08C0;
 		public const int DeathResultDelaySeconds = 0x08E0;
 		public const int UnknownData11 = 0x08E4;
@@ -239,8 +256,11 @@ namespace Offsets
 		public const int StackCountMax = 0x00A4;
 		public const int SpacePerItem = 0x00A8;
 		public const int UnknownData02 = 0x00AC;
+		public const int DroppedMesh = 0x00B0;
 		public const int DroppedMeshScale = 0x00D0;
 		public const int UnknownData03 = 0x00D4;
+		public const int Icon = 0x00D8;
+		public const int ToolTipIcon = 0x00F8;
 		public const int IconSizeRatio = 0x0118;
 		public const int ToolTipIconSizeRatio = 0x011C;
 		public const int DropSoundAk = 0x0120;
@@ -269,10 +289,12 @@ namespace Offsets
 		public const int PackageToolTipIcon = 0x0488;
 		public const int PackageToolTipIconSizeRatio = 0x0490;
 		public const int UnknownData02 = 0x0494;
+		public const int PackageMesh = 0x0498;
 		public const int BoxComponent = 0x04B8;
 		public const int InteractionComponent = 0x04C0;
 		public const int DestroyByEmptyItem = 0x04C8;
 		public const int UnknownData03 = 0x04C9;
+		public const int Items = 0x04D0;
 		public const int CreatorName = 0x04E0;
 		public const int SortPriority = 0x04F0;
 		public const int UnknownData04 = 0x04F4;
@@ -281,6 +303,7 @@ namespace Offsets
 	public class ADeployedItemPackage
 	{
 		public const int ItemPackageType = 0x03A0;
+		public const int ItemInfos = 0x03A8;
 	}
 
 	public class UDoorDataAsset
@@ -352,6 +375,12 @@ namespace Offsets
 		public const int JsonSaveFileName = 0x0038;
 	}
 
+	public class ULobbyCustomizableData
+	{
+		public const int Faces = 0x0048;
+		public const int Hairs = 0x0058;
+	}
+
 	public class AFlashBangCaptureActor
 	{
 		public const int SceneRootComponent = 0x03A0;
@@ -380,6 +409,7 @@ namespace Offsets
 	{
 		public const int RawItemSpawnDataTable = 0x0028;
 		public const int RawItemSpawnTogetherDataTable = 0x0030;
+		public const int SpawnProbArray = 0x0038;
 		public const int UnknownData00 = 0x0048;
 	}
 
@@ -431,6 +461,11 @@ namespace Offsets
 		public const int UnknownData00 = 0x0280;
 	}
 
+	public class UOnceInteractionComponent
+	{
+		public const int CharacterHistory = 0x0280;
+	}
+
 	public class UAmmoItem
 	{
 		public const int AmmoIcon = 0x0188;
@@ -441,6 +476,8 @@ namespace Offsets
 	public class UAttachableItem
 	{
 		public const int AttachmentData = 0x0188;
+		public const int AttachmentMeshAsset = 0x0240;
+		public const int AttachmentWeaponTagData = 0x0260;
 		public const int EquipOnPickUp = 0x0270;
 		public const int UnknownData00 = 0x0271;
 		public const int AttachedSoundAk = 0x0278;
@@ -473,6 +510,7 @@ namespace Offsets
 		public const int bCanZombieEquip = 0x0212;
 		public const int bIsUnequipable = 0x0213;
 		public const int UnknownData03 = 0x0214;
+		public const int HudDisplayEquipIcon = 0x0218;
 		public const int UnknownData04 = 0x0238;
 	}
 
@@ -533,6 +571,9 @@ namespace Offsets
 		public const int AttachmentAniRateCalculateType = 0x05F1;
 		public const int AttachmentRecoilPatternScaleCalculateType = 0x05F2;
 		public const int UnknownData06 = 0x05F3;
+		public const int AttachmentPositionData = 0x05F8;
+		public const int DefaultAttachedItemAssets = 0x0608;
+		public const int AttachedItemClasses = 0x0618;
 		public const int WeaponTag = 0x0628;
 		public const int UnknownData07 = 0x0630;
 		public const int AkComponent = 0x0698;
@@ -572,7 +613,9 @@ namespace Offsets
 		public const int WeaponType = 0x0248;
 		public const int AmmoCount = 0x0250;
 		public const int AmmoPerClip = 0x0254;
+		public const int AttachmentTagData = 0x0258;
 		public const int WeaponTag = 0x0268;
+		public const int AttachedItems = 0x0270;
 		public const int FiringMode = 0x0280;
 		public const int UnknownData01 = 0x0281;
 		public const int EquippedWeapon = 0x0288;
@@ -584,10 +627,13 @@ namespace Offsets
 		public const int bOpenByKey = 0x0198;
 		public const int bOpenByPoint = 0x0198;
 		public const int UnknownData00 = 0x0199;
+		public const int OpenKeyItem = 0x01A0;
 		public const int OpenKeyItemCount = 0x01C0;
 		public const int PointOpenPrice = 0x01C4;
 		public const int ExchangeBundleId = 0x01C8;
 		public const int UnknownData01 = 0x01CC;
+		public const int BundleList = 0x01D0;
+		public const int ReferenceItems = 0x01E0;
 	}
 
 	public class UItemSpawnProcessor
@@ -597,6 +643,7 @@ namespace Offsets
 
 	public class USpawnTableItemSpawnProcessor
 	{
+		public const int RawSpotGroupProperties = 0x0038;
 		public const int RawItemSpawnDataTable = 0x0048;
 		public const int RawItemSpawnTogetherDataTable = 0x0050;
 		public const int UnknownData00 = 0x0058;
@@ -661,6 +708,7 @@ namespace Offsets
 	public class UAirborneMatchPreparer
 	{
 		public const int AircraftClass = 0x0058;
+		public const int Aircrafts = 0x0060;
 		public const int AircraftCount = 0x0070;
 		public const int AircraftCapacityOverride = 0x0074;
 		public const int AircraftAltitude = 0x0078;
@@ -681,17 +729,22 @@ namespace Offsets
 		public const int UnknownData00 = 0x0028;
 		public const int MasterMaterial = 0x0080;
 		public const int MergedMaterial = 0x0088;
+		public const int ParameterList = 0x0090;
 		public const int bUpdateParameterList = 0x00A0;
 		public const int UnknownData01 = 0x00A1;
 	}
 
 	public class ABattleRoyaleModeController
 	{
+		public const int NormalPoisonGasDataArray = 0x0498;
+		public const int FastPoisonGasDataArray = 0x04A8;
 		public const int FastZonePlayerCount = 0x04B8;
 		public const int BattleRoyaleZoneTypeCheckTime = 0x04BC;
 		public const int PoisonWarningTime = 0x04C0;
 		public const int WaterVolumeRayHeight = 0x04D0;
 		public const int UnknownData00 = 0x04D4;
+		public const int OceanPhysicsVolume = 0x04E0;
+		public const int PassBluezoneAreas = 0x04F0;
 		public const int UnknownData01 = 0x0500;
 	}
 
@@ -725,6 +778,7 @@ namespace Offsets
 		public const int RedZoneProjectileCount = 0x04F0;
 		public const int RayCheckAroundLength = 0x04F4;
 		public const int UnknownData00 = 0x04F8;
+		public const int OceanPhysicsVolume = 0x0508;
 	}
 
 	public class AMutableCharacter
@@ -798,6 +852,7 @@ namespace Offsets
 		public const int UnknownData00 = 0x03A0;
 		public const int OnWeaponProcessorArmed = 0x03A8;
 		public const int UnknownData01 = 0x03B8;
+		public const int EquippedWeapons = 0x0438;
 		public const int CurrentWeaponIndex = 0x0448;
 		public const int UnknownData02 = 0x044C;
 	}
@@ -854,10 +909,13 @@ namespace Offsets
 		public const int bPeekLeftToggled = 0x0821;
 		public const int bPeekRightToggled = 0x0822;
 		public const int UnknownData00 = 0x0823;
+		public const int CurrentAttackerPlayerState = 0x0824;
+		public const int LastAttackedPlayerState = 0x082C;
 		public const int UnknownData01 = 0x0834;
 		public const int NoBagSpaceDelgate = 0x0880;
 		public const int UnknownData02 = 0x0890;
 		public const int LastPossessedController = 0x08E8;
+		public const int Banks = 0x08F0;
 		public const int BuffComponent = 0x0900;
 		public const int UnknownData03 = 0x0908;
 		public const int Remote_CastAnim = 0x0948;
@@ -1099,6 +1157,8 @@ namespace Offsets
 		public const int InvulnerablilityBuff = 0x1048;
 		public const int bInvulnerablilityEffectVisible = 0x1050;
 		public const int UnknownData41 = 0x1051;
+		public const int ComponentsToDestroyOnDedicatedServer = 0x1058;
+		public const int ZombieCustomizationData = 0x1068;
 		public const int bIsHoldingBreath = 0x1078;
 		public const int UnknownData42 = 0x1079;
 		public const int Health = 0x107C;
@@ -1116,17 +1176,22 @@ namespace Offsets
 		public const int BoostGaugeMax = 0x10B4;
 		public const int DecreaseTimerSecond = 0x10B8;
 		public const int DecreaseBoostGaugeByTime = 0x10BC;
+		public const int BuffWithBoostGauge = 0x10C0;
 		public const int MedKitClass = 0x10D0;
 		public const int FirstAidClass = 0x10D8;
 		public const int BandageClass = 0x10E0;
 		public const int AdrenalineClass = 0x10E8;
 		public const int PainKillerClass = 0x10F0;
 		public const int EnergyDrinkClass = 0x10F8;
+		public const int BoostItemClasses = 0x1100;
+		public const int HealItemClasses = 0x1110;
 		public const int GrenadeClass = 0x1120;
 		public const int MolotovClass = 0x1128;
 		public const int SmokeBombClass = 0x1130;
 		public const int FlashBangClass = 0x1138;
 		public const int UnknownData45 = 0x1140;
+		public const int LaunchInstigator = 0x1144;
+		public const int LaunchCauser = 0x114C;
 		public const int UnknownData46 = 0x1154;
 		public const int LastLaunchTime = 0x1158;
 		public const int AuthorizedPlayerState = 0x1160;
@@ -1153,6 +1218,11 @@ namespace Offsets
 		public const int DamageArmScale = 0x13E4;
 		public const int DamageStomachScale = 0x13E8;
 		public const int DamageLegScale = 0x13EC;
+		public const int HeadBoneNames = 0x13F0;
+		public const int ArmBoneNames = 0x1400;
+		public const int TorsoBoneNames = 0x1410;
+		public const int StomachBoneNames = 0x1420;
+		public const int LegBoneNames = 0x1430;
 		public const int UnknownData51 = 0x1440;
 		public const int FallDamageFactor = 0x1444;
 		public const int FallDamageVelocityMin = 0x1448;
@@ -1216,6 +1286,7 @@ namespace Offsets
 		public const int KilledForceFeedback = 0x0068;
 		public const int bFallDamage = 0x0070;
 		public const int UnknownData01 = 0x0071;
+		public const int DamageRatioInfos = 0x0078;
 		public const int HitReaction = 0x0088;
 		public const int UnknownData02 = 0x0089;
 	}
@@ -1295,6 +1366,7 @@ namespace Offsets
 		public const int FreeFallMovementComponent = 0x0478;
 		public const int VehicleSeatComponent = 0x0480;
 		public const int InteractionComponent = 0x0488;
+		public const int LastDriver = 0x0490;
 		public const int UnknownData01 = 0x0498;
 		public const int FreeFallFirstPersonCameraName = 0x04A0;
 		public const int FreeFallThirdPersonCameraName = 0x04A8;
@@ -1330,6 +1402,7 @@ namespace Offsets
 	public class AReplicationTrigger
 	{
 		public const int UnknownData00 = 0x03A0;
+		public const int TargetReplicatedActors = 0x03A8;
 		public const int UnknownData01 = 0x03B8;
 		public const int ReplicationGroupCount = 0x03BC;
 		public const int UnknownData02 = 0x03C0;
@@ -1339,8 +1412,10 @@ namespace Offsets
 
 	public class AReplicationTriggerManager
 	{
+		public const int TargetReplicatedActorClasses = 0x03A0;
 		public const int TriggerRadius = 0x03B0;
 		public const int TriggerInterval = 0x03B4;
+		public const int Triggers = 0x03B8;
 	}
 
 	public class URewardData
@@ -1534,6 +1609,7 @@ namespace Offsets
 		public const int StartRadius = 0x03D4;
 		public const int bRandomRotation = 0x03D8;
 		public const int UnknownData01 = 0x03D9;
+		public const int ActivationVolumes = 0x03E0;
 		public const int UnknownData02 = 0x03F0;
 	}
 
@@ -1553,11 +1629,13 @@ namespace Offsets
 	{
 		public const int OnEquipmentUpdated = 0x03D8;
 		public const int UnknownData00 = 0x03E8;
+		public const int Items = 0x0418;
 	}
 
 	public class AInventory
 	{
 		public const int OnInventoryUpdated = 0x03D8;
+		public const int Items = 0x03E8;
 		public const int MaxSpace = 0x03F8;
 		public const int UnknownData00 = 0x03FC;
 	}
@@ -1607,20 +1685,33 @@ namespace Offsets
 		public const int BuoyancyForceComponent = 0x0510;
 	}
 
+	public class ANearbyInteractiveItemExplorer
+	{
+		public const int ExplorableItems = 0x0408;
+	}
+
 	public class UThingSpawnProcessor
 	{
 		public const int UnknownData00 = 0x0028;
+	}
+
+	public class UCombinedThingSpawnProcessor
+	{
+		public const int SubProcessorClasses = 0x0038;
+		public const int SubProcessors = 0x0048;
 	}
 
 	public class UPackageSubThingSpawnProcessor
 	{
 		public const int RawItemSpawnDataTable = 0x0028;
 		public const int RawItemSpawnTogetherDataTable = 0x0030;
+		public const int RawSpotGroupProperties = 0x0038;
 		public const int UnknownData00 = 0x0048;
 	}
 
 	public class UVehicleSubThingSpawnProcessor
 	{
+		public const int RawSpotGroupProperties = 0x0028;
 		public const int RawVehicleSpawnDataTable = 0x0038;
 		public const int SpawnZOffsetFromFloor = 0x0040;
 		public const int UnknownData00 = 0x0044;
@@ -1688,6 +1779,8 @@ namespace Offsets
 
 	public class ATslAircraftVehicle
 	{
+		public const int AircraftParticles = 0x0400;
+		public const int AttachedParticles = 0x0410;
 		public const int MeshComponent = 0x0420;
 		public const int MovementComponent = 0x0428;
 		public const int SplineComponent = 0x0430;
@@ -1700,6 +1793,7 @@ namespace Offsets
 	{
 		public const int CarePackageItemSpawnerClass = 0x0490;
 		public const int CarePackageItemClass = 0x0498;
+		public const int DropCarePackageTableData = 0x04A0;
 		public const int CarePackageItemSpawner = 0x04B0;
 		public const int UnknownData00 = 0x04B8;
 	}
@@ -1761,6 +1855,8 @@ namespace Offsets
 		public const int WheelsLatSlip = 0x04C0;
 		public const int WheelsLongSlip = 0x04D0;
 		public const int WheelsSuspensionOffset = 0x04E0;
+		public const int WheelsContactSurface = 0x04F0;
+		public const int TestWheelsContactSurface_prev = 0x0500;
 		public const int WheelsSuspensionMaxDrop = 0x0510;
 		public const int WheelsSuspensionMaxRaise = 0x0520;
 		public const int NullSound = 0x0530;
@@ -1787,6 +1883,7 @@ namespace Offsets
 		public const int SinkBuffType = 0x0678;
 		public const int UnknownData08 = 0x0680;
 		public const int BuffComponent = 0x0688;
+		public const int ComponentsToDestroyOnDedicatedServer = 0x0690;
 		public const int bProcessAutoEject = 0x06A0;
 		public const int UnknownData09 = 0x06A1;
 		public const int AutoEjectGroundDistance = 0x06A4;
@@ -1817,6 +1914,7 @@ namespace Offsets
 		public const int VehicleTempComponent = 0x0450;
 		public const int TslPawnInputBindingComponent = 0x0458;
 		public const int AudioComEngine = 0x0460;
+		public const int ComponentsToDestroyOnDedicatedServer = 0x0468;
 		public const int VehicleEnginePoint = 0x0478;
 		public const int VehicleEngineRadius = 0x0480;
 		public const int Health = 0x0484;
@@ -2283,6 +2381,7 @@ namespace Offsets
 		public const int OnCreateCharacter = 0x08D0;
 		public const int OnDestroyCharacter = 0x08E0;
 		public const int StartURL = 0x08F0;
+		public const int CommonBinders = 0x0900;
 		public const int AkSound = 0x0910;
 		public const int Camera = 0x0918;
 		public const int UnknownData00 = 0x0920;
@@ -2329,6 +2428,7 @@ namespace Offsets
 	public class ATslCharacterProxy
 	{
 		public const int UnknownData00 = 0x07C0;
+		public const int ArmedWeapons = 0x07C8;
 		public const int WeaponAnimInfoComponent = 0x07D8;
 		public const int WeaponUpdateIntervalSeconds = 0x07E0;
 		public const int UnknownData01 = 0x07E4;
@@ -2397,6 +2497,19 @@ namespace Offsets
 		public const int UnknownData00 = 0x0130;
 	}
 
+	public class UTslConsoleSetting
+	{
+		public const int AutoCompleteItemPaths = 0x0070;
+		public const int AutoCompleteItemKinds = 0x0080;
+		public const int AutoCompleteVehiclePaths = 0x0090;
+		public const int AutoCompleteMaleBody = 0x00A0;
+		public const int AutoCompleteMaleHair = 0x00B0;
+		public const int AutoCompleteMaleFace = 0x00C0;
+		public const int AutoCompleteFemaleBody = 0x00D0;
+		public const int AutoCompleteFemaleHair = 0x00E0;
+		public const int AutoCompleteFemaleFace = 0x00F0;
+	}
+
 	public class ATslDamageField
 	{
 		public const int UnknownData00 = 0x03A0;
@@ -2412,6 +2525,7 @@ namespace Offsets
 	public class ATslDamageFieldContainer
 	{
 		public const int UnknownData00 = 0x03A0;
+		public const int DamageFieldLayouts = 0x03A8;
 		public const int UnknownData01 = 0x03B8;
 		public const int DamageFieldTemplate = 0x03C0;
 		public const int FlameInWall = 0x03C8;
@@ -2572,6 +2686,9 @@ namespace Offsets
 		public const int DestructibleComponentMaxDrawDistance = 0x00A8;
 		public const int UnknownData02 = 0x00AC;
 		public const int CharacterClassToPlay = 0x00B0;
+		public const int BoneMapping = 0x00B8;
+		public const int TestVehicleClasses = 0x00C8;
+		public const int TestFloatingVehicleClasses = 0x00D8;
 		public const int StoppedWheeledVehicleSpeedThreshold = 0x00E8;
 		public const int StoppedFloatingVehicleSpeedThreshold = 0x00EC;
 		public const int LastDriverDuration = 0x00F0;
@@ -2586,6 +2703,7 @@ namespace Offsets
 		public const int InventoryMaxSpaceDefault = 0x012C;
 		public const int ErrorIconTexture = 0x0130;
 		public const int LoadingIconTexture = 0x0138;
+		public const int AssetsForPackageIntegrity = 0x0140;
 		public const int UICrosshairDistance = 0x0150;
 		public const int UICrosshairInterpSpeed = 0x0154;
 		public const int UICrosshairDisableDistance = 0x0158;
@@ -2598,11 +2716,24 @@ namespace Offsets
 		public const int FullRecoilRecovery = 0x016D;
 		public const int UnknownData05 = 0x016E;
 		public const int LevelLoadingBoostParameters = 0x0170;
+		public const int NearClippingValues = 0x0180;
+		public const int CustomizableCategoryData = 0x0190;
+		public const int CustomizableActionNames = 0x01A0;
+		public const int CustomizableAxisNames = 0x01B0;
+		public const int CustomizableMouseSensitiveNames = 0x01C0;
+		public const int SupportedQualityLevels = 0x01D0;
+		public const int SupportedScreenResolutions = 0x01E0;
 		public const int MouseSensitivityCurve = 0x01F0;
 		public const int GammaCurve = 0x0200;
+		public const int CultureNames = 0x0210;
+		public const int ColorBlindTypes = 0x0220;
+		public const int CrosshairColors = 0x0230;
+		public const int KeyInputModeNames = 0x0240;
+		public const int MiniMapTypeList = 0x0250;
 		public const int MinimumScreenResolutionRatio = 0x0260;
 		public const int MinimumScreenResolution = 0x0264;
 		public const int UnknownData06 = 0x026C;
+		public const int OverrideMarkerColors = 0x0270;
 		public const int PunchClientHitLeeway_Attacker = 0x0280;
 		public const int PunchClientHitLeeway_Victim = 0x0284;
 		public const int ClientSideHitLeeway = 0x0288;
@@ -2615,11 +2746,14 @@ namespace Offsets
 		public const int LogMinHitLag = 0x02A4;
 		public const int HackDetectionSpeed = 0x02A8;
 		public const int UnknownData07 = 0x02AC;
+		public const int OverrideScalabilities = 0x02B0;
 		public const int FakeDoorBlockMaxY = 0x02C0;
 		public const int UnknownData08 = 0x02C4;
+		public const int ReportCauses = 0x02C8;
+		public const int SubjectToReport = 0x02D8;
 		public const int FreelookRecoveryInterpSpeed = 0x02E8;
 		public const int UnknownData09 = 0x02EC;
-		public const int FName = 0x02F0;
+		public const int GamepadSensitiveMultiplier = 0x02F0;
 		public const int bIsESports = 0x0340;
 		public const int UnknownData10 = 0x0341;
 		public const int LoadedMouseSensitivityCurve = 0x0398;
@@ -2641,8 +2775,10 @@ namespace Offsets
 		public const int UnknownData02 = 0x0320;
 		public const int LobbyWidget = 0x0440;
 		public const int UnknownData03 = 0x0448;
+		public const int ReplayKillEventItems = 0x04F0;
 		public const int OnEnumerateReplayKillEventsDone = 0x0500;
 		public const int UnknownData04 = 0x0510;
+		public const int ReplayItemList = 0x0520;
 		public const int UnknownData05 = 0x0530;
 		public const int OnGetReplayListDone = 0x0568;
 		public const int OnGotoTimelineDone = 0x0578;
@@ -2657,7 +2793,9 @@ namespace Offsets
 		public const int MalePawnClass = 0x0470;
 		public const int PerfBotPlayerControllerClass = 0x0478;
 		public const int ModeControllerClass = 0x0480;
+		public const int AdditionalModeControllerClasses = 0x0488;
 		public const int InitialItemDonatorClass = 0x0498;
+		public const int MatchPreparerClasses = 0x04A0;
 		public const int MatchStartType = 0x04B0;
 		public const int CameraViewBehaviour = 0x04B1;
 		public const int PlayerRespawn = 0x04B2;
@@ -2682,13 +2820,15 @@ namespace Offsets
 		public const int UnknownData02 = 0x04D7;
 		public const int CustomGameUpdateCharacterInfo = 0x04D8;
 		public const int UnknownData03 = 0x04EC;
+		public const int LimitCustomStringParameters = 0x04F0;
 		public const int MultiplierBlueZone = 0x0500;
 		public const int BlueZoneCentralizationFactor = 0x0504;
 		public const int MultiplierCarePackage = 0x0508;
 		public const int RedZoneCustomOption = 0x050C;
+		public const int BlueZoneCustomOptions = 0x0528;
 		public const int WarmupTime = 0x0538;
 		public const int EditorTestTeamMemberCount = 0x053C;
-		public const int FString = 0x0540;
+		public const int RewardDataMap = 0x0540;
 		public const int RewardData = 0x0590;
 		public const int WinnerPlayerState = 0x0598;
 		public const int WinnerTeam = 0x05A0;
@@ -2703,8 +2843,10 @@ namespace Offsets
 		public const int MatchPreparer = 0x05E0;
 		public const int ModeController = 0x05E8;
 		public const int DroppedItemGridManager = 0x05F0;
+		public const int AdditinalModeControllers = 0x05F8;
 		public const int UnknownData06 = 0x0608;
-		public const int FString = 0x06A0;
+		public const int JoinedUserPlayerStateMap = 0x06A0;
+		public const int Teams = 0x06F0;
 		public const int UnknownData07 = 0x0700;
 	}
 
@@ -2783,6 +2925,8 @@ namespace Offsets
 		public const int UnknownData06 = 0x0199;
 		public const int ColorBlindType = 0x019C;
 		public const int CrosshairColorString = 0x01A0;
+		public const int GearProfile1 = 0x01B0;
+		public const int GearProfile2 = 0x01C0;
 		public const int FppWeaponIconShowType = 0x01D0;
 		public const int TpsWeaponIconShowType = 0x01D1;
 		public const int FppEquipableItemIconShowType = 0x01D2;
@@ -2801,6 +2945,7 @@ namespace Offsets
 		public const int bUseFreeLookInterp = 0x01E2;
 		public const int bPreloadingMap = 0x01E3;
 		public const int UnknownData07 = 0x01E4;
+		public const int PreloadingMaps = 0x01E8;
 		public const int OnGameUserSettingApplied = 0x01F8;
 	}
 
@@ -2841,6 +2986,7 @@ namespace Offsets
 
 	public class UTslHealthGaugeData
 	{
+		public const int HealthGaugeColors = 0x0028;
 		public const int WarningRage = 0x0038;
 		public const int GroggyColorCurve = 0x0040;
 	}
@@ -2888,6 +3034,7 @@ namespace Offsets
 
 	public class ATslLevelScriptActor
 	{
+		public const int WeatherLevelInfos = 0x03A8;
 		public const int GlobalMPC = 0x03B8;
 		public const int SelectedWeatherLevelIndex = 0x03C0;
 		public const int UnknownData00 = 0x03C4;
@@ -2933,6 +3080,7 @@ namespace Offsets
 		public const int bAutoDestroyOnParticleFinish = 0x03A0;
 		public const int bAutoPlaySound = 0x03A1;
 		public const int UnknownData00 = 0x03A2;
+		public const int DefaultParameters = 0x03A8;
 		public const int AttachParentType = 0x03B8;
 		public const int UnknownData01 = 0x03B9;
 		public const int AttachSocketName = 0x03C0;
@@ -2986,6 +3134,7 @@ namespace Offsets
 		public const int PlayerScores = 0x0448;
 		public const int PlayerStatistics = 0x0454;
 		public const int UnknownData02 = 0x0458;
+		public const int ReplicatedEquipableItems = 0x0500;
 		public const int UnknownData03 = 0x0510;
 		public const int bQuitter = 0x052C;
 		public const int UnknownData04 = 0x052D;
@@ -2996,6 +3145,9 @@ namespace Offsets
 
 	public class ATslPostProcessEffect
 	{
+		public const int PostProcessMaterials = 0x03A0;
+		public const int DefaultPostProcessEffectParameter = 0x03B0;
+		public const int PostProcessEffectDynamicMaterialStates = 0x03C0;
 		public const int PostProcessVolume = 0x03D0;
 		public const int UnknownData00 = 0x03D8;
 	}
@@ -3144,6 +3296,7 @@ namespace Offsets
 		public const int UnknownData10 = 0x0508;
 		public const int OutlineEffectClass = 0x0520;
 		public const int OutlineEffect = 0x0528;
+		public const int ArrObPos = 0x0530;
 		public const int UnknownData11 = 0x0540;
 		public const int OnPlayerInfoDistanceDelegate = 0x05B0;
 		public const int UnknownData12 = 0x05C0;
@@ -3186,6 +3339,7 @@ namespace Offsets
 		public const int PreLoadDistance = 0x004C;
 		public const int PerFrameShowCount = 0x0050;
 		public const int PerFrameShowCountLimit = 0x0054;
+		public const int MinDrawDistanceOverride = 0x0058;
 		public const int UnknownData01 = 0x0068;
 	}
 
@@ -3200,6 +3354,8 @@ namespace Offsets
 	public class ATslStreamerManager
 	{
 		public const int UnknownData00 = 0x03A0;
+		public const int StreamerClasses = 0x03A8;
+		public const int TslStreamers = 0x03B8;
 	}
 
 	public class UTslThrowableTrajectoryViewComponent
@@ -3219,6 +3375,7 @@ namespace Offsets
 		public const int SplineGenerationAngThresholdDeg = 0x0850;
 		public const int UnknownData02 = 0x0854;
 		public const int ImpactMeshComponent = 0x0860;
+		public const int SplineMeshArray = 0x0868;
 		public const int SplineSegmentMeshMaterialDynamic = 0x0878;
 	}
 
@@ -3234,6 +3391,8 @@ namespace Offsets
 	{
 		public const int bWhiteList = 0x0260;
 		public const int UnknownData00 = 0x0261;
+		public const int BlockActions = 0x0268;
+		public const int BlockAxises = 0x0278;
 		public const int bGenerateEventOnOpen = 0x0288;
 		public const int UnknownData01 = 0x0289;
 	}
@@ -3249,6 +3408,8 @@ namespace Offsets
 		public const int BluezoneTimeTextBinder = 0x02A0;
 		public const int PlayerIconImageBinder = 0x02C0;
 		public const int MovingAnimationBinder = 0x02E8;
+		public const int WarningAnimationList = 0x0308;
+		public const int ReleasingTextAnimationList = 0x0318;
 		public const int EnterNextPlayzoneAnimBinder = 0x0328;
 		public const int LeaveNextPlayzoneAnimBinder = 0x0348;
 		public const int WidgetEmergingAnimBinder = 0x0368;
@@ -3345,6 +3506,7 @@ namespace Offsets
 
 	public class ULifeGaugeHitEffectBaseWidget
 	{
+		public const int AlphaCurveList = 0x0278;
 		public const int HitEffectImage = 0x0288;
 		public const int BaseColorParamName = 0x02B0;
 		public const int ColorLerpParamName = 0x02B8;
@@ -3422,6 +3584,8 @@ namespace Offsets
 		public const int UnknownData01 = 0x03E9;
 		public const int GridFont = 0x03F0;
 		public const int FontTypeFace = 0x03F8;
+		public const int GridTextHorizentalArray = 0x0400;
+		public const int GridTextVerticalArray = 0x0410;
 		public const int ColorLargeGrid = 0x0420;
 		public const int ColorSmallGrid = 0x0430;
 		public const int ColorText = 0x0440;
@@ -3439,9 +3603,15 @@ namespace Offsets
 		public const int MatInst = 0x0490;
 		public const int UnknownData03 = 0x0498;
 		public const int MyMapMarker = 0x04B0;
+		public const int TeamPlayerMarkers = 0x04B8;
 		public const int MyCharacterMapIcon = 0x0508;
+		public const int OtherCharacterMapIcons = 0x0510;
+		public const int MapCarePackageItemIcons = 0x0560;
 		public const int ReplicatedCharacterListUpdateTimer = 0x05B0;
 		public const int ReplicatedCarePackageItemListUpdateTimer = 0x05B8;
+		public const int ReplicatedCharacterList = 0x05C0;
+		public const int ReplicatedCarePackageItemList = 0x05D0;
+		public const int ShowMarkerOnwerList = 0x05E0;
 		public const int UnknownData04 = 0x05F0;
 		public const int MyOrTeamIconMaterial = 0x0610;
 		public const int OtherCharacterIconMaterial = 0x0618;
@@ -3552,6 +3722,8 @@ namespace Offsets
 	public class UTslKeyDisplayWidget
 	{
 		public const int OnKeyInputed = 0x0278;
+		public const int KeyReceiverWidgets = 0x0288;
+		public const int KeyReceiverWidgetBinders = 0x0298;
 		public const int InputName = 0x02A8;
 		public const int CategoryName = 0x02B0;
 		public const int DisplayText = 0x02B8;
@@ -3564,9 +3736,11 @@ namespace Offsets
 	public class UTslKeyOptionWidget
 	{
 		public const int ScrollBox_Binder = 0x0278;
+		public const int KeySettingWidgets = 0x0298;
 		public const int MouseSettingWidgetClass = 0x02A8;
 		public const int MouseSettingWidget = 0x02B0;
 		public const int KeySettingWidgetClass = 0x02B8;
+		public const int CategoryOrder = 0x02C0;
 	}
 
 	public class UTslKeySettingWidget
@@ -3574,6 +3748,7 @@ namespace Offsets
 		public const int OnKeyChanged = 0x0278;
 		public const int KeyDisplayWidgetClass = 0x0288;
 		public const int KeyScrollBoxBinder = 0x0290;
+		public const int KeyDisplayWidgets = 0x02B0;
 		public const int DisplayText = 0x02C0;
 		public const int CategoryName = 0x02D8;
 	}
@@ -3654,6 +3829,7 @@ namespace Offsets
 		public const int TeamOverlayBinder = 0x02F8;
 		public const int CompassMarkerWidgetClass = 0x0318;
 		public const int MyCompassMarkerWidget = 0x0320;
+		public const int TeamMarkerWidgetOfTeam = 0x0328;
 		public const int DivisionLevel = 0x0338;
 		public const int Offset = 0x033C;
 		public const int bClockwise = 0x0340;
@@ -3683,10 +3859,12 @@ namespace Offsets
 		public const int bIsKeyUp = 0x0302;
 		public const int bAxisInput = 0x0303;
 		public const int AxisScale = 0x0304;
+		public const int MouseButtons = 0x0308;
 	}
 
 	public class UTslTeamInfoListWidget
 	{
+		public const int TeamInfoWidgetList = 0x0278;
 		public const int TeamInfoWidgetClass = 0x0288;
 		public const int VerticalBoxBinder = 0x0290;
 	}
@@ -3713,6 +3891,7 @@ namespace Offsets
 
 	public class UTslTeamWidget
 	{
+		public const int TeamMarkWidgets = 0x0278;
 		public const int TeamMarkWidgetClass = 0x0288;
 		public const int TeamMarkerLayerBinder = 0x0290;
 	}
@@ -3816,6 +3995,7 @@ namespace Offsets
 		public const int FadeOutWeaponSlotAnimBinder = 0x02B8;
 		public const int FadeInUnarmedWeaponSlotAminBinder = 0x02D8;
 		public const int FadeOutUnarmedWeaponSlotAminBinder = 0x02F8;
+		public const int WeaponSlotWidgetBinderList = 0x0318;
 		public const int WeaponSlotListBorderBinder = 0x0328;
 		public const int FadeInSlotListAminBinder = 0x0348;
 		public const int FadeOutSlotListAminBinder = 0x0368;
@@ -3835,6 +4015,7 @@ namespace Offsets
 		public const int OnHealthChange = 0x0128;
 		public const int OnFuelChange = 0x0138;
 		public const int SimpleBodyBoneName = 0x0148;
+		public const int ComplexBodyBoneNames = 0x0150;
 		public const int MainComplexBodyBoneName = 0x0160;
 		public const int ComplexCollisionProfileName = 0x0168;
 		public const int bIsDying = 0x0170;
@@ -3937,6 +4118,7 @@ namespace Offsets
 		public const int ImpulseLimitationSpeedThreshold = 0x01F8;
 		public const int CollectTime = 0x01FC;
 		public const int UnknownData03 = 0x0200;
+		public const int DebugHitHistory = 0x0210;
 		public const int UnknownData04 = 0x0220;
 	}
 
@@ -3948,6 +4130,8 @@ namespace Offsets
 		public const int OnDriverLeave = 0x0128;
 		public const int OnPostDriverRide = 0x0138;
 		public const int OnPostDriverLeave = 0x0148;
+		public const int SeatInfos = 0x0158;
+		public const int Seats = 0x0168;
 		public const int bUseSeatCamera = 0x0178;
 		public const int bDoFlipCheck = 0x0179;
 		public const int UnknownData00 = 0x017A;
@@ -3960,6 +4144,7 @@ namespace Offsets
 		public const int OnLeaveVelocityMultiplier = 0x018C;
 		public const int bUseActiveStabilize = 0x0190;
 		public const int UnknownData03 = 0x0191;
+		public const int LastDriver = 0x0194;
 		public const int UnknownData04 = 0x019C;
 	}
 
@@ -3989,6 +4174,7 @@ namespace Offsets
 
 	public class UTslViewTargetTempComponent
 	{
+		public const int ComponentInfos = 0x00F8;
 		public const int UnknownData00 = 0x0108;
 	}
 
@@ -4023,6 +4209,7 @@ namespace Offsets
 	public class ATslWeapon_Melee
 	{
 		public const int AttackSoundAk = 0x07A8;
+		public const int AttackAnims = 0x07B0;
 		public const int Damage = 0x07C0;
 		public const int WeaponImpact = 0x07C4;
 		public const int DamageType = 0x07C8;
@@ -4236,7 +4423,9 @@ namespace Offsets
 		public const int SignIn = 0x00B8;
 		public const int KeyAdd = 0x00C0;
 		public const int KeyRevoke = 0x00C8;
+		public const int Channels = 0x00D0;
 		public const int UnknownData03 = 0x00E0;
+		public const int PlayerControllers = 0x00F0;
 		public const int ProximalMaxRange = 0x0100;
 		public const int ProximalClampingDistance = 0x0104;
 		public const int ProximalDistanceModel = 0x0108;

@@ -16,6 +16,9 @@ namespace Offsets
 		public const int bForceAddMessage = 0x026C;
 		public const int MessageAlignment = 0x026D;
 		public const int UnknownData00 = 0x026E;
+		public const int DelayMessageArray = 0x0270;
+		public const int CheckList = 0x0280;
+		public const int WidgetPositionList = 0x0290;
 		public const int MessageSize = 0x02A0;
 		public const int BorderSize = 0x02A8;
 		public const int MessageHeight = 0x02B0;

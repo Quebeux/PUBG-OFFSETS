@@ -71,6 +71,7 @@ namespace Offsets
 
 	public class UInterpTrackAkAudioEvent
 	{
+		public const int Events = 0x0090;
 		public const int bContinueEventOnMatineeEnd = 0x00A0;
 		public const int UnknownData00 = 0x00A1;
 	}

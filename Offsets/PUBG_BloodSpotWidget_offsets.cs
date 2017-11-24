@@ -10,6 +10,7 @@ namespace Offsets
 		public const int UberGraphFrame = 0x0240;
 		public const int FadeOut = 0x0248;
 		public const int Image_3 = 0x0250;
+		public const int BloodSpotTextures = 0x0258;
 	}
 
 }
