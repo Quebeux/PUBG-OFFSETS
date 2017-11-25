@@ -7,13 +7,19 @@ namespace Offsets
 {
 	public class UShaderPlatformQualitySettings
 	{
+		///<summary>FMaterialQualityOverrides[0x3]</summary>
 		public const int QualityOverrides = 0x0028;
+
+		///<summary>unsigned char[0x6]</summary>
 		public const int UnknownData00 = 0x003A;
+
 	}
 
 	public class UMaterialShaderQualitySettings
 	{
+		///<summary>TMap<FName,UShaderPlatformQualitySettings * ></summary>
 		public const int ForwardSettingMap = 0x0028;
+
 	}
 
 }

@@ -7,7 +7,9 @@ namespace Offsets
 {
 	public class UOptionTitleWidget_C
 	{
+		///<summary>FText</summary>
 		public const int DisplayTitleText = 0x0240;
+
 	}
 
 }

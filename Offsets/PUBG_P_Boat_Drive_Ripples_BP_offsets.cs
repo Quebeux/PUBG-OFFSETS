@@ -7,7 +7,9 @@ namespace Offsets
 {
 	public class AP_Boat_Drive_Ripples_BP_C
 	{
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x03F8;
+
 	}
 
 }

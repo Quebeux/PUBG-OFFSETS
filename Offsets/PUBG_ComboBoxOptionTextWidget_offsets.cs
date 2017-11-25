@@ -7,7 +7,9 @@ namespace Offsets
 {
 	public class UComboBoxOptionTextWidget_C
 	{
+		///<summary>FText</summary>
 		public const int DisplayName = 0x0240;
+
 	}
 
 }

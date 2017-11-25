@@ -7,7 +7,9 @@ namespace Offsets
 {
 	public class UMinimapCircletype_C
 	{
+		///<summary>UCircleMiniMapWidget_C *</summary>
 		public const int CircleMiniMapWidget_160 = 0x0240;
+
 	}
 
 }

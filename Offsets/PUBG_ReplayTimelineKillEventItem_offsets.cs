@@ -7,7 +7,9 @@ namespace Offsets
 {
 	public class UReplayTimelineKillEventItem_C
 	{
+		///<summary>FString</summary>
 		public const int KillTooltipText = 0x0240;
+
 	}
 
 }
