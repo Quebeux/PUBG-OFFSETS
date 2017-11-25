@@ -7,77 +7,77 @@ namespace Offsets
 {
 	public class UButtonWidgetStyle
 	{
-		///<summary><![CDATA[FButtonStyle]]></summary>
+		///<summary>FButtonStyle</summary>
 		public const int ButtonStyle = 0x0030;
 
 	}
 
 	public class UCheckBoxWidgetStyle
 	{
-		///<summary><![CDATA[FCheckBoxStyle]]></summary>
+		///<summary>FCheckBoxStyle</summary>
 		public const int CheckBoxStyle = 0x0030;
 
 	}
 
 	public class UComboBoxWidgetStyle
 	{
-		///<summary><![CDATA[FComboBoxStyle]]></summary>
+		///<summary>FComboBoxStyle</summary>
 		public const int ComboBoxStyle = 0x0030;
 
 	}
 
 	public class UComboButtonWidgetStyle
 	{
-		///<summary><![CDATA[FComboButtonStyle]]></summary>
+		///<summary>FComboButtonStyle</summary>
 		public const int ComboButtonStyle = 0x0030;
 
 	}
 
 	public class UEditableTextBoxWidgetStyle
 	{
-		///<summary><![CDATA[FEditableTextBoxStyle]]></summary>
+		///<summary>FEditableTextBoxStyle</summary>
 		public const int EditableTextBoxStyle = 0x0030;
 
 	}
 
 	public class UEditableTextWidgetStyle
 	{
-		///<summary><![CDATA[FEditableTextStyle]]></summary>
+		///<summary>FEditableTextStyle</summary>
 		public const int EditableTextStyle = 0x0030;
 
 	}
 
 	public class UProgressWidgetStyle
 	{
-		///<summary><![CDATA[FProgressBarStyle]]></summary>
+		///<summary>FProgressBarStyle</summary>
 		public const int ProgressBarStyle = 0x0030;
 
 	}
 
 	public class UScrollBarWidgetStyle
 	{
-		///<summary><![CDATA[FScrollBarStyle]]></summary>
+		///<summary>FScrollBarStyle</summary>
 		public const int ScrollBarStyle = 0x0030;
 
 	}
 
 	public class UScrollBoxWidgetStyle
 	{
-		///<summary><![CDATA[FScrollBoxStyle]]></summary>
+		///<summary>FScrollBoxStyle</summary>
 		public const int ScrollBoxStyle = 0x0030;
 
 	}
 
 	public class USpinBoxWidgetStyle
 	{
-		///<summary><![CDATA[FSpinBoxStyle]]></summary>
+		///<summary>FSpinBoxStyle</summary>
 		public const int SpinBoxStyle = 0x0030;
 
 	}
 
 	public class UTextBlockWidgetStyle
 	{
-		///<summary><![CDATA[FTextBlockStyle]]></summary>
+		///<summary>FTextBlockStyle</summary>
 		public const int TextBlockStyle = 0x0030;
 
 	}

@@ -7,113 +7,113 @@ namespace Offsets
 {
 	public class ULevelSequence
 	{
-		///<summary><![CDATA[UMovieScene *]]></summary>
+		///<summary>UMovieScene *</summary>
 		public const int MovieScene = 0x0028;
 
-		///<summary><![CDATA[FLevelSequenceObjectReferenceMap]]></summary>
+		///<summary>FLevelSequenceObjectReferenceMap</summary>
 		public const int ObjectReferences = 0x0030;
 
-		///<summary><![CDATA[TMap<FString,FLevelSequenceObject>]]></summary>
+		///<summary>TMap&lt;FString,FLevelSequenceObject&gt;</summary>
 		public const int PossessedObjects = 0x0080;
 
 	}
 
 	public class ULevelSequencePlayer
 	{
-		///<summary><![CDATA[unsigned char[0x20]]]></summary>
+		///<summary>unsigned char[0x20]</summary>
 		public const int UnknownData00 = 0x0028;
 
-		///<summary><![CDATA[ULevelSequence *]]></summary>
+		///<summary>ULevelSequence *</summary>
 		public const int LevelSequence = 0x0048;
 
-		///<summary><![CDATA[ULevelSequencePlayer *]]></summary>
+		///<summary>ULevelSequencePlayer *</summary>
 		public const int CurrentPlayer = 0x0050;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bIsPlaying = 0x0058;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bReversePlayback = 0x0059;
 
-		///<summary><![CDATA[unsigned char[0x2]]]></summary>
+		///<summary>unsigned char[0x2]</summary>
 		public const int UnknownData01 = 0x005A;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int TimeCursorPosition = 0x005C;
 
-		///<summary><![CDATA[unsigned char[0xC]]]></summary>
+		///<summary>unsigned char[0xC]</summary>
 		public const int UnknownData02 = 0x0060;
 
-		///<summary><![CDATA[FLevelSequencePlaybackSettings]]></summary>
+		///<summary>FLevelSequencePlaybackSettings</summary>
 		public const int PlaybackSettings = 0x006C;
 
-		///<summary><![CDATA[unsigned char[0x44]]]></summary>
+		///<summary>unsigned char[0x44]</summary>
 		public const int UnknownData03 = 0x0074;
 
-		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
+		///<summary>FScriptMulticastDelegate</summary>
 		public const int OnPlay = 0x00B8;
 
-		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
+		///<summary>FScriptMulticastDelegate</summary>
 		public const int OnStop = 0x00C8;
 
-		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
+		///<summary>FScriptMulticastDelegate</summary>
 		public const int OnPause = 0x00D8;
 
-		///<summary><![CDATA[unsigned char[0x78]]]></summary>
+		///<summary>unsigned char[0x78]</summary>
 		public const int UnknownData04 = 0x00E8;
 
 	}
 
 	public class ULevelSequenceBurnInOptions
 	{
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bUseBurnIn = 0x0028;
 
-		///<summary><![CDATA[unsigned char[0x7]]]></summary>
+		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData00 = 0x0029;
 
-		///<summary><![CDATA[FStringClassReference]]></summary>
+		///<summary>FStringClassReference</summary>
 		public const int BurnInClass = 0x0030;
 
-		///<summary><![CDATA[ULevelSequenceBurnInInitSettings *]]></summary>
+		///<summary>ULevelSequenceBurnInInitSettings *</summary>
 		public const int Settings = 0x0040;
 
 	}
 
 	public class ALevelSequenceActor
 	{
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bAutoPlay = 0x03A0;
 
-		///<summary><![CDATA[unsigned char[0x3]]]></summary>
+		///<summary>unsigned char[0x3]</summary>
 		public const int UnknownData00 = 0x03A1;
 
-		///<summary><![CDATA[FLevelSequencePlaybackSettings]]></summary>
+		///<summary>FLevelSequencePlaybackSettings</summary>
 		public const int PlaybackSettings = 0x03A4;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData01 = 0x03AC;
 
-		///<summary><![CDATA[ULevelSequencePlayer *]]></summary>
+		///<summary>ULevelSequencePlayer *</summary>
 		public const int SequencePlayer = 0x03B0;
 
-		///<summary><![CDATA[FStringAssetReference]]></summary>
+		///<summary>FStringAssetReference</summary>
 		public const int LevelSequence = 0x03B8;
 
-		///<summary><![CDATA[ULevelSequenceBurnInOptions *]]></summary>
+		///<summary>ULevelSequenceBurnInOptions *</summary>
 		public const int BurnInOptions = 0x03C8;
 
-		///<summary><![CDATA[ULevelSequenceBurnIn *]]></summary>
+		///<summary>ULevelSequenceBurnIn *</summary>
 		public const int BurnInInstance = 0x03D0;
 
 	}
 
 	public class ULevelSequenceBurnIn
 	{
-		///<summary><![CDATA[FLevelSequencePlayerSnapshot]]></summary>
+		///<summary>FLevelSequencePlayerSnapshot</summary>
 		public const int FrameInformation = 0x0240;
 
-		///<summary><![CDATA[ALevelSequenceActor *]]></summary>
+		///<summary>ALevelSequenceActor *</summary>
 		public const int LevelSequenceActor = 0x0288;
 
 	}

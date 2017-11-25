@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class USystemMessageWidget_C
 	{
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int FadeOutText = 0x0240;
 
-		///<summary><![CDATA[UMessageBorderWidget_C *]]></summary>
+		///<summary>UMessageBorderWidget_C *</summary>
 		public const int SystemMessageBorder = 0x0248;
 
 	}

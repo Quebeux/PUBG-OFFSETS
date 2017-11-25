@@ -7,16 +7,16 @@ namespace Offsets
 {
 	public class UBloodSpotWidget_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int FadeOut = 0x0248;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_3 = 0x0250;
 
-		///<summary><![CDATA[TArray<UTexture2D * >]]></summary>
+		///<summary>TArray&lt;UTexture2D * &gt;</summary>
 		public const int BloodSpotTextures = 0x0258;
 
 	}

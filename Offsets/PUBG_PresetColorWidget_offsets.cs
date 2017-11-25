@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class UPresetColorWidget_C
 	{
-		///<summary><![CDATA[FText]]></summary>
+		///<summary>FText</summary>
 		public const int DisplayName = 0x0240;
 
-		///<summary><![CDATA[FLinearColor]]></summary>
+		///<summary>FLinearColor</summary>
 		public const int Color = 0x0258;
 
 	}

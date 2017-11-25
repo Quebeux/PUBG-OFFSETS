@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class ATSLLobbyGameMode_C
 	{
-		///<summary><![CDATA[USceneComponent *]]></summary>
+		///<summary>USceneComponent *</summary>
 		public const int DefaultSceneRoot = 0x0470;
 
 	}

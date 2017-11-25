@@ -7,79 +7,79 @@ namespace Offsets
 {
 	public class UBP_TeamMarkWidget_C
 	{
-		///<summary><![CDATA[UBP_CircleProgressWidget_C *]]></summary>
+		///<summary>UBP_CircleProgressWidget_C *</summary>
 		public const int BP_CircleProgressWidget = 0x0448;
 
-		///<summary><![CDATA[UCanvasPanel *]]></summary>
+		///<summary>UCanvasPanel *</summary>
 		public const int CanvasPanel_1 = 0x0450;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int DeadPos = 0x0458;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int NormalPos = 0x0460;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int OutLineImage = 0x0468;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Parachute = 0x0470;
 
-		///<summary><![CDATA[UTextBlock *]]></summary>
+		///<summary>UTextBlock *</summary>
 		public const int PlayerNameText = 0x0478;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Quitter = 0x0480;
 
-		///<summary><![CDATA[UWidgetSwitcher *]]></summary>
+		///<summary>UWidgetSwitcher *</summary>
 		public const int StateSwitcher = 0x0488;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int VehiclePos = 0x0490;
 
-		///<summary><![CDATA[UVerticalBox *]]></summary>
+		///<summary>UVerticalBox *</summary>
 		public const int VerticalBox_1 = 0x0498;
 
-		///<summary><![CDATA[UVerticalBox *]]></summary>
+		///<summary>UVerticalBox *</summary>
 		public const int VerticalBox_2 = 0x04A0;
 
-		///<summary><![CDATA[UVerticalBox *]]></summary>
+		///<summary>UVerticalBox *</summary>
 		public const int VerticalBox_3 = 0x04A8;
 
-		///<summary><![CDATA[UVerticalBox *]]></summary>
+		///<summary>UVerticalBox *</summary>
 		public const int VerticalBox_5 = 0x04B0;
 
-		///<summary><![CDATA[UVerticalBox *]]></summary>
+		///<summary>UVerticalBox *</summary>
 		public const int VerticalBox_6 = 0x04B8;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int ImageSize_1 = 0x04C0;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int Width = 0x04C4;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int Height = 0x04C8;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData00 = 0x04CC;
 
-		///<summary><![CDATA[ATslCharacter *]]></summary>
+		///<summary>ATslCharacter *</summary>
 		public const int NewVar_1 = 0x04D0;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int IsPrevGroggyState = 0x04D8;
 
-		///<summary><![CDATA[unsigned char[0x3]]]></summary>
+		///<summary>unsigned char[0x3]</summary>
 		public const int UnknownData01 = 0x04D9;
 
-		///<summary><![CDATA[FVector2D]]></summary>
+		///<summary>FVector2D</summary>
 		public const int MoveLocation = 0x04DC;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData02 = 0x04E4;
 
-		///<summary><![CDATA[FColorBlindColorSet]]></summary>
+		///<summary>FColorBlindColorSet</summary>
 		public const int ColorBlindColorSet = 0x04E8;
 
 	}

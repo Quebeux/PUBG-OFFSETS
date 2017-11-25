@@ -7,22 +7,22 @@ namespace Offsets
 {
 	public class UCarePackgeItemListWidget_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary><![CDATA[UListBaseGroupWidget_C *]]></summary>
+		///<summary>UListBaseGroupWidget_C *</summary>
 		public const int CarePackageItemList = 0x0248;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int IsShowCarePackageItemList = 0x0250;
 
-		///<summary><![CDATA[unsigned char[0x7]]]></summary>
+		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData00 = 0x0251;
 
-		///<summary><![CDATA[TArray<UItem * >]]></summary>
+		///<summary>TArray&lt;UItem * &gt;</summary>
 		public const int Items = 0x0258;
 
-		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
+		///<summary>FScriptMulticastDelegate</summary>
 		public const int EventDispatcher_ShowCarePackageItem = 0x0268;
 
 	}

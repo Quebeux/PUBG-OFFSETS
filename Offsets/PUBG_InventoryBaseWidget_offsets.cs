@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class UInventoryBaseWidget_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0260;
 
-		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
+		///<summary>FScriptMulticastDelegate</summary>
 		public const int RefreshFocus = 0x0268;
 
 	}

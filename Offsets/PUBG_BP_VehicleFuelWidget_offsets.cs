@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class UBP_VehicleFuelWidget_C
 	{
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int GaugeWhidth = 0x0338;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int GaugePosition = 0x033C;
 
 	}

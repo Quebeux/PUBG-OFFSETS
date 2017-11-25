@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class ADeathDropItemPackage_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0518;
 
 	}

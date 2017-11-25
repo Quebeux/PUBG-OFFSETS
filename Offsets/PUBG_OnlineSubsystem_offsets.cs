@@ -7,13 +7,13 @@ namespace Offsets
 {
 	public class UNamedInterfaces
 	{
-		///<summary><![CDATA[TArray<FNamedInterface>]]></summary>
+		///<summary>TArray&lt;FNamedInterface&gt;</summary>
 		public const int NamedInterfaces = 0x0028;
 
-		///<summary><![CDATA[TArray<FNamedInterfaceDef>]]></summary>
+		///<summary>TArray&lt;FNamedInterfaceDef&gt;</summary>
 		public const int NamedInterfaceDefs = 0x0038;
 
-		///<summary><![CDATA[unsigned char[0x78]]]></summary>
+		///<summary>unsigned char[0x78]</summary>
 		public const int UnknownData00 = 0x0048;
 
 	}

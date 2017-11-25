@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class USpectatingSelectionWidget_C
 	{
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_1 = 0x0240;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_2 = 0x0248;
 
 	}

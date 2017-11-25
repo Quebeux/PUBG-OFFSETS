@@ -7,19 +7,19 @@ namespace Offsets
 {
 	public class AVehicleSeatBase_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0430;
 
-		///<summary><![CDATA[USphereComponent *]]></summary>
+		///<summary>USphereComponent *</summary>
 		public const int VehicleSeatInteractionCollision = 0x0438;
 
-		///<summary><![CDATA[UInteractionComponent *]]></summary>
+		///<summary>UInteractionComponent *</summary>
 		public const int Interaction = 0x0440;
 
-		///<summary><![CDATA[USceneComponent *]]></summary>
+		///<summary>USceneComponent *</summary>
 		public const int DefaultSceneRoot = 0x0448;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int LastInteractionTime = 0x0450;
 
 	}

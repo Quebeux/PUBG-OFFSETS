@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UInGameWeb_C
 	{
-		///<summary><![CDATA[UTslCoherentWidget *]]></summary>
+		///<summary>UTslCoherentWidget *</summary>
 		public const int TslCoherentWidget_66 = 0x0240;
 
 	}

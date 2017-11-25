@@ -7,24 +7,24 @@ namespace Offsets
 {
 	public class USoundEffectLowPassFilterPreset
 	{
-		///<summary><![CDATA[FSoundEffectLowPassFilterSettings]]></summary>
+		///<summary>FSoundEffectLowPassFilterSettings</summary>
 		public const int Settings = 0x0040;
 
 	}
 
 	public class USoundEffectSourceFilterPreset
 	{
-		///<summary><![CDATA[FSourceEffectFilterSettings]]></summary>
+		///<summary>FSourceEffectFilterSettings</summary>
 		public const int Settings = 0x0040;
 
 	}
 
 	public class USoundEffectSubmixEQPreset
 	{
-		///<summary><![CDATA[FSubmixEffectEQSettings]]></summary>
+		///<summary>FSubmixEffectEQSettings</summary>
 		public const int Settings = 0x0040;
 
-		///<summary><![CDATA[unsigned char[0x7]]]></summary>
+		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData00 = 0x0041;
 
 	}

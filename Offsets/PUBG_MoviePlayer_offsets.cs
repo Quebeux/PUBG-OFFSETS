@@ -7,16 +7,16 @@ namespace Offsets
 {
 	public class UMoviePlayerSettings
 	{
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bWaitForMoviesToComplete = 0x0028;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bMoviesAreSkippable = 0x0029;
 
-		///<summary><![CDATA[unsigned char[0x6]]]></summary>
+		///<summary>unsigned char[0x6]</summary>
 		public const int UnknownData00 = 0x002A;
 
-		///<summary><![CDATA[TArray<FString>]]></summary>
+		///<summary>TArray&lt;FString&gt;</summary>
 		public const int StartupMovies = 0x0030;
 
 	}

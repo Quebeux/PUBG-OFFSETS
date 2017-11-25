@@ -7,25 +7,25 @@ namespace Offsets
 {
 	public class UUiSettings_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0278;
 
-		///<summary><![CDATA[UQualityComboBox_C *]]></summary>
+		///<summary>UQualityComboBox_C *</summary>
 		public const int ColorblindComboBox = 0x0280;
 
-		///<summary><![CDATA[UPresetColorComboBoxWidget_C *]]></summary>
+		///<summary>UPresetColorComboBoxWidget_C *</summary>
 		public const int CrosshairColorComboBox = 0x0288;
 
-		///<summary><![CDATA[UQualityComboBox_C *]]></summary>
+		///<summary>UQualityComboBox_C *</summary>
 		public const int EquipmentsComboBox = 0x0290;
 
-		///<summary><![CDATA[UQualityComboBox_C *]]></summary>
+		///<summary>UQualityComboBox_C *</summary>
 		public const int InventoryScreenCharacterComboBox = 0x0298;
 
-		///<summary><![CDATA[UQualityComboBox_C *]]></summary>
+		///<summary>UQualityComboBox_C *</summary>
 		public const int WeaponSlotComboBox = 0x02A0;
 
-		///<summary><![CDATA[UQualitySliderWidget_C *]]></summary>
+		///<summary>UQualitySliderWidget_C *</summary>
 		public const int WorldMapZoomSpeed = 0x02A8;
 
 	}

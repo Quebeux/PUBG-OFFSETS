@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class ABuff_BreakSunkenVehicle_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0400;
 
-		///<summary><![CDATA[USceneComponent *]]></summary>
+		///<summary>USceneComponent *</summary>
 		public const int DefaultSceneRoot = 0x0408;
 
 	}

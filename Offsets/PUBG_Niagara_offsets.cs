@@ -7,146 +7,146 @@ namespace Offsets
 {
 	public class ANiagaraActor
 	{
-		///<summary><![CDATA[UNiagaraComponent *]]></summary>
+		///<summary>UNiagaraComponent *</summary>
 		public const int NiagaraComponent = 0x03A0;
 
 	}
 
 	public class UNiagaraComponent
 	{
-		///<summary><![CDATA[unsigned char[0x10]]]></summary>
+		///<summary>unsigned char[0x10]</summary>
 		public const int UnknownData00 = 0x06D0;
 
 	}
 
 	public class UNiagaraScript
 	{
-		///<summary><![CDATA[TArray<unsigned char>]]></summary>
+		///<summary>TArray&lt;unsigned char&gt;</summary>
 		public const int ByteCode = 0x0028;
 
-		///<summary><![CDATA[FNiagaraScriptConstantData]]></summary>
+		///<summary>FNiagaraScriptConstantData</summary>
 		public const int ConstantData = 0x0038;
 
-		///<summary><![CDATA[TArray<FNiagaraVariableInfo>]]></summary>
+		///<summary>TArray&lt;FNiagaraVariableInfo&gt;</summary>
 		public const int Attributes = 0x0098;
 
-		///<summary><![CDATA[TArray<FNiagaraDataSetProperties>]]></summary>
+		///<summary>TArray&lt;FNiagaraDataSetProperties&gt;</summary>
 		public const int EventReceivers = 0x00A8;
 
-		///<summary><![CDATA[TArray<FNiagaraDataSetProperties>]]></summary>
+		///<summary>TArray&lt;FNiagaraDataSetProperties&gt;</summary>
 		public const int EventGenerators = 0x00B8;
 
-		///<summary><![CDATA[FNiagaraScriptUsageInfo]]></summary>
+		///<summary>FNiagaraScriptUsageInfo</summary>
 		public const int Usage = 0x00C8;
 
-		///<summary><![CDATA[unsigned char[0x7]]]></summary>
+		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData00 = 0x00C9;
 
 	}
 
 	public class UNiagaraEmitterProperties
 	{
-		///<summary><![CDATA[FString]]></summary>
+		///<summary>FString</summary>
 		public const int EmitterName = 0x0028;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bIsEnabled = 0x0038;
 
-		///<summary><![CDATA[unsigned char[0x3]]]></summary>
+		///<summary>unsigned char[0x3]</summary>
 		public const int UnknownData00 = 0x0039;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int SpawnRate = 0x003C;
 
-		///<summary><![CDATA[UMaterial *]]></summary>
+		///<summary>UMaterial *</summary>
 		public const int Material = 0x0040;
 
-		///<summary><![CDATA[TEnumAsByte<EEmitterRenderModuleType>]]></summary>
+		///<summary>TEnumAsByte&lt;EEmitterRenderModuleType&gt;</summary>
 		public const int RenderModuleType = 0x0048;
 
-		///<summary><![CDATA[unsigned char[0x3]]]></summary>
+		///<summary>unsigned char[0x3]</summary>
 		public const int UnknownData01 = 0x0049;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int StartTime = 0x004C;
 
-		///<summary><![CDATA[float]]></summary>
+		///<summary>float</summary>
 		public const int EndTime = 0x0050;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData02 = 0x0054;
 
-		///<summary><![CDATA[UNiagaraEffectRendererProperties *]]></summary>
+		///<summary>UNiagaraEffectRendererProperties *</summary>
 		public const int RendererProperties = 0x0058;
 
-		///<summary><![CDATA[int]]></summary>
+		///<summary>int</summary>
 		public const int NumLoops = 0x0060;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData03 = 0x0064;
 
-		///<summary><![CDATA[FNiagaraEmitterScriptProperties]]></summary>
+		///<summary>FNiagaraEmitterScriptProperties</summary>
 		public const int UpdateScriptProps = 0x0068;
 
-		///<summary><![CDATA[FNiagaraEmitterScriptProperties]]></summary>
+		///<summary>FNiagaraEmitterScriptProperties</summary>
 		public const int SpawnScriptProps = 0x00C0;
 
 	}
 
 	public class UNiagaraEffect
 	{
-		///<summary><![CDATA[TArray<UNiagaraEmitterProperties * >]]></summary>
+		///<summary>TArray&lt;UNiagaraEmitterProperties * &gt;</summary>
 		public const int EmitterProps = 0x0028;
 
 	}
 
 	public class UNiagaraEffectRendererProperties
 	{
-		///<summary><![CDATA[FName]]></summary>
+		///<summary>FName</summary>
 		public const int dummy = 0x0028;
 
 	}
 
 	public class UNiagaraMeshRendererProperties
 	{
-		///<summary><![CDATA[UStaticMesh *]]></summary>
+		///<summary>UStaticMesh *</summary>
 		public const int ParticleMesh = 0x0030;
 
 	}
 
 	public class UNiagaraSpriteRendererProperties
 	{
-		///<summary><![CDATA[FVector2D]]></summary>
+		///<summary>FVector2D</summary>
 		public const int SubImageInfo = 0x0030;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int bBVelocityAligned = 0x0038;
 
-		///<summary><![CDATA[unsigned char[0x7]]]></summary>
+		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData00 = 0x0039;
 
 	}
 
 	public class UNiagaraEventReceiverEmitterAction_SpawnParticles
 	{
-		///<summary><![CDATA[uint32_t]]></summary>
+		///<summary>uint32_t</summary>
 		public const int NumParticles = 0x0028;
 
-		///<summary><![CDATA[unsigned char[0x4]]]></summary>
+		///<summary>unsigned char[0x4]</summary>
 		public const int UnknownData00 = 0x002C;
 
 	}
 
 	public class UNiagaraScriptSourceBase
 	{
-		///<summary><![CDATA[unsigned char[0x20]]]></summary>
+		///<summary>unsigned char[0x20]</summary>
 		public const int UnknownData00 = 0x0028;
 
 	}
 
 	public class UNiagaraSequence
 	{
-		///<summary><![CDATA[UMovieScene *]]></summary>
+		///<summary>UMovieScene *</summary>
 		public const int MovieScene = 0x0028;
 
 	}

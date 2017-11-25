@@ -7,13 +7,13 @@ namespace Offsets
 {
 	public class UBP_ObserverPlayerIconMuzzleFlash_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int MuzzleFlashPlay = 0x0248;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_MuzzleFlash = 0x0250;
 
 	}

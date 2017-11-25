@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class AP_VehicleDraft_Concrete_BP_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x03F8;
 
 	}

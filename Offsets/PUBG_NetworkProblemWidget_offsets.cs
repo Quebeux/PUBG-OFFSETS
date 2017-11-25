@@ -7,22 +7,22 @@ namespace Offsets
 {
 	public class UNetworkProblemWidget_C
 	{
-		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
+		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int IconBlinking = 0x0248;
 
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int Vanishing = 0x0250;
 
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int Emerging = 0x0258;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_56 = 0x0260;
 
-		///<summary><![CDATA[bool]]></summary>
+		///<summary>bool</summary>
 		public const int isVanishing = 0x0268;
 
 	}

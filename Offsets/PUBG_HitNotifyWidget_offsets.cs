@@ -7,22 +7,22 @@ namespace Offsets
 {
 	public class UHitNotifyWidget_C
 	{
-		///<summary><![CDATA[UWidgetAnimation *]]></summary>
+		///<summary>UWidgetAnimation *</summary>
 		public const int FadeOut = 0x0240;
 
-		///<summary><![CDATA[UCanvasPanel *]]></summary>
+		///<summary>UCanvasPanel *</summary>
 		public const int CanvasPanel_3 = 0x0248;
 
-		///<summary><![CDATA[UImage *]]></summary>
+		///<summary>UImage *</summary>
 		public const int Image_3 = 0x0250;
 
-		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
+		///<summary>UMaterialInstanceDynamic *</summary>
 		public const int MaskMaterialInstance = 0x0258;
 
-		///<summary><![CDATA[UAkAudioEvent *]]></summary>
+		///<summary>UAkAudioEvent *</summary>
 		public const int HitNotifyManSoundAk = 0x0260;
 
-		///<summary><![CDATA[UAkAudioEvent *]]></summary>
+		///<summary>UAkAudioEvent *</summary>
 		public const int HitNotifyWomanSoundAk = 0x0268;
 
 	}
