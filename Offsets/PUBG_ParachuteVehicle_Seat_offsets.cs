@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class AParachuteVehicle_Seat_C
 	{
-		///<summary>USceneComponent *</summary>
+		///<summary><![CDATA[USceneComponent *]]></summary>
 		public const int DefaultSceneRoot = 0x0428;
 
 	}

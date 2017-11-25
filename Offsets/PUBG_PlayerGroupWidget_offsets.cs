@@ -7,25 +7,25 @@ namespace Offsets
 {
 	public class UPlayerGroupWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UVerticalBox *</summary>
+		///<summary><![CDATA[UVerticalBox *]]></summary>
 		public const int PlayerList = 0x0248;
 
-		///<summary>UBorder *</summary>
+		///<summary><![CDATA[UBorder *]]></summary>
 		public const int PlayerListBG = 0x0250;
 
-		///<summary>TArray<UPlayerInfoWidget_C * ></summary>
+		///<summary><![CDATA[TArray<UPlayerInfoWidget_C * >]]></summary>
 		public const int PlayerInfoWidgetList = 0x0258;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bSelect = 0x0268;
 
-		///<summary>unsigned char[0x7]</summary>
+		///<summary><![CDATA[unsigned char[0x7]]]></summary>
 		public const int UnknownData00 = 0x0269;
 
-		///<summary>UMaterialInstanceDynamic *</summary>
+		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
 		public const int BGMaterial = 0x0270;
 
 	}

@@ -7,28 +7,28 @@ namespace Offsets
 {
 	public class UReportPlayerWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UButton *</summary>
+		///<summary><![CDATA[UButton *]]></summary>
 		public const int Button_1 = 0x0248;
 
-		///<summary>UButton *</summary>
+		///<summary><![CDATA[UButton *]]></summary>
 		public const int ButtonClose = 0x0250;
 
-		///<summary>UTextBlock *</summary>
+		///<summary><![CDATA[UTextBlock *]]></summary>
 		public const int PlayerName = 0x0258;
 
-		///<summary>UComboBoxString *</summary>
+		///<summary><![CDATA[UComboBoxString *]]></summary>
 		public const int ReportCausesComboBox = 0x0260;
 
-		///<summary>UTextBlock *</summary>
+		///<summary><![CDATA[UTextBlock *]]></summary>
 		public const int SubjectToReport = 0x0268;
 
-		///<summary>TEnumAsByte<EReportCause></summary>
+		///<summary><![CDATA[TEnumAsByte<EReportCause>]]></summary>
 		public const int SelectedReportCause = 0x0270;
 
-		///<summary>TEnumAsByte<ESubjectToReport></summary>
+		///<summary><![CDATA[TEnumAsByte<ESubjectToReport>]]></summary>
 		public const int SubjectToReportType = 0x0271;
 
 	}

@@ -7,59 +7,59 @@ namespace Offsets
 {
 	public class ACrossActor
 	{
-		///<summary>FString</summary>
+		///<summary><![CDATA[FString]]></summary>
 		public const int UniqueKey = 0x03B0;
 
-		///<summary>TArray<FCrossActorManager></summary>
+		///<summary><![CDATA[TArray<FCrossActorManager>]]></summary>
 		public const int SideActors = 0x03C0;
 
-		///<summary>TArray<FCrossMeshManager></summary>
+		///<summary><![CDATA[TArray<FCrossMeshManager>]]></summary>
 		public const int SideMeshes = 0x03D0;
 
 	}
 
 	public class ARoadActor
 	{
-		///<summary>TEnumAsByte<ESplineMeshAxis></summary>
+		///<summary><![CDATA[TEnumAsByte<ESplineMeshAxis>]]></summary>
 		public const int SplineMeshAxis = 0x03A0;
 
-		///<summary>unsigned char[0x3]</summary>
+		///<summary><![CDATA[unsigned char[0x3]]]></summary>
 		public const int UnknownData00 = 0x03A1;
 
-		///<summary>FVector</summary>
+		///<summary><![CDATA[FVector]]></summary>
 		public const int LocalOffset = 0x03A4;
 
-		///<summary>ARoadActor *</summary>
+		///<summary><![CDATA[ARoadActor *]]></summary>
 		public const int Father = 0x03B0;
 
-		///<summary>FString</summary>
+		///<summary><![CDATA[FString]]></summary>
 		public const int UniqueKey = 0x03B8;
 
-		///<summary>USplineComponent *</summary>
+		///<summary><![CDATA[USplineComponent *]]></summary>
 		public const int Spline = 0x03C8;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int Index = 0x03D0;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int Segmentation = 0x03D4;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int StepGeneration = 0x03D8;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int Size = 0x03DC;
 
-		///<summary>UStaticMesh *</summary>
+		///<summary><![CDATA[UStaticMesh *]]></summary>
 		public const int RoadMesh = 0x03E0;
 
-		///<summary>TArray<USplineMeshComponent * ></summary>
+		///<summary><![CDATA[TArray<USplineMeshComponent * >]]></summary>
 		public const int RoadMeshesComp = 0x03E8;
 
-		///<summary>TArray<FSideActorManager></summary>
+		///<summary><![CDATA[TArray<FSideActorManager>]]></summary>
 		public const int SideActors = 0x03F8;
 
-		///<summary>TArray<FSideMeshManager></summary>
+		///<summary><![CDATA[TArray<FSideMeshManager>]]></summary>
 		public const int SideMeshes = 0x0408;
 
 	}

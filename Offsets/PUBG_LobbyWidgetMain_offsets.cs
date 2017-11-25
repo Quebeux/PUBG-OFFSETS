@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class ULobbyWidgetMain_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UTslCoherentWidget *</summary>
+		///<summary><![CDATA[UTslCoherentWidget *]]></summary>
 		public const int WebWidget = 0x0248;
 
 	}

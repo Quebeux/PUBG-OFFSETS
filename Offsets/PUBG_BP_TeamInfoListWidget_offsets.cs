@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UBP_TeamInfoListWidget_C
 	{
-		///<summary>UVerticalBox *</summary>
+		///<summary><![CDATA[UVerticalBox *]]></summary>
 		public const int TeamList = 0x02B0;
 
 	}

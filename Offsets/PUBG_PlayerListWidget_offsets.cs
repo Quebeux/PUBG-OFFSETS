@@ -7,70 +7,70 @@ namespace Offsets
 {
 	public class UPlayerListWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0260;
 
-		///<summary>UCheckBox *</summary>
+		///<summary><![CDATA[UCheckBox *]]></summary>
 		public const int DeadPlayerIncludeCheckBox = 0x0268;
 
-		///<summary>UDistanceSliderWidget_C *</summary>
+		///<summary><![CDATA[UDistanceSliderWidget_C *]]></summary>
 		public const int DistanceSliderWidget = 0x0270;
 
-		///<summary>UScrollBox *</summary>
+		///<summary><![CDATA[UScrollBox *]]></summary>
 		public const int List = 0x0278;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int Distance = 0x0280;
 
-		///<summary>unsigned char[0x4]</summary>
+		///<summary><![CDATA[unsigned char[0x4]]]></summary>
 		public const int UnknownData00 = 0x0284;
 
-		///<summary>TArray<ATslCharacter * ></summary>
+		///<summary><![CDATA[TArray<ATslCharacter * >]]></summary>
 		public const int RefreshedPlayerLIst = 0x0288;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int TimeCheck = 0x0298;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int RefeshInterval = 0x029C;
 
-		///<summary>TArray<UPlayerInfoWidget_C * ></summary>
+		///<summary><![CDATA[TArray<UPlayerInfoWidget_C * >]]></summary>
 		public const int PlayerInfoWidgetList = 0x02A0;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int Count = 0x02B0;
 
-		///<summary>unsigned char[0x4]</summary>
+		///<summary><![CDATA[unsigned char[0x4]]]></summary>
 		public const int UnknownData01 = 0x02B4;
 
-		///<summary>FTimerHandle</summary>
+		///<summary><![CDATA[FTimerHandle]]></summary>
 		public const int UpdateCheckTimer = 0x02B8;
 
-		///<summary>TArray<int></summary>
+		///<summary><![CDATA[TArray<int>]]></summary>
 		public const int GroupKey = 0x02C0;
 
-		///<summary>TArray<UPlayerGroupWidget_C * ></summary>
+		///<summary><![CDATA[TArray<UPlayerGroupWidget_C * >]]></summary>
 		public const int GroupWidgetList = 0x02D0;
 
-		///<summary>UPlayerInfoWidget_C *</summary>
+		///<summary><![CDATA[UPlayerInfoWidget_C *]]></summary>
 		public const int PlayerInfoTemp = 0x02E0;
 
-		///<summary>UPlayerGroupWidget_C *</summary>
+		///<summary><![CDATA[UPlayerGroupWidget_C *]]></summary>
 		public const int PlayerGroupTemp = 0x02E8;
 
-		///<summary>FVector</summary>
+		///<summary><![CDATA[FVector]]></summary>
 		public const int CurrentSpectatorPawnLocation = 0x02F0;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int DistanceValue = 0x02FC;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bMouseDown = 0x0300;
 
-		///<summary>unsigned char[0x3]</summary>
+		///<summary><![CDATA[unsigned char[0x3]]]></summary>
 		public const int UnknownData02 = 0x0301;
 
-		///<summary>FVector2D</summary>
+		///<summary><![CDATA[FVector2D]]></summary>
 		public const int MouseDownPosition = 0x0304;
 
 	}

@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class ABP_PP_OutlineCustomDepthOcclusion_Inst_C
 	{
-		///<summary>USceneComponent *</summary>
+		///<summary><![CDATA[USceneComponent *]]></summary>
 		public const int DefaultSceneRoot = 0x03E8;
 
 	}

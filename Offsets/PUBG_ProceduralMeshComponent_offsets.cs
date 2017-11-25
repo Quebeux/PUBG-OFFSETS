@@ -7,28 +7,28 @@ namespace Offsets
 {
 	public class UProceduralMeshComponent
 	{
-		///<summary>unsigned char[0x8]</summary>
+		///<summary><![CDATA[unsigned char[0x8]]]></summary>
 		public const int UnknownData00 = 0x0780;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bUseComplexAsSimpleCollision = 0x0788;
 
-		///<summary>unsigned char[0x7]</summary>
+		///<summary><![CDATA[unsigned char[0x7]]]></summary>
 		public const int UnknownData01 = 0x0789;
 
-		///<summary>UBodySetup *</summary>
+		///<summary><![CDATA[UBodySetup *]]></summary>
 		public const int ProcMeshBodySetup = 0x0790;
 
-		///<summary>TArray<FProcMeshSection></summary>
+		///<summary><![CDATA[TArray<FProcMeshSection>]]></summary>
 		public const int ProcMeshSections = 0x0798;
 
-		///<summary>TArray<FKConvexElem></summary>
+		///<summary><![CDATA[TArray<FKConvexElem>]]></summary>
 		public const int CollisionConvexElems = 0x07A8;
 
-		///<summary>FBoxSphereBounds</summary>
+		///<summary><![CDATA[FBoxSphereBounds]]></summary>
 		public const int LocalBounds = 0x07B8;
 
-		///<summary>unsigned char[0xC]</summary>
+		///<summary><![CDATA[unsigned char[0xC]]]></summary>
 		public const int UnknownData02 = 0x07D4;
 
 	}

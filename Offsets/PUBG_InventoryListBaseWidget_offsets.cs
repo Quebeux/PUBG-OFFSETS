@@ -7,94 +7,94 @@ namespace Offsets
 {
 	public class UInventoryListBaseWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0260;
 
-		///<summary>UListBaseGroupWidget_C *</summary>
+		///<summary><![CDATA[UListBaseGroupWidget_C *]]></summary>
 		public const int CarePackage_Group = 0x0268;
 
-		///<summary>UBorder *</summary>
+		///<summary><![CDATA[UBorder *]]></summary>
 		public const int FocusColorBG = 0x0270;
 
-		///<summary>UCategoryGroupWidget_C *</summary>
+		///<summary><![CDATA[UCategoryGroupWidget_C *]]></summary>
 		public const int Ground_Group = 0x0278;
 
-		///<summary>UListBaseGroupWidget_C *</summary>
+		///<summary><![CDATA[UListBaseGroupWidget_C *]]></summary>
 		public const int InventoryOrDeathDropGroup = 0x0280;
 
-		///<summary>UScrollBox *</summary>
+		///<summary><![CDATA[UScrollBox *]]></summary>
 		public const int ItemList = 0x0288;
 
-		///<summary>UListBaseGroupWidget_C *</summary>
+		///<summary><![CDATA[UListBaseGroupWidget_C *]]></summary>
 		public const int ItemPackage_Group = 0x0290;
 
-		///<summary>TScriptInterface<USlotContainerInterface></summary>
+		///<summary><![CDATA[TScriptInterface<USlotContainerInterface>]]></summary>
 		public const int Container = 0x0298;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int BackgroundSlotWidgetCount = 0x02A8;
 
-		///<summary>unsigned char[0x4]</summary>
+		///<summary><![CDATA[unsigned char[0x4]]]></summary>
 		public const int UnknownData00 = 0x02AC;
 
-		///<summary>TArray<UItemSlotWidget_C * ></summary>
+		///<summary><![CDATA[TArray<UItemSlotWidget_C * >]]></summary>
 		public const int BackgroundSlotWidgets = 0x02B0;
 
-		///<summary>FScriptMulticastDelegate</summary>
+		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
 		public const int OnChildSlotFocus = 0x02C0;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bVicinity = 0x02D0;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bSort = 0x02D1;
 
-		///<summary>unsigned char[0x6]</summary>
+		///<summary><![CDATA[unsigned char[0x6]]]></summary>
 		public const int UnknownData01 = 0x02D2;
 
-		///<summary>TArray<TScriptInterface<USlotInterface>></summary>
+		///<summary><![CDATA[TArray<TScriptInterface<USlotInterface>>]]></summary>
 		public const int PendingSpawnList = 0x02D8;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int PendingSpawnCount = 0x02E8;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int PendingSpawnTimeCheck = 0x02EC;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int PendingSpawnTimeInterval = 0x02F0;
 
-		///<summary>unsigned char[0x4]</summary>
+		///<summary><![CDATA[unsigned char[0x4]]]></summary>
 		public const int UnknownData02 = 0x02F4;
 
-		///<summary>UItemSlotWidget_C *</summary>
+		///<summary><![CDATA[UItemSlotWidget_C *]]></summary>
 		public const int TempSlotItem = 0x02F8;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int FocusWidgetIndex = 0x0300;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bWantFocus = 0x0304;
 
-		///<summary>unsigned char[0x3]</summary>
+		///<summary><![CDATA[unsigned char[0x3]]]></summary>
 		public const int UnknownData03 = 0x0305;
 
-		///<summary>TArray<UItemSlotWidget_C * ></summary>
+		///<summary><![CDATA[TArray<UItemSlotWidget_C * >]]></summary>
 		public const int AddList = 0x0308;
 
-		///<summary>FScriptMulticastDelegate</summary>
+		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
 		public const int RefreshFocus = 0x0318;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int StartTime = 0x0328;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int TimeCheck = 0x032C;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bIsSlotScrollUp = 0x0330;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int bIsSlotScrollDown = 0x0331;
 
 	}

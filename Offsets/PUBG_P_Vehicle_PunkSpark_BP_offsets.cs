@@ -7,13 +7,13 @@ namespace Offsets
 {
 	public class AP_Vehicle_PunkSpark_BP_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x03F8;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int fSign = 0x0400;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int spawnFactor = 0x0404;
 
 	}

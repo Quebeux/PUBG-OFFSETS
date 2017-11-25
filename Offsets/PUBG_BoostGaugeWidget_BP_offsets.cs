@@ -7,37 +7,37 @@ namespace Offsets
 {
 	public class UBoostGaugeWidget_BP_C
 	{
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Emerging = 0x0380;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Warning = 0x0388;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Vanishing = 0x0390;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int Boost0_21 = 0x0398;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int Boost20_61 = 0x03A0;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int Boost60_91 = 0x03A8;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int Boost90_101 = 0x03B0;
 
-		///<summary>UMaterialInstanceDynamic *</summary>
+		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
 		public const int Gague0_21 = 0x03B8;
 
-		///<summary>UMaterialInstanceDynamic *</summary>
+		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
 		public const int Gauge20_61 = 0x03C0;
 
-		///<summary>UMaterialInstanceDynamic *</summary>
+		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
 		public const int Gauge60_91 = 0x03C8;
 
-		///<summary>UMaterialInstanceDynamic *</summary>
+		///<summary><![CDATA[UMaterialInstanceDynamic *]]></summary>
 		public const int Gauge90_101 = 0x03D0;
 
 	}

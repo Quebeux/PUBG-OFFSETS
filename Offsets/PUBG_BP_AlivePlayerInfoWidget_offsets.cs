@@ -7,16 +7,16 @@ namespace Offsets
 {
 	public class UBP_AlivePlayerInfoWidget_C
 	{
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Warning = 0x0370;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Increasing = 0x0378;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Decreasing = 0x0380;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Default = 0x0388;
 
 	}

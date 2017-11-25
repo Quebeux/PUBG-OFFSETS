@@ -7,19 +7,19 @@ namespace Offsets
 {
 	public class ULobbyVoiceChat_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int IconVoice = 0x0248;
 
-		///<summary>UTextBlock *</summary>
+		///<summary><![CDATA[UTextBlock *]]></summary>
 		public const int Nickname = 0x0250;
 
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int SlotIndex = 0x0258;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int Height = 0x025C;
 
 	}

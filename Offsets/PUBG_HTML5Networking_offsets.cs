@@ -11,10 +11,10 @@ namespace Offsets
 
 	public class UWebSocketNetDriver
 	{
-		///<summary>int</summary>
+		///<summary><![CDATA[int]]></summary>
 		public const int WebSocketPort = 0x0418;
 
-		///<summary>unsigned char[0xC]</summary>
+		///<summary><![CDATA[unsigned char[0xC]]]></summary>
 		public const int UnknownData00 = 0x041C;
 
 	}

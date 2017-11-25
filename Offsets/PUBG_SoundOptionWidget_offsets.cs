@@ -7,13 +7,13 @@ namespace Offsets
 {
 	public class USoundOptionWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0278;
 
-		///<summary>USoundSettingWidget_C *</summary>
+		///<summary><![CDATA[USoundSettingWidget_C *]]></summary>
 		public const int SoundSettingWidget = 0x0280;
 
-		///<summary>UVoiceSettingWidget_C *</summary>
+		///<summary><![CDATA[UVoiceSettingWidget_C *]]></summary>
 		public const int VoiceSettingWidget = 0x0288;
 
 	}

@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class UBP_LifeGaugeTemplateWidget_C
 	{
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Warning2 = 0x0310;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Warning = 0x0318;
 
 	}

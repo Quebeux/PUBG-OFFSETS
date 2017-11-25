@@ -7,22 +7,22 @@ namespace Offsets
 {
 	public class UKillCountWidget_C
 	{
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int KillCountVanishing = 0x0308;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int KillCountEmerging = 0x0310;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Warning = 0x0318;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Increasing = 0x0320;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Decreasing = 0x0328;
 
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int Default = 0x0330;
 
 	}

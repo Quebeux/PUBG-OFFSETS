@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UBP_LifeGaugeHitEffectWidget_C
 	{
-		///<summary>UWidgetAnimation *</summary>
+		///<summary><![CDATA[UWidgetAnimation *]]></summary>
 		public const int FadeOut = 0x0310;
 
 	}

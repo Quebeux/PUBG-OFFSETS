@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UKeyOptionWidget_BP_C
 	{
-		///<summary>UScrollBox *</summary>
+		///<summary><![CDATA[UScrollBox *]]></summary>
 		public const int List = 0x02D0;
 
 	}

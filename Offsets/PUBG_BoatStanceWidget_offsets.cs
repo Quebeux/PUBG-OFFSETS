@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UBoatStanceWidget_C
 	{
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int BoatImage = 0x0240;
 
 	}

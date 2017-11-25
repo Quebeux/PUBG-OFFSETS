@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class AMeleeWeaponStudio_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0400;
 
-		///<summary>UAsyncStaticMeshComponent *</summary>
+		///<summary><![CDATA[UAsyncStaticMeshComponent *]]></summary>
 		public const int AsyncStaticMesh = 0x0408;
 
 	}

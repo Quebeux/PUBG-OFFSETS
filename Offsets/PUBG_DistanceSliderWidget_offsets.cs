@@ -7,31 +7,31 @@ namespace Offsets
 {
 	public class UDistanceSliderWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>USlider *</summary>
+		///<summary><![CDATA[USlider *]]></summary>
 		public const int DistanceSlider = 0x0248;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int MinDistance = 0x0250;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int MaxDistance = 0x0254;
 
-		///<summary>FScriptMulticastDelegate</summary>
+		///<summary><![CDATA[FScriptMulticastDelegate]]></summary>
 		public const int ChagedDistance = 0x0258;
 
-		///<summary>UCurveFloat *</summary>
+		///<summary><![CDATA[UCurveFloat *]]></summary>
 		public const int DistanceCurve = 0x0268;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int Position = 0x0270;
 
-		///<summary>unsigned char[0x4]</summary>
+		///<summary><![CDATA[unsigned char[0x4]]]></summary>
 		public const int UnknownData00 = 0x0274;
 
-		///<summary>ATslSpectatorPawn *</summary>
+		///<summary><![CDATA[ATslSpectatorPawn *]]></summary>
 		public const int TslSpectatorPawn = 0x0278;
 
 	}

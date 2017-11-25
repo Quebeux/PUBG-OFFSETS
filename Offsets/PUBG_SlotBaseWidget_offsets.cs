@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class USlotBaseWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UAkAudioEvent *</summary>
+		///<summary><![CDATA[UAkAudioEvent *]]></summary>
 		public const int MouseOverSound = 0x0248;
 
 	}

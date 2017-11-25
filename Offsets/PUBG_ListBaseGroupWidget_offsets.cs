@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UListBaseGroupWidget_C
 	{
-		///<summary>UVerticalBox *</summary>
+		///<summary><![CDATA[UVerticalBox *]]></summary>
 		public const int List = 0x0240;
 
 	}

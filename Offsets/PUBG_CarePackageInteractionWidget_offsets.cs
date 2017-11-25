@@ -7,16 +7,16 @@ namespace Offsets
 {
 	public class UCarePackageInteractionWidget_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x0240;
 
-		///<summary>UWidgetSwitcher *</summary>
+		///<summary><![CDATA[UWidgetSwitcher *]]></summary>
 		public const int InteractionInputMethodSwitcher = 0x0248;
 
-		///<summary>UImage *</summary>
+		///<summary><![CDATA[UImage *]]></summary>
 		public const int KeyImage = 0x0250;
 
-		///<summary>bool</summary>
+		///<summary><![CDATA[bool]]></summary>
 		public const int IsCanShowCarePackageList = 0x0258;
 
 	}

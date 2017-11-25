@@ -7,7 +7,7 @@ namespace Offsets
 {
 	public class UVehicleWheelInfoWidget_C
 	{
-		///<summary>UTslWheeledVehicleMovement *</summary>
+		///<summary><![CDATA[UTslWheeledVehicleMovement *]]></summary>
 		public const int TslWheeledVehicleMovement = 0x02E0;
 
 	}

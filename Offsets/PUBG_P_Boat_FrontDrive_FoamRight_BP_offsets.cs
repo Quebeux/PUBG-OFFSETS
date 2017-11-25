@@ -7,10 +7,10 @@ namespace Offsets
 {
 	public class AP_Boat_FrontDrive_FoamRight_BP_C
 	{
-		///<summary>FPointerToUberGraphFrame</summary>
+		///<summary><![CDATA[FPointerToUberGraphFrame]]></summary>
 		public const int UberGraphFrame = 0x03F8;
 
-		///<summary>float</summary>
+		///<summary><![CDATA[float]]></summary>
 		public const int YFactor = 0x0400;
 
 	}
