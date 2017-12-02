@@ -35,7 +35,7 @@ namespace Offsets
 		public const int WeaponHandsOnLoadedAmmoCount = 0x0290;
 
 		///<summary>UImage *</summary>
-		public const int weaponImage = 0x0298;
+		public const int WeaponImage = 0x0298;
 
 		///<summary>USizeBox *</summary>
 		public const int WeaponImageSizeBox = 0x02A0;
