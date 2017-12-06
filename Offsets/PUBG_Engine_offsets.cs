@@ -2046,266 +2046,263 @@ namespace Offsets
 		///<summary>FVector</summary>
 		public const int Acceleration = 0x0298;
 
-		///<summary>FVector</summary>
-		public const int LastUpdateLocation = 0x02A4;
-
-		///<summary>FQuat</summary>
-		public const int LastUpdateRotation = 0x02B0;
+		///<summary>unsigned char[0x2D4]</summary>
+		public const int UnknownData08 = 0x02A4;
 
 		///<summary>FVector</summary>
-		public const int LastUpdateVelocity = 0x02C0;
+		public const int LastUpdateVelocity = 0x0578;
 
 		///<summary>float</summary>
-		public const int ServerLastTransformUpdateTimeStamp = 0x02CC;
+		public const int ServerLastTransformUpdateTimeStamp = 0x0584;
 
 		///<summary>FVector</summary>
-		public const int PendingImpulseToApply = 0x02D0;
+		public const int PendingImpulseToApply = 0x0588;
 
 		///<summary>FVector</summary>
-		public const int PendingForceToApply = 0x02DC;
+		public const int PendingForceToApply = 0x0594;
 
 		///<summary>float</summary>
-		public const int AnalogInputModifier = 0x02E8;
+		public const int AnalogInputModifier = 0x05A0;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData08 = 0x02EC;
+		public const int UnknownData09 = 0x05A4;
 
 		///<summary>float</summary>
-		public const int MaxSimulationTimeStep = 0x02F4;
+		public const int MaxSimulationTimeStep = 0x05AC;
 
 		///<summary>int</summary>
-		public const int MaxSimulationIterations = 0x02F8;
+		public const int MaxSimulationIterations = 0x05B0;
 
 		///<summary>float</summary>
-		public const int MaxDepenetrationWithGeometry = 0x02FC;
+		public const int MaxDepenetrationWithGeometry = 0x05B4;
 
 		///<summary>float</summary>
-		public const int MaxDepenetrationWithGeometryAsProxy = 0x0300;
+		public const int MaxDepenetrationWithGeometryAsProxy = 0x05B8;
 
 		///<summary>float</summary>
-		public const int MaxDepenetrationWithPawn = 0x0304;
+		public const int MaxDepenetrationWithPawn = 0x05BC;
 
 		///<summary>float</summary>
-		public const int MaxDepenetrationWithPawnAsProxy = 0x0308;
+		public const int MaxDepenetrationWithPawnAsProxy = 0x05C0;
 
 		///<summary>float</summary>
-		public const int NetworkSimulatedSmoothLocationTime = 0x030C;
+		public const int NetworkSimulatedSmoothLocationTime = 0x05C4;
 
 		///<summary>float</summary>
-		public const int NetworkSimulatedSmoothRotationTime = 0x0310;
+		public const int NetworkSimulatedSmoothRotationTime = 0x05C8;
 
 		///<summary>float</summary>
-		public const int ListenServerNetworkSimulatedSmoothLocationTime = 0x0314;
+		public const int ListenServerNetworkSimulatedSmoothLocationTime = 0x05CC;
 
 		///<summary>float</summary>
-		public const int ListenServerNetworkSimulatedSmoothRotationTime = 0x0318;
+		public const int ListenServerNetworkSimulatedSmoothRotationTime = 0x05D0;
 
 		///<summary>float</summary>
-		public const int NetworkMaxSmoothUpdateDistance = 0x031C;
+		public const int NetworkMaxSmoothUpdateDistance = 0x05D4;
 
 		///<summary>float</summary>
-		public const int NetworkNoSmoothUpdateDistance = 0x0320;
+		public const int NetworkNoSmoothUpdateDistance = 0x05D8;
 
 		///<summary>TEnumAsByte&lt;ENetworkSmoothingMode&gt;</summary>
-		public const int NetworkSmoothingMode = 0x0324;
+		public const int NetworkSmoothingMode = 0x05DC;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData09 = 0x0325;
+		public const int UnknownData10 = 0x05DD;
 
 		///<summary>float</summary>
-		public const int LedgeCheckThreshold = 0x0328;
+		public const int LedgeCheckThreshold = 0x05E0;
 
 		///<summary>float</summary>
-		public const int JumpOutOfWaterPitch = 0x032C;
+		public const int JumpOutOfWaterPitch = 0x05E4;
 
 		///<summary>FFindFloorResult</summary>
-		public const int CurrentFloor = 0x0330;
+		public const int CurrentFloor = 0x05E8;
 
 		///<summary>TEnumAsByte&lt;EMovementMode&gt;</summary>
-		public const int DefaultLandMovementMode = 0x03C8;
+		public const int DefaultLandMovementMode = 0x0680;
 
 		///<summary>TEnumAsByte&lt;EMovementMode&gt;</summary>
-		public const int DefaultWaterMovementMode = 0x03C9;
+		public const int DefaultWaterMovementMode = 0x0681;
 
 		///<summary>TEnumAsByte&lt;EMovementMode&gt;</summary>
-		public const int GroundMovementMode = 0x03CA;
+		public const int GroundMovementMode = 0x0682;
 
 		///<summary>unsigned char[0x1]</summary>
-		public const int UnknownData10 = 0x03CB;
+		public const int UnknownData11 = 0x0683;
 
 		///<summary>unsigned char:1</summary>
-		public const int bMaintainHorizontalGroundVelocity = 0x03CC;
+		public const int bMaintainHorizontalGroundVelocity = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bImpartBaseVelocityX = 0x03CC;
+		public const int bImpartBaseVelocityX = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bImpartBaseVelocityY = 0x03CC;
+		public const int bImpartBaseVelocityY = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bImpartBaseVelocityZ = 0x03CC;
+		public const int bImpartBaseVelocityZ = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bImpartBaseAngularVelocity = 0x03CC;
+		public const int bImpartBaseAngularVelocity = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bJustTeleported = 0x03CC;
+		public const int bJustTeleported = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bNetworkUpdateReceived = 0x03CC;
+		public const int bNetworkUpdateReceived = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bNetworkMovementModeChanged = 0x03CC;
+		public const int bNetworkMovementModeChanged = 0x0684;
 
 		///<summary>unsigned char:1</summary>
-		public const int bIgnoreClientMovementErrorChecksAndCorrection = 0x03CD;
+		public const int bIgnoreClientMovementErrorChecksAndCorrection = 0x0685;
 
 		///<summary>unsigned char:1</summary>
-		public const int bNotifyApex = 0x03CD;
+		public const int bNotifyApex = 0x0685;
 
 		///<summary>unsigned char:1</summary>
-		public const int bCheatFlying = 0x03CD;
+		public const int bCheatFlying = 0x0685;
 
 		///<summary>unsigned char:1</summary>
-		public const int bWantsToCrouch = 0x03CD;
+		public const int bWantsToCrouch = 0x0685;
 
 		///<summary>unsigned char:1</summary>
-		public const int bCrouchMaintainsBaseLocation = 0x03CD;
+		public const int bCrouchMaintainsBaseLocation = 0x0685;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData11 = 0x03CE;
+		public const int UnknownData12 = 0x0686;
 
 		///<summary>TEnumAsByte&lt;EStanceMode&gt;</summary>
-		public const int StanceMode = 0x03D0;
+		public const int StanceMode = 0x0688;
 
 		///<summary>TEnumAsByte&lt;EStanceMode&gt;</summary>
-		public const int WantsToStanceMode = 0x03D1;
+		public const int WantsToStanceMode = 0x0689;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData12 = 0x03D2;
+		public const int UnknownData13 = 0x068A;
 
 		///<summary>unsigned char:1</summary>
-		public const int bIgnoreBaseRotation = 0x03D4;
+		public const int bIgnoreBaseRotation = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bFastAttachedMove = 0x03D4;
+		public const int bFastAttachedMove = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bAlwaysCheckFloor = 0x03D4;
+		public const int bAlwaysCheckFloor = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bUseFlatBaseForFloorChecks = 0x03D4;
+		public const int bUseFlatBaseForFloorChecks = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bPerformingJumpOff = 0x03D4;
+		public const int bPerformingJumpOff = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bWantsToLeaveNavWalking = 0x03D4;
+		public const int bWantsToLeaveNavWalking = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bUseRVOAvoidance = 0x03D4;
+		public const int bUseRVOAvoidance = 0x068C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bRequestedMoveUseAcceleration = 0x03D4;
+		public const int bRequestedMoveUseAcceleration = 0x068C;
 
 		///<summary>unsigned char[0xB]</summary>
-		public const int UnknownData13 = 0x03D5;
+		public const int UnknownData14 = 0x068D;
 
 		///<summary>unsigned char:1</summary>
-		public const int bHasRequestedVelocity = 0x03E0;
+		public const int bHasRequestedVelocity = 0x0698;
 
 		///<summary>unsigned char:1</summary>
-		public const int bRequestedMoveWithMaxSpeed = 0x03E0;
+		public const int bRequestedMoveWithMaxSpeed = 0x0698;
 
 		///<summary>unsigned char:1</summary>
-		public const int bWasAvoidanceUpdated = 0x03E0;
+		public const int bWasAvoidanceUpdated = 0x0698;
 
 		///<summary>unsigned char:2</summary>
-		public const int UnknownData14 = 0x03E0;
+		public const int UnknownData15 = 0x0698;
 
 		///<summary>unsigned char:1</summary>
-		public const int bProjectNavMeshWalking = 0x03E0;
+		public const int bProjectNavMeshWalking = 0x0698;
 
 		///<summary>unsigned char:1</summary>
-		public const int bProjectNavMeshOnBothWorldChannels = 0x03E0;
+		public const int bProjectNavMeshOnBothWorldChannels = 0x0698;
 
 		///<summary>unsigned char[0x13]</summary>
-		public const int UnknownData15 = 0x03E1;
+		public const int UnknownData16 = 0x0699;
 
 		///<summary>float</summary>
-		public const int AvoidanceConsiderationRadius = 0x03F4;
+		public const int AvoidanceConsiderationRadius = 0x06AC;
 
 		///<summary>FVector</summary>
-		public const int RequestedVelocity = 0x03F8;
+		public const int RequestedVelocity = 0x06B0;
 
 		///<summary>int</summary>
-		public const int AvoidanceUID = 0x0404;
+		public const int AvoidanceUID = 0x06BC;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int AvoidanceGroup = 0x0408;
+		public const int AvoidanceGroup = 0x06C0;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int GroupsToAvoid = 0x040C;
+		public const int GroupsToAvoid = 0x06C4;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int GroupsToIgnore = 0x0410;
+		public const int GroupsToIgnore = 0x06C8;
 
 		///<summary>float</summary>
-		public const int AvoidanceWeight = 0x0414;
+		public const int AvoidanceWeight = 0x06CC;
 
 		///<summary>FVector</summary>
-		public const int PendingLaunchVelocity = 0x0418;
+		public const int PendingLaunchVelocity = 0x06D0;
 
 		///<summary>unsigned char[0xA4]</summary>
-		public const int UnknownData16 = 0x0424;
+		public const int UnknownData17 = 0x06DC;
 
 		///<summary>float</summary>
-		public const int NavMeshProjectionInterval = 0x04C8;
+		public const int NavMeshProjectionInterval = 0x0780;
 
 		///<summary>float</summary>
-		public const int NavMeshProjectionTimer = 0x04CC;
+		public const int NavMeshProjectionTimer = 0x0784;
 
 		///<summary>float</summary>
-		public const int NavMeshProjectionInterpSpeed = 0x04D0;
+		public const int NavMeshProjectionInterpSpeed = 0x0788;
 
 		///<summary>float</summary>
-		public const int NavMeshProjectionHeightScaleUp = 0x04D4;
+		public const int NavMeshProjectionHeightScaleUp = 0x078C;
 
 		///<summary>float</summary>
-		public const int NavMeshProjectionHeightScaleDown = 0x04D8;
+		public const int NavMeshProjectionHeightScaleDown = 0x0790;
 
 		///<summary>unsigned char[0x1C]</summary>
-		public const int UnknownData17 = 0x04DC;
+		public const int UnknownData18 = 0x0794;
 
 		///<summary>FCharacterMovementComponentPostPhysicsTickFunction</summary>
-		public const int PostPhysicsTickFunction = 0x04F8;
+		public const int PostPhysicsTickFunction = 0x07B0;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData18 = 0x0550;
+		public const int UnknownData19 = 0x0808;
 
 		///<summary>float</summary>
-		public const int MinTimeBetweenTimeStampResets = 0x0560;
+		public const int MinTimeBetweenTimeStampResets = 0x0818;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData19 = 0x0564;
+		public const int UnknownData20 = 0x081C;
 
 		///<summary>FRootMotionSourceGroup</summary>
-		public const int CurrentRootMotion = 0x0568;
+		public const int CurrentRootMotion = 0x0820;
 
-		///<summary>unsigned char[0x98]</summary>
-		public const int UnknownData20 = 0x0668;
+		///<summary>unsigned char[0x90]</summary>
+		public const int UnknownData21 = 0x0920;
 
 		///<summary>FRootMotionMovementParams</summary>
-		public const int RootMotionParams = 0x0700;
+		public const int RootMotionParams = 0x09B0;
 
 		///<summary>FVector</summary>
-		public const int AnimRootMotionVelocity = 0x0740;
+		public const int AnimRootMotionVelocity = 0x09F0;
 
 		///<summary>bool</summary>
-		public const int bWasSimulatingRootMotion = 0x074C;
+		public const int bWasSimulatingRootMotion = 0x09FC;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData21 = 0x074D;
+		public const int UnknownData22 = 0x09FD;
 
 	}
 

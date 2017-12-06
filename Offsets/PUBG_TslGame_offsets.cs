@@ -4875,208 +4875,208 @@ namespace Offsets
 	public class UTslCharacterMovement
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0750;
+		public const int UnknownData00 = 0x0A00;
 
 		///<summary>float</summary>
-		public const int MaxProneSpeed = 0x0758;
+		public const int MaxProneSpeed = 0x0A08;
 
 		///<summary>float</summary>
-		public const int MaxGroggySpeed = 0x075C;
+		public const int MaxGroggySpeed = 0x0A0C;
 
 		///<summary>float</summary>
-		public const int JumpedHalfHeight = 0x0760;
+		public const int JumpedHalfHeight = 0x0A10;
 
 		///<summary>float</summary>
-		public const int SpeedToJumpModifier = 0x0764;
+		public const int SpeedToJumpModifier = 0x0A14;
 
 		///<summary>float</summary>
-		public const int MinJumpZVelocity = 0x0768;
+		public const int MinJumpZVelocity = 0x0A18;
 
 		///<summary>float</summary>
-		public const int MaxJumpZVelocity = 0x076C;
+		public const int MaxJumpZVelocity = 0x0A1C;
 
 		///<summary>float</summary>
-		public const int LandingJumpDecreaseModifier = 0x0770;
+		public const int LandingJumpDecreaseModifier = 0x0A20;
 
 		///<summary>float</summary>
-		public const int RecoveryWalkSpeedRatePerSec = 0x0774;
+		public const int RecoveryWalkSpeedRatePerSec = 0x0A24;
 
 		///<summary>float</summary>
-		public const int MinWalkSpeedModifier = 0x0778;
+		public const int MinWalkSpeedModifier = 0x0A28;
 
 		///<summary>float</summary>
-		public const int WalkSpeedModifierUnit = 0x077C;
+		public const int WalkSpeedModifierUnit = 0x0A2C;
 
 		///<summary>float</summary>
-		public const int MinStandingJumpXYSpeed = 0x0780;
+		public const int MinStandingJumpXYSpeed = 0x0A30;
 
 		///<summary>float</summary>
-		public const int SpeedInWaterModifier = 0x0784;
+		public const int SpeedInWaterModifier = 0x0A34;
 
 		///<summary>int</summary>
-		public const int HeightFor200 = 0x07D8;
+		public const int HeightFor200 = 0x0A88;
 
 		///<summary>int</summary>
-		public const int HeightFor160 = 0x07DC;
+		public const int HeightFor160 = 0x0A8C;
 
 		///<summary>int</summary>
-		public const int HeightFor120 = 0x07E0;
+		public const int HeightFor120 = 0x0A90;
 
 		///<summary>int</summary>
-		public const int HeightFor90 = 0x07E4;
+		public const int HeightFor90 = 0x0A94;
 
 		///<summary>float</summary>
-		public const int SizeForNarrow = 0x07E8;
+		public const int SizeForNarrow = 0x0A98;
 
 		///<summary>int</summary>
-		public const int SizeForSlide = 0x07EC;
+		public const int SizeForSlide = 0x0A9C;
 
 		///<summary>float</summary>
-		public const int VelocityForMobile = 0x07F0;
+		public const int VelocityForMobile = 0x0AA0;
 
 		///<summary>float</summary>
-		public const int GlobalVaultScale = 0x07F4;
+		public const int GlobalVaultScale = 0x0AA4;
 
 		///<summary>float</summary>
-		public const int VaultCancelDTScalar = 0x07F8;
+		public const int VaultCancelDTScalar = 0x0AA8;
 
 		///<summary>float</summary>
-		public const int MinVelocityForStaticVaultCheck = 0x07FC;
+		public const int MinVelocityForStaticVaultCheck = 0x0AAC;
 
 		///<summary>FVaultingTask</summary>
-		public const int CurrentVaultingTask = 0x0800;
+		public const int CurrentVaultingTask = 0x0AB0;
 
 		///<summary>UVaultingData *</summary>
-		public const int CurrentVaultingData = 0x0840;
+		public const int CurrentVaultingData = 0x0AF0;
 
 		///<summary>float</summary>
-		public const int V_Timer_CP = 0x0848;
+		public const int V_Timer_CP = 0x0AF8;
 
 		///<summary>float</summary>
-		public const int AnimMultiplierPreApex = 0x084C;
+		public const int AnimMultiplierPreApex = 0x0AFC;
 
 		///<summary>float</summary>
-		public const int AnimMultiplierPostApex = 0x0850;
+		public const int AnimMultiplierPostApex = 0x0B00;
 
 		///<summary>bool</summary>
-		public const int bIsVaulting_CP = 0x0854;
+		public const int bIsVaulting_CP = 0x0B04;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0855;
+		public const int UnknownData01 = 0x0B05;
 
 		///<summary>FVector</summary>
-		public const int CharacterRelLocation = 0x0858;
+		public const int CharacterRelLocation = 0x0B08;
 
 		///<summary>FVector</summary>
-		public const int LastVaultLocation = 0x0864;
+		public const int LastVaultLocation = 0x0B14;
 
 		///<summary>FVector</summary>
-		public const int AveragedVelocity = 0x0870;
+		public const int AveragedVelocity = 0x0B20;
 
 		///<summary>float</summary>
-		public const int LastVaultTime = 0x087C;
+		public const int LastVaultTime = 0x0B2C;
 
 		///<summary>float</summary>
-		public const int VaultCancelAnimSpeed = 0x0880;
+		public const int VaultCancelAnimSpeed = 0x0B30;
 
 		///<summary>bool</summary>
-		public const int bWantsToCancelVault = 0x0884;
+		public const int bWantsToCancelVault = 0x0B34;
 
 		///<summary>unsigned char[0x4F]</summary>
-		public const int UnknownData02 = 0x0885;
+		public const int UnknownData02 = 0x0B35;
 
 		///<summary>float</summary>
-		public const int MaxSwimAcceleration = 0x08D4;
+		public const int MaxSwimAcceleration = 0x0B84;
 
 		///<summary>float</summary>
-		public const int MaxZSpeedOutOfWaterModifier = 0x08D8;
+		public const int MaxZSpeedOutOfWaterModifier = 0x0B88;
 
 		///<summary>FRotator</summary>
-		public const int MaxSwimmingRotationRate = 0x08DC;
+		public const int MaxSwimmingRotationRate = 0x0B8C;
 
 		///<summary>FRotator</summary>
-		public const int SwimmingRotationAcceleration = 0x08E8;
+		public const int SwimmingRotationAcceleration = 0x0B98;
 
 		///<summary>float</summary>
-		public const int MaxZSpeedOutOfWaterModifierForStandingSwimming = 0x08F4;
+		public const int MaxZSpeedOutOfWaterModifierForStandingSwimming = 0x0BA4;
 
 		///<summary>float</summary>
-		public const int WaveRidingModifier = 0x08F8;
+		public const int WaveRidingModifier = 0x0BA8;
 
 		///<summary>float</summary>
-		public const int WaveRidingSmoothingFactor = 0x08FC;
+		public const int WaveRidingSmoothingFactor = 0x0BAC;
 
 		///<summary>float</summary>
-		public const int WaveRidingModifierUnderWater = 0x0900;
+		public const int WaveRidingModifierUnderWater = 0x0BB0;
 
 		///<summary>float</summary>
-		public const int StayingUnderWaterDepthBand = 0x0904;
+		public const int StayingUnderWaterDepthBand = 0x0BB4;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData03 = 0x0908;
+		public const int UnknownData03 = 0x0BB8;
 
 		///<summary>float</summary>
-		public const int MaxUnderwaterSwimSpeed = 0x090C;
+		public const int MaxUnderwaterSwimSpeed = 0x0BBC;
 
 		///<summary>float</summary>
-		public const int MaxUnderwaterSwimAcceleration = 0x0910;
+		public const int MaxUnderwaterSwimAcceleration = 0x0BC0;
 
 		///<summary>float</summary>
-		public const int BrakingDecelerationUnderwaterSwimming = 0x0914;
+		public const int BrakingDecelerationUnderwaterSwimming = 0x0BC4;
 
 		///<summary>FRotator</summary>
-		public const int MaxUnderwaterSwimmingRotationRate = 0x0918;
+		public const int MaxUnderwaterSwimmingRotationRate = 0x0BC8;
 
 		///<summary>FRotator</summary>
-		public const int UnderwaterSwimmingRotationAcceleration = 0x0924;
+		public const int UnderwaterSwimmingRotationAcceleration = 0x0BD4;
 
 		///<summary>float</summary>
-		public const int MinimumHighAltitude = 0x0930;
+		public const int MinimumHighAltitude = 0x0BE0;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData04 = 0x0934;
+		public const int UnknownData04 = 0x0BE4;
 
 		///<summary>float</summary>
-		public const int MaxFallLateralSpeedAtHighAltitude = 0x0938;
+		public const int MaxFallLateralSpeedAtHighAltitude = 0x0BE8;
 
 		///<summary>float</summary>
-		public const int TerminalVelocityAtHighAltitude = 0x093C;
+		public const int TerminalVelocityAtHighAltitude = 0x0BEC;
 
 		///<summary>float</summary>
-		public const int DecreaseTerminalVelocityAtHighAltitude = 0x0940;
+		public const int DecreaseTerminalVelocityAtHighAltitude = 0x0BF0;
 
 		///<summary>float</summary>
-		public const int MaxFallAccelerationAtHighAltitude = 0x0944;
+		public const int MaxFallAccelerationAtHighAltitude = 0x0BF4;
 
 		///<summary>FRotator</summary>
-		public const int FallRotationRateAtHighAltitude = 0x0948;
+		public const int FallRotationRateAtHighAltitude = 0x0BF8;
 
 		///<summary>float</summary>
-		public const int AirControlAtHighAltitude = 0x0954;
+		public const int AirControlAtHighAltitude = 0x0C04;
 
 		///<summary>float</summary>
-		public const int AirControlBoostMultiplierAtHighAltitude = 0x0958;
+		public const int AirControlBoostMultiplierAtHighAltitude = 0x0C08;
 
 		///<summary>float</summary>
-		public const int AirControlBoostVelocityThresholdAtHighAltitude = 0x095C;
+		public const int AirControlBoostVelocityThresholdAtHighAltitude = 0x0C0C;
 
 		///<summary>UClass *</summary>
-		public const int FallingDamageType = 0x0960;
+		public const int FallingDamageType = 0x0C10;
 
 		///<summary>UCurveFloat *</summary>
-		public const int EjectDamageCurve = 0x0968;
+		public const int EjectDamageCurve = 0x0C18;
 
 		///<summary>float</summary>
-		public const int FallingDamageMinZCut = 0x0970;
+		public const int FallingDamageMinZCut = 0x0C20;
 
 		///<summary>float</summary>
-		public const int FallingDamageVDampingZ = 0x0974;
+		public const int FallingDamageVDampingZ = 0x0C24;
 
 		///<summary>float</summary>
-		public const int FallingDamageFactor = 0x0978;
+		public const int FallingDamageFactor = 0x0C28;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData05 = 0x097C;
+		public const int UnknownData05 = 0x0C2C;
 
 	}
 

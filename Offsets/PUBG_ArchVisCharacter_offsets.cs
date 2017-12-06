@@ -39,31 +39,31 @@ namespace Offsets
 	public class UArchVisCharMovementComponent
 	{
 		///<summary>FRotator</summary>
-		public const int RotationalAcceleration = 0x0750;
+		public const int RotationalAcceleration = 0x0A00;
 
 		///<summary>FRotator</summary>
-		public const int RotationalDeceleration = 0x075C;
+		public const int RotationalDeceleration = 0x0A0C;
 
 		///<summary>FRotator</summary>
-		public const int MaxRotationalVelocity = 0x0768;
+		public const int MaxRotationalVelocity = 0x0A18;
 
 		///<summary>float</summary>
-		public const int MinPitch = 0x0774;
+		public const int MinPitch = 0x0A24;
 
 		///<summary>float</summary>
-		public const int MaxPitch = 0x0778;
+		public const int MaxPitch = 0x0A28;
 
 		///<summary>float</summary>
-		public const int WalkingFriction = 0x077C;
+		public const int WalkingFriction = 0x0A2C;
 
 		///<summary>float</summary>
-		public const int WalkingSpeed = 0x0780;
+		public const int WalkingSpeed = 0x0A30;
 
 		///<summary>float</summary>
-		public const int WalkingAcceleration = 0x0784;
+		public const int WalkingAcceleration = 0x0A34;
 
 		///<summary>unsigned char[0x18]</summary>
-		public const int UnknownData00 = 0x0788;
+		public const int UnknownData00 = 0x0A38;
 
 	}
 
