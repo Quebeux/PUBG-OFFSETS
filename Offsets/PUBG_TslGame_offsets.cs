@@ -935,7 +935,7 @@ namespace Offsets
 
 	public class UHackReporterComponent
 	{
-		///<summary>unsigned char[0x188]</summary>
+		///<summary>unsigned char[0x1C8]</summary>
 		public const int UnknownData00 = 0x00F8;
 
 	}
@@ -7017,67 +7017,73 @@ namespace Offsets
 		public const int ClientSideHitLeeway = 0x028C;
 
 		///<summary>float</summary>
-		public const int LogClientSideHitLeeway = 0x0290;
+		public const int ClientSideHitLeewayInPlace = 0x0290;
 
 		///<summary>float</summary>
-		public const int ClientSideOriginDistanceLeeway = 0x0294;
+		public const int LogClientSideHitLeeway = 0x0294;
 
 		///<summary>float</summary>
-		public const int ClientSideOriginDistanceLeewayInPlace = 0x0298;
+		public const int ClientSideOriginDistanceLeeway = 0x0298;
 
 		///<summary>float</summary>
-		public const int ClientSideOriginDistanceMax = 0x029C;
+		public const int ClientSideOriginDistanceLeewayInPlace = 0x029C;
 
 		///<summary>float</summary>
-		public const int TravelDistanceLeeway = 0x02A0;
+		public const int ClientSideOriginDistanceMax = 0x02A0;
 
 		///<summary>float</summary>
-		public const int AllowedHitLag = 0x02A4;
+		public const int TravelDistanceLeeway = 0x02A4;
 
 		///<summary>float</summary>
-		public const int LogMinHitLag = 0x02A8;
+		public const int AllowedHitLag = 0x02A8;
 
 		///<summary>float</summary>
-		public const int HackDetectionSpeed = 0x02AC;
+		public const int LogMinHitLag = 0x02AC;
+
+		///<summary>float</summary>
+		public const int HackDetectionSpeed = 0x02B0;
+
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData07 = 0x02B4;
 
 		///<summary>TArray&lt;FOverrideScalability&gt;</summary>
-		public const int OverrideScalabilities = 0x02B0;
+		public const int OverrideScalabilities = 0x02B8;
 
 		///<summary>float</summary>
-		public const int FakeDoorBlockMaxY = 0x02C0;
+		public const int FakeDoorBlockMaxY = 0x02C8;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData07 = 0x02C4;
+		public const int UnknownData08 = 0x02CC;
 
 		///<summary>TArray&lt;FReportCauseData&gt;</summary>
-		public const int ReportCauses = 0x02C8;
+		public const int ReportCauses = 0x02D0;
 
 		///<summary>TArray&lt;FSubjectToReport&gt;</summary>
-		public const int SubjectToReport = 0x02D8;
+		public const int SubjectToReport = 0x02E0;
 
 		///<summary>float</summary>
-		public const int FreelookRecoveryInterpSpeed = 0x02E8;
+		public const int FreelookRecoveryInterpSpeed = 0x02F0;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData08 = 0x02EC;
+		public const int UnknownData09 = 0x02F4;
 
 		///<summary>TMap&lt;FName,float&gt;</summary>
-		public const int GamepadSensitiveMultiplier = 0x02F0;
+		public const int GamepadSensitiveMultiplier = 0x02F8;
 
 		///<summary>bool</summary>
-		public const int bIsESports = 0x0340;
+		public const int bIsESports = 0x0348;
 
 		///<summary>unsigned char[0x57]</summary>
-		public const int UnknownData09 = 0x0341;
+		public const int UnknownData10 = 0x0349;
 
 		///<summary>UCurveFloat *</summary>
-		public const int LoadedMouseSensitivityCurve = 0x0398;
+		public const int LoadedMouseSensitivityCurve = 0x03A0;
 
 		///<summary>UCurveFloat *</summary>
-		public const int LoadedGammaCurve = 0x03A0;
+		public const int LoadedGammaCurve = 0x03A8;
 
 		///<summary>UTextureRenderTarget2D *</summary>
-		public const int CharacterStudioRenderTarget = 0x03A8;
+		public const int CharacterStudioRenderTarget = 0x03B0;
 
 	}
 
