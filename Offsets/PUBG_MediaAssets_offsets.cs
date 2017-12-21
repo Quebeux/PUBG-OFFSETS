@@ -5,64 +5,71 @@
 
 namespace Offsets
 {
+	public class UMediaOverlays
+	{
+		///<summary>unsigned char[0x88]</summary>
+		public const int UnknownData00 = 0x0028;
+
+	}
+
 	public class UMediaPlayer
 	{
-		///<summary>unsigned char[0x8]</summary>
+		///<summary>unsigned char[0x18]</summary>
 		public const int UnknownData00 = 0x0028;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnEndReached = 0x0030;
+		public const int OnEndReached = 0x0040;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnMediaClosed = 0x0040;
+		public const int OnMediaClosed = 0x0050;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnMediaOpened = 0x0050;
+		public const int OnMediaOpened = 0x0060;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnMediaOpenFailed = 0x0060;
+		public const int OnMediaOpenFailed = 0x0070;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnPlaybackResumed = 0x0070;
+		public const int OnPlaybackResumed = 0x0080;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnPlaybackSuspended = 0x0080;
-
-		///<summary>FName</summary>
-		public const int DesiredPlayerName = 0x0090;
+		public const int OnPlaybackSuspended = 0x0090;
 
 		///<summary>bool</summary>
-		public const int PlayOnOpen = 0x0098;
+		public const int PlayOnOpen = 0x00A0;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0099;
+		public const int UnknownData01 = 0x00A1;
 
 		///<summary>unsigned char:1</summary>
-		public const int Shuffle = 0x009C;
+		public const int Shuffle = 0x00A4;
 
 		///<summary>unsigned char:1</summary>
-		public const int Loop = 0x009C;
+		public const int Loop = 0x00A4;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData02 = 0x009D;
+		public const int UnknownData02 = 0x00A5;
+
+		///<summary>UMediaOverlays *</summary>
+		public const int Overlays = 0x00A8;
 
 		///<summary>UMediaPlaylist *</summary>
-		public const int Playlist = 0x00A0;
+		public const int Playlist = 0x00B0;
 
 		///<summary>int</summary>
-		public const int PlaylistIndex = 0x00A8;
+		public const int PlaylistIndex = 0x00B8;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData03 = 0x00AC;
+		public const int UnknownData03 = 0x00BC;
 
 		///<summary>UMediaSoundWave *</summary>
-		public const int SoundWave = 0x00B0;
+		public const int SoundWave = 0x00C0;
 
 		///<summary>UMediaTexture *</summary>
-		public const int VideoTexture = 0x00B8;
+		public const int VideoTexture = 0x00C8;
 
-		///<summary>unsigned char[0xA0]</summary>
-		public const int UnknownData04 = 0x00C0;
+		///<summary>unsigned char[0x90]</summary>
+		public const int UnknownData04 = 0x00D0;
 
 	}
 
@@ -76,19 +83,19 @@ namespace Offsets
 	public class UMediaSoundWave
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0260;
+		public const int UnknownData00 = 0x0280;
 
 		///<summary>int</summary>
-		public const int AudioTrackIndex = 0x0268;
+		public const int AudioTrackIndex = 0x0288;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData01 = 0x026C;
+		public const int UnknownData01 = 0x028C;
 
 		///<summary>UMediaPlayer *</summary>
-		public const int MediaPlayer = 0x0270;
+		public const int MediaPlayer = 0x0290;
 
 		///<summary>unsigned char[0xC8]</summary>
-		public const int UnknownData02 = 0x0278;
+		public const int UnknownData02 = 0x0298;
 
 	}
 
@@ -97,6 +104,10 @@ namespace Offsets
 		///<summary>unsigned char[0x8]</summary>
 		public const int UnknownData00 = 0x0028;
 
+	}
+
+	public class UBaseMediaSource
+	{
 		///<summary>FName</summary>
 		public const int PlayerName = 0x0030;
 
@@ -115,13 +126,6 @@ namespace Offsets
 
 	}
 
-	public class UPlatformMediaSource
-	{
-		///<summary>UMediaSource *</summary>
-		public const int MediaSource = 0x0038;
-
-	}
-
 	public class UStreamMediaSource
 	{
 		///<summary>FString</summary>
@@ -129,10 +133,10 @@ namespace Offsets
 
 	}
 
-	public class UMediaSubtitles
+	public class UPlatformMediaSource
 	{
-		///<summary>TArray&lt;FMediaSubtitle&gt;</summary>
-		public const int Subtitles = 0x0028;
+		///<summary>UMediaSource *</summary>
+		public const int MediaSource = 0x0030;
 
 	}
 

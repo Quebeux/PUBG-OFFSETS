@@ -16,14 +16,17 @@ namespace Offsets
 		///<summary>UComboBoxString *</summary>
 		public const int ComboBox = 0x0250;
 
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_1 = 0x0258;
+
 		///<summary>FText</summary>
-		public const int DisplayName = 0x0258;
+		public const int DisplayName = 0x0260;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnSelectionChanged = 0x0270;
+		public const int OnSelectionChanged = 0x0278;
 
 		///<summary>TArray&lt;FComboBoxOption&gt;</summary>
-		public const int OptionList = 0x0280;
+		public const int OptionList = 0x0288;
 
 	}
 

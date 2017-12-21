@@ -22,23 +22,29 @@ namespace Offsets
 		///<summary>UCircularThrobber *</summary>
 		public const int CircularThrobber_1 = 0x0260;
 
-		///<summary>UTextBlock *</summary>
-		public const int TextCancel = 0x0268;
+		///<summary>UImage *</summary>
+		public const int Image_1 = 0x0268;
 
 		///<summary>UTextBlock *</summary>
-		public const int TextOK = 0x0270;
+		public const int TextBlock_172 = 0x0270;
+
+		///<summary>UTextBlock *</summary>
+		public const int TextCancel = 0x0278;
+
+		///<summary>UTextBlock *</summary>
+		public const int TextOK = 0x0280;
 
 		///<summary>UBorder *</summary>
-		public const int Waiting = 0x0278;
+		public const int Waiting = 0x0288;
 
 		///<summary>FText</summary>
-		public const int Message = 0x0280;
+		public const int Message = 0x0290;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int ButtonClickDispatcher = 0x0298;
+		public const int ButtonClickDispatcher = 0x02A8;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int HideMyself = 0x02A8;
+		public const int HideMyself = 0x02B8;
 
 	}
 

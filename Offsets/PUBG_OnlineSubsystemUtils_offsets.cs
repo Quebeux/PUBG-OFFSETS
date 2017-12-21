@@ -168,19 +168,31 @@ namespace Offsets
 	public class UIpNetDriver
 	{
 		///<summary>unsigned char:1</summary>
-		public const int LogPortUnreach = 0x0418;
+		public const int LogPortUnreach = 0x0438;
 
 		///<summary>unsigned char:1</summary>
-		public const int AllowPlayerPortUnreach = 0x0418;
+		public const int AllowPlayerPortUnreach = 0x0438;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData00 = 0x0419;
+		public const int UnknownData00 = 0x0439;
 
 		///<summary>uint32_t</summary>
-		public const int MaxPortCountToTry = 0x041C;
+		public const int MaxPortCountToTry = 0x043C;
 
 		///<summary>unsigned char[0x18]</summary>
-		public const int UnknownData01 = 0x0420;
+		public const int UnknownData01 = 0x0440;
+
+		///<summary>uint32_t</summary>
+		public const int ServerDesiredSocketReceiveBufferBytes = 0x0458;
+
+		///<summary>uint32_t</summary>
+		public const int ServerDesiredSocketSendBufferBytes = 0x045C;
+
+		///<summary>uint32_t</summary>
+		public const int ClientDesiredSocketReceiveBufferBytes = 0x0460;
+
+		///<summary>uint32_t</summary>
+		public const int ClientDesiredSocketSendBufferBytes = 0x0464;
 
 	}
 
@@ -239,35 +251,35 @@ namespace Offsets
 	public class AOnlineBeacon
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x03A0;
+		public const int UnknownData00 = 0x03B0;
 
 		///<summary>float</summary>
-		public const int BeaconConnectionInitialTimeout = 0x03A8;
+		public const int BeaconConnectionInitialTimeout = 0x03B8;
 
 		///<summary>float</summary>
-		public const int BeaconConnectionTimeout = 0x03AC;
+		public const int BeaconConnectionTimeout = 0x03BC;
 
 		///<summary>UNetDriver *</summary>
-		public const int NetDriver = 0x03B0;
+		public const int NetDriver = 0x03C0;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData01 = 0x03B8;
+		public const int UnknownData01 = 0x03C8;
 
 	}
 
 	public class AOnlineBeaconClient
 	{
 		///<summary>AOnlineBeaconHostObject *</summary>
-		public const int BeaconOwner = 0x03C8;
+		public const int BeaconOwner = 0x03D8;
 
 		///<summary>UNetConnection *</summary>
-		public const int BeaconConnection = 0x03D0;
+		public const int BeaconConnection = 0x03E0;
 
-		///<summary>TEnumAsByte&lt;EBeaconConnectionState&gt;</summary>
-		public const int ConnectionState = 0x03D8;
+		///<summary>EBeaconConnectionState</summary>
+		public const int ConnectionState = 0x03E8;
 
-		///<summary>unsigned char[0x57]</summary>
-		public const int UnknownData00 = 0x03D9;
+		///<summary>unsigned char[0x77]</summary>
+		public const int UnknownData00 = 0x03E9;
 
 	}
 
@@ -308,86 +320,89 @@ namespace Offsets
 	public class APartyBeaconClient
 	{
 		///<summary>unsigned char[0xC0]</summary>
-		public const int UnknownData00 = 0x0430;
+		public const int UnknownData00 = 0x0460;
 
 		///<summary>FString</summary>
-		public const int DestSessionId = 0x04F0;
+		public const int DestSessionId = 0x0520;
 
 		///<summary>FPartyReservation</summary>
-		public const int PendingReservation = 0x0500;
+		public const int PendingReservation = 0x0530;
 
-		///<summary>TEnumAsByte&lt;EClientRequestType&gt;</summary>
-		public const int RequestType = 0x0530;
-
-		///<summary>bool</summary>
-		public const int bPendingReservationSent = 0x0531;
+		///<summary>EClientRequestType</summary>
+		public const int RequestType = 0x0560;
 
 		///<summary>bool</summary>
-		public const int bCancelReservation = 0x0532;
+		public const int bPendingReservationSent = 0x0561;
+
+		///<summary>bool</summary>
+		public const int bCancelReservation = 0x0562;
 
 		///<summary>unsigned char[0x2D]</summary>
-		public const int UnknownData01 = 0x0533;
+		public const int UnknownData01 = 0x0563;
 
 	}
 
 	public class AOnlineBeaconHost
 	{
 		///<summary>int</summary>
-		public const int ListenPort = 0x03C8;
+		public const int ListenPort = 0x03D8;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x03CC;
+		public const int UnknownData00 = 0x03DC;
 
 		///<summary>TArray&lt;AOnlineBeaconClient * &gt;</summary>
-		public const int ClientActors = 0x03D0;
+		public const int ClientActors = 0x03E0;
 
 		///<summary>unsigned char[0xA0]</summary>
-		public const int UnknownData01 = 0x03E0;
+		public const int UnknownData01 = 0x03F0;
 
 	}
 
 	public class AOnlineBeaconHostObject
 	{
 		///<summary>FString</summary>
-		public const int BeaconTypeName = 0x03A0;
+		public const int BeaconTypeName = 0x03B0;
 
 		///<summary>UClass *</summary>
-		public const int ClientBeaconActorClass = 0x03B0;
+		public const int ClientBeaconActorClass = 0x03C0;
 
 		///<summary>TArray&lt;AOnlineBeaconClient * &gt;</summary>
-		public const int ClientActors = 0x03B8;
+		public const int ClientActors = 0x03C8;
 
 	}
 
 	public class APartyBeaconHost
 	{
 		///<summary>UPartyBeaconState *</summary>
-		public const int State = 0x03C8;
+		public const int State = 0x03D8;
 
 		///<summary>unsigned char[0x140]</summary>
-		public const int UnknownData00 = 0x03D0;
+		public const int UnknownData00 = 0x03E0;
 
 		///<summary>bool</summary>
-		public const int bLogoutOnSessionTimeout = 0x0510;
+		public const int bLogoutOnSessionTimeout = 0x0520;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0511;
+		public const int UnknownData01 = 0x0521;
 
 		///<summary>float</summary>
-		public const int SessionTimeoutSecs = 0x0514;
+		public const int SessionTimeoutSecs = 0x0524;
 
 		///<summary>float</summary>
-		public const int TravelSessionTimeoutSecs = 0x0518;
+		public const int TravelSessionTimeoutSecs = 0x0528;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData02 = 0x051C;
+		public const int UnknownData02 = 0x052C;
 
 	}
 
 	public class UOnlineEngineInterfaceImpl
 	{
-		///<summary>unsigned char[0xF8]</summary>
-		public const int UnknownData00 = 0x0028;
+		///<summary>FName</summary>
+		public const int VoiceSubsystemNameOverride = 0x0028;
+
+		///<summary>unsigned char[0x100]</summary>
+		public const int UnknownData00 = 0x0030;
 
 	}
 

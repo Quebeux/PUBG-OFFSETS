@@ -16,6 +16,9 @@ namespace Offsets
 		///<summary>UWidgetAnimation *</summary>
 		public const int GamePlayMessageFadeIn = 0x02F8;
 
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_1 = 0x0300;
+
 	}
 
 }

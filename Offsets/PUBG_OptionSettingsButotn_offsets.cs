@@ -13,11 +13,14 @@ namespace Offsets
 		///<summary>UButton *</summary>
 		public const int Button_1 = 0x0248;
 
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_1 = 0x0250;
+
 		///<summary>FText</summary>
-		public const int ButtonDisplayText = 0x0250;
+		public const int ButtonDisplayText = 0x0258;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnButtonDown = 0x0268;
+		public const int OnButtonDown = 0x0270;
 
 	}
 

@@ -35,7 +35,7 @@ namespace Offsets
 		public const int UnknownData01 = 0x0279;
 
 		///<summary>TArray&lt;UItemSlotWidget_C * &gt;</summary>
-		public const int ItemSlotListWidget = 0x0280;
+		public const int ItemSlotArray = 0x0280;
 
 	}
 

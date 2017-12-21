@@ -8,10 +8,10 @@ namespace Offsets
 	public class UBP_MapCarePackageItemIconWidget_C
 	{
 		///<summary>UWidgetAnimation *</summary>
-		public const int Hitted = 0x02E8;
+		public const int Hitted = 0x0338;
 
 		///<summary>UWidgetAnimation *</summary>
-		public const int Attacked = 0x02F0;
+		public const int Attacked = 0x0340;
 
 	}
 

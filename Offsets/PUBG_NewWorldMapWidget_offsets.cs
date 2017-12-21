@@ -85,101 +85,107 @@ namespace Offsets
 		///<summary>UButton *</summary>
 		public const int RestoreHelpButton = 0x0358;
 
-		///<summary>UCurveFloat *</summary>
-		public const int MapSizeCurve = 0x0360;
+		///<summary>UUIBlurBackground_C *</summary>
+		public const int UIBlurBackground = 0x0360;
 
 		///<summary>UCurveFloat *</summary>
-		public const int MapSizeChangeTimeCurve = 0x0368;
+		public const int MapSizeCurve = 0x0368;
+
+		///<summary>UCurveFloat *</summary>
+		public const int MapSizeChangeTimeCurve = 0x0370;
 
 		///<summary>FVector2D</summary>
-		public const int MouseCapturePosotion = 0x0370;
+		public const int MouseCapturePosotion = 0x0378;
 
 		///<summary>bool</summary>
-		public const int bMouseDown = 0x0378;
+		public const int bMouseDown = 0x0380;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData00 = 0x0379;
+		public const int UnknownData00 = 0x0381;
 
 		///<summary>float</summary>
-		public const int Time_MapSize = 0x037C;
+		public const int Time_MapSize = 0x0384;
 
 		///<summary>bool</summary>
-		public const int bChangeMapSize = 0x0380;
+		public const int bChangeMapSize = 0x0388;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0381;
+		public const int UnknownData01 = 0x0389;
 
 		///<summary>FVector2D</summary>
-		public const int StartSize = 0x0384;
+		public const int StartSize = 0x038C;
 
 		///<summary>FVector2D</summary>
-		public const int SizeOffset = 0x038C;
+		public const int SizeOffset = 0x0394;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData02 = 0x0394;
+		public const int UnknownData02 = 0x039C;
 
 		///<summary>UCurveFloat *</summary>
-		public const int PositionMoveTimeCurve = 0x0398;
+		public const int PositionMoveTimeCurve = 0x03A0;
 
 		///<summary>float</summary>
-		public const int Time_Position = 0x03A0;
+		public const int Time_Position = 0x03A8;
 
 		///<summary>bool</summary>
-		public const int bMovePosition = 0x03A4;
+		public const int bMovePosition = 0x03AC;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData03 = 0x03A5;
+		public const int UnknownData03 = 0x03AD;
 
 		///<summary>FVector2D</summary>
-		public const int StartPosition = 0x03A8;
+		public const int StartPosition = 0x03B0;
 
 		///<summary>FVector2D</summary>
-		public const int PositionOffset = 0x03B0;
+		public const int PositionOffset = 0x03B8;
 
 		///<summary>FVector2D</summary>
-		public const int TestMove = 0x03B8;
+		public const int TestMove = 0x03C0;
 
 		///<summary>bool</summary>
-		public const int WheelUp = 0x03C0;
+		public const int WheelUp = 0x03C8;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData04 = 0x03C1;
+		public const int UnknownData04 = 0x03C9;
 
 		///<summary>TArray&lt;FVector2D&gt;</summary>
-		public const int AlignmentStack = 0x03C8;
+		public const int AlignmentStack = 0x03D0;
 
 		///<summary>float</summary>
-		public const int LastZoomLevel = 0x03D8;
+		public const int LastZoomLevel = 0x03E0;
 
 		///<summary>FVector2D</summary>
-		public const int NewVar_1 = 0x03DC;
+		public const int NewVar_1 = 0x03E4;
 
 		///<summary>FVector2D</summary>
-		public const int MouseDownPosition = 0x03E4;
+		public const int MouseDownPosition = 0x03EC;
 
 		///<summary>bool</summary>
-		public const int NewVar_2 = 0x03EC;
+		public const int NewVar_2 = 0x03F4;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData05 = 0x03ED;
+		public const int UnknownData05 = 0x03F5;
 
 		///<summary>int</summary>
-		public const int NewVar_3 = 0x03F0;
+		public const int NewVar_3 = 0x03F8;
 
 		///<summary>bool</summary>
-		public const int bMapMovingReady = 0x03F4;
+		public const int bMapMovingReady = 0x03FC;
 
 		///<summary>bool</summary>
-		public const int bIsReplaying = 0x03F5;
+		public const int bIsReplaying = 0x03FD;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData06 = 0x03F6;
+		public const int UnknownData06 = 0x03FE;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnHideMyself = 0x03F8;
+		public const int OnHideMyself = 0x0400;
 
 		///<summary>UCurveFloat *</summary>
-		public const int ZoomMultiplier = 0x0408;
+		public const int ZoomMultiplierCurve = 0x0410;
+
+		///<summary>bool</summary>
+		public const int bIsObserving = 0x0418;
 
 	}
 

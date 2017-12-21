@@ -68,13 +68,19 @@ namespace Offsets
 		public const int TimeCheck = 0x02C4;
 
 		///<summary>UCurveFloat *</summary>
-		public const int NewVar_1 = 0x02C8;
+		public const int MoveCurve = 0x02C8;
 
 		///<summary>UNewSystemMessageWidget_C *</summary>
 		public const int LastMessageWidget = 0x02D0;
 
 		///<summary>bool</summary>
 		public const int bUniqueCheck = 0x02D8;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x02D9;
+
+		///<summary>FVector2D</summary>
+		public const int MoveVector = 0x02DC;
 
 	}
 

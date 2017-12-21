@@ -5,26 +5,59 @@
 
 namespace Offsets
 {
-	public class UCustomizableMeshComponent
+	public class UCustomizableSkeletalComponent
 	{
-		///<summary>unsigned char[0x58]</summary>
-		public const int UnknownData00 = 0x0300;
+		///<summary>UCustomizableObjectInstance *</summary>
+		public const int CustomizableObjectInstance = 0x03F0;
 
-		///<summary>TArray&lt;TWeakObjectPtr&lt;UTexture2D&gt;&gt;</summary>
-		public const int CreatedTextures = 0x0358;
-
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData01 = 0x0368;
+		///<summary>unsigned char[0x48]</summary>
+		public const int UnknownData00 = 0x03F8;
 
 	}
 
-	public class UCustomizableSkeletalComponent
+	public class UCustomizableObjectInstance
 	{
-		///<summary>USkeletalMesh *</summary>
-		public const int SkeletalMesh = 0x0370;
+		///<summary>UCustomizableObject *</summary>
+		public const int CustomizableObject = 0x0028;
 
-		///<summary>unsigned char[0x48]</summary>
-		public const int UnknownData00 = 0x0378;
+		///<summary>USkeletalMesh *</summary>
+		public const int SkeletalMesh = 0x0030;
+
+		///<summary>int</summary>
+		public const int State = 0x0038;
+
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData00 = 0x003C;
+
+		///<summary>TArray&lt;FCustomizableObjectBoolParameterValue&gt;</summary>
+		public const int BoolParameters = 0x0040;
+
+		///<summary>TArray&lt;FCustomizableObjectIntParameterValue&gt;</summary>
+		public const int IntParameters = 0x0050;
+
+		///<summary>TArray&lt;FCustomizableObjectFloatParameterValue&gt;</summary>
+		public const int FloatParameters = 0x0060;
+
+		///<summary>TArray&lt;FCustomizableObjectVectorParameterValue&gt;</summary>
+		public const int VectorParameters = 0x0070;
+
+		///<summary>TArray&lt;FCustomizableObjectProjectorParameterValue&gt;</summary>
+		public const int ProjectorParameters = 0x0080;
+
+		///<summary>bool</summary>
+		public const int bBuildRawData = 0x0090;
+
+		///<summary>bool</summary>
+		public const int bBuildRenderData = 0x0091;
+
+		///<summary>unsigned char[0x9E]</summary>
+		public const int UnknownData01 = 0x0092;
+
+		///<summary>UCustomizableInstancePrivateData *</summary>
+		public const int PrivateData = 0x0130;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData02 = 0x0138;
 
 	}
 
@@ -42,7 +75,7 @@ namespace Offsets
 		///<summary>TArray&lt;FGeneratedTexture&gt;</summary>
 		public const int GeneratedTextures = 0x0050;
 
-		///<summary>unsigned char[0xA0]</summary>
+		///<summary>unsigned char[0x138]</summary>
 		public const int UnknownData01 = 0x0060;
 
 	}
@@ -55,94 +88,48 @@ namespace Offsets
 		///<summary>UStaticMesh *</summary>
 		public const int ReferenceStaticMesh = 0x0030;
 
+		///<summary>ECustomizableObjectRelevancy</summary>
+		public const int Relevancy = 0x0038;
+
+		///<summary>bool</summary>
+		public const int bDisableTextureLayoutManagement = 0x0039;
+
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData00 = 0x003A;
+
 		///<summary>TArray&lt;UMaterialInterface * &gt;</summary>
-		public const int ReferencedMaterials = 0x0038;
+		public const int ReferencedMaterials = 0x0040;
 
 		///<summary>TArray&lt;FMutableModelImageProperties&gt;</summary>
-		public const int ImageProperties = 0x0048;
+		public const int ImageProperties = 0x0050;
 
 		///<summary>TMap&lt;FString,FCustomizableObjectIdPair&gt;</summary>
-		public const int GroupNodeMap = 0x0058;
+		public const int GroupNodeMap = 0x0060;
 
 		///<summary>FCompilationOptions</summary>
-		public const int CompileOptions = 0x00A8;
+		public const int CompileOptions = 0x00B0;
 
 		///<summary>FGuid</summary>
-		public const int VersionId = 0x00B4;
-
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x00C4;
+		public const int VersionId = 0x00C8;
 
 		///<summary>TArray&lt;FMutableModelParameterProperties&gt;</summary>
-		public const int ParameterProperties = 0x00C8;
+		public const int ParameterProperties = 0x00D8;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData01 = 0x00D8;
-
-	}
-
-	public class UCustomizableObjectInstance
-	{
-		///<summary>UCustomizableObject *</summary>
-		public const int CustomizableObject = 0x0028;
-
-		///<summary>int</summary>
-		public const int State = 0x0030;
-
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x0034;
-
-		///<summary>TArray&lt;FCustomizableObjectBoolParameterValue&gt;</summary>
-		public const int BoolParameters = 0x0038;
-
-		///<summary>TArray&lt;FCustomizableObjectIntParameterValue&gt;</summary>
-		public const int IntParameters = 0x0048;
-
-		///<summary>TArray&lt;FCustomizableObjectFloatParameterValue&gt;</summary>
-		public const int FloatParameters = 0x0058;
-
-		///<summary>TArray&lt;FCustomizableObjectVectorParameterValue&gt;</summary>
-		public const int VectorParameters = 0x0068;
-
-		///<summary>TArray&lt;FCustomizableObjectProjectorParameterValue&gt;</summary>
-		public const int ProjectorParameters = 0x0078;
-
-		///<summary>bool</summary>
-		public const int bBuildRawData = 0x0088;
-
-		///<summary>bool</summary>
-		public const int bBuildRenderData = 0x0089;
-
-		///<summary>unsigned char[0x96]</summary>
-		public const int UnknownData01 = 0x008A;
-
-		///<summary>UCustomizableInstancePrivateData *</summary>
-		public const int PrivateData = 0x0120;
-
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData02 = 0x0128;
+		public const int UnknownData01 = 0x00E8;
 
 	}
 
 	public class UCustomizableObjectSystem
 	{
-		///<summary>unsigned char[0x20]</summary>
+		///<summary>unsigned char[0x10]</summary>
 		public const int UnknownData00 = 0x0028;
 
-		///<summary>TArray&lt;FMutableSkeletalMeshTracker&gt;</summary>
-		public const int SkeletalMeshTrackerArray = 0x0048;
+		///<summary>TArray&lt;UTexture2D * &gt;</summary>
+		public const int ProtectedCachedTextures = 0x0038;
 
-		///<summary>TArray&lt;FMutableTextureTracker&gt;</summary>
-		public const int TextureTrackerArray = 0x0058;
-
-		///<summary>unsigned char[0x20]</summary>
-		public const int UnknownData01 = 0x0068;
-
-		///<summary>UCustomizableSkeletalComponent *</summary>
-		public const int CurrentBeginUpdateComponent = 0x0088;
-
-		///<summary>unsigned char[0x60]</summary>
-		public const int UnknownData02 = 0x0090;
+		///<summary>TArray&lt;FPendingReleaseSkeletalMeshInfo&gt;</summary>
+		public const int PendingReleaseSkeletalMesh = 0x0048;
 
 	}
 

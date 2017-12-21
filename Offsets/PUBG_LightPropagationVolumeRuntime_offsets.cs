@@ -14,10 +14,10 @@ namespace Offsets
 		public const int Settings = 0x0030;
 
 		///<summary>float</summary>
-		public const int BlendWeight = 0x0068;
+		public const int BlendWeight = 0x0070;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData01 = 0x006C;
+		public const int UnknownData01 = 0x0074;
 
 	}
 

@@ -25,10 +25,10 @@ namespace Offsets
 		///<summary>UTextBlock *</summary>
 		public const int SubjectToReport = 0x0268;
 
-		///<summary>TEnumAsByte&lt;EReportCause&gt;</summary>
+		///<summary>EReportCause</summary>
 		public const int SelectedReportCause = 0x0270;
 
-		///<summary>TEnumAsByte&lt;ESubjectToReport&gt;</summary>
+		///<summary>ESubjectToReport</summary>
 		public const int SubjectToReportType = 0x0271;
 
 	}

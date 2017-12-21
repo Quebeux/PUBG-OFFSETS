@@ -7,14 +7,11 @@ namespace Offsets
 {
 	public class UFoliageInstancedStaticMeshComponent
 	{
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x09E0;
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnInstanceTakePointDamage = 0x0BD0;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnInstanceTakeRadialDamage = 0x09E8;
-
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData01 = 0x09F8;
+		public const int OnInstanceTakeRadialDamage = 0x0BE0;
 
 	}
 
@@ -32,7 +29,7 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int Radius = 0x0040;
 
-		///<summary>TEnumAsByte&lt;EFoliageScaling&gt;</summary>
+		///<summary>EFoliageScaling</summary>
 		public const int Scaling = 0x0044;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -171,210 +168,223 @@ namespace Offsets
 		public const int BodyInstance = 0x0140;
 
 		///<summary>TEnumAsByte&lt;EHasCustomNavigableGeometry&gt;</summary>
-		public const int CustomNavigableGeometry = 0x0300;
+		public const int CustomNavigableGeometry = 0x0380;
 
 		///<summary>FLightingChannels</summary>
-		public const int LightingChannels = 0x0301;
+		public const int LightingChannels = 0x0381;
 
-		///<summary>float</summary>
-		public const int CollisionRadius = 0x0304;
+		///<summary>unsigned char:1</summary>
+		public const int bRenderCustomDepth = 0x0384;
 
-		///<summary>float</summary>
-		public const int ShadeRadius = 0x0308;
-
-		///<summary>int</summary>
-		public const int NumSteps = 0x030C;
-
-		///<summary>float</summary>
-		public const int InitialSeedDensity = 0x0310;
-
-		///<summary>float</summary>
-		public const int AverageSpreadDistance = 0x0314;
-
-		///<summary>float</summary>
-		public const int SpreadVariance = 0x0318;
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData10 = 0x0385;
 
 		///<summary>int</summary>
-		public const int SeedsPerStep = 0x031C;
-
-		///<summary>int</summary>
-		public const int DistributionSeed = 0x0320;
+		public const int CustomDepthStencilValue = 0x0388;
 
 		///<summary>float</summary>
-		public const int MaxInitialSeedOffset = 0x0324;
+		public const int CollisionRadius = 0x038C;
+
+		///<summary>float</summary>
+		public const int ShadeRadius = 0x0390;
+
+		///<summary>int</summary>
+		public const int NumSteps = 0x0394;
+
+		///<summary>float</summary>
+		public const int InitialSeedDensity = 0x0398;
+
+		///<summary>float</summary>
+		public const int AverageSpreadDistance = 0x039C;
+
+		///<summary>float</summary>
+		public const int SpreadVariance = 0x03A0;
+
+		///<summary>int</summary>
+		public const int SeedsPerStep = 0x03A4;
+
+		///<summary>int</summary>
+		public const int DistributionSeed = 0x03A8;
+
+		///<summary>float</summary>
+		public const int MaxInitialSeedOffset = 0x03AC;
 
 		///<summary>bool</summary>
-		public const int bCanGrowInShade = 0x0328;
+		public const int bCanGrowInShade = 0x03B0;
 
 		///<summary>bool</summary>
-		public const int bSpawnsInShade = 0x0329;
+		public const int bSpawnsInShade = 0x03B1;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData10 = 0x032A;
+		public const int UnknownData11 = 0x03B2;
 
 		///<summary>float</summary>
-		public const int MaxInitialAge = 0x032C;
+		public const int MaxInitialAge = 0x03B4;
 
 		///<summary>float</summary>
-		public const int MaxAge = 0x0330;
+		public const int MaxAge = 0x03B8;
 
 		///<summary>float</summary>
-		public const int OverlapPriority = 0x0334;
+		public const int OverlapPriority = 0x03BC;
 
 		///<summary>FFloatInterval</summary>
-		public const int ProceduralScale = 0x0338;
+		public const int ProceduralScale = 0x03C0;
 
 		///<summary>FRuntimeFloatCurve</summary>
-		public const int ScaleCurve = 0x0340;
+		public const int ScaleCurve = 0x03C8;
 
 		///<summary>int</summary>
-		public const int ChangeCount = 0x03C0;
+		public const int ChangeCount = 0x0440;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyDensity = 0x03C4;
+		public const int ReapplyDensity = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyRadius = 0x03C4;
+		public const int ReapplyRadius = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyAlignToNormal = 0x03C4;
+		public const int ReapplyAlignToNormal = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyRandomYaw = 0x03C4;
+		public const int ReapplyRandomYaw = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyScaling = 0x03C4;
+		public const int ReapplyScaling = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyScaleX = 0x03C4;
+		public const int ReapplyScaleX = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyScaleY = 0x03C4;
+		public const int ReapplyScaleY = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyScaleZ = 0x03C4;
+		public const int ReapplyScaleZ = 0x0444;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyRandomPitchAngle = 0x03C5;
+		public const int ReapplyRandomPitchAngle = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyGroundSlope = 0x03C5;
+		public const int ReapplyGroundSlope = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyHeight = 0x03C5;
+		public const int ReapplyHeight = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyLandscapeLayers = 0x03C5;
+		public const int ReapplyLandscapeLayers = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyZOffset = 0x03C5;
+		public const int ReapplyZOffset = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyCollisionWithWorld = 0x03C5;
+		public const int ReapplyCollisionWithWorld = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int ReapplyVertexColorMask = 0x03C5;
+		public const int ReapplyVertexColorMask = 0x0445;
 
 		///<summary>unsigned char:1</summary>
-		public const int bEnableDensityScaling = 0x03C5;
+		public const int bEnableDensityScaling = 0x0445;
 
 		///<summary>unsigned char[0xA]</summary>
-		public const int UnknownData11 = 0x03C6;
+		public const int UnknownData12 = 0x0446;
 
 	}
 
 	public class UFoliageType_InstancedStaticMesh
 	{
 		///<summary>TArray&lt;UMaterialInterface * &gt;</summary>
-		public const int OverrideMaterials = 0x03D0;
+		public const int OverrideMaterials = 0x0450;
 
 		///<summary>UClass *</summary>
-		public const int ComponentClass = 0x03E0;
+		public const int ComponentClass = 0x0460;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x03E8;
+		public const int UnknownData00 = 0x0468;
 
 	}
 
 	public class AInstancedFoliageActor
 	{
 		///<summary>unsigned char[0x50]</summary>
-		public const int UnknownData00 = 0x03A0;
+		public const int UnknownData00 = 0x03B0;
 
 	}
 
 	public class AInteractiveFoliageActor
 	{
 		///<summary>UCapsuleComponent *</summary>
-		public const int CapsuleComponent = 0x03B0;
+		public const int CapsuleComponent = 0x03C0;
 
 		///<summary>FVector</summary>
-		public const int TouchingActorEntryPosition = 0x03B8;
+		public const int TouchingActorEntryPosition = 0x03C8;
 
 		///<summary>FVector</summary>
-		public const int FoliageVelocity = 0x03C4;
+		public const int FoliageVelocity = 0x03D4;
 
 		///<summary>FVector</summary>
-		public const int FoliageForce = 0x03D0;
+		public const int FoliageForce = 0x03E0;
 
 		///<summary>FVector</summary>
-		public const int FoliagePosition = 0x03DC;
+		public const int FoliagePosition = 0x03EC;
 
 		///<summary>float</summary>
-		public const int FoliageDamageImpulseScale = 0x03E8;
+		public const int FoliageDamageImpulseScale = 0x03F8;
 
 		///<summary>float</summary>
-		public const int FoliageTouchImpulseScale = 0x03EC;
+		public const int FoliageTouchImpulseScale = 0x03FC;
 
 		///<summary>float</summary>
-		public const int FoliageStiffness = 0x03F0;
+		public const int FoliageStiffness = 0x0400;
 
 		///<summary>float</summary>
-		public const int FoliageStiffnessQuadratic = 0x03F4;
+		public const int FoliageStiffnessQuadratic = 0x0404;
 
 		///<summary>float</summary>
-		public const int FoliageDamping = 0x03F8;
+		public const int FoliageDamping = 0x0408;
 
 		///<summary>float</summary>
-		public const int MaxDamageImpulse = 0x03FC;
+		public const int MaxDamageImpulse = 0x040C;
 
 		///<summary>float</summary>
-		public const int MaxTouchImpulse = 0x0400;
+		public const int MaxTouchImpulse = 0x0410;
 
 		///<summary>float</summary>
-		public const int MaxForce = 0x0404;
+		public const int MaxForce = 0x0414;
 
 		///<summary>float</summary>
-		public const int Mass = 0x0408;
+		public const int Mass = 0x0418;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x040C;
+		public const int UnknownData00 = 0x041C;
+
+	}
+
+	public class UInteractiveFoliageComponent
+	{
+		///<summary>unsigned char[0x10]</summary>
+		public const int UnknownData00 = 0x09E0;
 
 	}
 
 	public class AProceduralFoliageBlockingVolume
 	{
 		///<summary>AProceduralFoliageVolume *</summary>
-		public const int ProceduralFoliageVolume = 0x03D8;
+		public const int ProceduralFoliageVolume = 0x03E8;
 
 	}
 
 	public class UProceduralFoliageComponent
 	{
-		///<summary>UProceduralFoliageSpawner *</summary>
-		public const int FoliageSpawner = 0x00F8;
-
 		///<summary>float</summary>
-		public const int TileOverlap = 0x0100;
+		public const int TileOverlap = 0x01E0;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x0104;
+		public const int UnknownData00 = 0x01E4;
 
 		///<summary>AVolume *</summary>
-		public const int SpawningVolume = 0x0108;
+		public const int SpawningVolume = 0x01E8;
 
 		///<summary>FGuid</summary>
-		public const int ProceduralGuid = 0x0110;
+		public const int ProceduralGuid = 0x01F0;
 
 	}
 
@@ -425,7 +435,7 @@ namespace Offsets
 	public class AProceduralFoliageVolume
 	{
 		///<summary>UProceduralFoliageComponent *</summary>
-		public const int ProceduralComponent = 0x03D8;
+		public const int ProceduralComponent = 0x03E8;
 
 	}
 

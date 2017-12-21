@@ -43,10 +43,10 @@ namespace Offsets
 		///<summary>FScriptDelegate</summary>
 		public const int ToolTipWidgetDelegate = 0x0090;
 
-		///<summary>TEnumAsByte&lt;ESlateVisibility&gt;</summary>
+		///<summary>ESlateVisibility</summary>
 		public const int Visiblity = 0x00A0;
 
-		///<summary>TEnumAsByte&lt;ESlateVisibility&gt;</summary>
+		///<summary>ESlateVisibility</summary>
 		public const int Visibility = 0x00A1;
 
 		///<summary>unsigned char[0x6]</summary>
@@ -119,35 +119,47 @@ namespace Offsets
 		///<summary>unsigned char[0x6]</summary>
 		public const int UnknownData01 = 0x019A;
 
-		///<summary>UWidgetTree *</summary>
-		public const int WidgetTree = 0x01A0;
+		///<summary>TArray&lt;UUMGSequencePlayer * &gt;</summary>
+		public const int ActiveSequencePlayers = 0x01A0;
 
 		///<summary>TArray&lt;UUMGSequencePlayer * &gt;</summary>
-		public const int ActiveSequencePlayers = 0x01A8;
+		public const int StoppedSequencePlayers = 0x01B0;
 
-		///<summary>TArray&lt;UUMGSequencePlayer * &gt;</summary>
-		public const int StoppedSequencePlayers = 0x01B8;
+		///<summary>bool</summary>
+		public const int bStopAction = 0x01C0;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x01C1;
+
+		///<summary>int</summary>
+		public const int Priority = 0x01C4;
 
 		///<summary>TArray&lt;FNamedSlotBinding&gt;</summary>
 		public const int NamedSlotBindings = 0x01C8;
 
-		///<summary>bool</summary>
-		public const int bStopAction = 0x01D8;
+		///<summary>UWidgetTree *</summary>
+		public const int WidgetTree = 0x01D8;
 
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData02 = 0x01D9;
+		///<summary>unsigned char:1</summary>
+		public const int bCanEverTick = 0x01E0;
 
-		///<summary>int</summary>
-		public const int Priority = 0x01DC;
+		///<summary>unsigned char:1</summary>
+		public const int bCanEverPaint = 0x01E0;
 
-		///<summary>unsigned char[0x8]</summary>
+		///<summary>unsigned char:1</summary>
 		public const int UnknownData03 = 0x01E0;
+
+		///<summary>unsigned char:1</summary>
+		public const int bCookedWidgetTree = 0x01E0;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData04 = 0x01E1;
 
 		///<summary>UInputComponent *</summary>
 		public const int InputComponent = 0x01E8;
 
 		///<summary>unsigned char[0x50]</summary>
-		public const int UnknownData04 = 0x01F0;
+		public const int UnknownData05 = 0x01F0;
 
 	}
 
@@ -172,7 +184,7 @@ namespace Offsets
 		///<summary>UWidget *</summary>
 		public const int DefaultDragVisual = 0x0040;
 
-		///<summary>TEnumAsByte&lt;EDragPivot&gt;</summary>
+		///<summary>EDragPivot</summary>
 		public const int Pivot = 0x0048;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -198,48 +210,54 @@ namespace Offsets
 	public class UMovieScene2DTransformSection
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0040;
+		public const int UnknownData00 = 0x00D0;
 
 		///<summary>FRichCurve[0x2]</summary>
-		public const int Translation = 0x0048;
+		public const int Translation = 0x00D8;
 
 		///<summary>FRichCurve</summary>
-		public const int Rotation = 0x0138;
+		public const int Rotation = 0x01B8;
 
 		///<summary>FRichCurve[0x2]</summary>
-		public const int Scale = 0x01B0;
+		public const int Scale = 0x0228;
 
 		///<summary>FRichCurve[0x2]</summary>
-		public const int Shear = 0x02A0;
+		public const int Shear = 0x0308;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData01 = 0x03E8;
 
 	}
 
 	public class UMovieSceneMarginSection
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0040;
+		public const int UnknownData00 = 0x00D0;
 
 		///<summary>FRichCurve</summary>
-		public const int TopCurve = 0x0048;
+		public const int TopCurve = 0x00D8;
 
 		///<summary>FRichCurve</summary>
-		public const int LeftCurve = 0x00C0;
+		public const int LeftCurve = 0x0148;
 
 		///<summary>FRichCurve</summary>
-		public const int RightCurve = 0x0138;
+		public const int RightCurve = 0x01B8;
 
 		///<summary>FRichCurve</summary>
-		public const int BottomCurve = 0x01B0;
+		public const int BottomCurve = 0x0228;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData01 = 0x0298;
 
 	}
 
 	public class UMovieSceneWidgetMaterialTrack
 	{
-		///<summary>TArray&lt;FName&gt;</summary>
-		public const int BrushPropertyNamePath = 0x0038;
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x00D0;
 
 		///<summary>FName</summary>
-		public const int TrackName = 0x0048;
+		public const int TrackName = 0x00D8;
 
 	}
 
@@ -326,16 +344,56 @@ namespace Offsets
 
 	}
 
+	public class UWidgetBlueprintGeneratedClass
+	{
+		///<summary>UWidgetTree *</summary>
+		public const int WidgetTree = 0x0358;
+
+		///<summary>bool</summary>
+		public const int bAllowTemplate = 0x0360;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData00 = 0x0361;
+
+		///<summary>TArray&lt;FDelegateRuntimeBinding&gt;</summary>
+		public const int Bindings = 0x0368;
+
+		///<summary>TArray&lt;UWidgetAnimation * &gt;</summary>
+		public const int Animations = 0x0378;
+
+		///<summary>TArray&lt;FName&gt;</summary>
+		public const int NamedSlots = 0x0388;
+
+		///<summary>bool</summary>
+		public const int bValidTemplate = 0x0398;
+
+		///<summary>bool</summary>
+		public const int bTemplateInitialized = 0x0399;
+
+		///<summary>bool</summary>
+		public const int bCookedTemplate = 0x039A;
+
+		///<summary>unsigned char[0x5]</summary>
+		public const int UnknownData01 = 0x039B;
+
+		///<summary>TAssetPtr&lt;UUserWidget&gt;</summary>
+		public const int TemplateAsset = 0x03A0;
+
+		///<summary>UUserWidget *</summary>
+		public const int Template = 0x03C0;
+
+	}
+
 	public class UUMGSequencePlayer
 	{
-		///<summary>unsigned char[0x20]</summary>
+		///<summary>unsigned char[0x348]</summary>
 		public const int UnknownData00 = 0x0028;
 
 		///<summary>UWidgetAnimation *</summary>
-		public const int Animation = 0x0048;
+		public const int Animation = 0x0370;
 
-		///<summary>unsigned char[0x150]</summary>
-		public const int UnknownData01 = 0x0050;
+		///<summary>unsigned char[0x328]</summary>
+		public const int UnknownData01 = 0x0378;
 
 	}
 
@@ -346,6 +404,22 @@ namespace Offsets
 
 		///<summary>UWidget *</summary>
 		public const int Content = 0x0030;
+
+	}
+
+	public class UBackgroundBlurSlot
+	{
+		///<summary>FMargin</summary>
+		public const int Padding = 0x0038;
+
+		///<summary>TEnumAsByte&lt;EHorizontalAlignment&gt;</summary>
+		public const int HorizontalAlignment = 0x0048;
+
+		///<summary>TEnumAsByte&lt;EVerticalAlignment&gt;</summary>
+		public const int VerticalAlignment = 0x0049;
+
+		///<summary>unsigned char[0x16]</summary>
+		public const int UnknownData00 = 0x004A;
 
 	}
 
@@ -599,6 +673,26 @@ namespace Offsets
 
 	}
 
+	public class UPanelWidget
+	{
+		///<summary>TArray&lt;UPanelSlot * &gt;</summary>
+		public const int Slots = 0x0128;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x0138;
+
+	}
+
+	public class UWindowTitleBarArea
+	{
+		///<summary>bool</summary>
+		public const int bDoubleClickTogglesFullscreen = 0x0140;
+
+		///<summary>unsigned char[0x1F]</summary>
+		public const int UnknownData00 = 0x0141;
+
+	}
+
 	public class UWindowTitleBarAreaSlot
 	{
 		///<summary>FMargin</summary>
@@ -676,8 +770,11 @@ namespace Offsets
 		///<summary>FScriptDelegate</summary>
 		public const int OnGenerateWidgetEvent = 0x0138;
 
-		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData00 = 0x0148;
+		///<summary>bool</summary>
+		public const int bIsFocusable = 0x0148;
+
+		///<summary>unsigned char[0x17]</summary>
+		public const int UnknownData00 = 0x0149;
 
 	}
 
@@ -716,17 +813,23 @@ namespace Offsets
 		///<summary>FSlateColor</summary>
 		public const int ForegroundColor = 0x0D08;
 
+		///<summary>bool</summary>
+		public const int bIsFocusable = 0x0D30;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData01 = 0x0D31;
+
 		///<summary>FScriptDelegate</summary>
-		public const int OnGenerateWidgetEvent = 0x0D30;
+		public const int OnGenerateWidgetEvent = 0x0D38;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnSelectionChanged = 0x0D40;
+		public const int OnSelectionChanged = 0x0D48;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnOpening = 0x0D50;
+		public const int OnOpening = 0x0D58;
 
 		///<summary>unsigned char[0x40]</summary>
-		public const int UnknownData01 = 0x0D60;
+		public const int UnknownData02 = 0x0D68;
 
 	}
 
@@ -747,7 +850,7 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int WrapTextAt = 0x0134;
 
-		///<summary>TEnumAsByte&lt;ETextWrappingPolicy&gt;</summary>
+		///<summary>ETextWrappingPolicy</summary>
 		public const int WrappingPolicy = 0x0138;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -940,37 +1043,37 @@ namespace Offsets
 		public const int Style = 0x0130;
 
 		///<summary>FSlateBrush</summary>
-		public const int BorderBrush = 0x0258;
+		public const int BorderBrush = 0x0260;
 
 		///<summary>FSlateColor</summary>
-		public const int BorderColor = 0x02E8;
+		public const int BorderColor = 0x02F0;
 
 		///<summary>bool</summary>
-		public const int bIsExpanded = 0x0310;
+		public const int bIsExpanded = 0x0318;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0311;
+		public const int UnknownData01 = 0x0319;
 
 		///<summary>float</summary>
-		public const int MaxHeight = 0x0314;
+		public const int MaxHeight = 0x031C;
 
 		///<summary>FMargin</summary>
-		public const int HeaderPadding = 0x0318;
+		public const int HeaderPadding = 0x0320;
 
 		///<summary>FMargin</summary>
-		public const int AreaPadding = 0x0328;
+		public const int AreaPadding = 0x0330;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnExpansionChanged = 0x0338;
+		public const int OnExpansionChanged = 0x0340;
 
 		///<summary>UWidget *</summary>
-		public const int HeaderContent = 0x0348;
+		public const int HeaderContent = 0x0350;
 
 		///<summary>UWidget *</summary>
-		public const int BodyContent = 0x0350;
+		public const int BodyContent = 0x0358;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData02 = 0x0358;
+		public const int UnknownData02 = 0x0360;
 
 	}
 
@@ -1040,20 +1143,47 @@ namespace Offsets
 
 	}
 
-	public class UPanelWidget
-	{
-		///<summary>TArray&lt;UPanelSlot * &gt;</summary>
-		public const int Slots = 0x0128;
-
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0138;
-
-	}
-
 	public class UCanvasPanel
 	{
 		///<summary>unsigned char[0x10]</summary>
 		public const int UnknownData00 = 0x0140;
+
+	}
+
+	public class UBackgroundBlur
+	{
+		///<summary>FMargin</summary>
+		public const int Padding = 0x0140;
+
+		///<summary>TEnumAsByte&lt;EHorizontalAlignment&gt;</summary>
+		public const int HorizontalAlignment = 0x0150;
+
+		///<summary>TEnumAsByte&lt;EVerticalAlignment&gt;</summary>
+		public const int VerticalAlignment = 0x0151;
+
+		///<summary>bool</summary>
+		public const int bApplyAlphaToBlur = 0x0152;
+
+		///<summary>unsigned char[0x1]</summary>
+		public const int UnknownData00 = 0x0153;
+
+		///<summary>float</summary>
+		public const int BlurStrength = 0x0154;
+
+		///<summary>bool</summary>
+		public const int bOverrideAutoRadiusCalculation = 0x0158;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData01 = 0x0159;
+
+		///<summary>int</summary>
+		public const int BlurRadius = 0x015C;
+
+		///<summary>FSlateBrush</summary>
+		public const int LowQualityFallbackBrush = 0x0160;
+
+		///<summary>unsigned char[0x10]</summary>
+		public const int UnknownData02 = 0x01F0;
 
 	}
 
@@ -1166,7 +1296,7 @@ namespace Offsets
 
 	public class UCheckBox
 	{
-		///<summary>TEnumAsByte&lt;ECheckBoxState&gt;</summary>
+		///<summary>ECheckBoxState</summary>
 		public const int CheckedState = 0x0140;
 
 		///<summary>unsigned char[0x7]</summary>
@@ -1407,16 +1537,6 @@ namespace Offsets
 
 	}
 
-	public class UWindowTitleBarArea
-	{
-		///<summary>bool</summary>
-		public const int bDoubleClickTogglesFullscreen = 0x0140;
-
-		///<summary>unsigned char[0x1F]</summary>
-		public const int UnknownData00 = 0x0141;
-
-	}
-
 	public class UGridPanel
 	{
 		///<summary>TArray&lt;float&gt;</summary>
@@ -1461,10 +1581,10 @@ namespace Offsets
 		///<summary>TEnumAsByte&lt;EOrientation&gt;</summary>
 		public const int Orientation = 0x08B0;
 
-		///<summary>TEnumAsByte&lt;ESlateVisibility&gt;</summary>
+		///<summary>ESlateVisibility</summary>
 		public const int ScrollBarVisibility = 0x08B1;
 
-		///<summary>TEnumAsByte&lt;EConsumeMouseWheel&gt;</summary>
+		///<summary>EConsumeMouseWheel</summary>
 		public const int ConsumeMouseWheel = 0x08B2;
 
 		///<summary>unsigned char[0x1]</summary>
@@ -1519,8 +1639,14 @@ namespace Offsets
 		///<summary>FVector2D</summary>
 		public const int InnerSlotPadding = 0x0140;
 
-		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData00 = 0x0148;
+		///<summary>float</summary>
+		public const int WrapWidth = 0x0148;
+
+		///<summary>bool</summary>
+		public const int bExplicitWrapWidth = 0x014C;
+
+		///<summary>unsigned char[0x13]</summary>
+		public const int UnknownData00 = 0x014D;
 
 	}
 
@@ -1815,23 +1941,29 @@ namespace Offsets
 		///<summary>FTextBlockStyle</summary>
 		public const int WidgetStyle = 0x0190;
 
-		///<summary>FSlateFontInfo</summary>
-		public const int Font = 0x0398;
-
 		///<summary>bool</summary>
-		public const int AllowContextMenu = 0x0400;
+		public const int bIsReadOnly = 0x0398;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0401;
+		public const int UnknownData00 = 0x0399;
+
+		///<summary>FSlateFontInfo</summary>
+		public const int Font = 0x03A0;
+
+		///<summary>bool</summary>
+		public const int AllowContextMenu = 0x0408;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData01 = 0x0409;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnTextChanged = 0x0408;
+		public const int OnTextChanged = 0x0410;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnTextCommitted = 0x0418;
+		public const int OnTextCommitted = 0x0420;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData01 = 0x0428;
+		public const int UnknownData02 = 0x0430;
 
 	}
 
@@ -1853,10 +1985,13 @@ namespace Offsets
 		public const int TextStyle = 0x0A00;
 
 		///<summary>bool</summary>
-		public const int AllowContextMenu = 0x0C08;
+		public const int bIsReadOnly = 0x0C08;
 
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0C09;
+		///<summary>bool</summary>
+		public const int AllowContextMenu = 0x0C09;
+
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData00 = 0x0C0A;
 
 		///<summary>USlateWidgetStyleAsset *</summary>
 		public const int Style = 0x0C10;
@@ -1971,254 +2106,231 @@ namespace Offsets
 
 	}
 
-	public class UWidgetTree
-	{
-		///<summary>UWidget *</summary>
-		public const int RootWidget = 0x0028;
-
-		///<summary>TArray&lt;UWidget * &gt;</summary>
-		public const int AllWidgets = 0x0030;
-
-	}
-
 	public class UWidgetAnimation
 	{
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnAnimationStarted = 0x0028;
+		public const int OnAnimationStarted = 0x0330;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnAnimationFinished = 0x0038;
+		public const int OnAnimationFinished = 0x0340;
 
 		///<summary>UMovieScene *</summary>
-		public const int MovieScene = 0x0048;
+		public const int MovieScene = 0x0350;
 
 		///<summary>TArray&lt;FWidgetAnimationBinding&gt;</summary>
-		public const int AnimationBindings = 0x0050;
+		public const int AnimationBindings = 0x0358;
 
-		///<summary>unsigned char[0x148]</summary>
-		public const int UnknownData00 = 0x0060;
-
-	}
-
-	public class UWidgetBlueprintGeneratedClass
-	{
-		///<summary>UWidgetTree *</summary>
-		public const int WidgetTree = 0x02F8;
-
-		///<summary>TArray&lt;FDelegateRuntimeBinding&gt;</summary>
-		public const int Bindings = 0x0300;
-
-		///<summary>TArray&lt;UWidgetAnimation * &gt;</summary>
-		public const int Animations = 0x0310;
-
-		///<summary>TArray&lt;FName&gt;</summary>
-		public const int NamedSlots = 0x0320;
-
-		///<summary>unsigned char:1</summary>
-		public const int bCanEverTick = 0x0330;
-
-		///<summary>unsigned char:1</summary>
-		public const int bCanEverPaint = 0x0330;
-
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0331;
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x0368;
 
 	}
 
 	public class UWidgetComponent
 	{
-		///<summary>TEnumAsByte&lt;EWidgetSpace&gt;</summary>
-		public const int Space = 0x0780;
+		///<summary>EWidgetSpace</summary>
+		public const int Space = 0x0950;
 
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0781;
-
-		///<summary>UClass *</summary>
-		public const int WidgetClass = 0x0788;
-
-		///<summary>FIntPoint</summary>
-		public const int DrawSize = 0x0790;
-
-		///<summary>bool</summary>
-		public const int bManuallyRedraw = 0x0798;
-
-		///<summary>bool</summary>
-		public const int bRedrawRequested = 0x0799;
-
-		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData01 = 0x079A;
-
-		///<summary>float</summary>
-		public const int RedrawTime = 0x079C;
-
-		///<summary>float</summary>
-		public const int LastWidgetRenderTime = 0x07A0;
-
-		///<summary>bool</summary>
-		public const int bWindowFocusable = 0x07A4;
-
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData02 = 0x07A5;
-
-		///<summary>FIntPoint</summary>
-		public const int CurrentDrawSize = 0x07A8;
-
-		///<summary>bool</summary>
-		public const int bDrawAtDesiredSize = 0x07B0;
-
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData03 = 0x07B1;
-
-		///<summary>FVector2D</summary>
-		public const int Pivot = 0x07B4;
-
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData04 = 0x07BC;
-
-		///<summary>ULocalPlayer *</summary>
-		public const int OwnerPlayer = 0x07C0;
-
-		///<summary>FLinearColor</summary>
-		public const int BackgroundColor = 0x07C8;
-
-		///<summary>FLinearColor</summary>
-		public const int TintColorAndOpacity = 0x07D8;
-
-		///<summary>float</summary>
-		public const int OpacityFromTexture = 0x07E8;
-
-		///<summary>TEnumAsByte&lt;EWidgetBlendMode&gt;</summary>
-		public const int BlendMode = 0x07EC;
-
-		///<summary>bool</summary>
-		public const int bIsTwoSided = 0x07ED;
-
-		///<summary>bool</summary>
-		public const int TickWhenOffscreen = 0x07EE;
-
-		///<summary>unsigned char[0x1]</summary>
-		public const int UnknownData05 = 0x07EF;
-
-		///<summary>UUserWidget *</summary>
-		public const int Widget = 0x07F0;
-
-		///<summary>unsigned char[0x20]</summary>
-		public const int UnknownData06 = 0x07F8;
-
-		///<summary>UBodySetup *</summary>
-		public const int BodySetup = 0x0818;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int TranslucentMaterial = 0x0820;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int TranslucentMaterial_OneSided = 0x0828;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int OpaqueMaterial = 0x0830;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int OpaqueMaterial_OneSided = 0x0838;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int MaskedMaterial = 0x0840;
-
-		///<summary>UMaterialInterface *</summary>
-		public const int MaskedMaterial_OneSided = 0x0848;
-
-		///<summary>UTextureRenderTarget2D *</summary>
-		public const int RenderTarget = 0x0850;
-
-		///<summary>UMaterialInstanceDynamic *</summary>
-		public const int MaterialInstance = 0x0858;
-
-		///<summary>bool</summary>
-		public const int bAddedToScreen = 0x0860;
-
-		///<summary>bool</summary>
-		public const int bEditTimeUsable = 0x0861;
+		///<summary>EWidgetTimingPolicy</summary>
+		public const int TimingPolicy = 0x0951;
 
 		///<summary>unsigned char[0x6]</summary>
-		public const int UnknownData07 = 0x0862;
+		public const int UnknownData00 = 0x0952;
+
+		///<summary>UClass *</summary>
+		public const int WidgetClass = 0x0958;
+
+		///<summary>FIntPoint</summary>
+		public const int DrawSize = 0x0960;
+
+		///<summary>bool</summary>
+		public const int bManuallyRedraw = 0x0968;
+
+		///<summary>bool</summary>
+		public const int bRedrawRequested = 0x0969;
+
+		///<summary>unsigned char[0x2]</summary>
+		public const int UnknownData01 = 0x096A;
+
+		///<summary>float</summary>
+		public const int RedrawTime = 0x096C;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData02 = 0x0970;
+
+		///<summary>FIntPoint</summary>
+		public const int CurrentDrawSize = 0x0978;
+
+		///<summary>bool</summary>
+		public const int bDrawAtDesiredSize = 0x0980;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData03 = 0x0981;
+
+		///<summary>FVector2D</summary>
+		public const int Pivot = 0x0984;
+
+		///<summary>bool</summary>
+		public const int bReceiveHardwareInput = 0x098C;
+
+		///<summary>bool</summary>
+		public const int bWindowFocusable = 0x098D;
+
+		///<summary>unsigned char[0x2]</summary>
+		public const int UnknownData04 = 0x098E;
+
+		///<summary>ULocalPlayer *</summary>
+		public const int OwnerPlayer = 0x0990;
+
+		///<summary>FLinearColor</summary>
+		public const int BackgroundColor = 0x0998;
+
+		///<summary>FLinearColor</summary>
+		public const int TintColorAndOpacity = 0x09A8;
+
+		///<summary>float</summary>
+		public const int OpacityFromTexture = 0x09B8;
+
+		///<summary>EWidgetBlendMode</summary>
+		public const int BlendMode = 0x09BC;
+
+		///<summary>bool</summary>
+		public const int bIsTwoSided = 0x09BD;
+
+		///<summary>bool</summary>
+		public const int TickWhenOffscreen = 0x09BE;
+
+		///<summary>unsigned char[0x1]</summary>
+		public const int UnknownData05 = 0x09BF;
+
+		///<summary>UUserWidget *</summary>
+		public const int Widget = 0x09C0;
+
+		///<summary>unsigned char[0x20]</summary>
+		public const int UnknownData06 = 0x09C8;
+
+		///<summary>UBodySetup *</summary>
+		public const int BodySetup = 0x09E8;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int TranslucentMaterial = 0x09F0;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int TranslucentMaterial_OneSided = 0x09F8;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int OpaqueMaterial = 0x0A00;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int OpaqueMaterial_OneSided = 0x0A08;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int MaskedMaterial = 0x0A10;
+
+		///<summary>UMaterialInterface *</summary>
+		public const int MaskedMaterial_OneSided = 0x0A18;
+
+		///<summary>UTextureRenderTarget2D *</summary>
+		public const int RenderTarget = 0x0A20;
+
+		///<summary>UMaterialInstanceDynamic *</summary>
+		public const int MaterialInstance = 0x0A28;
+
+		///<summary>bool</summary>
+		public const int bAddedToScreen = 0x0A30;
+
+		///<summary>bool</summary>
+		public const int bEditTimeUsable = 0x0A31;
+
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData07 = 0x0A32;
 
 		///<summary>FName</summary>
-		public const int SharedLayerName = 0x0868;
+		public const int SharedLayerName = 0x0A38;
 
 		///<summary>int</summary>
-		public const int LayerZOrder = 0x0870;
+		public const int LayerZOrder = 0x0A40;
 
-		///<summary>unsigned char[0x3C]</summary>
-		public const int UnknownData08 = 0x0874;
+		///<summary>EWidgetGeometryMode</summary>
+		public const int GeometryMode = 0x0A44;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData08 = 0x0A45;
+
+		///<summary>float</summary>
+		public const int CylinderArcAngle = 0x0A48;
+
+		///<summary>unsigned char[0x34]</summary>
+		public const int UnknownData09 = 0x0A4C;
 
 	}
 
 	public class UWidgetInteractionComponent
 	{
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnHoveredWidgetChanged = 0x0300;
+		public const int OnHoveredWidgetChanged = 0x03F0;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData00 = 0x0310;
+		public const int UnknownData00 = 0x0400;
 
 		///<summary>int</summary>
-		public const int VirtualUserIndex = 0x0320;
+		public const int VirtualUserIndex = 0x0410;
 
 		///<summary>float</summary>
-		public const int PointerIndex = 0x0324;
+		public const int PointerIndex = 0x0414;
 
 		///<summary>TEnumAsByte&lt;ECollisionChannel&gt;</summary>
-		public const int TraceChannel = 0x0328;
+		public const int TraceChannel = 0x0418;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x0329;
+		public const int UnknownData01 = 0x0419;
 
 		///<summary>float</summary>
-		public const int InteractionDistance = 0x032C;
+		public const int InteractionDistance = 0x041C;
 
-		///<summary>TEnumAsByte&lt;EWidgetInteractionSource&gt;</summary>
-		public const int InteractionSource = 0x0330;
-
-		///<summary>bool</summary>
-		public const int bEnableHitTesting = 0x0331;
+		///<summary>EWidgetInteractionSource</summary>
+		public const int InteractionSource = 0x0420;
 
 		///<summary>bool</summary>
-		public const int bShowDebug = 0x0332;
+		public const int bEnableHitTesting = 0x0421;
+
+		///<summary>bool</summary>
+		public const int bShowDebug = 0x0422;
 
 		///<summary>unsigned char[0x1]</summary>
-		public const int UnknownData02 = 0x0333;
+		public const int UnknownData02 = 0x0423;
 
 		///<summary>FLinearColor</summary>
-		public const int DebugColor = 0x0334;
+		public const int DebugColor = 0x0424;
 
 		///<summary>unsigned char[0x7C]</summary>
-		public const int UnknownData03 = 0x0344;
+		public const int UnknownData03 = 0x0434;
 
 		///<summary>FHitResult</summary>
-		public const int CustomHitResult = 0x03C0;
+		public const int CustomHitResult = 0x04B0;
 
 		///<summary>FVector2D</summary>
-		public const int LocalHitLocation = 0x0448;
+		public const int LocalHitLocation = 0x0538;
 
 		///<summary>FVector2D</summary>
-		public const int LastLocalHitLocation = 0x0450;
+		public const int LastLocalHitLocation = 0x0540;
 
 		///<summary>UWidgetComponent *</summary>
-		public const int HoveredWidgetComponent = 0x0458;
+		public const int HoveredWidgetComponent = 0x0548;
 
 		///<summary>FHitResult</summary>
-		public const int LastHitResult = 0x0460;
+		public const int LastHitResult = 0x0550;
 
 		///<summary>bool</summary>
-		public const int bIsHoveredWidgetInteractable = 0x04E8;
+		public const int bIsHoveredWidgetInteractable = 0x05D8;
 
 		///<summary>bool</summary>
-		public const int bIsHoveredWidgetFocusable = 0x04E9;
+		public const int bIsHoveredWidgetFocusable = 0x05D9;
 
 		///<summary>bool</summary>
-		public const int bIsHoveredWidgetHitTestVisible = 0x04EA;
+		public const int bIsHoveredWidgetHitTestVisible = 0x05DA;
 
 		///<summary>unsigned char[0x5]</summary>
-		public const int UnknownData04 = 0x04EB;
+		public const int UnknownData04 = 0x05DB;
 
 	}
 
@@ -2241,6 +2353,16 @@ namespace Offsets
 
 		///<summary>FWidgetNavigationData</summary>
 		public const int Previous = 0x00A0;
+
+	}
+
+	public class UWidgetTree
+	{
+		///<summary>UWidget *</summary>
+		public const int RootWidget = 0x0028;
+
+		///<summary>TArray&lt;UWidget * &gt;</summary>
+		public const int AllWidgets = 0x0030;
 
 	}
 

@@ -28,7 +28,7 @@ namespace Offsets
 		///<summary>int</summary>
 		public const int MouseOverAttachmentWeaponSlotIndex = 0x00B0;
 
-		///<summary>TEnumAsByte&lt;EWeaponAttachmentSlotID&gt;</summary>
+		///<summary>EWeaponAttachmentSlotID</summary>
 		public const int MouseOverAttachmentSlotId = 0x00B4;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -64,7 +64,7 @@ namespace Offsets
 		///<summary>int</summary>
 		public const int DragDroppingWeaponIndex = 0x00E8;
 
-		///<summary>TEnumAsByte&lt;EEquipSlotID&gt;</summary>
+		///<summary>EEquipSlotID</summary>
 		public const int MouseOverSlotId = 0x00EC;
 
 		///<summary>unsigned char[0x3]</summary>

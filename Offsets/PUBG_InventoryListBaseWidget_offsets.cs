@@ -97,6 +97,21 @@ namespace Offsets
 		///<summary>bool</summary>
 		public const int bIsSlotScrollDown = 0x0331;
 
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData04 = 0x0332;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnInventoryDrop = 0x0338;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnDoSlotAction = 0x0348;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnEnterSlot = 0x0358;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnLeaveSlot = 0x0368;
+
 	}
 
 }

@@ -22,17 +22,32 @@ namespace Offsets
 		///<summary>UImage *</summary>
 		public const int Image_2 = 0x02B0;
 
+		///<summary>UImage *</summary>
+		public const int Image_3 = 0x02B8;
+
+		///<summary>UImage *</summary>
+		public const int Image_4 = 0x02C0;
+
 		///<summary>UWidgetSwitcher *</summary>
-		public const int MainMenuSwitcher = 0x02B8;
+		public const int MainMenuSwitcher = 0x02C8;
 
 		///<summary>UButtonWidget_C *</summary>
-		public const int OptionButton = 0x02C0;
+		public const int OptionButton = 0x02D0;
 
 		///<summary>UButtonWidget_C *</summary>
-		public const int Resume = 0x02C8;
+		public const int Resume = 0x02D8;
+
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_3 = 0x02E0;
+
+		///<summary>UUIBlurBackground_C *</summary>
+		public const int UIBlurBackground = 0x02E8;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int TestDispatcher = 0x02D0;
+		public const int TestDispatcher = 0x02F0;
+
+		///<summary>bool</summary>
+		public const int IsGamePad = 0x0300;
 
 	}
 

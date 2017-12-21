@@ -40,32 +40,47 @@ namespace Offsets
 		///<summary>UButton *</summary>
 		public const int OkButton = 0x02E0;
 
+		///<summary>UTextBlock *</summary>
+		public const int OkTextOnButton = 0x02E8;
+
 		///<summary>UButton *</summary>
-		public const int OuterPopup = 0x02E8;
+		public const int OuterPopup = 0x02F0;
+
+		///<summary>USizeBox *</summary>
+		public const int SizeBox_2 = 0x02F8;
+
+		///<summary>USizeBox *</summary>
+		public const int SizeBox_3 = 0x0300;
+
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_4 = 0x0308;
 
 		///<summary>UItem *</summary>
-		public const int Item = 0x02F0;
+		public const int Item = 0x0310;
 
 		///<summary>AInventory *</summary>
-		public const int Inventory = 0x02F8;
+		public const int Inventory = 0x0318;
 
 		///<summary>TScriptInterface&lt;USlotContainerInterface&gt;</summary>
-		public const int Container = 0x0300;
+		public const int Container = 0x0320;
 
 		///<summary>TScriptInterface&lt;USlotInterface&gt;</summary>
-		public const int ItemSlot = 0x0310;
+		public const int ItemSlot = 0x0330;
 
 		///<summary>bool</summary>
-		public const int bIsDropping = 0x0320;
+		public const int bIsDropping = 0x0340;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0321;
+		public const int UnknownData00 = 0x0341;
 
 		///<summary>FText</summary>
-		public const int AmountText = 0x0328;
+		public const int AmountText = 0x0348;
 
 		///<summary>FText</summary>
-		public const int OkText = 0x0340;
+		public const int OkText = 0x0360;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnStackCountUpdated = 0x0378;
 
 	}
 

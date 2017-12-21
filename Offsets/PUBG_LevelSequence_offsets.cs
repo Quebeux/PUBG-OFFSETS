@@ -8,59 +8,32 @@ namespace Offsets
 	public class ULevelSequence
 	{
 		///<summary>UMovieScene *</summary>
-		public const int MovieScene = 0x0028;
+		public const int MovieScene = 0x0330;
 
 		///<summary>FLevelSequenceObjectReferenceMap</summary>
-		public const int ObjectReferences = 0x0030;
+		public const int ObjectReferences = 0x0338;
+
+		///<summary>FLevelSequenceBindingReferences</summary>
+		public const int BindingReferences = 0x0388;
 
 		///<summary>TMap&lt;FString,FLevelSequenceObject&gt;</summary>
-		public const int PossessedObjects = 0x0080;
+		public const int PossessedObjects = 0x03D8;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x0428;
 
 	}
 
 	public class ULevelSequencePlayer
 	{
 		///<summary>unsigned char[0x20]</summary>
-		public const int UnknownData00 = 0x0028;
+		public const int UnknownData00 = 0x0700;
 
-		///<summary>ULevelSequence *</summary>
-		public const int LevelSequence = 0x0048;
+		///<summary>TArray&lt;UObject * &gt;</summary>
+		public const int AdditionalEventReceivers = 0x0720;
 
-		///<summary>ULevelSequencePlayer *</summary>
-		public const int CurrentPlayer = 0x0050;
-
-		///<summary>bool</summary>
-		public const int bIsPlaying = 0x0058;
-
-		///<summary>bool</summary>
-		public const int bReversePlayback = 0x0059;
-
-		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData01 = 0x005A;
-
-		///<summary>float</summary>
-		public const int TimeCursorPosition = 0x005C;
-
-		///<summary>unsigned char[0xC]</summary>
-		public const int UnknownData02 = 0x0060;
-
-		///<summary>FLevelSequencePlaybackSettings</summary>
-		public const int PlaybackSettings = 0x006C;
-
-		///<summary>unsigned char[0x44]</summary>
-		public const int UnknownData03 = 0x0074;
-
-		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnPlay = 0x00B8;
-
-		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnStop = 0x00C8;
-
-		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnPause = 0x00D8;
-
-		///<summary>unsigned char[0x78]</summary>
-		public const int UnknownData04 = 0x00E8;
+		///<summary>unsigned char[0x50]</summary>
+		public const int UnknownData01 = 0x0730;
 
 	}
 
@@ -82,29 +55,35 @@ namespace Offsets
 
 	public class ALevelSequenceActor
 	{
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x03B0;
+
 		///<summary>bool</summary>
-		public const int bAutoPlay = 0x03A0;
+		public const int bAutoPlay = 0x03B8;
 
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData00 = 0x03A1;
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData01 = 0x03B9;
 
-		///<summary>FLevelSequencePlaybackSettings</summary>
-		public const int PlaybackSettings = 0x03A4;
-
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData01 = 0x03AC;
+		///<summary>FMovieSceneSequencePlaybackSettings</summary>
+		public const int PlaybackSettings = 0x03C0;
 
 		///<summary>ULevelSequencePlayer *</summary>
-		public const int SequencePlayer = 0x03B0;
+		public const int SequencePlayer = 0x03E8;
 
 		///<summary>FStringAssetReference</summary>
-		public const int LevelSequence = 0x03B8;
+		public const int LevelSequence = 0x03F0;
+
+		///<summary>TArray&lt;AActor * &gt;</summary>
+		public const int AdditionalEventReceivers = 0x0400;
 
 		///<summary>ULevelSequenceBurnInOptions *</summary>
-		public const int BurnInOptions = 0x03C8;
+		public const int BurnInOptions = 0x0410;
+
+		///<summary>UMovieSceneBindingOverrides *</summary>
+		public const int BindingOverrides = 0x0418;
 
 		///<summary>ULevelSequenceBurnIn *</summary>
-		public const int BurnInInstance = 0x03D0;
+		public const int BurnInInstance = 0x0420;
 
 	}
 
@@ -114,7 +93,7 @@ namespace Offsets
 		public const int FrameInformation = 0x0240;
 
 		///<summary>ALevelSequenceActor *</summary>
-		public const int LevelSequenceActor = 0x0288;
+		public const int LevelSequenceActor = 0x0290;
 
 	}
 

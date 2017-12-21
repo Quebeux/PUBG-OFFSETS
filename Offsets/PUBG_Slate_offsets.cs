@@ -68,6 +68,22 @@ namespace Offsets
 
 	}
 
+	public class USlateSettings
+	{
+		///<summary>bool</summary>
+		public const int bVirtualKeyboardSendsTextChanged = 0x0028;
+
+		///<summary>bool</summary>
+		public const int bVirtualKeyboardDisplayOnFocus = 0x0029;
+
+		///<summary>bool</summary>
+		public const int bExplicitCanvasChildZOrder = 0x002A;
+
+		///<summary>unsigned char[0x5]</summary>
+		public const int UnknownData00 = 0x002B;
+
+	}
+
 	public class USpinBoxWidgetStyle
 	{
 		///<summary>FSpinBoxStyle</summary>

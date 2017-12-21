@@ -86,7 +86,7 @@ namespace Offsets
 
 	public class UClass
 	{
-		///<summary>unsigned char[0x1A0]</summary>
+		///<summary>unsigned char[0x1D0]</summary>
 		public const int UnknownData00 = 0x0088;
 
 	}
@@ -131,7 +131,7 @@ namespace Offsets
 	public class UDynamicClass
 	{
 		///<summary>unsigned char[0x68]</summary>
-		public const int UnknownData00 = 0x0228;
+		public const int UnknownData00 = 0x0258;
 
 	}
 
@@ -144,28 +144,42 @@ namespace Offsets
 
 	public class UEnum
 	{
-		///<summary>unsigned char[0x28]</summary>
+		///<summary>unsigned char[0x30]</summary>
 		public const int UnknownData00 = 0x0030;
+
+	}
+
+	public class UProperty
+	{
+		///<summary>unsigned char[0x48]</summary>
+		public const int UnknownData00 = 0x0030;
+
+	}
+
+	public class UEnumProperty
+	{
+		///<summary>unsigned char[0x10]</summary>
+		public const int UnknownData00 = 0x0078;
 
 	}
 
 	public class ULinkerPlaceholderClass
 	{
-		///<summary>unsigned char[0x150]</summary>
-		public const int UnknownData00 = 0x0228;
+		///<summary>unsigned char[0x1A0]</summary>
+		public const int UnknownData00 = 0x0258;
 
 	}
 
 	public class ULinkerPlaceholderExportObject
 	{
-		///<summary>unsigned char[0x60]</summary>
+		///<summary>unsigned char[0xB0]</summary>
 		public const int UnknownData00 = 0x0028;
 
 	}
 
 	public class ULinkerPlaceholderFunction
 	{
-		///<summary>unsigned char[0x150]</summary>
+		///<summary>unsigned char[0x1A0]</summary>
 		public const int UnknownData00 = 0x00B8;
 
 	}
@@ -181,13 +195,6 @@ namespace Offsets
 	{
 		///<summary>unsigned char[0x8]</summary>
 		public const int UnknownData00 = 0x0028;
-
-	}
-
-	public class UProperty
-	{
-		///<summary>unsigned char[0x48]</summary>
-		public const int UnknownData00 = 0x0030;
 
 	}
 

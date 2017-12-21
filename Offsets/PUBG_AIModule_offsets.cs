@@ -73,74 +73,74 @@ namespace Offsets
 	public class AAIController
 	{
 		///<summary>unsigned char[0x38]</summary>
-		public const int UnknownData00 = 0x0408;
+		public const int UnknownData00 = 0x0418;
 
 		///<summary>unsigned char:1</summary>
-		public const int bStopAILogicOnUnposses = 0x0440;
+		public const int bStopAILogicOnUnposses = 0x0450;
 
 		///<summary>unsigned char:1</summary>
-		public const int bLOSflag = 0x0440;
+		public const int bLOSflag = 0x0450;
 
 		///<summary>unsigned char:1</summary>
-		public const int bSkipExtraLOSChecks = 0x0440;
+		public const int bSkipExtraLOSChecks = 0x0450;
 
 		///<summary>unsigned char:1</summary>
-		public const int bAllowStrafe = 0x0440;
+		public const int bAllowStrafe = 0x0450;
 
 		///<summary>unsigned char:1</summary>
-		public const int bWantsPlayerState = 0x0440;
+		public const int bWantsPlayerState = 0x0450;
 
 		///<summary>unsigned char:1</summary>
-		public const int bSetControlRotationFromPawnOrientation = 0x0440;
+		public const int bSetControlRotationFromPawnOrientation = 0x0450;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData01 = 0x0441;
+		public const int UnknownData01 = 0x0451;
 
 		///<summary>UPathFollowingComponent *</summary>
-		public const int PathFollowingComponent = 0x0448;
+		public const int PathFollowingComponent = 0x0458;
 
 		///<summary>UBrainComponent *</summary>
-		public const int BrainComponent = 0x0450;
+		public const int BrainComponent = 0x0460;
 
 		///<summary>UAIPerceptionComponent *</summary>
-		public const int PerceptionComponent = 0x0458;
+		public const int PerceptionComponent = 0x0468;
 
 		///<summary>UPawnActionsComponent *</summary>
-		public const int ActionsComp = 0x0460;
+		public const int ActionsComp = 0x0470;
 
 		///<summary>UBlackboardComponent *</summary>
-		public const int Blackboard = 0x0468;
+		public const int Blackboard = 0x0478;
 
 		///<summary>UGameplayTasksComponent *</summary>
-		public const int CachedGameplayTasksComponent = 0x0470;
+		public const int CachedGameplayTasksComponent = 0x0480;
 
 		///<summary>UClass *</summary>
-		public const int DefaultNavigationFilterClass = 0x0478;
+		public const int DefaultNavigationFilterClass = 0x0488;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int ReceiveMoveCompleted = 0x0480;
+		public const int ReceiveMoveCompleted = 0x0490;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData02 = 0x0490;
+		public const int UnknownData02 = 0x04A0;
 
 	}
 
 	public class UPathFollowingComponent
 	{
-		///<summary>unsigned char[0x128]</summary>
-		public const int UnknownData00 = 0x00F8;
+		///<summary>unsigned char[0x120]</summary>
+		public const int UnknownData00 = 0x01E0;
 
 		///<summary>UNavMovementComponent *</summary>
-		public const int MovementComp = 0x0220;
+		public const int MovementComp = 0x0300;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData01 = 0x0228;
+		public const int UnknownData01 = 0x0308;
 
 		///<summary>ANavigationData *</summary>
-		public const int MyNavData = 0x0230;
+		public const int MyNavData = 0x0310;
 
 		///<summary>unsigned char[0x178]</summary>
-		public const int UnknownData02 = 0x0238;
+		public const int UnknownData02 = 0x0318;
 
 	}
 
@@ -154,25 +154,6 @@ namespace Offsets
 
 		///<summary>unsigned char[0x20]</summary>
 		public const int UnknownData00 = 0x0048;
-
-	}
-
-	public class UPawnActionsComponent
-	{
-		///<summary>APawn *</summary>
-		public const int ControlledPawn = 0x00F8;
-
-		///<summary>TArray&lt;FPawnActionStack&gt;</summary>
-		public const int ActionStacks = 0x0100;
-
-		///<summary>TArray&lt;FPawnActionEvent&gt;</summary>
-		public const int ActionEvents = 0x0110;
-
-		///<summary>UPawnAction *</summary>
-		public const int CurrentAction = 0x0120;
-
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0128;
 
 	}
 
@@ -195,64 +176,19 @@ namespace Offsets
 
 	}
 
-	public class UAISystem
+	public class UAIDataProvider_Random
 	{
-		///<summary>FStringClassReference</summary>
-		public const int PerceptionSystemClassName = 0x0048;
-
-		///<summary>FStringClassReference</summary>
-		public const int HotSpotManagerClassName = 0x0058;
+		///<summary>float</summary>
+		public const int Min = 0x0040;
 
 		///<summary>float</summary>
-		public const int AcceptanceRadius = 0x0068;
+		public const int Max = 0x0044;
 
-		///<summary>float</summary>
-		public const int PathfollowingRegularPathPointAcceptanceRadius = 0x006C;
+		///<summary>unsigned char:1</summary>
+		public const int bInteger = 0x0048;
 
-		///<summary>float</summary>
-		public const int PathfollowingNavLinkAcceptanceRadius = 0x0070;
-
-		///<summary>bool</summary>
-		public const int bFinishMoveOnGoalOverlap = 0x0074;
-
-		///<summary>bool</summary>
-		public const int bAcceptPartialPaths = 0x0075;
-
-		///<summary>bool</summary>
-		public const int bAllowStrafing = 0x0076;
-
-		///<summary>bool</summary>
-		public const int bEnableBTAITasks = 0x0077;
-
-		///<summary>bool</summary>
-		public const int bAllowControllersAsEQSQuerier = 0x0078;
-
-		///<summary>bool</summary>
-		public const int bEnableDebuggerPlugin = 0x0079;
-
-		///<summary>TEnumAsByte&lt;ECollisionChannel&gt;</summary>
-		public const int DefaultSightCollisionChannel = 0x007A;
-
-		///<summary>unsigned char[0x5]</summary>
-		public const int UnknownData00 = 0x007B;
-
-		///<summary>UBehaviorTreeManager *</summary>
-		public const int BehaviorTreeManager = 0x0080;
-
-		///<summary>UEnvQueryManager *</summary>
-		public const int EnvironmentQueryManager = 0x0088;
-
-		///<summary>UAIPerceptionSystem *</summary>
-		public const int PerceptionSystem = 0x0090;
-
-		///<summary>TArray&lt;UAIAsyncTaskBlueprintProxy * &gt;</summary>
-		public const int AllProxyObjects = 0x0098;
-
-		///<summary>UAIHotSpotManager *</summary>
-		public const int HotSpotManager = 0x00A8;
-
-		///<summary>unsigned char[0x58]</summary>
-		public const int UnknownData01 = 0x00B0;
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData00 = 0x0049;
 
 	}
 
@@ -261,7 +197,7 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int DefaultExpirationAge = 0x0028;
 
-		///<summary>TEnumAsByte&lt;EAISenseNotifyType&gt;</summary>
+		///<summary>EAISenseNotifyType</summary>
 		public const int NotifyType = 0x002C;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -302,42 +238,36 @@ namespace Offsets
 
 	public class UAIPerceptionComponent
 	{
-		///<summary>TArray&lt;UAISenseConfig * &gt;</summary>
-		public const int SensesConfig = 0x00F8;
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x01E0;
 
 		///<summary>UClass *</summary>
-		public const int DominantSense = 0x0108;
+		public const int DominantSense = 0x01E8;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData00 = 0x0110;
+		public const int UnknownData01 = 0x01F0;
 
 		///<summary>AAIController *</summary>
-		public const int AIOwner = 0x0120;
+		public const int AIOwner = 0x0200;
 
 		///<summary>unsigned char[0x80]</summary>
-		public const int UnknownData01 = 0x0128;
+		public const int UnknownData02 = 0x0208;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnPerceptionUpdated = 0x01A8;
+		public const int OnPerceptionUpdated = 0x0288;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnTargetPerceptionUpdated = 0x01B8;
+		public const int OnTargetPerceptionUpdated = 0x0298;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData02 = 0x01C8;
+		public const int UnknownData03 = 0x02A8;
 
 	}
 
 	public class UAIPerceptionStimuliSourceComponent
 	{
-		///<summary>unsigned char:1</summary>
-		public const int bAutoRegisterAsSource = 0x00F8;
-
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x00F9;
-
 		///<summary>TArray&lt;UClass * &gt;</summary>
-		public const int RegisterAsSourceForSenses = 0x0100;
+		public const int RegisterAsSourceForSenses = 0x01E0;
 
 	}
 
@@ -520,6 +450,70 @@ namespace Offsets
 
 	}
 
+	public class UAISystem
+	{
+		///<summary>FStringClassReference</summary>
+		public const int PerceptionSystemClassName = 0x0048;
+
+		///<summary>FStringClassReference</summary>
+		public const int HotSpotManagerClassName = 0x0058;
+
+		///<summary>float</summary>
+		public const int AcceptanceRadius = 0x0068;
+
+		///<summary>float</summary>
+		public const int PathfollowingRegularPathPointAcceptanceRadius = 0x006C;
+
+		///<summary>float</summary>
+		public const int PathfollowingNavLinkAcceptanceRadius = 0x0070;
+
+		///<summary>bool</summary>
+		public const int bFinishMoveOnGoalOverlap = 0x0074;
+
+		///<summary>bool</summary>
+		public const int bAcceptPartialPaths = 0x0075;
+
+		///<summary>bool</summary>
+		public const int bAllowStrafing = 0x0076;
+
+		///<summary>bool</summary>
+		public const int bEnableBTAITasks = 0x0077;
+
+		///<summary>bool</summary>
+		public const int bAllowControllersAsEQSQuerier = 0x0078;
+
+		///<summary>bool</summary>
+		public const int bEnableDebuggerPlugin = 0x0079;
+
+		///<summary>TEnumAsByte&lt;ECollisionChannel&gt;</summary>
+		public const int DefaultSightCollisionChannel = 0x007A;
+
+		///<summary>unsigned char[0x5]</summary>
+		public const int UnknownData00 = 0x007B;
+
+		///<summary>UBehaviorTreeManager *</summary>
+		public const int BehaviorTreeManager = 0x0080;
+
+		///<summary>UEnvQueryManager *</summary>
+		public const int EnvironmentQueryManager = 0x0088;
+
+		///<summary>UAIPerceptionSystem *</summary>
+		public const int PerceptionSystem = 0x0090;
+
+		///<summary>TArray&lt;UAIAsyncTaskBlueprintProxy * &gt;</summary>
+		public const int AllProxyObjects = 0x0098;
+
+		///<summary>UAIHotSpotManager *</summary>
+		public const int HotSpotManager = 0x00A8;
+
+		///<summary>UNavLocalGridManager *</summary>
+		public const int NavLocalGrids = 0x00B0;
+
+		///<summary>unsigned char[0x58]</summary>
+		public const int UnknownData01 = 0x00B8;
+
+	}
+
 	public class UAITask
 	{
 		///<summary>AAIController *</summary>
@@ -543,32 +537,43 @@ namespace Offsets
 
 	}
 
-	public class UBrainComponent
+	public class UEnvQueryItemType
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x00F8;
+		public const int UnknownData00 = 0x0028;
 
+	}
+
+	public class UAITask_RunEQS
+	{
+		///<summary>unsigned char[0xE0]</summary>
+		public const int UnknownData00 = 0x0070;
+
+	}
+
+	public class UBrainComponent
+	{
 		///<summary>UBlackboardComponent *</summary>
-		public const int BlackboardComp = 0x0100;
+		public const int BlackboardComp = 0x01E0;
 
 		///<summary>AAIController *</summary>
-		public const int AIOwner = 0x0108;
+		public const int AIOwner = 0x01E8;
 
-		///<summary>unsigned char[0x48]</summary>
-		public const int UnknownData01 = 0x0110;
+		///<summary>unsigned char[0x50]</summary>
+		public const int UnknownData00 = 0x01F0;
 
 	}
 
 	public class UBehaviorTreeComponent
 	{
-		///<summary>unsigned char[0x20]</summary>
-		public const int UnknownData00 = 0x0158;
+		///<summary>unsigned char[0x18]</summary>
+		public const int UnknownData00 = 0x0240;
 
 		///<summary>TArray&lt;UBTNode * &gt;</summary>
-		public const int NodeInstances = 0x0178;
+		public const int NodeInstances = 0x0258;
 
 		///<summary>unsigned char[0x108]</summary>
-		public const int UnknownData01 = 0x0188;
+		public const int UnknownData01 = 0x0268;
 
 	}
 
@@ -627,6 +632,45 @@ namespace Offsets
 
 	}
 
+	public class UBlackboardData
+	{
+		///<summary>UBlackboardData *</summary>
+		public const int Parent = 0x0030;
+
+		///<summary>TArray&lt;FBlackboardEntry&gt;</summary>
+		public const int Keys = 0x0038;
+
+		///<summary>unsigned char:1</summary>
+		public const int bHasSynchronizedKeys = 0x0048;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData00 = 0x0049;
+
+	}
+
+	public class UBlackboardComponent
+	{
+		///<summary>UBlackboardData *</summary>
+		public const int BlackboardAsset = 0x01E0;
+
+		///<summary>unsigned char[0x20]</summary>
+		public const int UnknownData00 = 0x01E8;
+
+		///<summary>TArray&lt;UBlackboardKeyType * &gt;</summary>
+		public const int KeyInstances = 0x0208;
+
+		///<summary>unsigned char[0xB8]</summary>
+		public const int UnknownData01 = 0x0218;
+
+	}
+
+	public class UBlackboardKeyType_Class
+	{
+		///<summary>UClass *</summary>
+		public const int BaseClass = 0x0030;
+
+	}
+
 	public class UBlackboardKeyType_Enum
 	{
 		///<summary>UEnum *</summary>
@@ -650,48 +694,6 @@ namespace Offsets
 
 		///<summary>UEnum *</summary>
 		public const int EnumType = 0x0040;
-
-	}
-
-	public class UBlackboardData
-	{
-		///<summary>UBlackboardData *</summary>
-		public const int Parent = 0x0028;
-
-		///<summary>TArray&lt;FBlackboardEntry&gt;</summary>
-		public const int Keys = 0x0030;
-
-		///<summary>unsigned char:1</summary>
-		public const int bHasSynchronizedKeys = 0x0040;
-
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x0041;
-
-	}
-
-	public class UBlackboardComponent
-	{
-		///<summary>UBrainComponent *</summary>
-		public const int BrainComp = 0x00F8;
-
-		///<summary>UBlackboardData *</summary>
-		public const int BlackboardAsset = 0x0100;
-
-		///<summary>unsigned char[0x20]</summary>
-		public const int UnknownData00 = 0x0108;
-
-		///<summary>TArray&lt;UBlackboardKeyType * &gt;</summary>
-		public const int KeyInstances = 0x0128;
-
-		///<summary>unsigned char[0xB8]</summary>
-		public const int UnknownData01 = 0x0138;
-
-	}
-
-	public class UBlackboardKeyType_Class
-	{
-		///<summary>UClass *</summary>
-		public const int BaseClass = 0x0030;
 
 	}
 
@@ -752,14 +754,23 @@ namespace Offsets
 		///<summary>FAIDataProviderFloatValue</summary>
 		public const int ParametrizedAcceptableRadius = 0x0098;
 
-		///<summary>unsigned char:1</summary>
-		public const int bUseParametrizedRadius = 0x00C8;
+		///<summary>EFAIDistanceType</summary>
+		public const int GeometricDistanceType = 0x00C8;
 
-		///<summary>unsigned char:1</summary>
-		public const int bUseNavAgentGoalLocation = 0x00C8;
-
-		///<summary>unsigned char[0x7]</summary>
+		///<summary>unsigned char[0x3]</summary>
 		public const int UnknownData01 = 0x00C9;
+
+		///<summary>unsigned char:1</summary>
+		public const int bUseParametrizedRadius = 0x00CC;
+
+		///<summary>unsigned char:1</summary>
+		public const int bUseNavAgentGoalLocation = 0x00CC;
+
+		///<summary>unsigned char:1</summary>
+		public const int bPathFindingBasedTest = 0x00CC;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x00CD;
 
 	}
 
@@ -803,7 +814,7 @@ namespace Offsets
 		///<summary>FBlackboardKeySelector</summary>
 		public const int ActorToCheck = 0x0068;
 
-		///<summary>TEnumAsByte&lt;EGameplayContainerMatchType&gt;</summary>
+		///<summary>EGameplayContainerMatchType</summary>
 		public const int TagsToMatch = 0x0090;
 
 		///<summary>unsigned char[0x7]</summary>
@@ -1015,13 +1026,6 @@ namespace Offsets
 
 	}
 
-	public class UEnvQueryItemType
-	{
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0028;
-
-	}
-
 	public class UBTService_RunEQS
 	{
 		///<summary>FEQSParametrizedQueryExecutionRequest</summary>
@@ -1190,43 +1194,6 @@ namespace Offsets
 
 	}
 
-	public class UPawnAction
-	{
-		///<summary>UPawnAction *</summary>
-		public const int ChildAction = 0x0028;
-
-		///<summary>UPawnAction *</summary>
-		public const int ParentAction = 0x0030;
-
-		///<summary>UPawnActionsComponent *</summary>
-		public const int OwnerComponent = 0x0038;
-
-		///<summary>UObject *</summary>
-		public const int Instigator = 0x0040;
-
-		///<summary>UBrainComponent *</summary>
-		public const int BrainComp = 0x0048;
-
-		///<summary>unsigned char[0x68]</summary>
-		public const int UnknownData00 = 0x0050;
-
-		///<summary>unsigned char:1</summary>
-		public const int bAllowNewSameClassInstance = 0x00B8;
-
-		///<summary>unsigned char:1</summary>
-		public const int bReplaceActiveSameClassInstance = 0x00B8;
-
-		///<summary>unsigned char:1</summary>
-		public const int bShouldPauseMovement = 0x00B8;
-
-		///<summary>unsigned char:1</summary>
-		public const int bAlwaysNotifyOnFinished = 0x00B8;
-
-		///<summary>unsigned char[0x17]</summary>
-		public const int UnknownData01 = 0x00B9;
-
-	}
-
 	public class UBTTask_PushPawnAction
 	{
 		///<summary>UPawnAction *</summary>
@@ -1348,24 +1315,27 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int PathOptimizationInterval = 0x0064;
 
+		///<summary>float</summary>
+		public const int SeparationDirClamp = 0x0068;
+
 		///<summary>unsigned char:4</summary>
-		public const int UnknownData00 = 0x0068;
+		public const int UnknownData00 = 0x006C;
 
 		///<summary>unsigned char:1</summary>
-		public const int bResolveCollisions = 0x0068;
+		public const int bResolveCollisions = 0x006C;
 
-		///<summary>unsigned char[0x7F]</summary>
-		public const int UnknownData01 = 0x0069;
+		///<summary>unsigned char[0x7B]</summary>
+		public const int UnknownData01 = 0x006D;
 
 	}
 
 	public class UEnvQuery
 	{
 		///<summary>FName</summary>
-		public const int QueryName = 0x0028;
+		public const int QueryName = 0x0030;
 
 		///<summary>TArray&lt;UEnvQueryOption * &gt;</summary>
-		public const int Options = 0x0030;
+		public const int Options = 0x0038;
 
 	}
 
@@ -1403,23 +1373,23 @@ namespace Offsets
 
 	public class UEnvQueryManager
 	{
-		///<summary>unsigned char[0x70]</summary>
+		///<summary>unsigned char[0x78]</summary>
 		public const int UnknownData00 = 0x0028;
 
 		///<summary>TArray&lt;FEnvQueryInstanceCache&gt;</summary>
-		public const int InstanceCache = 0x0098;
+		public const int InstanceCache = 0x00A0;
 
 		///<summary>TArray&lt;UEnvQueryContext * &gt;</summary>
-		public const int LocalContexts = 0x00A8;
+		public const int LocalContexts = 0x00B0;
 
 		///<summary>TArray&lt;UEnvQueryInstanceBlueprintWrapper * &gt;</summary>
-		public const int GCShieldedWrappers = 0x00B8;
+		public const int GCShieldedWrappers = 0x00C0;
 
-		///<summary>unsigned char[0x58]</summary>
-		public const int UnknownData01 = 0x00C8;
+		///<summary>unsigned char[0x54]</summary>
+		public const int UnknownData01 = 0x00D0;
 
-		///<summary>double</summary>
-		public const int MaxAllowedTestingTime = 0x0120;
+		///<summary>float</summary>
+		public const int MaxAllowedTestingTime = 0x0124;
 
 		///<summary>bool</summary>
 		public const int bTestQueriesUsingBreadth = 0x0128;
@@ -1463,14 +1433,17 @@ namespace Offsets
 
 	public class UEnvQueryGenerator_ActorsOfClass
 	{
+		///<summary>UClass *</summary>
+		public const int SearchedActorClass = 0x0050;
+
+		///<summary>FAIDataProviderBoolValue</summary>
+		public const int GenerateOnlyActorsInRadius = 0x0058;
+
 		///<summary>FAIDataProviderFloatValue</summary>
-		public const int SearchRadius = 0x0050;
+		public const int SearchRadius = 0x0088;
 
 		///<summary>UClass *</summary>
-		public const int SearchedActorClass = 0x0080;
-
-		///<summary>UClass *</summary>
-		public const int SearchCenter = 0x0088;
+		public const int SearchCenter = 0x00B8;
 
 	}
 
@@ -1514,6 +1487,31 @@ namespace Offsets
 	{
 		///<summary>FEnvTraceData</summary>
 		public const int ProjectionData = 0x0050;
+
+	}
+
+	public class UEnvQueryGenerator_Cone
+	{
+		///<summary>FAIDataProviderFloatValue</summary>
+		public const int AlignedPointsDistance = 0x0080;
+
+		///<summary>FAIDataProviderFloatValue</summary>
+		public const int ConeDegrees = 0x00B0;
+
+		///<summary>FAIDataProviderFloatValue</summary>
+		public const int AngleStep = 0x00E0;
+
+		///<summary>FAIDataProviderFloatValue</summary>
+		public const int Range = 0x0110;
+
+		///<summary>UClass *</summary>
+		public const int CenterActor = 0x0140;
+
+		///<summary>unsigned char:1</summary>
+		public const int bIncludeContextLocation = 0x0148;
+
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData00 = 0x0149;
 
 	}
 
@@ -1565,7 +1563,7 @@ namespace Offsets
 		///<summary>FAIDataProviderIntValue</summary>
 		public const int NumberOfPoints = 0x00E0;
 
-		///<summary>TEnumAsByte&lt;EPointOnCircleSpacingMethod&gt;</summary>
+		///<summary>EPointOnCircleSpacingMethod</summary>
 		public const int PointOnCircleSpacingMethod = 0x0110;
 
 		///<summary>unsigned char[0x7]</summary>
@@ -1679,8 +1677,11 @@ namespace Offsets
 		///<summary>TEnumAsByte&lt;EEnvQueryTestClamping&gt;</summary>
 		public const int ClampMaxType = 0x00E3;
 
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData03 = 0x00E4;
+		///<summary>EEQSNormalizationType</summary>
+		public const int NormalizationType = 0x00E4;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData03 = 0x00E5;
 
 		///<summary>FAIDataProviderFloatValue</summary>
 		public const int ScoreClampMin = 0x00E8;
@@ -1729,7 +1730,7 @@ namespace Offsets
 		///<summary>FEnvDirection</summary>
 		public const int LineB = 0x01E0;
 
-		///<summary>TEnumAsByte&lt;EEnvTestDot&gt;</summary>
+		///<summary>EEnvTestDot</summary>
 		public const int TestMode = 0x0200;
 
 		///<summary>bool</summary>
@@ -1742,14 +1743,20 @@ namespace Offsets
 
 	public class UEnvQueryTest_GameplayTags
 	{
-		///<summary>TEnumAsByte&lt;EGameplayContainerMatchType&gt;</summary>
-		public const int TagsToMatch = 0x01C0;
+		///<summary>FGameplayTagQuery</summary>
+		public const int TagQueryToMatch = 0x01C0;
 
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData00 = 0x01C1;
+		///<summary>bool</summary>
+		public const int bUpdatedToUseQuery = 0x0208;
+
+		///<summary>EGameplayContainerMatchType</summary>
+		public const int TagsToMatch = 0x0209;
+
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData00 = 0x020A;
 
 		///<summary>FGameplayTagContainer</summary>
-		public const int GameplayTags = 0x01C8;
+		public const int GameplayTags = 0x0210;
 
 	}
 
@@ -1827,85 +1834,136 @@ namespace Offsets
 
 	public class UEQSRenderingComponent
 	{
-		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData00 = 0x06D0;
+		///<summary>unsigned char[0x30]</summary>
+		public const int UnknownData00 = 0x0850;
 
 	}
 
 	public class AEQSTestingPawn
 	{
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x07C0;
+		public const int UnknownData00 = 0x07E0;
 
 		///<summary>UEnvQuery *</summary>
-		public const int QueryTemplate = 0x07C8;
+		public const int QueryTemplate = 0x07E8;
 
 		///<summary>TArray&lt;FEnvNamedValue&gt;</summary>
-		public const int QueryParams = 0x07D0;
+		public const int QueryParams = 0x07F0;
 
 		///<summary>TArray&lt;FAIDynamicParam&gt;</summary>
-		public const int QueryConfig = 0x07E0;
+		public const int QueryConfig = 0x0800;
 
 		///<summary>float</summary>
-		public const int TimeLimitPerStep = 0x07F0;
+		public const int TimeLimitPerStep = 0x0810;
 
 		///<summary>int</summary>
-		public const int StepToDebugDraw = 0x07F4;
+		public const int StepToDebugDraw = 0x0814;
 
-		///<summary>TEnumAsByte&lt;EEnvQueryHightlightMode&gt;</summary>
-		public const int HighlightMode = 0x07F8;
-
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x07F9;
-
-		///<summary>unsigned char:1</summary>
-		public const int bDrawLabels = 0x07FC;
-
-		///<summary>unsigned char:1</summary>
-		public const int bDrawFailedItems = 0x07FC;
-
-		///<summary>unsigned char:1</summary>
-		public const int bReRunQueryOnlyOnFinishedMove = 0x07FC;
-
-		///<summary>unsigned char:1</summary>
-		public const int bShouldBeVisibleInGame = 0x07FC;
-
-		///<summary>unsigned char:1</summary>
-		public const int bTickDuringGame = 0x07FC;
+		///<summary>EEnvQueryHightlightMode</summary>
+		public const int HighlightMode = 0x0818;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData02 = 0x07FD;
+		public const int UnknownData01 = 0x0819;
+
+		///<summary>unsigned char:1</summary>
+		public const int bDrawLabels = 0x081C;
+
+		///<summary>unsigned char:1</summary>
+		public const int bDrawFailedItems = 0x081C;
+
+		///<summary>unsigned char:1</summary>
+		public const int bReRunQueryOnlyOnFinishedMove = 0x081C;
+
+		///<summary>unsigned char:1</summary>
+		public const int bShouldBeVisibleInGame = 0x081C;
+
+		///<summary>unsigned char:1</summary>
+		public const int bTickDuringGame = 0x081C;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x081D;
 
 		///<summary>TEnumAsByte&lt;EEnvQueryRunMode&gt;</summary>
-		public const int QueryingMode = 0x0800;
+		public const int QueryingMode = 0x0820;
 
 		///<summary>unsigned char[0x2F]</summary>
-		public const int UnknownData03 = 0x0801;
+		public const int UnknownData03 = 0x0821;
+
+	}
+
+	public class UNavLocalGridManager
+	{
+		///<summary>unsigned char[0x30]</summary>
+		public const int UnknownData00 = 0x0028;
 
 	}
 
 	public class UCrowdFollowingComponent
 	{
 		///<summary>FVector</summary>
-		public const int CrowdAgentMoveDirection = 0x03B0;
+		public const int CrowdAgentMoveDirection = 0x0490;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData00 = 0x03BC;
+		public const int UnknownData00 = 0x049C;
 
 		///<summary>UCharacterMovementComponent *</summary>
-		public const int CharacterMovement = 0x03C0;
+		public const int CharacterMovement = 0x04A0;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int AvoidanceGroup = 0x03C8;
+		public const int AvoidanceGroup = 0x04A8;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int GroupsToAvoid = 0x03CC;
+		public const int GroupsToAvoid = 0x04AC;
 
 		///<summary>FNavAvoidanceMask</summary>
-		public const int GroupsToIgnore = 0x03D0;
+		public const int GroupsToIgnore = 0x04B0;
 
 		///<summary>unsigned char[0x2C]</summary>
-		public const int UnknownData01 = 0x03D4;
+		public const int UnknownData01 = 0x04B4;
+
+	}
+
+	public class UGridPathFollowingComponent
+	{
+		///<summary>unsigned char[0x30]</summary>
+		public const int UnknownData00 = 0x0490;
+
+	}
+
+	public class UPawnAction
+	{
+		///<summary>UPawnAction *</summary>
+		public const int ChildAction = 0x0028;
+
+		///<summary>UPawnAction *</summary>
+		public const int ParentAction = 0x0030;
+
+		///<summary>UPawnActionsComponent *</summary>
+		public const int OwnerComponent = 0x0038;
+
+		///<summary>UObject *</summary>
+		public const int Instigator = 0x0040;
+
+		///<summary>UBrainComponent *</summary>
+		public const int BrainComp = 0x0048;
+
+		///<summary>unsigned char[0x68]</summary>
+		public const int UnknownData00 = 0x0050;
+
+		///<summary>unsigned char:1</summary>
+		public const int bAllowNewSameClassInstance = 0x00B8;
+
+		///<summary>unsigned char:1</summary>
+		public const int bReplaceActiveSameClassInstance = 0x00B8;
+
+		///<summary>unsigned char:1</summary>
+		public const int bShouldPauseMovement = 0x00B8;
+
+		///<summary>unsigned char:1</summary>
+		public const int bAlwaysNotifyOnFinished = 0x00B8;
+
+		///<summary>unsigned char[0x17]</summary>
+		public const int UnknownData01 = 0x00B9;
 
 	}
 
@@ -1994,49 +2052,59 @@ namespace Offsets
 
 	}
 
+	public class UPawnActionsComponent
+	{
+		///<summary>TArray&lt;FPawnActionStack&gt;</summary>
+		public const int ActionStacks = 0x01E0;
+
+		///<summary>TArray&lt;FPawnActionEvent&gt;</summary>
+		public const int ActionEvents = 0x01F0;
+
+		///<summary>UPawnAction *</summary>
+		public const int CurrentAction = 0x0200;
+
+		///<summary>unsigned char[0x8]</summary>
+		public const int UnknownData00 = 0x0208;
+
+	}
+
 	public class UPawnSensingComponent
 	{
 		///<summary>float</summary>
-		public const int HearingThreshold = 0x00F8;
+		public const int SightRadius = 0x01E0;
 
 		///<summary>float</summary>
-		public const int LOSHearingThreshold = 0x00FC;
+		public const int SensingInterval = 0x01E4;
 
 		///<summary>float</summary>
-		public const int SightRadius = 0x0100;
-
-		///<summary>float</summary>
-		public const int SensingInterval = 0x0104;
-
-		///<summary>float</summary>
-		public const int HearingMaxSoundAge = 0x0108;
+		public const int HearingMaxSoundAge = 0x01E8;
 
 		///<summary>unsigned char:1</summary>
-		public const int bEnableSensingUpdates = 0x010C;
+		public const int bEnableSensingUpdates = 0x01EC;
 
 		///<summary>unsigned char:1</summary>
-		public const int bOnlySensePlayers = 0x010C;
+		public const int bOnlySensePlayers = 0x01EC;
 
 		///<summary>unsigned char:1</summary>
-		public const int bSeePawns = 0x010C;
+		public const int bSeePawns = 0x01EC;
 
 		///<summary>unsigned char:1</summary>
-		public const int bHearNoises = 0x010C;
+		public const int bHearNoises = 0x01EC;
 
 		///<summary>unsigned char[0xB]</summary>
-		public const int UnknownData00 = 0x010D;
+		public const int UnknownData00 = 0x01ED;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnSeePawn = 0x0118;
+		public const int OnSeePawn = 0x01F8;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnHearNoise = 0x0128;
+		public const int OnHearNoise = 0x0208;
 
 		///<summary>float</summary>
-		public const int PeripheralVisionAngle = 0x0138;
+		public const int PeripheralVisionAngle = 0x0218;
 
 		///<summary>float</summary>
-		public const int PeripheralVisionCosine = 0x013C;
+		public const int PeripheralVisionCosine = 0x021C;
 
 	}
 

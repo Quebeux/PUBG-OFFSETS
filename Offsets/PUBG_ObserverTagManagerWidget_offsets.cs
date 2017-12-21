@@ -8,10 +8,7 @@ namespace Offsets
 	public class UObserverTagManagerWidget_C
 	{
 		///<summary>FPointerToUberGraphFrame</summary>
-		public const int UberGraphFrame = 0x0240;
-
-		///<summary>TArray&lt;UPlayerHeadWidget_C * &gt;</summary>
-		public const int PlayerHeadWidgets = 0x0248;
+		public const int UberGraphFrame = 0x02B8;
 
 	}
 

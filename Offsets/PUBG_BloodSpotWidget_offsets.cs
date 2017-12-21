@@ -14,7 +14,7 @@ namespace Offsets
 		public const int FadeOut = 0x0248;
 
 		///<summary>UImage *</summary>
-		public const int Image_3 = 0x0250;
+		public const int BloodSpotImage = 0x0250;
 
 		///<summary>TArray&lt;UTexture2D * &gt;</summary>
 		public const int BloodSpotTextures = 0x0258;

@@ -7,8 +7,17 @@ namespace Offsets
 {
 	public class UBP_CompassMarkerWidget_C
 	{
+		///<summary>UWidgetAnimation *</summary>
+		public const int Vanish = 0x0300;
+
+		///<summary>UWidgetAnimation *</summary>
+		public const int emerge = 0x0308;
+
 		///<summary>UImage *</summary>
-		public const int CompassMarkerImage = 0x02B0;
+		public const int CompassMarkerImage = 0x0310;
+
+		///<summary>UInvalidationBox *</summary>
+		public const int InvalidationBox_Marker = 0x0318;
 
 	}
 

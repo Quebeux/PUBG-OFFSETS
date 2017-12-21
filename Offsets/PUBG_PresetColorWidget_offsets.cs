@@ -7,11 +7,17 @@ namespace Offsets
 {
 	public class UPresetColorWidget_C
 	{
+		///<summary>UBorder *</summary>
+		public const int Border_2 = 0x0240;
+
+		///<summary>UTextBlock *</summary>
+		public const int TextBlock_1 = 0x0248;
+
 		///<summary>FText</summary>
-		public const int DisplayName = 0x0240;
+		public const int DisplayName = 0x0250;
 
 		///<summary>FLinearColor</summary>
-		public const int Color = 0x0258;
+		public const int Color = 0x0268;
 
 	}
 

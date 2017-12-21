@@ -8,62 +8,62 @@ namespace Offsets
 	public class AArchVisCharacter
 	{
 		///<summary>FString</summary>
-		public const int LookUpAxisName = 0x07C0;
+		public const int LookUpAxisName = 0x07E0;
 
 		///<summary>FString</summary>
-		public const int LookUpAtRateAxisName = 0x07D0;
+		public const int LookUpAtRateAxisName = 0x07F0;
 
 		///<summary>FString</summary>
-		public const int TurnAxisName = 0x07E0;
+		public const int TurnAxisName = 0x0800;
 
 		///<summary>FString</summary>
-		public const int TurnAtRateAxisName = 0x07F0;
+		public const int TurnAtRateAxisName = 0x0810;
 
 		///<summary>FString</summary>
-		public const int MoveForwardAxisName = 0x0800;
+		public const int MoveForwardAxisName = 0x0820;
 
 		///<summary>FString</summary>
-		public const int MoveRightAxisName = 0x0810;
+		public const int MoveRightAxisName = 0x0830;
 
 		///<summary>float</summary>
-		public const int MouseSensitivityScale_Pitch = 0x0820;
+		public const int MouseSensitivityScale_Pitch = 0x0840;
 
 		///<summary>float</summary>
-		public const int MouseSensitivityScale_Yaw = 0x0824;
+		public const int MouseSensitivityScale_Yaw = 0x0844;
 
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData00 = 0x0828;
+		public const int UnknownData00 = 0x0848;
 
 	}
 
 	public class UArchVisCharMovementComponent
 	{
-		///<summary>FRotator</summary>
-		public const int RotationalAcceleration = 0x0750;
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData00 = 0x0840;
 
 		///<summary>FRotator</summary>
-		public const int RotationalDeceleration = 0x075C;
+		public const int RotationalDeceleration = 0x0844;
 
 		///<summary>FRotator</summary>
-		public const int MaxRotationalVelocity = 0x0768;
+		public const int MaxRotationalVelocity = 0x0850;
 
 		///<summary>float</summary>
-		public const int MinPitch = 0x0774;
+		public const int MinPitch = 0x085C;
 
 		///<summary>float</summary>
-		public const int MaxPitch = 0x0778;
+		public const int MaxPitch = 0x0860;
 
 		///<summary>float</summary>
-		public const int WalkingFriction = 0x077C;
+		public const int WalkingFriction = 0x0864;
 
 		///<summary>float</summary>
-		public const int WalkingSpeed = 0x0780;
+		public const int WalkingSpeed = 0x0868;
 
 		///<summary>float</summary>
-		public const int WalkingAcceleration = 0x0784;
+		public const int WalkingAcceleration = 0x086C;
 
-		///<summary>unsigned char[0x18]</summary>
-		public const int UnknownData00 = 0x0788;
+		///<summary>unsigned char[0x20]</summary>
+		public const int UnknownData01 = 0x0870;
 
 	}
 

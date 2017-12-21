@@ -13,17 +13,11 @@ namespace Offsets
 		///<summary>UCoherentUIGTWidget *</summary>
 		public const int WebView_1 = 0x0248;
 
-		///<summary>UCoherentUIGTWidget *</summary>
-		public const int WebView_2 = 0x0250;
-
-		///<summary>UCoherentUIGTWidget *</summary>
-		public const int WebView_3 = 0x0258;
-
 		///<summary>TArray&lt;UCoherentUIGTWidget * &gt;</summary>
-		public const int ViewArray = 0x0260;
+		public const int ViewArray = 0x0250;
 
 		///<summary>int</summary>
-		public const int TickForWebViewVisibilityChange = 0x0270;
+		public const int TickForWebViewVisibilityChange = 0x0260;
 
 	}
 

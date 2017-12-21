@@ -34,24 +34,21 @@ namespace Offsets
 		///<summary>FString</summary>
 		public const int InheritedCommandLineArguments = 0x00B0;
 
-		///<summary>unsigned char[0x140]</summary>
+		///<summary>unsigned char[0x180]</summary>
 		public const int UnknownData02 = 0x00C0;
 
 	}
 
 	public class ULevelCapture
 	{
-		///<summary>bool</summary>
-		public const int bAutoStartCapture = 0x0200;
-
-		///<summary>unsigned char[0xB]</summary>
-		public const int UnknownData00 = 0x0201;
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData00 = 0x0240;
 
 		///<summary>FGuid</summary>
-		public const int PrerequisiteActorId = 0x020C;
+		public const int PrerequisiteActorId = 0x0244;
 
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData01 = 0x021C;
+		///<summary>unsigned char[0xC]</summary>
+		public const int UnknownData01 = 0x0254;
 
 	}
 

@@ -10,7 +10,7 @@ namespace Offsets
 		///<summary>FPointerToUberGraphFrame</summary>
 		public const int UberGraphFrame = 0x0250;
 
-		///<summary>TEnumAsByte&lt;EEquipSlotID&gt;</summary>
+		///<summary>EEquipSlotID</summary>
 		public const int EquipSlotID = 0x0258;
 
 		///<summary>unsigned char[0x3]</summary>
@@ -35,10 +35,13 @@ namespace Offsets
 		public const int SlotBackground_Over = 0x0280;
 
 		///<summary>bool</summary>
-		public const int bMouseOver = 0x0288;
+		public const int bGamepadFocus = 0x0288;
 
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData01 = 0x0289;
+		///<summary>bool</summary>
+		public const int bMouseOver = 0x0289;
+
+		///<summary>unsigned char[0x6]</summary>
+		public const int UnknownData01 = 0x028A;
 
 		///<summary>UMaterialInstanceDynamic *</summary>
 		public const int SlotDynamicMaterial = 0x0290;
@@ -78,6 +81,24 @@ namespace Offsets
 
 		///<summary>FScriptMulticastDelegate</summary>
 		public const int RefreshFocus = 0x02E0;
+
+		///<summary>TScriptInterface&lt;USlotInterface&gt;</summary>
+		public const int FocusItemSlot = 0x02F0;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnChildFocusSlotID = 0x0300;
+
+		///<summary>UItemToolTipWidget_Bp_C *</summary>
+		public const int SaveToolTip = 0x0310;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnEnterSlot = 0x0318;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnLeaveSlot = 0x0328;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnDoSlotAction = 0x0338;
 
 	}
 
