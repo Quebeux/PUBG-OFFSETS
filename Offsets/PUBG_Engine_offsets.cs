@@ -5326,25 +5326,28 @@ namespace Offsets
 		public const int UnknownData02 = 0x0416;
 
 		///<summary>float</summary>
-		public const int MovementTimeDiscrepancyMaxTimeMargin = 0x0418;
+		public const int MovementTimeDiscrepancyResolutionMinFPS = 0x0418;
 
 		///<summary>float</summary>
-		public const int MovementTimeDiscrepancyMinTimeMargin = 0x041C;
+		public const int MovementTimeDiscrepancyMaxTimeMargin = 0x041C;
 
 		///<summary>float</summary>
-		public const int MovementTimeDiscrepancyResolutionRate = 0x0420;
+		public const int MovementTimeDiscrepancyMinTimeMargin = 0x0420;
 
 		///<summary>float</summary>
-		public const int MovementTimeDiscrepancyDriftAllowance = 0x0424;
+		public const int MovementTimeDiscrepancyResolutionRate = 0x0424;
+
+		///<summary>float</summary>
+		public const int MovementTimeDiscrepancyDriftAllowance = 0x0428;
 
 		///<summary>bool</summary>
-		public const int bMovementTimeDiscrepancyForceCorrectionsDuringResolution = 0x0428;
+		public const int bMovementTimeDiscrepancyForceCorrectionsDuringResolution = 0x042C;
 
 		///<summary>bool</summary>
-		public const int bUseDistanceBasedRelevancy = 0x0429;
+		public const int bUseDistanceBasedRelevancy = 0x042D;
 
-		///<summary>unsigned char[0xE]</summary>
-		public const int UnknownData03 = 0x042A;
+		///<summary>unsigned char[0xA]</summary>
+		public const int UnknownData03 = 0x042E;
 
 	}
 

@@ -559,20 +559,14 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int DeathResultDelaySeconds = 0x0A30;
 
-		///<summary>unsigned char[0x90]</summary>
+		///<summary>unsigned char[0xFC]</summary>
 		public const int UnknownData11 = 0x0A34;
-
-		///<summary>FPingPongSummary</summary>
-		public const int PingPongSummary = 0x0AC4;
-
-		///<summary>unsigned char[0x60]</summary>
-		public const int UnknownData12 = 0x0AD0;
 
 		///<summary>bool</summary>
 		public const int bUseTPAntibotClient = 0x0B30;
 
 		///<summary>unsigned char[0xF]</summary>
-		public const int UnknownData13 = 0x0B31;
+		public const int UnknownData12 = 0x0B31;
 
 	}
 
@@ -1079,7 +1073,7 @@ namespace Offsets
 
 	public class UHackReporterComponent
 	{
-		///<summary>unsigned char[0x140]</summary>
+		///<summary>unsigned char[0x1B0]</summary>
 		public const int UnknownData00 = 0x01E0;
 
 	}
@@ -7335,61 +7329,64 @@ namespace Offsets
 		public const int OnRecordStarted = 0x05E8;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnDownloadZippedReplayProgressDelegate = 0x05F8;
+		public const int OnReplayProblem = 0x05F8;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnDownloadZippedReplayCompleteDelegate = 0x0608;
+		public const int OnDownloadZippedReplayProgressDelegate = 0x0608;
+
+		///<summary>FScriptMulticastDelegate</summary>
+		public const int OnDownloadZippedReplayCompleteDelegate = 0x0618;
 
 		///<summary>unsigned char[0x28]</summary>
-		public const int UnknownData07 = 0x0618;
+		public const int UnknownData07 = 0x0628;
 
 		///<summary>int</summary>
-		public const int MaxReplaysForNullStreamer = 0x0640;
+		public const int MaxReplaysForNullStreamer = 0x0650;
 
 		///<summary>int</summary>
-		public const int NumReplaysForNullStreamer = 0x0644;
+		public const int NumReplaysForNullStreamer = 0x0654;
 
 		///<summary>int</summary>
-		public const int NumReplaysToKeepForNullStreamer = 0x0648;
+		public const int NumReplaysToKeepForNullStreamer = 0x0658;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData08 = 0x064C;
+		public const int UnknownData08 = 0x065C;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnKeepAndDeleteOldestReplaysDoneDelegate = 0x0650;
+		public const int OnKeepAndDeleteOldestReplaysDoneDelegate = 0x0660;
 
 		///<summary>unsigned char[0x10]</summary>
-		public const int UnknownData09 = 0x0660;
+		public const int UnknownData09 = 0x0670;
 
 		///<summary>UGameEventObserver *</summary>
-		public const int GameEventObserver = 0x0670;
+		public const int GameEventObserver = 0x0680;
 
 		///<summary>unsigned char[0x28]</summary>
-		public const int UnknownData10 = 0x0678;
+		public const int UnknownData10 = 0x0688;
 
 		///<summary>FTslReplaySummary</summary>
-		public const int ReplaySummaryForPlayback = 0x06A0;
+		public const int ReplaySummaryForPlayback = 0x06B0;
 
 		///<summary>FScriptMulticastDelegate</summary>
-		public const int OnGetReplaySummaryDone = 0x0720;
+		public const int OnGetReplaySummaryDone = 0x0730;
 
 		///<summary>bool</summary>
-		public const int bIsStartedFromReplayListMap = 0x0730;
+		public const int bIsStartedFromReplayListMap = 0x0740;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData11 = 0x0731;
+		public const int UnknownData11 = 0x0741;
 
 		///<summary>ATslPlayerState *</summary>
-		public const int CachedDemoPlayerState = 0x0738;
+		public const int CachedDemoPlayerState = 0x0748;
 
 		///<summary>unsigned char[0x140]</summary>
-		public const int UnknownData12 = 0x0740;
+		public const int UnknownData12 = 0x0750;
 
 		///<summary>UHighlightSession *</summary>
-		public const int HighlightSession = 0x0880;
+		public const int HighlightSession = 0x0890;
 
 		///<summary>unsigned char[0xE8]</summary>
-		public const int UnknownData13 = 0x0888;
+		public const int UnknownData13 = 0x0898;
 
 	}
 
