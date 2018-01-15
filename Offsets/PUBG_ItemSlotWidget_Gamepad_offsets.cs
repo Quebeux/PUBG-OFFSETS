@@ -71,7 +71,7 @@ namespace Offsets
 		public const int SlotName = 0x02F0;
 
 		///<summary>USizeBox *</summary>
-		public const int StackCountBlock = 0x02F8;
+		public const int StackcountBlock = 0x02F8;
 
 		///<summary>UTextBlock *</summary>
 		public const int StackCountText = 0x0300;

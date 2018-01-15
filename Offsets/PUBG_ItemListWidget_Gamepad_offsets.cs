@@ -118,6 +118,12 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int ItemListHeight = 0x0354;
 
+		///<summary>int</summary>
+		public const int MaxLoop = 0x0358;
+
+		///<summary>int</summary>
+		public const int CountLoop = 0x035C;
+
 	}
 
 }

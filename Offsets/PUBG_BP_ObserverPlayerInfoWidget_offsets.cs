@@ -53,7 +53,7 @@ namespace Offsets
 		public const int TeamNumberText = 0x04D0;
 
 		///<summary>UImage *</summary>
-		public const int WeaponImage = 0x04D8;
+		public const int weaponImage = 0x04D8;
 
 	}
 

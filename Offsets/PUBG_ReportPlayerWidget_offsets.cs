@@ -16,20 +16,23 @@ namespace Offsets
 		///<summary>UButton *</summary>
 		public const int ButtonClose = 0x0250;
 
+		///<summary>UDetailReportCauseManagerWidget_C *</summary>
+		public const int DetailReportManager = 0x0258;
+
 		///<summary>UTextBlock *</summary>
-		public const int PlayerName = 0x0258;
+		public const int PlayerName = 0x0260;
 
 		///<summary>UComboBoxString *</summary>
-		public const int ReportCausesComboBox = 0x0260;
+		public const int ReportCausesComboBox = 0x0268;
 
 		///<summary>UTextBlock *</summary>
-		public const int SubjectToReport = 0x0268;
+		public const int SubjectToReport = 0x0270;
 
 		///<summary>EReportCause</summary>
-		public const int SelectedReportCause = 0x0270;
+		public const int SelectedReportCause = 0x0278;
 
 		///<summary>ESubjectToReport</summary>
-		public const int SubjectToReportType = 0x0271;
+		public const int SubjectToReportType = 0x0279;
 
 	}
 

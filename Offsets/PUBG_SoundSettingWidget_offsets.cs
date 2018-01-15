@@ -19,23 +19,29 @@ namespace Offsets
 		///<summary>UQualitySliderWidget_C *</summary>
 		public const int BGMSoundSliderWidget = 0x0300;
 
-		///<summary>UTslCheckBox_C *</summary>
-		public const int EffectSoundCheckBox = 0x0308;
-
-		///<summary>UQualitySliderWidget_C *</summary>
-		public const int EffectSoundSliderWidget = 0x0310;
+		///<summary>UChildOptionTitleWidget_C *</summary>
+		public const int ChildOptionTitleWidget = 0x0308;
 
 		///<summary>UTslCheckBox_C *</summary>
-		public const int MasterSoundCheckBox = 0x0318;
+		public const int EffectSoundCheckBox = 0x0310;
 
 		///<summary>UQualitySliderWidget_C *</summary>
-		public const int MasterSoundSliderWidget = 0x0320;
+		public const int EffectSoundSliderWidget = 0x0318;
+
+		///<summary>UVerticalBox *</summary>
+		public const int MainPanel = 0x0320;
 
 		///<summary>UTslCheckBox_C *</summary>
-		public const int UISoundCheckBox = 0x0328;
+		public const int MasterSoundCheckBox = 0x0328;
 
 		///<summary>UQualitySliderWidget_C *</summary>
-		public const int UISoundSliderWidget = 0x0330;
+		public const int MasterSoundSliderWidget = 0x0330;
+
+		///<summary>UTslCheckBox_C *</summary>
+		public const int UISoundCheckBox = 0x0338;
+
+		///<summary>UQualitySliderWidget_C *</summary>
+		public const int UISoundSliderWidget = 0x0340;
 
 	}
 

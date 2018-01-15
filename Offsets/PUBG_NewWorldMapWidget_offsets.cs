@@ -187,6 +187,12 @@ namespace Offsets
 		///<summary>bool</summary>
 		public const int bIsObserving = 0x0418;
 
+		///<summary>unsigned char[0x7]</summary>
+		public const int UnknownData07 = 0x0419;
+
+		///<summary>UCurveFloat *</summary>
+		public const int MovePadGuideCurve = 0x0420;
+
 	}
 
 }

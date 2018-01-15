@@ -58,38 +58,35 @@ namespace Offsets
 		///<summary>UParachuteVehicleWidget_C *</summary>
 		public const int ParachuteVehicleWidget_862 = 0x02C0;
 
-		///<summary>UReplayProblemWidget_C *</summary>
-		public const int ReplayProblemWidget = 0x02C8;
-
 		///<summary>UButton *</summary>
-		public const int ReportBotton = 0x02D0;
+		public const int ReportBotton = 0x02C8;
 
 		///<summary>URetainerBox *</summary>
-		public const int RetainerBox_VersionInfo = 0x02D8;
+		public const int RetainerBox_VersionInfo = 0x02D0;
 
 		///<summary>UTeamCountWidget_C *</summary>
-		public const int TeamCountWidget = 0x02E0;
+		public const int TeamCountWidget = 0x02D8;
 
 		///<summary>UVersionInfoWidget_C *</summary>
-		public const int VersionInfoWidget_96 = 0x02E8;
+		public const int VersionInfoWidget_96 = 0x02E0;
 
 		///<summary>UWidgetSwitcher *</summary>
-		public const int WidgetSwitcher_1 = 0x02F0;
+		public const int WidgetSwitcher_1 = 0x02E8;
 
 		///<summary>ATslHUD *</summary>
-		public const int refHUD = 0x02F8;
+		public const int refHUD = 0x02F0;
 
 		///<summary>ATslCharacter *</summary>
-		public const int CachedCharacter = 0x0300;
+		public const int CachedCharacter = 0x02F8;
 
 		///<summary>FWidgetTransform</summary>
-		public const int CharacterInfoDownPos = 0x0308;
+		public const int CharacterInfoDownPos = 0x0300;
 
 		///<summary>FWidgetTransform</summary>
-		public const int CharacterInfoUpPos = 0x0324;
+		public const int CharacterInfoUpPos = 0x031C;
 
 		///<summary>bool</summary>
-		public const int IsFirstConstruct = 0x0340;
+		public const int IsFirstConstruct = 0x0338;
 
 	}
 

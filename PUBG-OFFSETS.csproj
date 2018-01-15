@@ -133,6 +133,8 @@
 <Compile Include="Offsets\PUBG_CustomMeshComponent_offsets.cs" />
 <Compile Include="Offsets\PUBG_DeathDropItemPackage_offsets.cs" />
 <Compile Include="Offsets\PUBG_DefaultRifleSetting_offsets.cs" />
+<Compile Include="Offsets\PUBG_DetailReportCauseCheckBoxWidget_offsets.cs" />
+<Compile Include="Offsets\PUBG_DetailReportCauseManagerWidget_offsets.cs" />
 <Compile Include="Offsets\PUBG_DistanceSliderWidget_offsets.cs" />
 <Compile Include="Offsets\PUBG_DualKeyDisplayWidget_BP_offsets.cs" />
 <Compile Include="Offsets\PUBG_EngineSettings_offsets.cs" />
@@ -216,7 +218,6 @@
 <Compile Include="Offsets\PUBG_MovieSceneCapture_offsets.cs" />
 <Compile Include="Offsets\PUBG_MovieSceneTracks_offsets.cs" />
 <Compile Include="Offsets\PUBG_MovieScene_offsets.cs" />
-<Compile Include="Offsets\PUBG_NetworkProblemWidget_offsets.cs" />
 <Compile Include="Offsets\PUBG_NewCastingBarWidget_offsets.cs" />
 <Compile Include="Offsets\PUBG_NewLobbySystemMenuWidget_offsets.cs" />
 <Compile Include="Offsets\PUBG_NewMatchResultWidget_offsets.cs" />

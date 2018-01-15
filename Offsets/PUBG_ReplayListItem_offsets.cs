@@ -13,26 +13,26 @@ namespace Offsets
 		///<summary>UTextBlock *</summary>
 		public const int ActionMessage = 0x0248;
 
-		///<summary>UButton *</summary>
-		public const int ButtonItem = 0x0250;
+		///<summary>UTextBlock *</summary>
+		public const int AllDeadOrWinText = 0x0250;
 
 		///<summary>UButton *</summary>
-		public const int Cancel = 0x0258;
+		public const int ButtonItem = 0x0258;
+
+		///<summary>UButton *</summary>
+		public const int Cancel = 0x0260;
 
 		///<summary>UCheckBox *</summary>
-		public const int CheckBoxShouldKeep = 0x0260;
+		public const int CheckBoxShouldKeep = 0x0268;
 
 		///<summary>UTextBlock *</summary>
-		public const int CorruptText = 0x0268;
+		public const int CorruptText = 0x0270;
 
 		///<summary>UTextBlock *</summary>
-		public const int Date = 0x0270;
+		public const int Date = 0x0278;
 
 		///<summary>UButton *</summary>
-		public const int Download = 0x0278;
-
-		///<summary>UTextBlock *</summary>
-		public const int DummyText = 0x0280;
+		public const int Download = 0x0280;
 
 		///<summary>UTextBlock *</summary>
 		public const int FriendlyName = 0x0288;

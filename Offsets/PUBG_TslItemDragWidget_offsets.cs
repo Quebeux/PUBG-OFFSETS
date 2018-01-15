@@ -20,7 +20,7 @@ namespace Offsets
 		public const int ItemIcon = 0x0258;
 
 		///<summary>UVerticalBox *</summary>
-		public const int StackCountBlock = 0x0260;
+		public const int StackcountBlock = 0x0260;
 
 		///<summary>UTextBlock *</summary>
 		public const int StackCountText = 0x0268;

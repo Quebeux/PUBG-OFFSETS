@@ -131,6 +131,9 @@ namespace Offsets
 		///<summary>TArray&lt;FPendingReleaseSkeletalMeshInfo&gt;</summary>
 		public const int PendingReleaseSkeletalMesh = 0x0048;
 
+		///<summary>unsigned char[0x10]</summary>
+		public const int UnknownData01 = 0x0058;
+
 	}
 
 }
