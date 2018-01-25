@@ -1739,6 +1739,13 @@ namespace Offsets
 
 	}
 
+	public class UKakaoSessionClientChecker
+	{
+		///<summary>unsigned char[0x28]</summary>
+		public const int UnknownData00 = 0x0028;
+
+	}
+
 	public class ALevelAttribute
 	{
 		///<summary>int</summary>
@@ -4301,8 +4308,17 @@ namespace Offsets
 		///<summary>TArray&lt;AStartActivationVolume * &gt;</summary>
 		public const int ActivationVolumes = 0x03F0;
 
+		///<summary>bool</summary>
+		public const int bForceSelect = 0x0400;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x0401;
+
+		///<summary>int</summary>
+		public const int Weight = 0x0404;
+
 		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData02 = 0x0400;
+		public const int UnknownData03 = 0x0408;
 
 	}
 
@@ -6839,113 +6855,116 @@ namespace Offsets
 
 	public class UTslSettings
 	{
-		///<summary>bool</summary>
-		public const int SupportedClientReplay = 0x0028;
+		///<summary>int</summary>
+		public const int ObserverNetSpeed = 0x0028;
 
 		///<summary>bool</summary>
-		public const int SupportedKillcam = 0x0029;
+		public const int SupportedClientReplay = 0x002C;
+
+		///<summary>bool</summary>
+		public const int SupportedKillcam = 0x002D;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData00 = 0x002A;
+		public const int UnknownData00 = 0x002E;
 
 		///<summary>int</summary>
-		public const int MaxReplaysForNullStreamer = 0x002C;
+		public const int MaxReplaysForNullStreamer = 0x0030;
 
 		///<summary>float</summary>
-		public const int RepDistance_Item = 0x0030;
+		public const int RepDistance_Item = 0x0034;
 
 		///<summary>float</summary>
-		public const int RepDistance_Character = 0x0034;
+		public const int RepDistance_Character = 0x0038;
 
 		///<summary>float</summary>
-		public const int RepDistance_Weapon = 0x0038;
+		public const int RepDistance_Weapon = 0x003C;
 
 		///<summary>float</summary>
-		public const int RepDistance_Vehicle = 0x003C;
+		public const int RepDistance_Vehicle = 0x0040;
 
 		///<summary>float</summary>
-		public const int RepDistance_Parachute = 0x0040;
+		public const int RepDistance_Parachute = 0x0044;
 
 		///<summary>float</summary>
-		public const int RepDistance_Door = 0x0044;
+		public const int RepDistance_Door = 0x0048;
 
 		///<summary>float</summary>
-		public const int RepDistance_Window = 0x0048;
+		public const int RepDistance_Window = 0x004C;
 
 		///<summary>float</summary>
-		public const int RepFrequency_Character = 0x004C;
+		public const int RepFrequency_Character = 0x0050;
 
 		///<summary>float</summary>
-		public const int RepFrequency_WheeledVehicle = 0x0050;
+		public const int RepFrequency_WheeledVehicle = 0x0054;
 
 		///<summary>float</summary>
-		public const int RepFrequency_FloatingVehicle = 0x0054;
+		public const int RepFrequency_FloatingVehicle = 0x0058;
 
 		///<summary>float</summary>
-		public const int RepFrequency_Parachute = 0x0058;
+		public const int RepFrequency_Parachute = 0x005C;
 
 		///<summary>float</summary>
-		public const int RepFrequency_Aircraft = 0x005C;
+		public const int RepFrequency_Aircraft = 0x0060;
 
 		///<summary>float</summary>
-		public const int RepFrequency_CarePackage = 0x0060;
+		public const int RepFrequency_CarePackage = 0x0064;
 
 		///<summary>float</summary>
-		public const int RepVehicle_SpawnDistance = 0x0064;
+		public const int RepVehicle_SpawnDistance = 0x0068;
 
 		///<summary>float</summary>
-		public const int RepVehicle_UnspawnDistance = 0x0068;
+		public const int RepVehicle_UnspawnDistance = 0x006C;
 
 		///<summary>FRigidBodyErrorCorrection</summary>
-		public const int RepVehicle_PhysicErrorCorrection = 0x006C;
+		public const int RepVehicle_PhysicErrorCorrection = 0x0070;
 
 		///<summary>float</summary>
-		public const int CharacterCorrection_MaxSpeed = 0x0088;
+		public const int CharacterCorrection_MaxSpeed = 0x008C;
 
 		///<summary>float</summary>
-		public const int CharacterCorrection_MaxSpeedPositionError = 0x008C;
+		public const int CharacterCorrection_MaxSpeedPositionError = 0x0090;
 
 		///<summary>float</summary>
-		public const int CharacterCorrection_ZeroSpeedPositionError = 0x0090;
+		public const int CharacterCorrection_ZeroSpeedPositionError = 0x0094;
 
 		///<summary>bool</summary>
-		public const int bBattlEyeEnabled = 0x0094;
+		public const int bBattlEyeEnabled = 0x0098;
 
 		///<summary>bool</summary>
-		public const int bBattlEyeEnabledInPIE = 0x0095;
+		public const int bBattlEyeEnabledInPIE = 0x0099;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData01 = 0x0096;
+		public const int UnknownData01 = 0x009A;
 
 		///<summary>float</summary>
-		public const int BattlEyeReliablePacketIntervalOnClient = 0x0098;
+		public const int BattlEyeReliablePacketIntervalOnClient = 0x009C;
 
 		///<summary>float</summary>
-		public const int BattlEyeReliablePacketIntervalOnServer = 0x009C;
+		public const int BattlEyeReliablePacketIntervalOnServer = 0x00A0;
 
 		///<summary>bool</summary>
-		public const int bTPEnabled = 0x00A0;
+		public const int bTPEnabled = 0x00A4;
 
 		///<summary>bool</summary>
-		public const int bTPEnabledInPIE = 0x00A1;
+		public const int bTPEnabledInPIE = 0x00A5;
 
 		///<summary>bool</summary>
-		public const int bTPLaFPSUpdateStatus = 0x00A2;
+		public const int bTPLaFPSUpdateStatus = 0x00A6;
 
 		///<summary>unsigned char[0x1]</summary>
-		public const int UnknownData02 = 0x00A3;
+		public const int UnknownData02 = 0x00A7;
 
 		///<summary>float</summary>
-		public const int TPLaFPSUpdateStatusPeriodInMs = 0x00A4;
+		public const int TPLaFPSUpdateStatusPeriodInMs = 0x00A8;
 
 		///<summary>bool</summary>
-		public const int bChineseLicensing = 0x00A8;
+		public const int bChineseLicensing = 0x00AC;
 
 		///<summary>bool</summary>
-		public const int bUseGappLobby = 0x00A9;
+		public const int bUseGappLobby = 0x00AD;
 
-		///<summary>unsigned char[0x6]</summary>
-		public const int UnknownData03 = 0x00AA;
+		///<summary>unsigned char[0x2]</summary>
+		public const int UnknownData03 = 0x00AE;
 
 		///<summary>FString</summary>
 		public const int GappLobbyUrl = 0x00B0;
@@ -6953,8 +6972,14 @@ namespace Offsets
 		///<summary>bool</summary>
 		public const int bKoreanRating = 0x00C0;
 
-		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData04 = 0x00C1;
+		///<summary>bool</summary>
+		public const int bKakao = 0x00C1;
+
+		///<summary>bool</summary>
+		public const int bKakaoTest = 0x00C2;
+
+		///<summary>unsigned char[0x1]</summary>
+		public const int UnknownData04 = 0x00C3;
 
 		///<summary>float</summary>
 		public const int GameStateLogInterval = 0x00C4;
@@ -7184,110 +7209,116 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int HackDetectionSpeed = 0x0318;
 
-		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData11 = 0x031C;
+		///<summary>float</summary>
+		public const int HackDetectionSpeed_Crouch = 0x031C;
+
+		///<summary>float</summary>
+		public const int HackDetectionSpeed_Prone = 0x0320;
+
+		///<summary>float</summary>
+		public const int InvalidRevivingMaxTime = 0x0324;
 
 		///<summary>TArray&lt;FOverrideScalability&gt;</summary>
-		public const int OverrideScalabilities = 0x0320;
+		public const int OverrideScalabilities = 0x0328;
 
 		///<summary>float</summary>
-		public const int FakeDoorBlockMaxY = 0x0330;
+		public const int FakeDoorBlockMaxY = 0x0338;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData12 = 0x0334;
+		public const int UnknownData11 = 0x033C;
 
 		///<summary>TArray&lt;FReportCauseData&gt;</summary>
-		public const int ReportCauses = 0x0338;
+		public const int ReportCauses = 0x0340;
 
 		///<summary>TArray&lt;FSubjectToReport&gt;</summary>
-		public const int SubjectToReport = 0x0348;
+		public const int SubjectToReport = 0x0350;
 
 		///<summary>TArray&lt;FReportDetailCauseTypeDescription&gt;</summary>
-		public const int ReportDetailCauseTypeDescriptions = 0x0358;
+		public const int ReportDetailCauseTypeDescriptions = 0x0360;
 
 		///<summary>float</summary>
-		public const int FreelookRecoveryInterpSpeed = 0x0368;
+		public const int FreelookRecoveryInterpSpeed = 0x0370;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData13 = 0x036C;
+		public const int UnknownData12 = 0x0374;
 
 		///<summary>TMap&lt;FName,float&gt;</summary>
-		public const int GamepadSensitiveMultiplier = 0x0370;
+		public const int GamepadSensitiveMultiplier = 0x0378;
 
 		///<summary>float</summary>
-		public const int GamePadInnerDeadZone = 0x03C0;
+		public const int GamePadInnerDeadZone = 0x03C8;
 
 		///<summary>float</summary>
-		public const int GamePadOutDeadZoneAcceleration = 0x03C4;
+		public const int GamePadOutDeadZoneAcceleration = 0x03CC;
 
 		///<summary>float</summary>
-		public const int GamePadOutMaxAxisValue = 0x03C8;
+		public const int GamePadOutMaxAxisValue = 0x03D0;
 
 		///<summary>float</summary>
-		public const int GamePadAccelerationStandardFps = 0x03CC;
+		public const int GamePadAccelerationStandardFps = 0x03D4;
 
 		///<summary>float</summary>
-		public const int AimAssistDecisionRadius = 0x03D0;
+		public const int AimAssistDecisionRadius = 0x03D8;
 
 		///<summary>bool</summary>
-		public const int bApplyInputValue = 0x03D4;
+		public const int bApplyInputValue = 0x03DC;
 
 		///<summary>bool</summary>
-		public const int bIgnorePadSensitive = 0x03D5;
+		public const int bIgnorePadSensitive = 0x03DD;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData14 = 0x03D6;
+		public const int UnknownData13 = 0x03DE;
 
 		///<summary>float</summary>
-		public const int InsensitiveZone = 0x03D8;
+		public const int InsensitiveZone = 0x03E0;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData15 = 0x03DC;
+		public const int UnknownData14 = 0x03E4;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int AimCameraAssists = 0x03E0;
+		public const int AimCameraAssists = 0x03E8;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int ADSCameraAssists = 0x03F0;
+		public const int ADSCameraAssists = 0x03F8;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int Scope2XCameraAssists = 0x0400;
+		public const int Scope2XCameraAssists = 0x0408;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int Scope4XCameraAssists = 0x0410;
+		public const int Scope4XCameraAssists = 0x0418;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int Scope8XCameraAssists = 0x0420;
+		public const int Scope8XCameraAssists = 0x0428;
 
 		///<summary>TArray&lt;FAimAssistData&gt;</summary>
-		public const int Scope15XCameraAssists = 0x0430;
+		public const int Scope15XCameraAssists = 0x0438;
 
 		///<summary>bool</summary>
-		public const int bIsESports = 0x0440;
+		public const int bIsESports = 0x0448;
 
 		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData16 = 0x0441;
+		public const int UnknownData15 = 0x0449;
 
 		///<summary>FStringAssetReference</summary>
-		public const int DialogUMGWidgetClassStringAssetReference = 0x0448;
+		public const int DialogUMGWidgetClassStringAssetReference = 0x0450;
 
 		///<summary>unsigned char[0x50]</summary>
-		public const int UnknownData17 = 0x0458;
+		public const int UnknownData16 = 0x0460;
 
 		///<summary>UCurveFloat *</summary>
-		public const int LoadedMouseSensitivityCurve = 0x04A8;
+		public const int LoadedMouseSensitivityCurve = 0x04B0;
 
 		///<summary>UCurveFloat *</summary>
-		public const int LoadedGammaCurve = 0x04B0;
+		public const int LoadedGammaCurve = 0x04B8;
 
 		///<summary>UTextureRenderTarget2D *</summary>
-		public const int CharacterStudioRenderTarget = 0x04B8;
+		public const int CharacterStudioRenderTarget = 0x04C0;
 
 		///<summary>TArray&lt;FAnimatableCustomizableObjectData&gt;</summary>
-		public const int AnimatableCustomizableDatas = 0x04C0;
+		public const int AnimatableCustomizableDatas = 0x04C8;
 
 		///<summary>TMap&lt;FName,float&gt;</summary>
-		public const int NotifyDistanceLimitMap = 0x04D0;
+		public const int NotifyDistanceLimitMap = 0x04D8;
 
 	}
 
@@ -7425,8 +7456,11 @@ namespace Offsets
 		///<summary>UHighlightSession *</summary>
 		public const int HighlightSession = 0x09A8;
 
-		///<summary>unsigned char[0x100]</summary>
+		///<summary>unsigned char[0xF8]</summary>
 		public const int UnknownData12 = 0x09B0;
+
+		///<summary>UKakaoSessionClientChecker *</summary>
+		public const int KakaoSessionClientProcessChecker = 0x0AA8;
 
 	}
 
@@ -8372,41 +8406,53 @@ namespace Offsets
 		///<summary>UClass *</summary>
 		public const int BasicBeltItemClassForNoBelt = 0x05C8;
 
-		///<summary>unsigned char[0x8]</summary>
-		public const int UnknownData04 = 0x05D0;
+		///<summary>TArray&lt;AActor * &gt;</summary>
+		public const int PlayerStarts = 0x0620;
+
+		///<summary>TArray&lt;FPlayerStartsUserCount&gt;</summary>
+		public const int PlayerStartsUserCount = 0x0630;
+
+		///<summary>TMap&lt;FString,ATslPlayerStart * &gt;</summary>
+		public const int PlayerStartsUniqueIdMap = 0x0640;
+
+		///<summary>int</summary>
+		public const int PlayerStartCount = 0x0690;
+
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData04 = 0x0694;
 
 		///<summary>UItemSpawnProcessor *</summary>
-		public const int ItemSpawnProcessor = 0x05D8;
+		public const int ItemSpawnProcessor = 0x0698;
 
 		///<summary>UThingSpawnProcessor *</summary>
-		public const int ThingSpawnProcessor = 0x05E0;
+		public const int ThingSpawnProcessor = 0x06A0;
 
 		///<summary>UGeneralItemSpawner *</summary>
-		public const int InitialItemDonator = 0x05E8;
+		public const int InitialItemDonator = 0x06A8;
 
 		///<summary>UMatchPreparer *</summary>
-		public const int MatchPreparer = 0x05F0;
+		public const int MatchPreparer = 0x06B0;
 
 		///<summary>AModeController *</summary>
-		public const int ModeController = 0x05F8;
+		public const int ModeController = 0x06B8;
 
 		///<summary>ADroppedItemGridManager *</summary>
-		public const int DroppedItemGridManager = 0x0600;
+		public const int DroppedItemGridManager = 0x06C0;
 
 		///<summary>TArray&lt;AModeController * &gt;</summary>
-		public const int AdditinalModeControllers = 0x0608;
+		public const int AdditinalModeControllers = 0x06C8;
 
 		///<summary>unsigned char[0x98]</summary>
-		public const int UnknownData05 = 0x0618;
+		public const int UnknownData05 = 0x06D8;
 
 		///<summary>TMap&lt;FString,APlayerState * &gt;</summary>
-		public const int JoinedUserPlayerStateMap = 0x06B0;
+		public const int JoinedUserPlayerStateMap = 0x0770;
 
 		///<summary>TArray&lt;FTeams&gt;</summary>
-		public const int Teams = 0x0700;
+		public const int Teams = 0x07C0;
 
 		///<summary>unsigned char[0xB0]</summary>
-		public const int UnknownData06 = 0x0710;
+		public const int UnknownData06 = 0x07D0;
 
 	}
 
