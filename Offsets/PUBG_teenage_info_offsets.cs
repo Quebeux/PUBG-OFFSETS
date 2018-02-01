@@ -13,11 +13,20 @@ namespace Offsets
 		///<summary>UWidgetAnimation *</summary>
 		public const int FadeOutimgtxt = 0x0248;
 
-		///<summary>UImage *</summary>
-		public const int Image_1 = 0x0250;
+		///<summary>UWidgetSwitcher *</summary>
+		public const int GameRatingPages = 0x0250;
 
 		///<summary>UImage *</summary>
-		public const int Image_2 = 0x0258;
+		public const int Image_1 = 0x0258;
+
+		///<summary>UImage *</summary>
+		public const int Image_2 = 0x0260;
+
+		///<summary>UImage *</summary>
+		public const int Image_9 = 0x0268;
+
+		///<summary>UImage *</summary>
+		public const int Image_10 = 0x0270;
 
 	}
 

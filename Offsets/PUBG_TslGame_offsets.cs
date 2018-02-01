@@ -1083,7 +1083,7 @@ namespace Offsets
 
 	public class UHackReporterComponent
 	{
-		///<summary>unsigned char[0x240]</summary>
+		///<summary>unsigned char[0x230]</summary>
 		public const int UnknownData00 = 0x01E0;
 
 	}
