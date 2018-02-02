@@ -131,7 +131,7 @@ namespace Offsets
 		public const int OnChildFocusSlotID = 0x03A0;
 
 		///<summary>EEquipSlotID</summary>
-		public const int FocusSlotID = 0x03B0;
+		public const int FocusSlotId = 0x03B0;
 
 		///<summary>unsigned char[0x7]</summary>
 		public const int UnknownData05 = 0x03B1;

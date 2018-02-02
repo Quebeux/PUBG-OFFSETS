@@ -5004,7 +5004,7 @@ namespace Offsets
 		///<summary>float</summary>
 		public const int SteeringYawBias = 0x0798;
 
-		///<summary>unsigned char[0x44]</summary>
+		///<summary>unsigned char[0x34]</summary>
 		public const int UnknownData10 = 0x079C;
 
 	}
@@ -12888,269 +12888,272 @@ namespace Offsets
 	public class ATslMotorbikeVehicle
 	{
 		///<summary>bool</summary>
-		public const int bStabilizeOnServer = 0x07E0;
-
-		///<summary>bool</summary>
-		public const int bStabilizeOnRemoteClient = 0x07E1;
-
-		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData00 = 0x07E2;
-
-		///<summary>float</summary>
-		public const int KickstandStabAngularDamp = 0x07E4;
-
-		///<summary>float</summary>
-		public const int KickstandMAV = 0x07E8;
-
-		///<summary>float</summary>
-		public const int DefaultAngularDamping_Client = 0x07EC;
-
-		///<summary>float</summary>
-		public const int DefaultAngularDamping_Server = 0x07F0;
-
-		///<summary>float</summary>
-		public const int NoDriverAngularDamping_Client = 0x07F4;
-
-		///<summary>float</summary>
-		public const int NoDriverAngularDamping_Server = 0x07F8;
-
-		///<summary>float</summary>
-		public const int KickstandStabilizeTorqueScalar = 0x07FC;
-
-		///<summary>float</summary>
-		public const int KickstandStabilizeRollScalar = 0x0800;
-
-		///<summary>float</summary>
-		public const int KickstandStabilizeRollMinRange = 0x0804;
-
-		///<summary>float</summary>
-		public const int MinVelocityForStabilizeOverride = 0x0808;
-
-		///<summary>float</summary>
-		public const int KickstandStabLinearDamp = 0x080C;
-
-		///<summary>FName</summary>
-		public const int StabilizeBone_Low = 0x0810;
-
-		///<summary>FName</summary>
-		public const int StabilizeBone_High = 0x0818;
-
-		///<summary>UCurveFloat *</summary>
-		public const int Curve_Roll = 0x0820;
-
-		///<summary>UCurveFloat *</summary>
-		public const int Curve_RollReturn = 0x0828;
-
-		///<summary>UCurveFloat *</summary>
-		public const int Curve_Steer = 0x0830;
-
-		///<summary>UCurveFloat *</summary>
-		public const int Curve_Yaw = 0x0838;
-
-		///<summary>UCurveFloat *</summary>
-		public const int Curve_Torque = 0x0840;
-
-		///<summary>FVector</summary>
-		public const int StabStaticVector = 0x0848;
-
-		///<summary>FVector</summary>
-		public const int StabStaticVectorKickstand = 0x0854;
-
-		///<summary>FVector</summary>
-		public const int StabNoDriverVector = 0x0860;
-
-		///<summary>FVector2D</summary>
-		public const int StabX_Velocity_In = 0x086C;
-
-		///<summary>FVector2D</summary>
-		public const int StabX_Velocity_Out = 0x0874;
-
-		///<summary>FVector2D</summary>
-		public const int StabX_Pitch_In = 0x087C;
-
-		///<summary>FVector2D</summary>
-		public const int StabX_Pitch_Out = 0x0884;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Velocity_In = 0x088C;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Velocity_Out = 0x0894;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Roll_In = 0x089C;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Roll_Out = 0x08A4;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Pitch_In = 0x08AC;
-
-		///<summary>FVector2D</summary>
-		public const int StabZ_Pitch_Out = 0x08B4;
-
-		///<summary>FVector2D</summary>
-		public const int StabTorque_In = 0x08BC;
-
-		///<summary>FVector2D</summary>
-		public const int StabTorque_Out = 0x08C4;
-
-		///<summary>float</summary>
-		public const int StabTorque_ForceScalar = 0x08CC;
-
-		///<summary>FVector2D</summary>
-		public const int StabTorque_Pitch_In = 0x08D0;
-
-		///<summary>FVector2D</summary>
-		public const int StabTorque_Pitch_Out = 0x08D8;
-
-		///<summary>bool</summary>
-		public const int bUseFlipping = 0x08E0;
+		public const int bUseKickstandStabilize = 0x07D0;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData01 = 0x08E1;
+		public const int UnknownData00 = 0x07D1;
 
 		///<summary>float</summary>
-		public const int FlippingForce = 0x08E4;
+		public const int MinSuspensionOffsetForContact = 0x07D4;
+
+		///<summary>bool</summary>
+		public const int bStabilizeOnServer = 0x07D8;
+
+		///<summary>bool</summary>
+		public const int bStabilizeOnRemoteClient = 0x07D9;
+
+		///<summary>unsigned char[0x2]</summary>
+		public const int UnknownData01 = 0x07DA;
 
 		///<summary>float</summary>
-		public const int InitialFlipTimer = 0x08E8;
+		public const int KickstandStabAngularDamp = 0x07DC;
 
 		///<summary>float</summary>
-		public const int MinVelocityForFlipping = 0x08EC;
+		public const int KickstandMAV = 0x07E0;
+
+		///<summary>float</summary>
+		public const int DefaultAngularDamping_Client = 0x07E4;
+
+		///<summary>float</summary>
+		public const int DefaultAngularDamping_Server = 0x07E8;
+
+		///<summary>float</summary>
+		public const int NoDriverAngularDamping_Client = 0x07EC;
+
+		///<summary>float</summary>
+		public const int NoDriverAngularDamping_Server = 0x07F0;
+
+		///<summary>float</summary>
+		public const int KickstandStabilizeTorqueScalar = 0x07F4;
+
+		///<summary>float</summary>
+		public const int KickstandStabilizeRollScalar = 0x07F8;
+
+		///<summary>float</summary>
+		public const int KickstandStabilizeRollMinRange = 0x07FC;
+
+		///<summary>float</summary>
+		public const int MinVelocityForStabilizeOverride = 0x0800;
+
+		///<summary>float</summary>
+		public const int KickstandStabLinearDamp = 0x0804;
+
+		///<summary>FName</summary>
+		public const int StabilizeBone_Low = 0x0808;
+
+		///<summary>FName</summary>
+		public const int StabilizeBone_High = 0x0810;
+
+		///<summary>UCurveFloat *</summary>
+		public const int Curve_Roll = 0x0818;
+
+		///<summary>UCurveFloat *</summary>
+		public const int Curve_RollReturn = 0x0820;
+
+		///<summary>UCurveFloat *</summary>
+		public const int Curve_Steer = 0x0828;
+
+		///<summary>UCurveFloat *</summary>
+		public const int Curve_Yaw = 0x0830;
+
+		///<summary>UCurveFloat *</summary>
+		public const int Curve_Torque = 0x0838;
+
+		///<summary>FVector</summary>
+		public const int StabStaticVector = 0x0840;
+
+		///<summary>FVector</summary>
+		public const int StabStaticVectorKickstand = 0x084C;
+
+		///<summary>FVector</summary>
+		public const int StabNoDriverVector = 0x0858;
+
+		///<summary>FVector2D</summary>
+		public const int StabX_Velocity_In = 0x0864;
+
+		///<summary>FVector2D</summary>
+		public const int StabX_Velocity_Out = 0x086C;
+
+		///<summary>FVector2D</summary>
+		public const int StabX_Pitch_In = 0x0874;
+
+		///<summary>FVector2D</summary>
+		public const int StabX_Pitch_Out = 0x087C;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Velocity_In = 0x0884;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Velocity_Out = 0x088C;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Roll_In = 0x0894;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Roll_Out = 0x089C;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Pitch_In = 0x08A4;
+
+		///<summary>FVector2D</summary>
+		public const int StabZ_Pitch_Out = 0x08AC;
+
+		///<summary>FVector2D</summary>
+		public const int StabTorque_In = 0x08B4;
+
+		///<summary>FVector2D</summary>
+		public const int StabTorque_Out = 0x08BC;
+
+		///<summary>float</summary>
+		public const int StabTorque_ForceScalar = 0x08C4;
+
+		///<summary>FVector2D</summary>
+		public const int StabTorque_Pitch_In = 0x08C8;
+
+		///<summary>FVector2D</summary>
+		public const int StabTorque_Pitch_Out = 0x08D0;
+
+		///<summary>bool</summary>
+		public const int bUseFlipping = 0x08D8;
+
+		///<summary>unsigned char[0x3]</summary>
+		public const int UnknownData02 = 0x08D9;
+
+		///<summary>float</summary>
+		public const int FlippingForce = 0x08DC;
+
+		///<summary>float</summary>
+		public const int InitialFlipTimer = 0x08E0;
+
+		///<summary>float</summary>
+		public const int MinVelocityForFlipping = 0x08E4;
 
 		///<summary>unsigned char[0x4]</summary>
-		public const int UnknownData02 = 0x08F0;
+		public const int UnknownData03 = 0x08E8;
 
 		///<summary>float</summary>
-		public const int DefaultLinearDamp = 0x08F4;
+		public const int DefaultLinearDamp = 0x08EC;
 
 		///<summary>float</summary>
-		public const int DefaultAngularDamp = 0x08F8;
+		public const int DefaultAngularDamp = 0x08F0;
 
 		///<summary>float</summary>
-		public const int DefaultMAV = 0x08FC;
+		public const int DefaultMAV = 0x08F4;
 
 		///<summary>float</summary>
-		public const int ContactAlpha_RiseRate = 0x0900;
+		public const int ContactAlpha_RiseRate = 0x08F8;
 
 		///<summary>float</summary>
-		public const int ContactAlpha_FallRate = 0x0904;
+		public const int ContactAlpha_FallRate = 0x08FC;
 
 		///<summary>float</summary>
-		public const int ContactAlpha_LowerClamp = 0x0908;
+		public const int ContactAlpha_LowerClamp = 0x0900;
 
 		///<summary>FVector2D</summary>
-		public const int ContactAlpha_MapPitchIn = 0x090C;
+		public const int ContactAlpha_MapPitchIn = 0x0904;
 
 		///<summary>FVector2D</summary>
-		public const int ContactAlpha_MapRollIn = 0x0914;
+		public const int ContactAlpha_MapRollIn = 0x090C;
 
 		///<summary>float</summary>
-		public const int ContactAlphaRemoteMultiplier = 0x091C;
+		public const int ContactAlphaRemoteMultiplier = 0x0914;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlF_VelMap = 0x0920;
+		public const int AirControlF_VelMap = 0x0918;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlB_VelMap = 0x0928;
+		public const int AirControlB_VelMap = 0x0920;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlL_VelMap = 0x0930;
+		public const int AirControlL_VelMap = 0x0928;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlR_VelMap = 0x0938;
+		public const int AirControlR_VelMap = 0x0930;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlQ_VelMap = 0x0940;
+		public const int AirControlQ_VelMap = 0x0938;
 
 		///<summary>FVector2D</summary>
-		public const int AirControlE_VelMap = 0x0948;
+		public const int AirControlE_VelMap = 0x0940;
 
 		///<summary>float</summary>
-		public const int AirControl_FB_Torque = 0x0950;
+		public const int AirControl_FB_Torque = 0x0948;
 
 		///<summary>float</summary>
-		public const int AirControl_LR_Torque = 0x0954;
+		public const int AirControl_LR_Torque = 0x094C;
 
 		///<summary>float</summary>
-		public const int AirControl_QE_Torque = 0x0958;
+		public const int AirControl_QE_Torque = 0x0950;
 
 		///<summary>bool</summary>
-		public const int bStabilizeInAir = 0x095C;
+		public const int bStabilizeInAir = 0x0954;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData03 = 0x095D;
+		public const int UnknownData04 = 0x0955;
 
 		///<summary>float</summary>
-		public const int StabilizeAirPercentage = 0x0960;
+		public const int StabilizeAirPercentage = 0x0958;
 
 		///<summary>float</summary>
-		public const int FC_PitchUp = 0x0964;
+		public const int FC_PitchUp = 0x095C;
 
 		///<summary>float</summary>
-		public const int FC_PitchDown = 0x0968;
+		public const int FC_PitchDown = 0x0960;
 
 		///<summary>bool</summary>
-		public const int bUseAnchoring = 0x096C;
+		public const int bUseAnchoring = 0x0964;
 
 		///<summary>unsigned char[0x3]</summary>
-		public const int UnknownData04 = 0x096D;
+		public const int UnknownData05 = 0x0965;
 
 		///<summary>float</summary>
-		public const int MinImpulseForAnchorRelease = 0x0970;
+		public const int MinImpulseForAnchorRelease = 0x0968;
 
 		///<summary>FVector2D</summary>
-		public const int DriverVelocityAngularDampingInMap = 0x0974;
+		public const int DriverVelocityAngularDampingInMap = 0x096C;
 
 		///<summary>FVector2D</summary>
-		public const int DriverVelocityAngularDampingOutMap = 0x097C;
+		public const int DriverVelocityAngularDampingOutMap = 0x0974;
 
 		///<summary>bool</summary>
-		public const int bProcessCounterSteering = 0x0984;
+		public const int bProcessCounterSteering = 0x097C;
 
 		///<summary>bool</summary>
-		public const int bProcessCounterSteerOnRemote = 0x0985;
+		public const int bProcessCounterSteerOnRemote = 0x097D;
 
 		///<summary>unsigned char[0x2]</summary>
-		public const int UnknownData05 = 0x0986;
+		public const int UnknownData06 = 0x097E;
 
 		///<summary>float</summary>
-		public const int CounterSteerAngularSpeedScalar = 0x0988;
+		public const int CounterSteerAngularSpeedScalar = 0x0980;
 
 		///<summary>float</summary>
-		public const int CounterSteerScalar_Default = 0x098C;
+		public const int CounterSteerScalar_Default = 0x0984;
 
 		///<summary>float</summary>
-		public const int CounterSteerScalar_NoThrottle = 0x0990;
+		public const int CounterSteerScalar_NoThrottle = 0x0988;
 
 		///<summary>float</summary>
-		public const int CounterSteerScalar_Brake = 0x0994;
+		public const int CounterSteerScalar_Brake = 0x098C;
 
 		///<summary>unsigned char[0x40]</summary>
-		public const int UnknownData06 = 0x0998;
+		public const int UnknownData07 = 0x0990;
 
 		///<summary>bool</summary>
-		public const int bKickstandStabilizeActive = 0x09D8;
+		public const int bKickstandStabilizeActive = 0x09D0;
 
-		///<summary>unsigned char[0x7]</summary>
-		public const int UnknownData07 = 0x09D9;
+		///<summary>unsigned char[0xF]</summary>
+		public const int UnknownData08 = 0x09D1;
 
 	}
 
 	public class ATslMotorbikeVehicle_Sidecar
 	{
-		///<summary>float</summary>
-		public const int Sidecar_COM_Y_Left = 0x09E0;
-
-		///<summary>float</summary>
-		public const int Sidecar_COM_Y_Right = 0x09E4;
-
 		///<summary>FVector</summary>
-		public const int Sidecar_StabilizerHigh_StaticCOM = 0x09E8;
+		public const int Sidecar_StabilizerHigh_StaticCOM = 0x09E0;
 
-		///<summary>unsigned char[0xC]</summary>
-		public const int UnknownData00 = 0x09F4;
+		///<summary>unsigned char[0x4]</summary>
+		public const int UnknownData00 = 0x09EC;
 
 	}
 
